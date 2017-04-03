@@ -104,22 +104,34 @@ We recommend that you proceed as if you've an already released product. Typicall
 Go back and make multiple commits whenever possible. Part of the beautify of Conventional Commits is its ability to drive us to make more organized commits and PRs.
 
 ### Doesn’t this discourage rapid development and fast iteration?
+
 It discourages moving fast in a disorganized way. It helps you be able to move fast long term and across more projects with more diverse teams.
 
 ### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
-When used properly, Convential Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+
+When used properly, Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
 
 ### How does this relate to SemVer?
 
-we encourage you do use Conventional Commits in conjunction with semantic-versioning. When you publish a version of your library, if you've landed only `fix:` commits use a patch version, if you've landed a feature use a minor release, if you've landed a breaking change use a major release.
+`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases. 
+
+### How should I version my commit type specification extensions, e.g. `@jameswomack/conventional-commit-spec`?
+
+We recommend using SemVer and publishing to an NPM-compatible registry.
 
 ### What do I do if I accidentally use the wrong commit type?
 
-Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
+#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+
+Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use. 
+
+#### When you used a type *not* of the spec, e.g. `feet` instead of `feat`
+
+In a worst case scenario, it's not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the standard.
 
 ### Do all my contributors need to use the conventional commit specification?
 
-No, if you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they're merged -- adding no workload to casual committers
+No! If you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they're merged—adding no workload to casual committers. A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
 
 ## Who's Behind This/Inspired This?
 
