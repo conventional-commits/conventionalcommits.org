@@ -1,0 +1,27 @@
+title: Conventional Commits
+descriptions: open-source maintainer, squash feature branches onto `master` and write a standardized commit message while doing so.
+
+# Should be in the form of
+# <machine readable key>: <human readable label>
+languages:
+  en: english
+
+versions:
+  - 1.0.0-beta
+
+current_version: 1.0.0-beta
+
+# Default author, for when none is set
+author: Benjamin Coe
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
