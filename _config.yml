@@ -18,6 +18,7 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - kramdown
 
 defaults:
   -
@@ -25,3 +26,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
