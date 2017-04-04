@@ -35,4 +35,7 @@ gem "listen", "3.0.6"
 
  # Pin activesupport because 5.0 is broken on 2.1
 gem "activesupport", "4.2.7"
-gem 'html-proofer'
+gem "html-proofer"
+gem "rack-jekyll"
+gem 'rake'
+gem 'puma'

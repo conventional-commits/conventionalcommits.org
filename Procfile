@@ -1,1 +1,1 @@
-web: bundle exec jekyll serve --port=$PORT --config _config.yml,_config_local.yml
+web: bundle exec puma -t 8:32 -w 3 -p $PORT

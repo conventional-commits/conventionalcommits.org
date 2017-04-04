@@ -154,22 +154,34 @@ a more structured commit history.</li>
 <p>Go back and make multiple commits whenever possible. Part of the beautify of Conventional Commits is its ability to drive us to make more organized commits and PRs.</p>
 
 <h3 id="doesnt-this-discourage-rapid-development-and-fast-iteration">Doesn’t this discourage rapid development and fast iteration?</h3>
+
 <p>It discourages moving fast in a disorganized way. It helps you be able to move fast long term and across more projects with more diverse teams.</p>
 
 <h3 id="might-conventional-commits-lead-developers-to-limit-the-type-of-commits-they-make-because-theyll-be-thinking-in-the-types-provided">Might Conventional Commits lead developers to limit the type of commits they make because they’ll be thinking in the types provided?</h3>
-<p>When used properly, Convential Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.</p>
+
+<p>When used properly, Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.</p>
 
 <h3 id="how-does-this-relate-to-semver">How does this relate to SemVer?</h3>
 
-<p>we encourage you do use Conventional Commits in conjunction with semantic-versioning. When you publish a version of your library, if you’ve landed only <code class="highlighter-rouge">fix:</code> commits use a patch version, if you’ve landed a feature use a minor release, if you’ve landed a breaking change use a major release.</p>
+<p><code class="highlighter-rouge">fix</code> type commits should be translated to <code class="highlighter-rouge">PATCH</code> releases. <code class="highlighter-rouge">feat</code> type commits should be translated to <code class="highlighter-rouge">MINOR</code> releases. Commits with <code class="highlighter-rouge">BREAKING CHANGE</code> in the commits, regardless of type, should be translated to <code class="highlighter-rouge">MAJOR</code> releases.</p>
+
+<h3 id="how-should-i-version-my-commit-type-specification-extensions-eg-jameswomackconventional-commit-spec">How should I version my commit type specification extensions, e.g. <code class="highlighter-rouge">@jameswomack/conventional-commit-spec</code>?</h3>
+
+<p>We recommend using SemVer and publishing to an NPM-compatible registry.</p>
 
 <h3 id="what-do-i-do-if-i-accidentally-use-the-wrong-commit-type">What do I do if I accidentally use the wrong commit type?</h3>
 
+<h4 id="when-you-used-a-type-thats-of-the-spec-but-not-the-correct-type-eg-fix-instead-of-feat">When you used a type that’s of the spec but not the correct type, e.g. <code class="highlighter-rouge">fix</code> instead of <code class="highlighter-rouge">feat</code></h4>
+
 <p>Prior to merging or releasing the mistake, we recommend using <code class="highlighter-rouge">git rebase -i</code> to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.</p>
+
+<h4 id="when-you-used-a-type-not-of-the-spec-eg-feet-instead-of-feat">When you used a type <em>not</em> of the spec, e.g. <code class="highlighter-rouge">feet</code> instead of <code class="highlighter-rouge">feat</code></h4>
+
+<p>In a worst case scenario, it’s not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the standard.</p>
 
 <h3 id="do-all-my-contributors-need-to-use-the-conventional-commit-specification">Do all my contributors need to use the conventional commit specification?</h3>
 
-<p>No, if you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they’re merged – adding no workload to casual committers</p>
+<p>No! If you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they’re merged—adding no workload to casual committers. A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.</p>
 
 <h2 id="whos-behind-thisinspired-this">Who’s Behind This/Inspired This?</h2>
 
@@ -184,7 +196,7 @@ folks contributing to:</p>
   <li><a href="https://github.com/conventional-changelog/standard-version">standard-version</a>: a tool
 for managing CHANGELOG generation, tagging, and version bumping, based on the
 Conventional Commit standard.</li>
-  <li><a href="https://www.npmjs.com/package/unleash">unlease</a>: a tool for automating the
+  <li><a href="https://www.npmjs.com/package/unleash">unleash</a>: a tool for automating the
 software release and publishing lifecycle.</li>
   <li><a href="https://github.com/lerna/lerna">lerna</a>: a tool for managing monorepos, which grew out
 of the Babel project.</li>
