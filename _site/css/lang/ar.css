@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@import url(http://fonts.googleapis.com/earlyaccess/thabit.css);
+
+
+html {
+    font-family: 'Droid Arabic Naskh', tahoma, Helvetica, Arial, sans-serif;
+    line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Arabic Kufi', Arial, sans-serif;
+}
+
+h3 {
+    text-align: right;
+    font-weight: bold;
+}
+
+code {
+    direction: ltr !important;
+    background-color: #ecf0f1;
+    padding: 5px;
+    font-family: 'Thabit', 'Courier New', serif;
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+}

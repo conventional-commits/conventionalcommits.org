@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+bundle exec jekyll build --config _config.yml,_config_local.yml
+bundle exec htmlproofer _site --check-html --disable-external

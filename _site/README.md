@@ -1,7 +1,5 @@
 # ConventionalCommits.org
 
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
 This repo is the home of the Conventional Commits specification.
 
 ## Repo Layout
@@ -23,14 +21,6 @@ to send a pull request.
 3. Add a translated `spec/vX.X.X.md` for the latest spec to that folder.
 4. Ensure all files have the appropriate `title` and `language` front matter (see others as an example).
 5. Add the language to the `_config.yml` file.
-
-## Badges!
-
-Tell your users that you use the Conventional Commits specification:
-
-```markdown
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-```
 
 ## Thank you semver.org
 
