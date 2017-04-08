@@ -78,7 +78,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
    begin one blank line after the description.
 7. A footer MAY be provided one blank line after the body. The footer SHOULD contain
    additional meta-information about the pull-request (such as the issues it fixes, e.g., `fixes #13, #5`).
-8. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space. A short
+8. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
 9. A description MUST be provided after the `BREAKING CHANGE: `, describing what
   has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
 10. types other than `feat` and `fix` MAY be used in your commit messages.
