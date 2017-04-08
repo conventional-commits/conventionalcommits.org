@@ -37,7 +37,7 @@ consumers of your library:
 A scope may be provided to a commit's type, to provide additional contextual information and
 is contained within parenthesis, e.g., `feat(parser): adds ability to parse arrays`.
 
-Commit _types_ other than `fix:` and `feat:` are allowed, for example [the Angular convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit-message-format) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are
+Commit _types_ other than `fix:` and `feat:` are allowed, for example [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are
 not mandated by the conventional commits specification.
 
 ## Introduction
