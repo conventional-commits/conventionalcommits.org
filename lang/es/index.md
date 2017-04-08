@@ -142,7 +142,7 @@ folks contributing to:
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a
   set of tools for parsing conventional commit messages from git histories.
-* [unleash](https://www.npmjs.com/package/unleash): a tool for automating the
+* [unleash](https://github.com/netflix/unleash): a tool for automating the
   software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out
   of the Babel project.

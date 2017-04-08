@@ -142,16 +142,14 @@ folks contributing to:
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a
   set of tools for parsing conventional commit messages from git histories.
-* [unleash](https://www.npmjs.com/package/unleash): a tool for automating the
+* [unleash](https://github.com/netflix/unleash): a tool for automating the
   software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out
   of the Babel project.
 
 ## Projects Using Conventional Commits
 
-```md
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-```
+<img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" />
 
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools
