@@ -53,7 +53,7 @@ a readable commit history (and [ideally a well maintained CHANGLOG](http://keepa
 forensic process.
 
 The Conventional Commits specification proposes introducing a standardized lightweight
-convention on top of commit messages. This convention dovetails with [semver](http://semver.org),
+convention on top of commit messages. This convention dovetails with [SemVer](http://semver.org),
 asking software developers to describe in commit messages, features, fixes, and breaking
 changes that they make.
 
