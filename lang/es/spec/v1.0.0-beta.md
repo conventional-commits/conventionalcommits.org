@@ -114,7 +114,7 @@ Conventional Commits encourages us to make more of certain types of commits such
 
 `fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
 
-### How should I version my commit type specification extensions, e.g. `@jameswomack/conventional-commit-spec`?
+### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
 
 We recommend using SemVer to release your own extensions to this specification, and
 encourage you to do so.
