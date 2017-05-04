@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/lang/es/</loc>
+<loc>/lang/es/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/lang/es/spec/v1.0.0-beta.html</loc>
+<loc>/lang/es/spec/v1.0.0-beta.1.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/spec/v1.0.0-beta.html</loc>
+<loc>/spec/v1.0.0-beta.1.html</loc>
+</url>
+<url>
+<loc>/lang/es/spec/v1.0.0-beta.html</loc>
+</url>
+<url>
+<loc>/spec/v1.0.0-beta.html</loc>
 </url>
 </urlset>
