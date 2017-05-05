@@ -1,9 +1,9 @@
 ---
-title: Conventional Commits 1.0.0-beta
+title: Conventional Commits 1.0.0-beta.1
 language: es
 ---
 
-# Conventional Commits 1.0.0-beta
+# Conventional Commits 1.0.0-beta.1
 
 ## Summary
 
@@ -31,7 +31,7 @@ consumers of your library:
 2. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates
   with [`MINOR`](http://semver.org/#summary) in semantic versioning).
 3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`Major`](http://semver.org/#summary) in semantic versioning). A breaking change can be
-  part of commits of any _type_. E.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
+  part of commits of any _type_. e.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
 
 <br />
 A scope may be provided to a commit's type, to provide additional contextual information and
