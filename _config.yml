@@ -5,6 +5,7 @@ descriptions: open-source maintainer, squash feature branches onto `master` and 
 # <machine readable key>: <human readable label>
 languages:
   en: english
+  pl: polish
 
 versions:
   - 1.0.0-beta
