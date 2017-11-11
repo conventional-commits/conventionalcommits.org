@@ -32,13 +32,10 @@ consumers of your library:
   with [`MINOR`](http://semver.org/#summary) in semantic versioning).
 3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`Major`](http://semver.org/#summary) in semantic versioning). A breaking change can be
   part of commits of any _type_. e.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
-
+4. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are not mandated by the conventional commits specification.
 <br />
 A scope may be provided to a commit's type, to provide additional contextual information and
 is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
-
-Commit _types_ other than `fix:` and `feat:` are allowed, for example [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are
-not mandated by the conventional commits specification.
 
 ## Introduction
 
