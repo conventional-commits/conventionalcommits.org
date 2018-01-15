@@ -6,6 +6,7 @@ descriptions: open-source maintainer, squash feature branches onto `master` and 
 languages:
   en: english
   pl: polish
+  it: italian
 
 versions:
   - 1.0.0-beta
