@@ -30,7 +30,7 @@ consumers of your library:
 1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in semantic versioning).
 2. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates
   with [`MINOR`](http://semver.org/#summary) in semantic versioning).
-3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`Major`](http://semver.org/#summary) in semantic versioning). A breaking change can be
+3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning). A breaking change can be
   part of commits of any _type_. e.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
 4. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are not mandated by the conventional commits specification.
 <br />
@@ -61,7 +61,7 @@ debug issues across project boundaries.
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. commits MUST be prefixed with a type, which consists of a verb, `feat`, `fix`, etc.,
+1. commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc.,
    followed by a colon and a space.
 2. the type `feat` MUST be used when a commit adds a new feature to your application
   or library.

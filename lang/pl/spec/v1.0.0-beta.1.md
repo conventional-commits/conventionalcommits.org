@@ -29,7 +29,7 @@ do użytkowników Twojej biblioteki:
 
 1. **fix:** dostarczenie _typu_ `fix` naprawia błąd obecny w Twoim kodzie (powiązane z [`PATCH`](http://semver.org/#summary) w wersjonowaniu semantycznym).
 2. **feat:** dostarczenie _typu_ `feat` wprowadza nowe funkcje do Twojej biblioteki (powiązane z [`MINOR`](http://semver.org/#summary) w wersjonowaniu semantycznym).
-3. **BREAKING CHANGE:** dostarczenie, które posiada tekst `BREAKING CHANGE:` na początku jego opcjonalnego ciała bądź stopki wprowadza zmianę łamiącą kompatybilność API (powiązane z [`Major`](http://semver.org/#summary) w wersjonowaniu semantycznym). Zmiana łamiąca kompatybilność wsteczną może być elementem zmian każdego innego _typu_, np. `fix:`, `feat:` & `chore:` - wszystkie byłyby poprawne, w dodatku do każdego innego _typu_.
+3. **BREAKING CHANGE:** dostarczenie, które posiada tekst `BREAKING CHANGE:` na początku jego opcjonalnego ciała bądź stopki wprowadza zmianę łamiącą kompatybilność API (powiązane z [`MAJOR`](http://semver.org/#summary) w wersjonowaniu semantycznym). Zmiana łamiąca kompatybilność wsteczną może być elementem zmian każdego innego _typu_, np. `fix:`, `feat:` & `chore:` - wszystkie byłyby poprawne, w dodatku do każdego innego _typu_.
 
 <br />
 Przy typie dostarczenia może zostać podany zakres w celu dostarczenia dokładniejszej informacji o kontekście dostarczenia.
