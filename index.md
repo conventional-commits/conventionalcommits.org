@@ -30,9 +30,11 @@ consumers of your library:
 1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in semantic versioning).
 2. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates
   with [`MINOR`](http://semver.org/#summary) in semantic versioning).
-3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`Major`](http://semver.org/#summary) in semantic versioning). A breaking change can be
+3. **improvement:** a commit of the _type_ `improvement` improve a current implementation without adding a new feature or fixing a bug
+  (this can be correlated with [`MINOR`](http://semver.org/#summary) in semantic versioning if there is no breaking change, otherwise correlated with a [`Major`](http://semver.org/#summary)).
+4. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`Major`](http://semver.org/#summary) in semantic versioning). A breaking change can be
   part of commits of any _type_. e.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
-4. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are not mandated by the conventional commits specification.
+5. Others: commit _types_ other than `fix:`, `feat:` and `improvement:` are allowed, for example [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) recommends `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, but these tags are not mandated by the conventional commits specification.
 <br />
 A scope may be provided to a commit's type, to provide additional contextual information and
 is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
@@ -61,24 +63,25 @@ debug issues across project boundaries.
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. commits MUST be prefixed with a type, which consists of a verb, `feat`, `fix`, etc.,
+1. commits MUST be prefixed with a type, which consists of a verb, `feat`, `fix`, `improvement`, etc.,
    followed by a colon and a space.
 2. the type `feat` MUST be used when a commit adds a new feature to your application
   or library.
 3. the type `fix` MUST be used when a commit represents a bug fix for your application.
-4. an optional scope MAY be provided after a type. A scope is a phrase describing
+4. the type `improvement` MUST be used when improving a current implementation without adding a new feature or fixing a bug.
+5. an optional scope MAY be provided after a type. A scope is a phrase describing
   a section of the codebase enclosed in parenthesis, e.g., `fix(parser):`
-5. A description MUST immediately follow the type/scope prefix.
+6. A description MUST immediately follow the type/scope prefix.
   The description is a short description of the pull request, e.g.,
   _fix: array parsing issue when multiple spaces were contained in string._
-6. A longer commit body MAY be provided after the short description. The body MUST
+7. A longer commit body MAY be provided after the short description. The body MUST
    begin one blank line after the description.
-7. A footer MAY be provided one blank line after the body. The footer SHOULD contain
+8. A footer MAY be provided one blank line after the body. The footer SHOULD contain
    additional meta-information about the pull-request (such as the issues it fixes, e.g., `fixes #13, #5`).
-8. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
-9. A description MUST be provided after the `BREAKING CHANGE: `, describing what
+9. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
+10. A description MUST be provided after the `BREAKING CHANGE: `, describing what
   has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
-10. types other than `feat` and `fix` MAY be used in your commit messages.
+11. types other than `fix:`, `feat:` and `improvement:` MAY be used in your commit messages.
 
 ## Why Use Conventional Commits
 
