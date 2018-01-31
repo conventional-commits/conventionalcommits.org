@@ -61,7 +61,7 @@ debug issues across project boundaries.
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. commits MUST be prefixed with a type, which consists of a verb, `feat`, `fix`, etc.,
+1. commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc.,
    followed by a colon and a space.
 2. the type `feat` MUST be used when a commit adds a new feature to your application
   or library.
