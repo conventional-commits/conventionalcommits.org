@@ -29,7 +29,7 @@ l'intento al consumatore della libreria:
 
 1. **fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un versionamento semver).
 2. **feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento semver).
-3. **BREAKING CHANGE:** un commit che contiente il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`Major`](http://semver.org/#summary) in un versionamento semver).
+3. **BREAKING CHANGE:** un commit che contiente il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento semver).
 Una _breaking change_ può essere parte di un commit di qualsiasi _tipo_.
 Es: I tipi `fix:`, `feat:` & `chore:` sono tutti validi.
 4. Altro: Sono ammessi altri _tipi_ oltre `fix:` e `feat:`, ad esempio [la convenzione Angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) raccomanda `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `chore:`, ma questi non sono coperti da questa specifica.
@@ -62,7 +62,7 @@ rimuovere errori tra progetti.
 
 Le parole “DEVE”, “NON DEVE”, “RICHIESTO”, “DOVRÀ”, “NON DOVRÀ”, “DOVREBBE”, “NON DOVREBBE”, “RACCOMANDATO”, “POTREBBE” e “OPZIONALE” devo essere interpretata come da specifica [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Un commit DEVE iniziare con un _tipo_, il quale consiste in un verbo, `feat`, `fix`, etc.,
+1. Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc.,
    seguito dai due punti ed uno spazio.
 2. Il _tipo_ `feat` DEVE essere usato quando un commit aggiunge una funzionalità
    all'applicazione o libreria.

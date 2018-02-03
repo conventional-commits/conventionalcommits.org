@@ -31,7 +31,7 @@ language: zh-Hans
 4. 其它在 `fix:` 和 `feat:` 之外的提交 _类型_ 也都是支持的，例如 [Angular 约定](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) 中推荐使用 `docs:`、`style:`、`refactor:`、`perf:`、`test:`、`chore:`，但这些标签在约定式提交规范中并不是强制性的。
 
 <br />
-可以为提交类型添加一个围在圆括号内的作用域，以为其提供额外的上下文信息。例如，`feat(parser): add ability to parse arrays`。
+可以为提交类型添加一个围在圆括号内的作用域，以为其提供额外的上下文信息。例如 `feat(parser): add ability to parse arrays.`
 
 ## 介绍
 
@@ -45,13 +45,13 @@ language: zh-Hans
 
 ## 约定式提交规范
 
-本文档中的关键词 “必须”，“禁止”，“需要”，“应当”，“不应当”，“应该”，“不应该”，“推荐”，“可以” 和 “可选” 应按照 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) 的描述解释。
+本文档中的关键词 “必须”、“禁止”、“需要”、“应当”、“不应当”、“应该”、“不应该”、“推荐”、“可以” 和 “可选” 应按照 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) 的描述解释。
 
-1. 每个提交都**必须**使用类型字段前缀，这由一个形如 `feat` 或 `fix` 的动词组成，其后接冒号和空格。
+1. 每个提交都**必须**使用类型字段前缀，这由一个形如 `feat` 或 `fix` 的名词组成，其后接冒号和空格。
 2. 当一个提交为应用或类库实现了新特性时，**必须**使用 `feat` 类型。
 3. 当一个提交为应用修复了 bug 时，**必须**使用 `fix` 类型。
 4. 可选的作用域字段**可以**在类型后提供。作用域是描述代码库中某个部分的词组，封装在括号中，形如 `fix(parser):` 等。
-5. 描述字段**必须**紧接在类型或作用域前缀之后。描述指的是对 pull request 的简短描述，形如：_fix: array parsing issue when multiple spaces were contained in string._
+5. 描述字段**必须**紧接在类型或作用域前缀之后。描述指的是对 pull request 的简短描述，形如 _fix: array parsing issue when multiple spaces were contained in string._
 6. 在简短描述之后，**可以**编写更长的提交正文。正文**必须**起始于描述字段结束的一个空行后。
 7. 在正文结束的一个空行后，**可以**编写页脚。页脚**应当**包含额外的元信息（例如它所修复的 issue，类似 `fixse #13, #5` 等）。
 8. 破坏性变更**必须**在提交的正文或脚注加以展示。一个破坏性变更**必须**包含大写的文本 `BREAKING CHANGE`，紧跟冒号和空格。
