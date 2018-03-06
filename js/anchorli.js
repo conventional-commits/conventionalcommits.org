@@ -17,7 +17,7 @@ document.onreadystatechange = function () {
       li.id = 'spec-item-' + (i + 1);
     }
 
-    // Add anchor link to all elemens with an ID in the spec
+    // Add anchor link to all elements with an ID in the spec
     var headers = document.querySelectorAll('#spec [id]');
     for (var i = 0; i < headers.length; i++)
     {
