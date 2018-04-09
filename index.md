@@ -37,6 +37,34 @@ consumers of your library:
 A scope may be provided to a commit's type, to provide additional contextual information and
 is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
 
+## Examples
+
+### Commit message with description and breaking change in body
+```
+feat: allow provided config object to extend other configs
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+```
+
+### Commit message with no body
+```
+docs: correct spelling of CHANGLOG
+```
+
+### Commit message with scope
+```
+feat(lang): added polish language
+```
+
+### Commit message for a fix using an (optional) issue number.
+```
+fix: minor typos in code
+
+see the issue for details on the typos fixed
+
+fixes issue #12
+```
+
 ## Introduction
 
 In software development, it's been my experience that bugs are most often introduced
