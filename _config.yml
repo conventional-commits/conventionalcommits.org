@@ -12,8 +12,9 @@ languages:
 versions:
   - 1.0.0-beta
   - 1.0.0-beta.1
+  - 1.0.0-beta.2
 
-current_version: 1.0.0-beta.1
+current_version: 1.0.0-beta.2
 
 # Default author, for when none is set
 author: Benjamin Coe
@@ -31,4 +32,4 @@ defaults:
     values:
       layout: "default"
 
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+exclude: ['docker-compose.yml', 'config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
