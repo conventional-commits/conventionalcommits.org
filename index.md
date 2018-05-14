@@ -48,7 +48,7 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Commit message with no body
 ```
-docs: correct spelling of CHANGLOG
+docs: correct spelling of CHANGELOG
 ```
 
 ### Commit message with scope
