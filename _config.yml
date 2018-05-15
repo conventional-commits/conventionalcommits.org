@@ -8,6 +8,7 @@ languages:
   pl: polish
   it: italian
   zh-Hans: 简体中文
+  es: spanish
 
 versions:
   - 1.0.0-beta
