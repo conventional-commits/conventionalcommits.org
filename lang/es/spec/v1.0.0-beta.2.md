@@ -41,7 +41,7 @@ intención al consumidor de la librería:
     válidos, adicional a cualquier otro _tipo_.
 4.  Otros: _tipos_ de commits distintos a `fix:` y `feat:` están permitidos, por
     ejemplo [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional)
-    (basado en [the Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit))
+    (basado en [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines))
     recomienda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` y
     otros. También recomendamos `improvement` para commits que mejorar una
     implementación actual sin añadir nuevas características ni corregir errores.
