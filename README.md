@@ -24,6 +24,11 @@ to send a pull request.
 4. Ensure all files have the appropriate `title` and `language` front matter (see others as an example).
 5. Add the language to the `_config.yml` file.
 
+### Running project locally
+
+There's a docker-compose.yml file ready that will help you to check if the website looks good!
+To run it make sure you have [docker-compose installed](https://docs.docker.com/compose/install/#install-compose) on your machine and just use the command `docker-compose up` to make it run locally.
+
 ## Badges!
 
 Tell your users that you use the Conventional Commits specification:
