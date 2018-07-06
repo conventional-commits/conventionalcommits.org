@@ -53,7 +53,7 @@ docs: correct spelling of CHANGELOG
 
 ### Commit message with scope
 ```
-feat(lang): added polish language
+feat(lang): add polish language
 ```
 
 ### Commit message for a fix using an (optional) issue number.
