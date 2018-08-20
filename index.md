@@ -116,6 +116,10 @@ The description is a short description of the code changes, e.g., _fix: array pa
 
 We recommend that you proceed as if you've an already released product. Typically *somebody*, even if its your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
+### Are the types in the commit title uppercase or lowercase?
+
+Any casing may be used, but it's best to be consistent. 
+
 ### What do I do if the commit conforms to more than one of the commit types?
 
 Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
