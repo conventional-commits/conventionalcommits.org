@@ -1,0 +1,14 @@
+@import "./../abstracts/index";
+
+main article.markdown-body {
+  h1{
+    font-size: 2.3em;
+  }
+  h1, h2, h3, h4, h5, h6, a {
+    font-weight: bold;
+    color: $color-primary-heading;
+  }
+  a.anchorjs-link:hover {
+    text-decoration: none;
+  }
+}

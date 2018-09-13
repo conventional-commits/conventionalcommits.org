@@ -1,0 +1,16 @@
+<section class="welcome">
+  <div class="container">
+    <h1 class="welcome__title">{{.Param "Title"}}</h1>
+    <p class="welcome__description">{{.Param "Description"}}</p>
+    {{ if .Param "Actions" }}
+    <div class="welcome__actions">
+      {{ range .Param "Actions" }}
+      <a class="welcome__action" href="{{.url}}">{{.label}}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+    <figure class="welcome__image">
+      <img src='{{default "/img/git-flow--welcome.png"}}'>
+    </figure>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+@import "./../abstracts/variables";
+
+
+@function get-color-accessible-for-background($color) {
+  @if (lightness( $color ) > 50) {
+    @return darken($color, 60%)
+  }
+  @else {
+    @return lighten($color, 60%)
+  }
+}

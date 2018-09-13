@@ -1,0 +1,107 @@
+@import "./../abstracts/index";
+
+@keyframes show {
+  from {
+    @include dropdown-animation-hidden;
+  }
+  to {
+    @include dropdown-animation-visible;
+  }
+}
+
+@keyframes hide {
+  from {
+    @include dropdown-animation-visible;
+  }
+  to {
+    @include dropdown-animation-hidden;
+  }
+}
+
+.dropdown {
+  position: relative;
+  min-width: 110px;
+
+  &__label {
+    display: block;
+    width: 100%;
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+    text-align: center;
+    padding: $dropdown-padding;
+    background-color: $dropdown-label-background-color;
+    border-radius: $dropdown-border-radius;
+    &:after {
+      display: none;
+      content: '';
+      width: 100%;
+      height: $dropdown-options-space-from-label * 1.5;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__options {
+    visibility: visible;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    list-style: none;
+    background-color: $dropdown-options-background-color;
+    border-radius: $dropdown-border-radius;
+    box-shadow: $shadow-soft;
+    animation: hide $dropdown-animation-timing/2 ease forwards;
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-style: solid;
+      border-width: 0 $dropdown-arrow-size ($dropdown-arrow-size/2) $dropdown-arrow-size;
+      border-color: transparent transparent $dropdown-options-background-color transparent;
+      transform: translate(-50%, -100%);
+    }
+  }
+
+  &__option {
+    a {
+      display: block;
+      padding: $dropdown-padding;
+      color: rgba(black, .6);
+      text-decoration: none;
+      border-bottom: 1px solid $dropdown-option-border-bottom-color;
+      transition: background-color .3s ease, color .3s ease;
+      text-transform: none;
+      font-weight: normal;
+      &:hover,
+      &:focus {
+        color: $color-primary;
+        background-color: rgba($color-neutral-dark, .025);
+      }
+    }
+    &:last-child a {
+      border-bottom: none;
+    }
+  }
+
+  &:hover &__label:after, &:hover &__options,
+  &:focus &__label:after, &:focus &__options {
+    display: block;
+  }
+
+  &:hover &__options,
+  &:focus &__options {
+    animation: show $dropdown-animation-timing ease forwards;
+  }
+}

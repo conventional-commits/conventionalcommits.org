@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    {{ if .Site.Params.License }}
+    <div class="footer__license">
+      {{ if .Site.Params.License.Title }}
+      <p>{{ .Site.Params.License.Title }}</p>
+      {{ end }}
+      {{ if .Site.Params.License.Action }}
+      <a href="{{.Site.Params.License.Action.Url}}" target="_blank">{{.Site.Params.License.Action.Label}}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="footer__logos">
+      {{ range .Site.Params.Footer.Logos }}
+      {{ if .name }}
+      <a class="footer__logo" href="{{.url}}">{{ (partial (printf "%s%v%s" "svg-" .name ".html") .) }}</a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</footer>
