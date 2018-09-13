@@ -1,0 +1,7 @@
+name = "Conventional Commits"
+license = "MIT"
+description = "Hugo theme for Conventional Commits website"
+homepage = "https://github.com/lorenzodianni/hugo-conventional-commits-theme"
+tags = []
+features = []
+min_version = "0.42"

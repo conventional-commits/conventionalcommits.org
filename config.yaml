@@ -1,0 +1,102 @@
+baseURL: '/'
+languageCode: en-us
+theme: conventional-commits
+defaultContentLanguageInSubdir: true
+defaultContentLanguage: "en"
+
+# Global parameters
+params:
+  license:
+    title: License
+    action:
+      label: Creative Commons - CC BY 3.0
+      url: 'https://creativecommons.org/licenses/by/3.0/'
+
+  footer:
+    logos:
+    - name: github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+
+# Languages parameters
+languages:
+  en:
+    weight: 1
+    languageName: "English"
+    title: Conventional Commits
+    description: A specification for adding human and machine readable meaning to commit messages
+    actions:
+    - label: Read the specs
+      url: '#specification'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+
+  it:
+    weight: 2
+    languageName: "Italian"
+    title: Commit Convenzionali
+    description: Una specifica per aggiungere un significato leggibile da umani e macchine ai messaggi dei commit
+    actions:
+    - label: Leggi la specifica
+      url: '#specifica'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+
+  pl:
+    weight: 2
+    languageName: "Polish"
+    title: Konwencjonalne Commity
+    description: Specyfikacja dodawania znaczenia czytelnego dla człowieka do commit komunikatów
+    actions:
+    - label: Przeczytaj specyfikację
+      url: '#specyfikacja'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+  zh:
+    weight: 2
+    languageName: "Chinese"
+    title: 约定式提交
+    description: 一种规范，用于添加人机可读的含义以提交消息
+    actions:
+    - label: 阅读规范
+      url: '#约定式提交规范'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
+      - v1.0.0-beta.1
+      - v1.0.0-beta
+
+  es:
+    weight: 2
+    languageName: "Spanish"
+    title: Commits Convencionales
+    description: Una especificación para agregar un significado legible por una máquina humana para commit mensajes
+    actions:
+    - label: Lee la especificación
+      url: '#especificación'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2

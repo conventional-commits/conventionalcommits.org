@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="container">
+    <a href="/"><div class="logo"></div></a>
+    <ul class="header__menu">
+      <li class="header__menu-item dropdown">
+        <button class="dropdown__label">Versions</button>
+        <ul class="dropdown__options">
+          {{ range .Site.Params.Versions.List }}
+          <li class="dropdown__option"><a href="/{{ $.Site.Language }}/{{ . }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </li>
+      <li class="header__menu-item dropdown">
+        <button class="dropdown__label">Languages</button>
+        <ul class="dropdown__options">
+          {{ .Site.Home.AllTranslations }}
+          {{ range .Site.Home.AllTranslations }}
+          <li class="dropdown__option"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+          {{ end }}
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>

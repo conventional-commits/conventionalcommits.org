@@ -1,0 +1,29 @@
+@import "variables";
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin gradient-primary($deg: 45deg) {
+  background: linear-gradient($deg, $color-primary 0%, $color-primary-light 100%);
+}
+
+@mixin dropdown-animation-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, $dropdown-options-space-from-label);
+}
+
+@mixin dropdown-animation-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 0);
+}

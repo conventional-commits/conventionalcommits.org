@@ -1,0 +1,35 @@
+@import "./../abstracts/index";
+
+.footer {
+  margin: ($article-offset-top + ($gap-md*3)) 0 ($gap-md*3);
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__license {
+    margin-right: auto;
+    a {
+      font-size: .7em;
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__logos {
+    margin-left: auto;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  .github {
+    width: $footer-logo-size;
+    height: $footer-logo-size;
+  }
+}

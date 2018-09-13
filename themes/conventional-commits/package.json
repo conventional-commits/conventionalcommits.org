@@ -1,0 +1,33 @@
+{
+  "name": "hugo-conventional-commits-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run css:watch & npm run js:watch",
+    "css": "node-sass ./static/css/scss/style.scss -o ./static/css",
+    "css:watch": "npm run css -- -w",
+    "css:autoprefixer": "postcss --no-map --use autoprefixer -o ./static/css/style.css ./static/css/style.css",
+    "css:nano": "postcss --no-map --use cssnano -o ./static/css/style.css ./static/css/style.css",
+    "css:build": "npm run css && npm run css:autoprefixer && npm run css:nano",
+    "js": "webpack --mode=development ./static/js/index.js -o ./static/js/bundle.js",
+    "js:watch": "npm run js -- --watch",
+    "js:build": "webpack --mode=production ./static/js/index.js -o ./static/js/bundle.js",
+    "build": "npm run css:build && npm run js:build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "anchor-js": "^4.1.1",
+    "github-markdown-css": "^2.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "cssnano": "^4.1.0",
+    "node-sass": "^4.9.3",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

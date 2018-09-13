@@ -1,13 +1,12 @@
-version: "3"
+version: '3'
+
 services:
-  site:
-    command: jekyll serve
-    image: jekyll/jekyll:latest
-    volumes:
-      - ./:/srv/jekyll
-      - ./vendor/bundle:/usr/local/bundle
+  app:
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
     ports:
-      - 4000:4000
-      - 35729:35729
-      - 3000:3000
-      - 80:4000
+     - "1313:1313"
+    working_dir: /src/
+    volumes:
+      - ./:/src/
