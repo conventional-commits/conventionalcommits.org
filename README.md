@@ -43,7 +43,7 @@ Tell your users that you use the Conventional Commits specification:
 
 ## Thank you
 
-To *[Lorenzo D'Ianni]*(https://github.com/lorenzodianni) for the great effort creating the CSS and the HTML for the new UI.
+To ***[Lorenzo D'Ianni](https://github.com/lorenzodianni)*** for the great effort creating the CSS and the HTML for the new UI.
 
 To [Netlify](https://www.netlify.com/) to host our project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
 
