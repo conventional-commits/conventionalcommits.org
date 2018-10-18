@@ -7,7 +7,7 @@ aliases: ["/es/"]
 
 ## Resumen
 
-Al mantener proyectos de código abierto, cuando se incorporan ramas con nuevas
+Como mantenedor de proyectos de código abierto, cuando se incorporan ramas con nuevas
 características en `master` al escribir un mensaje de commit estandarizado, el
 mensaje del commit debe estar estructurado de la siguiente forma:
 
@@ -116,8 +116,7 @@ Las palabras “DEBE” (“MUST”), “NO DEBE” (“MUST NOT”), “REQUIER
 “OPCIONAL” (“OPTIONAL”) en este documento se deben interpretar como se describe
 en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Los commits DEBEN iniciar con un tipo que consiste en un sustantivo `feat`, `fix`, etc.,
-    seguido de dos puntos y un espacio.
+1. Los commits DEBEN iniciarse con un tipo que consiste en un sustantivo `feat`, `fix`, etc., seguido de dos puntos y un espacio.
 1. El tipo `feat` DEBE ser usado cuando un commit agrega una nueva
     característica a la aplicación o librería.
 1. El tipo `fix` DEBE ser usado cuando el commit representa una corrección a un
@@ -163,7 +162,7 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 Recomendamos trabajar como si ya hubiera lanzado su producto. Típicamente
 _alguien_, incluso si son sus compañeros desarrolladores, están usando su
-producto. Ellos querrán saber que se ha arreglado, que se ha dañado, etc.
+producto. Ellos querrán saber qué se ha arreglado, qué se ha dañado, etc.
 
 ### ¿Qué debo hacer si un commit encaja en más de un tipo de commit?
 
@@ -199,10 +198,10 @@ Recomendamos usar SemVer para liberar su propia extensión a esta especificació
 #### Cuando utiliza un tipo que es de la especificación pero no es el correcto, e.g. `fix` en lugar de `feat`
 
 Antes de combinar o liberar el error, recomendamos usar `git rebase -i` para
-editar la historia de los commits. Después de que se ha liberado, la limpieza
+editar el historial de los commits. Después de que se ha liberado, la limpieza
 será distinta de acuerdo con las herramientas y procesos que usted use.
 
-#### Cuanto se usa un tipo que no está en la especificación, e.g. `feet` instead of `feat`
+#### Cuando se usa un tipo que no está en la especificación, e.g. `feet` instead of `feat`
 
 En el peor de los escenarios, no es el fin del mundo si aparece un commit que no
 cumple con las especificaciones de los commits convencionales. Simplemente, el

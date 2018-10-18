@@ -90,7 +90,7 @@ languages:
     weight: 2
     languageName: "Spanish"
     title: Commits Convencionales
-    description: Una especificación para agregar un significado legible por una máquina humana para commit mensajes
+    description: Una especificación que añade significado a los mensajes de commits para que sean legibles tanto por máquinas como por humanos
     actions:
     - label: Lee la especificación
       url: '#especificación'
