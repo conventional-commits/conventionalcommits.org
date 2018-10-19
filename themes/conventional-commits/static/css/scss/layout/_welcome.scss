@@ -18,7 +18,7 @@
   }
 
   &__title {
-    font-size: 3em;
+    font-size: 2.6em;
     margin-bottom: $gap-sm;
     @include desktop {
       font-size: 3.6em;
@@ -27,6 +27,10 @@
 
   &__description {
     font-size: 18px;
+    width: 100%;
+    @include desktop {
+      width: 80%;
+    }
   }
 
   &__actions {
@@ -41,13 +45,13 @@
     color: $welcome-action-color;
     border: 1px solid $welcome-action-color;
     margin-right: $gap-md;
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     &:last-child {
       margin-right: 0;
     }
     &:hover {
       background-color: $welcome-action-color;
-      color: get-color-accessible-for-background($welcome-action-color)
+      color: get-color-accessible-for-background($welcome-action-color);
     }
   }
 
@@ -77,4 +81,3 @@
     }
   }
 }
-
