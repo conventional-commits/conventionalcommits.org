@@ -77,7 +77,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 1. A description MUST immediately follow the type/scope prefix.
 The description is a short description of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string._
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
-1. A footer MAY be provided one blank line after the body (or after the description if body is missing).
+1. A footer MAY be provided one blank line after the body.
   The footer SHOULD contain additional issue references about the code changes (such as the issues it fixes, e.g.,`Fixes #13`).
 1. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
 1. A description MUST be provided after the `BREAKING CHANGE: `, describing what has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
