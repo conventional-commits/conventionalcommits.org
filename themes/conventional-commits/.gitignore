@@ -2,6 +2,11 @@
 .DS_Store
 package-lock.json
 
+themes/conventional-commits/static/css/index.css
+themes/conventional-commits/static/css/style.css
+themes/conventional-commits/static/css/style.min.css
+themes/conventional-commits/static/js/bundle.js
+
 # Logs
 logs
 *.log
