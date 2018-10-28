@@ -16,11 +16,11 @@ draft: true
 ---
 
 ```
-<type>[optional scope]: <description>
+<type>[optional область]: <краткое описание>
 
-[optional body]
+[optional тело]
 
-[optional footer]
+[optional подвал]
 ```
 ---
 
