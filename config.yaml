@@ -100,3 +100,18 @@ languages:
       current: v1.0.0-beta.2
       list:
       - v1.0.0-beta.2
+
+  ru:
+    weight: 2
+    languageName: "Русский"
+    title: Общепринятые коммиты
+    description: Спецификация о добавлении сообщений коммитов, которые удобны для чтения людьми и машинами
+    actions:
+      - label: Читать спецификацию
+        url: '#спецификация'
+      - label: GitHub
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+        - v1.0.0-beta.2
