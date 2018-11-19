@@ -115,3 +115,18 @@ languages:
       current: v1.0.0-beta.2
       list:
         - v1.0.0-beta.2
+
+  fr:
+    weight: 2
+    languageName: "Français"
+    title: Commits Conventionnels
+    description: Une spécification ajoutant une signification lisible pour l'homme et pour la machine dans les messages des commits
+    actions:
+    - label: Voir la spécification
+      url: '#spécification'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.2
+      list:
+      - v1.0.0-beta.2
