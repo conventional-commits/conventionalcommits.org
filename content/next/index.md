@@ -150,6 +150,10 @@ The first draft of this specification has been written in collaboration with som
 * [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
 
+## Tooling for Conventional Commits
+
+* [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
+
 ## Projects Using Conventional Commits
 
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
