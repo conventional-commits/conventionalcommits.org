@@ -1,13 +1,17 @@
 ---
 draft: false
+aliases: ["/en/"]
 ---
 
-# Conventional Commits 1.0.0-beta.2
+# Conventional Commits 1.0.0-beta.3
 
 ## Summary
 
-As an open-source maintainer, squash feature branches onto `master` and write
-a standardized commit message while doing so.
+The Conventional Commits specification is a lightweight convention on top of commit messages.
+It provides an easy set of rules for creating an explicit commit history;
+which makes it easier to write automated tools on top of.
+This convention dovetails with [SemVer](http://semver.org),
+by describing the features, fixes, and breaking changes made in commit messages.
 
 The commit message should be structured as follows:
 
@@ -27,14 +31,14 @@ The commit contains the following structural elements, to communicate intent to 
 consumers of your library:
 
 1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in semantic versioning).
-1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates
-  with [`MINOR`](http://semver.org/#summary) in semantic versioning).
-1. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning). A breaking change can be
-  part of commits of any _type_. e.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
-1. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others. We also recommend `improvement` for commits that improve a current implementation without adding a new feature or fixing a bug. Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE, which is NOT recommended).
+1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in semantic versioning).
+1. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning).
+A BREAKING CHANGE can be part of commits of any _type_.
+1. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
+We also recommend `improvement` for commits that improve a current implementation without adding a new feature or fixing a bug.
+Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
 <br />
-A scope may be provided to a commit's type, to provide additional contextual information and
-is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
+A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
 
 ## Examples
 
@@ -63,47 +67,21 @@ see the issue for details on the typos fixed
 
 fixes issue #12
 ```
-
-## Introduction
-
-In software development, it's been my experience that bugs are most often introduced
-at the boundaries between applications. Unit testing works great for testing the interactions
-that an open-source maintainer knows about, but do a poor job of capturing all the
-interesting, often unexpected, ways that a community puts a library to use.
-
-Anyone who has upgraded to a new patch version of a dependency, only to watch their
-application start throwing a steady stream of 500 errors, knows how important
-a readable commit history (and [ideally a well maintained CHANGELOG](http://keepachangelog.com/en/0.3.0/)) is to the ensuing
-forensic process.
-
-The Conventional Commits specification proposes introducing a standardized lightweight
-convention on top of commit messages. This convention dovetails with [SemVer](http://semver.org),
-asking software developers to describe in commit messages, features, fixes, and breaking
-changes that they make.
-
-By introducing this convention, we create a common language that makes it easier to
-debug issues across project boundaries.
-
 ## Specification
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc.,
-   followed by a colon and a space.
-1. The type `feat` MUST be used when a commit adds a new feature to your application
-  or library.
+1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed by a colon and a space.
+1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
-1. An optional scope MAY be provided after a type. A scope is a phrase describing
-  a section of the codebase enclosed in parenthesis, e.g., `fix(parser):`
+1. An optional scope MAY be provided after a type. A scope is a phrase describing a section of the codebase enclosed in parenthesis, e.g., `fix(parser):`
 1. A description MUST immediately follow the type/scope prefix.
-  The description is a short description of the code changes, e.g.,
-  _fix: array parsing issue when multiple spaces were contained in string._
+The description is a short description of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string._
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
-1. A footer MAY be provided one blank line after the body (or after the description if body is missing).
+1. A footer MAY be provided one blank line after the body.
   The footer SHOULD contain additional issue references about the code changes (such as the issues it fixes, e.g.,`Fixes #13`).
 1. Breaking changes MUST be indicated at the very beginning of the footer or body section of a commit. A breaking change MUST consist of the uppercase text `BREAKING CHANGE`, followed by a colon and a space.
-1. A description MUST be provided after the `BREAKING CHANGE: `, describing what
-  has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
+1. A description MUST be provided after the `BREAKING CHANGE: `, describing what has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
 1. The footer MUST only contain `BREAKING CHANGE`, external links, issue references, and other meta-information.
 1. Types other than `feat` and `fix` MAY be used in your commit messages.
 
@@ -121,6 +99,10 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 ### How should I deal with commit messages in the initial development phase?
 
 We recommend that you proceed as if you've an already released product. Typically *somebody*, even if its your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+
+### Are the types in the commit title uppercase or lowercase?
+
+Any casing may be used, but it's best to be consistent.
 
 ### What do I do if the commit conforms to more than one of the commit types?
 
@@ -155,30 +137,37 @@ In a worst case scenario, it's not the end of the world if a commit lands that d
 
 ### Do all my contributors need to use the conventional commit specification?
 
-No! If you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they're merged—adding no workload to casual committers. A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
+No! If you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they're merged—adding no workload to casual committers.
+A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
 
 ## About
 
-The Conventional Commit specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
+The Conventional Commit specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
-The first draft of this specification has been written in collaboration with some of the
-folks contributing to:
+The first draft of this specification has been written in collaboration with some of the folks contributing to:
 
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a
-  set of tools for parsing conventional commit messages from git histories.
-* [unleash](https://github.com/netflix/unleash): a tool for automating the
-  software release and publishing lifecycle.
-* [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out
-  of the Babel project.
+* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing conventional commit messages from git histories.
+* [bumped](https://bumped.github.io): a tool for releasing software that makes it easy to perform actions before and after releasing a new version of your software.
+* [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
+* [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
+
+## Tooling for Conventional Commits
+
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs. 
+Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
+* [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
 
 ## Projects Using Conventional Commits
 
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
-* [parse-commit-message](https://github.com/olstenlarck/parse-commit-message): Spec compliant parsing utility to get object like `{ header: { type, scope, subject }, body, footer }` from given commit message string.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools
-  and libraries for adding test coverage to your JavaScript tests.
+* [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools and libraries for adding test coverage to your JavaScript tests.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) and [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Optional supplemental user interface enhancing [Apereo uPortal](https://www.apereo.org/projects/uportal).
+* [massive.js](https://github.com/dmfay/massive-js): A data access library for Node and PostgreSQL.
+* [electron](https://github.com/electron/electron): Build cross-platform desktop apps with JavaScript, HTML, and CSS.
+* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): A simple to use scroll utility package for centering elements, and smooth animations
+* [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source modular toolkit.
+* [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
