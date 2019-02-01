@@ -24,7 +24,7 @@ to send a pull request.
 
 1. Create a new file in `./content/version/index.{lang}.md` using the hugo command `hugo new {version}/index.{lang}.md`.
 1. Ensure all files have the appropriate fields required (see others as an example)..
-1. Add the language to the `config.yml` file (see others as an example).
+1. Add the language to the `config.yaml` file (see others as an example).
 
 ### Running project locally
 
