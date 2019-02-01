@@ -91,15 +91,16 @@ languages:
     weight: 2
     languageName: "Spanish"
     title: Commits Convencionales
-    description: Una especificación que añade significado a los mensajes de commits para que sean legibles tanto por máquinas como por humanos
+    description: Especificación para dar significado a los mensajes de los commits haciéndolos legibles para máquinas y humanos
     actions:
     - label: Lee la especificación
       url: '#especificación'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.2
+      current: v1.0.0-beta.3
       list:
+      - v1.0.0-beta.3
       - v1.0.0-beta.2
 
   ru:
