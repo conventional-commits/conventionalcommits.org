@@ -31,7 +31,7 @@ consumers of your library:
   with [`MINOR`](http://semver.org/#summary) in semantic versioning).
 1. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning). A breaking change can be
   part of commits of any _type_. e.g., a `fix:`, `feat:` & `chore:` types would all be valid, in addition to any other _type_.
-1. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others. We also recommend `improvement` for commits that improve a current implementation without adding a new feature or fixing a bug. Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE, which is NOT recommended).
+1. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others. We also recommend `improvement` for commits that improve a current implementation without adding a new feature or fixing a bug. Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE, which is NOT recommended).
 <br />
 A scope may be provided to a commit's type, to provide additional contextual information and
 is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
@@ -132,7 +132,7 @@ It discourages moving fast in a disorganized way. It helps you be able to move f
 
 ### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
 
-Conventional Commits encourages us to make more of certain types of commits such as `fixes`. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
 
 ### How does this relate to SemVer?
 
