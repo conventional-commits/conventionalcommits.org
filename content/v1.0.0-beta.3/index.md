@@ -34,7 +34,7 @@ consumers of your library:
 1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in semantic versioning).
 1. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
-1. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
+1. Others: commit _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
 We also recommend `improvement` for commits that improve a current implementation without adding a new feature or fixing a bug.
 Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
 <br />
@@ -114,7 +114,7 @@ It discourages moving fast in a disorganized way. It helps you be able to move f
 
 ### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
 
-Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Conventional Commits encourages us to make more of certain types of commits such as `fixes`. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
 
 ### How does this relate to SemVer?
 
@@ -166,7 +166,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [massive.js](https://github.com/dmfay/massive-js): A data access library for Node and PostgreSQL.
 * [electron](https://github.com/electron/electron): Build cross-platform desktop apps with JavaScript, HTML, and CSS.
 * [scroll-utility](https://github.com/LeDDGroup/scroll-utility): A simple to use scroll utility package for centering elements, and smooth animations
-* [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source modular toolkit.
+* [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source UI toolkit.
 * [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
