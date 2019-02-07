@@ -115,7 +115,7 @@ It discourages moving fast in a disorganized way. It helps you be able to move f
 
 ### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
 
-Conventional Commits encourages us to make more of certain types of commits such as `fixes`. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
 
 ### How does this relate to SemVer?
 
