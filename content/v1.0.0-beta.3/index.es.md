@@ -1,14 +1,17 @@
 ---
 draft: false
+aliases: ["/es/"]
 ---
 
-# Commits Convencionales 1.0.0-beta.2
+# Commits Convencionales 1.0.0-beta.3
 
 ## Resumen
 
-Como mantenedor de proyectos de código abierto, cuando se incorporan ramas con nuevas
-características en `master` al escribir un mensaje de commit estandarizado, el
-mensaje del commit debe estar estructurado de la siguiente forma:
+La especificación de Commit Convencionales es una convención liviana que se aplica a los mensajes de los commits.
+Esta especificación proporciona un conjunto fácil de reglas para crear un historial de commits explícito;
+Esta convención se ajusta a [SemVer](http://semver.org), al describir las características, correcciones y cambios que rompen la compatibilidad en los mensajes de los commits.
+
+El mensaje del commit debe estar estructurado de la siguiente forma:
 
 ---
 
@@ -27,34 +30,34 @@ El commit contiene los siguientes elementos estructurales para comunicar la
 intención al consumidor de la librería:
 
 1. **fix:** un commit de _tipo_ `fix` corrige un error en la base del código
-    (se correlaciona con [`PATCH`](http://semver.org/#summary) en el versionado
-    semántico).
+   (se correlaciona con [`PATCH`](http://semver.org/#summary) en el versionado
+   semántico).
 1. **feat:** un commit de _tipo_ `feat` introduce nuevas características en la
-    base del código (se correlaciona con [`MINOR`](http://semver.org/#summary)
-    en el versionado semántico).
+   base del código (se correlaciona con [`MINOR`](http://semver.org/#summary)
+   en el versionado semántico).
 1. **BREAKING CHANGE:** un commit que contiene el texto `BREAKING CHANGE:` al
-    inicio de su cuerpo opcional o la sección de nota de pie introduce un cambio
-    en el uso de la API (se correlaciona con [`MAJOR`](http://semver.org/#summary)
-    en el versionado semántico). Un cambio en el uso de la API puede ser parte
-    de commits de _tipo_. e.g., a `fix:`, `feat:` & `chore:` todos tipos
-    válidos, adicional a cualquier otro _tipo_.
+   inicio de su cuerpo opcional o la sección de nota de pie introduce un cambio
+   que rompe la compatibilidad en el uso de la API (se correlaciona con [`MAJOR`](http://semver.org/#summary)
+   en el versionado semántico). Un cambio en el uso de la API puede ser parte
+   de commits de _tipo_. e.g., a `fix:`, `feat:` & `chore:` todos tipos
+   válidos, adicional a cualquier otro _tipo_.
 1. Otros: _tipos_ de commits distintos a `fix:` y `feat:` están permitidos, por
-    ejemplo [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional)
-    (basado en [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines))
-    recomienda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` y
-    otros. También recomendamos `improvement` para commits que mejorar una
-    implementación actual sin añadir nuevas características ni corregir errores.
-    Tenga presente que estos tipos no son impuestos por la especificación de
-    commits convencionales y no tienen efecto implícito en el versionado
-    semántico (a menos que incluyan el texto BREAKING CHANGE, lo cual NO es
-    recomendado).
-    <br />
-    Se puede agregar un ámbito al _tipo_ de commit para proveer información
-    contextual adicional y se escribe entre paréntesis, e.g., `feat(parser): add ability to parse arrays`.
+   ejemplo [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional)
+   (basado en [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines))
+   recomienda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` y
+   otros. También recomendamos `improvement` para commits que mejorar una
+   implementación actual sin añadir nuevas características ni corregir errores.
+   Tenga presente que estos tipos no son impuestos por la especificación de
+   commits convencionales y no tienen efecto implícito en el versionado
+   semántico (a menos que incluyan el texto BREAKING CHANGE, lo cual NO es
+   recomendado).
+   <br />
+   Se puede agregar un ámbito al _tipo_ de commit para proveer información
+   contextual adicional y se escribe entre paréntesis, e.g., `feat(parser): add ability to parse arrays`.
 
 ## Ejemplos
 
-### Mensaje de commit con descripción y cambio en el uso de la API en el cuerpo
+### Mensaje de commit con descripción y cambio que rompe la compatibilidad en el cuerpo
 
 ```
 feat: allow provided config object to extend other configs
@@ -84,29 +87,6 @@ see the issue for details on the typos fixed
 fixes issue #12
 ```
 
-## Introducción
-
-En el desarrollo de software, ha sido mi experiencia que los errores en el
-código son introducidos con más frecuencia en las fronteras de la aplicación.
-Los tests unitarios funcionan muy bien para probar las interacciones que el
-mantenedor conoce, pero hacen un mal trabajo capturando la manera interesante,
-a veces inesperada, en que una comunidad usa una librería.
-
-Cualquiera que haya actualizado una versión corregida de una dependencia para
-luego darse cuenta de que la aplicación empieza a arrojar un flujo de 500
-errores, sabe lo importante que es un historial de commits legible (e
-[idealmente un bien mantenido CHANGELOG](http://keepachangelog.com/en/0.3.0/))
-para el consiguiente proceso forense.
-
-La especificación de Commits Convencionales propone introducir una convención
-estandarizada y ligera sobre los mensajes de los commits. Esta convención encaja
-con [SemVer](http://semver.org), pidiéndole a los desarrolladores de software
-describir en los mensajes de los commits, las características, correcciones y
-cambios que rompen el uso de la API que hagan.
-
-Al introducir esta convención, creamos un lenguaje común que permite depurar más
-fácilmente los problemas a través de las fronteras de un proyecto.
-
 ## Especificación
 
 Las palabras “DEBE” (“MUST”), “NO DEBE” (“MUST NOT”), “REQUIERE” (“REQUIRED”),
@@ -117,32 +97,30 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 1. Los commits DEBEN iniciarse con un tipo que consiste en un sustantivo `feat`, `fix`, etc., seguido de dos puntos y un espacio.
 1. El tipo `feat` DEBE ser usado cuando un commit agrega una nueva
-    característica a la aplicación o librería.
+   característica a la aplicación o librería.
 1. El tipo `fix` DEBE ser usado cuando el commit representa una corrección a un
-    error en el código de la aplicación.
+   error en el código de la aplicación.
 1. Se PUEDE añadir un ámbito opcional después del tipo. El ámbito es una frase
-    que describe una sección de la base del código encerrada en paréntesis,
-    e.g., `fix(parser):`
+   que describe una sección de la base del código encerrada en paréntesis,
+   e.g., `fix(parser):`
 1. Una descripción DEBE ir inmediatamente después del tipo/ámbito inicial y es
-    una descripción corta de los cambios realizados en el código, e.g.,
-    _fix: array parsing issue when multiple spaces were contained in string._
+   una descripción corta de los cambios realizados en el código, e.g.,
+   _fix: array parsing issue when multiple spaces were contained in string._
 1. Un cuerpo del commit más extenso PUEDE agregarse después de la descripción,
-    dando información contextual adicional acerca de los cambios en el código.
-    El cuerpo DEBE iniciar con una línea en blanco después de la descripción.
+   dando información contextual adicional acerca de los cambios en el código.
+   El cuerpo DEBE iniciar con una línea en blanco después de la descripción.
 1. Una nota de pie PUEDE agregarse tras una línea en blanco después del
-    cuerpo o después de la descripción en caso de que no se haya dado un cuerpo.
-    La nota de pie DEBE contener referencias adicionales a los números de
-    problemas registrados sobre el cambio del código (como el número de problema
-    que corrige, e.g.,`Fixes #13`).
-1. Los cambios que rompen la API DEBEN ser indicados al inicio de la nota de
-    pie o el cuerpo del commit. Un cambio que rompe la API DEBE contener el
-    texto en mayúsculas `BREAKING CHANGE`, seguido de dos puntos y espacio.
+   cuerpo o después de la descripción en caso de que no se haya dado un cuerpo.
+   La nota de pie DEBE contener referencias adicionales a los números de
+   problemas registrados sobre el cambio del código (como el número de problema
+   que corrige, e.g.,`Fixes #13`).
+1. Los cambios que rompen la compatibilidad con la API DEBEN ser indicados al inicio de la nota de pie o el cuerpo del commit. Un cambio que rompe la compatibilidad con la API DEBE contener el texto en mayúsculas `BREAKING CHANGE`, seguido de dos puntos y espacio.
 1. Una descripción se DEBE proveer después de `BREAKING CHANGE:`, describiendo
-    qué ha cambiado en la API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
+   qué ha cambiado en la API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
 1. La nota de pie DEBE contener solamente el texto `BREAKING CHANGE`, vínculos
-    externos, referencias a problemas u otra metainformación.
+   externos, referencias a problemas u otra metainformación.
 1. Otros tipos distintos a `feat` y `fix` PUEDEN ser usados en los mensajes de
-    los commits.
+   los commits.
 
 ## ¿Por qué usar Commits Convencionales?
 
@@ -162,6 +140,10 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 Recomendamos trabajar como si ya hubiera lanzado su producto. Típicamente
 _alguien_, incluso si son sus compañeros desarrolladores, están usando su
 producto. Ellos querrán saber qué se ha arreglado, qué se ha dañado, etc.
+
+### ¿Se deben escribir los tipos de los commits en mayúscula o minúscula?
+
+Cualquiera está bien, pero es mejor ser consistente.
 
 ### ¿Qué debo hacer si un commit encaja en más de un tipo de commit?
 
@@ -218,7 +200,7 @@ para que ingrese el mensaje de commit correcto al momento de hacer el merge.
 ## Acerca de
 
 La especificación de Commits Convencionales está inspirada, y fuertemente
-basada, en [Angular Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
+basada, en [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
 El primer borrador de esta especificación ha sido escrito en colaboración con
 algunos de los colaboradores de:
@@ -226,10 +208,17 @@ algunos de los colaboradores de:
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog):
   una serie de herramientas para analizar los mensajes de los commits de los
   historiales de git.
+* [bumped](https://bumped.github.io): una herramienta para liberar software que facilita realizar acciones antes y después de lanzar una nueva versión de su software.
 * [unleash](https://github.com/netflix/unleash): una herramienta para
   automatizar la liberación de software y ciclo de vida de publicación.
 * [lerna](https://github.com/lerna/lerna): una herramienta para manejar
   mono-repositorios, que creció a partir del proyecto Babel.
+
+## Herramientas para Commit Convencionales
+
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): una desarrollada para crear mensajes de confirmación según las especificaciones de Commits Convencionales.
+  Configurable y usable en proyectos de PHP como una dependencia de composer o utilizable globalmente para proyectos no PHP.
+* [conform](https://github.com/autonomy/conform): una herramienta que se puede utilizar para aplicar políticas en los repositorios de git, incluidos los Commits Convencionales.
 
 ## Proyectos usando Commits Convencionales
 
@@ -237,6 +226,11 @@ algunos de los colaboradores de:
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): una colección de herramientas y librerías de código abierto para agregar cobertura de código a sus tests.
 * [standard-version](https://github.com/conventional-changelog/standard-version): versionado automático y manejos de CHANGELOG, usando el botón de squash de GitHub y siguiendo el flujo de trabajo de los Commits Convencionales.
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) y [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): mejoramiento opcional para la interfaz de usuario [Apereo uPortal](https://www.apereo.org/projects/uportal).
+* [massive.js](https://github.com/dmfay/massive-js): una librería para el acceso a datos para Node y PostgreSQL
+* [electron](https://github.com/electron/electron): Construya aplicaciones multi-plataforma con JavaScript, HTML y CSS.
+* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Un paquete de utilidades de desplazamiento fácil de usar para centrar elementos y realizar animaciones
+* [Blaze UI](https://github.com/BlazeUI/blaze): Kit de herramientas modular de código abierto sin frameworks.
+* [Monica](https://github.com/monicahq/monica): Un sistema de gestión de relaciones personales de código abierto.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
