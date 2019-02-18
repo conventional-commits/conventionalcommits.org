@@ -3,11 +3,15 @@ draft: false
 aliases: ["/zh/"]
 ---
 
-# 约定式提交 1.0.0-beta.2
+# 约定式提交 1.0.0-beta.3
 
 ## 概述
 
-开源维护者在将特性分支合并入 `master` 时，可编写标准化的提交说明。
+约定式提交规范是一种基于提交消息的轻量级约定。
+它提供了一组用于创建清晰的提交历史的简单规则；
+这使得编写基于规范的自动化工具变得更容易。
+这个约定与 [SemVer](http://semver.org) 相吻合，
+在提交信息中描述新特性、bug 修复和破坏性变更。
 
 提交说明的结构如下所示：
 
@@ -26,11 +30,14 @@ aliases: ["/zh/"]
 提交说明包含了下面的结构化元素，以向类库使用者表明其意图：
 
 1. **fix:** _类型_ 为 `fix` 的提交表示在代码库中修复了一个 bug（这和语义化版本中的 [`PATCH`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
-1. **feat:** _类型_ 为 `feat` 的提交表示在代码库中新增了一个功能（这和语义化版本中的 [`MINOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
-1. **BREAKING CHANGE:** 在可选的正文或脚注的起始位置带有 `BREAKING CHANGE:` 的提交，表示引入了破坏性 API 变更（这和语义化版本中的 [`MAJOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。破坏性变更可以是任意 _类型_ 提交的一部分。例如 `fix:`、`feat:` 和 `chore:`，乃至对于更多其它的 _类型_ 而言，它都是有效的。
-1. **其它情况:** 除 `fix:` 和 `feat:` 之外的提交 _类型_ 也是被允许的，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)（基于 [Angular 约定](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)）中推荐的 `chore:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:` 及其他标签。我们也推荐使用`improvement`，用于对当前实现进行改进而没有添加新功能或修复错误的提交。请注意，这些标签在约定式提交规范中并不是强制性的，并且在语义化版本中没有隐式的影响（除非它们包含这种情况下本不被推荐的 BREAKING CHANGE）。
+2. **feat:** _类型_ 为 `feat` 的提交表示在代码库中新增了一个功能（这和语义化版本中的 [`MINOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
+3. **BREAKING CHANGE:** 在可选的正文或脚注的起始位置带有 `BREAKING CHANGE:` 的提交，表示引入了破坏性 API 变更（这和语义化版本中的 [`MAJOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
+破坏性变更可以是任意 _类型_ 提交的一部分。
+1. **其它情况:** 除 `fix:` 和 `feat:` 之外的提交 _类型_ 也是被允许的，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)（基于 [Angular 约定](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)）中推荐的 `chore:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:` 及其他标签。
+我们也推荐使用`improvement`，用于对当前实现进行改进而没有添加新功能或修复错误的提交。
+请注意，这些标签在约定式提交规范中并不是强制性的。并且在语义化版本中没有隐式的影响（除非他们包含 BREAKING CHANGE）。
 <br />
-可以为提交类型添加一个围在圆括号内的作用域，以为其提供额外的上下文信息。例如 `feat(parser): adds ability to parse arrays`。
+可以为提交类型添加一个围在圆括号内的作用域，以为其提供额外的上下文信息。例如 `feat(parser): adds ability to parse arrays.`。
 
 ## 示例
 
@@ -60,16 +67,6 @@ see the issue for details on the typos fixed
 fixes issue #12
 ```
 
-## 介绍
-
-在软件开发中，以我个人的经验来说，bug 最常产生在应用间的边界情况中。单元测试在开源维护者已知的交互场景下工作得很好。但对于社区中各种有趣且常常是意想不到的方式使用类库的情况，它就覆盖得比较差了。
-
-那些经历过在升级了一个依赖新的 patch 版本后，发现自己的应用竟开始抛出稳定的 500 错误流的人，都明白一个可读的提交历史（以及[理想的维护良好的 CHANGELOG](http://keepachangelog.com/en/0.3.0/)）对于排错有多重要。
-
-约定式的提交规范提议在提交说明的基础上，引入一种标准化的轻量级约定。这个约定和 [SemVer](http://semver.org) 相吻合，它要求开发者在提交信息中描述他们所改动的新特性、bug 修复和破坏性变更。
-
-引入这一约定后，我们可以创建一种通用的语言，更易于在项目边界间调试问题。
-
 ## 约定式提交规范
 
 本文中的关键词 “必须（MUST）”、“禁止（MUST NOT）”、“需要（REQUIRED）”、“应当（SHALL）”、“不应当（SHALL NOT）”、“应该（SHOULD）”、“不应该（SHOULD NOT）”、“推荐（RECOMMENDED）”、“可以（MAY）” 和 “可选（OPTIONAL）” ，解释参考 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) 中所述。
@@ -78,9 +75,11 @@ fixes issue #12
 1. 当一个提交为应用或类库实现了新特性时，**必须**使用 `feat` 类型。
 1. 当一个提交为应用修复了 bug 时，**必须**使用 `fix` 类型。
 1. 可选的作用域字段**可以**在类型后提供。作用域是描述代码库中某个部分的词组，封装在圆括号中，例如： `fix(parser):`。
-1. 描述字段**必须**紧接在类型或作用域前缀之后。描述指的是对代码变更的简短描述，例如： _fix: array parsing issue when multiple spaces were contained in string._
+1. 描述字段**必须**紧接在类型或作用域前缀之后。
+描述指的是对代码变更的简短描述，例如： _fix: array parsing issue when multiple spaces were contained in string._
 1. 在简短描述之后，**可以**编写更长的提交正文，为代码变更提供额外的上下文信息。正文**必须**起始于描述字段结束的一个空行后。
-1. 在正文结束的一个空行后，**可以**编写脚注（如果没有正文，可以编写在描述之后）。脚注**应当**为代码变更包含额外的 issue 引用信息（比如它所修复的 issue，例如： `Fixes #13`）。
+1. 在正文结束的一个空行后，**可以**编写脚注。
+  脚注**应当**为代码变更包含额外的 issue 引用信息（比如它所修复的 issue，例如： `Fixes #13`）。
 1. 破坏性变更**必须**在提交的正文或脚注加以展示。一个破坏性变更**必须**包含大写的文本 `BREAKING CHANGE`，紧跟冒号和空格。
 1. 在 `BREAKING CHANGE: ` 之后**必须**提供描述，以描述对 API 的变更。例如： _BREAKING CHANGE: environment variables now take precedence over config files._
 1. 脚注**必须**只包含 `BREAKING CHANGE`、外部链接、issue 引用和其它元信息。
@@ -99,6 +98,10 @@ fixes issue #12
 ### 在初始开发阶段我该如何处理提交说明？
 
 我们建议你按照假设你已发布了产品那样来处理。因为通常总 *有人* 使用你的软件，即便那是你软件开发的同事们。他们会希望知道诸如修复了什么、哪里不兼容等信息。
+
+### 提交标题中的类型是大写还是小写?
+
+大小写都可以，但最好是一致的。
 
 ### 如果提交符合多种类型我该如何操作？
 
@@ -132,7 +135,8 @@ fixes issue #12
 
 ### 所有的贡献者都需要使用约定式提交规范吗？
 
-并不！如果你使用基于 squash 的 Git 工作流，主管维护者可以在合并时清理提交信息——这不会对普通提交者产生额外的负担。有种常见的工作流是让 git 系统自动从 pull request 中 squash 出提交，并向主管维护者提供一份表单，用以在合并时输入合适的 git 提交信息。
+并不！如果你使用基于 squash 的 Git 工作流，主管维护者可以在合并时清理提交信息——这不会对普通提交者产生额外的负担。
+有种常见的工作流是让 git 系统自动从 pull request 中 squash 出提交，并向主管维护者提供一份表单，用以在合并时输入合适的 git 提交信息。
 
 ## 关于
 
@@ -140,18 +144,28 @@ fixes issue #12
 
 该规范的首个草案来自下面这些项目中若干贡献者们的协作：
 
-
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)：一套从 git 历史中解析出约定式提交说明的工具。
+* [bumped](https://bumped.github.io)：一个用于发布软件的工具，可以在为你的软件发布新版本前后轻松地执行操作。
 * [unleash](https://github.com/netflix/unleash)：一个用于自动化软件发行和发布生命周期的工具。
 * [lerna](https://github.com/lerna/lerna)：一个用于管理宏仓库（monorepo）的工具，源自 Babel 项目。
+
+## 用于约定式提交的工具
+
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen)：一个用于创建遵循约定式提交规范提交信息的工具。
+可配置，并且可以作为 composer 依赖项用于 PHP 项目，或可在非 PHP 项目中全局使用。
+* [conform](https://github.com/autonomy/conform)：一个可用以在 git 仓库上施加配置的工具，包括约定式提交。
 
 ## 使用约定式提交的项目
 
 * [yargs](https://github.com/yargs/yargs)：广受欢迎的命令行参数解析器。
-* [parse-commit-message](https://github.com/olstenlarck/parse-commit-message): 一个符合规范的解析工具，从给定的某个提交信息字符串中解析出形如 `{ header: { type, scope, subject }, body, footer }` 的对象。
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs)：一套为 JavaScript 测试生成测试覆盖率的开源工具和类库。
 * [standard-version](https://github.com/conventional-changelog/standard-version) 基于 GitHub 的新 squash 按钮与推荐的约定式提交工作流，自动管理版本和 CHANGELOG。
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) 和 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame)：用于增强 [Apereo uPortal](https://www.apereo.org/projects/uportal) 的可选用户界面。
+* [massive.js](https://github.com/dmfay/massive-js)：一个用于 Node 和 PostgreSQL 的数据访问类库。
+* [electron](https://github.com/electron/electron)：用 JavaScript、HTML 和 CSS 构建跨平台应用。
+* [scroll-utility](https://github.com/LeDDGroup/scroll-utility)：一个居中元素和平滑动画的滚屏工具包实例。
+* [Blaze UI](https://github.com/BlazeUI/blaze)：无框架开源 UI 套件。
+* [Monica](https://github.com/monicahq/monica)：一个开源的人际关系管理系统。
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

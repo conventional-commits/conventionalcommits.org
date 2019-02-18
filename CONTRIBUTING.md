@@ -6,7 +6,7 @@ The contribution guideline is derived from the SlimPHP, Istanbul Code Coverage a
 
 Be kind to one another. We're striving to make Conventional Commits an inclusive environment that's great for first time open-source contributors.
 
-tldr; we value value constructive community interaction, over technical acumen.
+tldr; we value constructive community interaction, over technical acumen.
 
 ## Pull Requests
 

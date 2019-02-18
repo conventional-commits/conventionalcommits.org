@@ -97,7 +97,7 @@ The description is a short description of the code changes, e.g., _fix: array pa
 
 ### How should I deal with commit messages in the initial development phase?
 
-We recommend that you proceed as if you're an already released product. Typically *somebody*, even if its your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+We recommend that you proceed as if you're an already released product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
 ### Are the types in the commit title uppercase or lowercase?
 
@@ -167,6 +167,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [scroll-utility](https://github.com/LeDDGroup/scroll-utility): A simple to use scroll utility package for centering elements, and smooth animations
 * [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source modular toolkit.
 * [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
+* [mhy](https://mhy.js.org): 🧩 A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
