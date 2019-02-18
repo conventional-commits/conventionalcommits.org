@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "themes/conventional-commits/package.json"
+      ]
+    }
+  }
+}
