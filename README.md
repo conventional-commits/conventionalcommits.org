@@ -38,7 +38,7 @@ Once the website will be compiled, you can see the website visiting `http://loca
 Tell your users that you use the Conventional Commits specification:
 
 ```markdown
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![Greenkeeper badge](https://badges.greenkeeper.io/conventional-commits/conventionalcommits.org.svg)](https://greenkeeper.io/)
 ```
 
 ## Thank you
