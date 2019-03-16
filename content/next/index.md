@@ -102,7 +102,7 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
 
 ### How should I deal with commit messages in the initial development phase?
 
-We recommend that you proceed as if you've an already released product. Typically *somebody*, even if its your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+We recommend that you proceed as if you've already released the product. Typically *somebody*, even if its your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
 ### Are the types in the commit title uppercase or lowercase?
 
