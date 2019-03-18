@@ -77,7 +77,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
   by an OPTIONAL scope, and a REQUIRED terminal semicolon and space.
 1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
-1. An optional scope MAY be provided after a type. A scope MUST consist of a noun describing a
+1. The scope MAY be provided after a type. A scope MUST consist of a noun describing a
   section of the codebase surrounded by parenthesis e.g., `fix(parser):`
 1. A description MUST immediately follow the space after the type/scope prefix.
 The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string._
