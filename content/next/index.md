@@ -65,7 +65,8 @@ fix: minor typos in code
 
 see the issue for details on the typos fixed
 
-fixes issue #12
+fixes: #12
+resolves: #16
 ```
 
 ## Specification
