@@ -69,6 +69,10 @@ fixes: #12
 resolves: #16
 ```
 
+When to use `fixes:` is clear where as `resolves:` might be a little
+confusing to here is how to use it, if additional change is hard to
+label using one of existing types `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`.
+
 ## Specification
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
