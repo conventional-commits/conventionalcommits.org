@@ -25,9 +25,11 @@ languages:
     title: Conventional Commits
     description: A specification for adding human and machine readable meaning to commit messages
     actions:
-    - label: Read the specs
+    - label: Quick Summary
+      url: '#summary'
+    - label: Full Specification
       url: '#specification'
-    - label: GitHub
+    - label: Contribute
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
       current: v1.0.0-beta.3

@@ -36,6 +36,7 @@
   &__actions {
     display: flex;
     margin-top: ($gap-lg * 3)/2;
+    flex-wrap: wrap;
   }
 
   &__action {
@@ -45,7 +46,9 @@
     color: $welcome-action-color;
     border: 1px solid $welcome-action-color;
     margin-right: $gap-md;
+    margin-bottom: $gap-md;
     transition: background-color .3s ease, color .3s ease;
+    min-width: fit-content;
     &:last-child {
       margin-right: 0;
     }
