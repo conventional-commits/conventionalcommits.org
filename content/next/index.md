@@ -49,6 +49,13 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
+### Commit message with optional `!` to draw attention to breaking change
+```
+chore!: drop Node 6 from testing matrix
+
+BREAKING CHANGE: dropping Node 6 which hits end of life in April
+```
+
 ### Commit message with no body
 ```
 docs: correct spelling of CHANGELOG
@@ -88,6 +95,8 @@ per-line.
 1. A description MUST be provided after the `BREAKING CHANGE: `, describing what has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
 1. Types other than `feat` and `fix` MAY be used in your commit messages.
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
+1. A `!` MAY be appended prior to the `:` in the type/scope prefix, to further draw attention to breaking changes. `BREAKING CHANGE: description` MUST also be included in the body
+or footer, along with the `!` in the prefix.
 
 ## Why Use Conventional Commits
 
