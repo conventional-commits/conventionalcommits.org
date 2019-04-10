@@ -49,6 +49,13 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
+### Commit message with optional `!` to draw attention to breaking change
+```
+chore!: drop Node 6 from testing matrix
+
+BREAKING CHANGE: dropping Node 6 which hits end of life in April
+```
+
 ### Commit message with no body
 ```
 docs: correct spelling of CHANGELOG
