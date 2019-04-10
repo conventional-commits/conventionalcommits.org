@@ -32,8 +32,9 @@ languages:
     - label: Contribute
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.3
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.3
       - v1.0.0-beta.2
       - v1.0.0-beta.1
