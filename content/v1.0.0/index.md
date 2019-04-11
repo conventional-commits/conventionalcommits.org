@@ -2,7 +2,7 @@
 draft: true
 ---
 
-# Conventional Commits 1.0.0-beta.4
+# Conventional Commits 1.0.0
 
 ## Summary
 
