@@ -150,7 +150,7 @@ In a worst case scenario, it's not the end of the world if a commit lands that d
 
 ### Do all my contributors need to use the conventional commit specification?
 
-No! If you use a squash based workflow on Git lead maintainers can cleanup the commit messages as they're merged—adding no workload to casual committers.
+No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
 
 ## About
