@@ -122,6 +122,23 @@ languages:
       list:
         - v1.0.0-beta.2
 
+  ja:
+    weight: 2
+    languageName: "日本語"
+    title: Conventional Commits
+    description: 人間と機械が読みやすく、意味のあるコミットメッセージにするための仕様
+    actions:
+      - label: 簡単なまとめ
+        url: '#概要'
+      - label: すべての仕様
+        url: '#仕様'
+      - label: GitHub
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.4
+      list:
+      - v1.0.0-beta.4
+
   fr:
     weight: 2
     languageName: "Français"
