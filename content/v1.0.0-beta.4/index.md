@@ -81,7 +81,7 @@ closes issue #12
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-  by an OPTIONAL scope, and a REQUIRED terminal semicolon and space.
+  by an OPTIONAL scope, and a REQUIRED terminal colon and space.
 1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
