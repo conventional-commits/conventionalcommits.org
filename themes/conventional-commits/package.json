@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run css:watch & npm run js:watch",
+    "start": "npm run css & npm run css:watch & npm run js:watch",
     "css": "node-sass ./static/css/scss/style.scss -o ./static/css",
     "css:watch": "npm run css -- -w",
     "css:autoprefixer": "postcss --no-map --use autoprefixer -o ./static/css/style.css ./static/css/style.css",
