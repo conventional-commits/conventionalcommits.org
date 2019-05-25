@@ -166,6 +166,7 @@ The first draft of this specification has been written in collaboration with som
 
 ## Tooling for Conventional Commits
 
+* [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs. 
 Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
