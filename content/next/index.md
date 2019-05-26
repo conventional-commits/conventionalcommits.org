@@ -49,11 +49,16 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Commit message with optional `!` to draw attention to breaking change
+### Commit message with `!` to draw attention to breaking change
+```
+chore!: drop Node 6 from testing matrix
+```
+
+### Commit message with both `!` and BREAKING CHANGE in body
 ```
 chore!: drop Node 6 from testing matrix
 
-BREAKING CHANGE: dropping Node 6 which hits end of life in April
+BREAKING CHANGE: dropping Node 6 as it hits end of life in April
 ```
 
 ### Commit message with no body
@@ -91,12 +96,14 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
 1. A footer of one or more lines MAY be provided one blank line after the body. The footer MUST contain meta-information
 about the commit, e.g., related pull-requests, reviewers, breaking changes, with one piece of meta-information
 per-line.
-1. Breaking changes MUST be indicated at the very beginning of the body section, or at the beginning of a line in the footer section. A breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon and a space.
-1. A description MUST be provided after the `BREAKING CHANGE: `, describing what has changed about the API, e.g., _BREAKING CHANGE: environment variables now take precedence over config files._
+1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or at the beginning of its optional body or footer section.
+1. If included in the body or footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
+_BREAKING CHANGE: environment variables now take precedence over config files._
+1. If included in the type/scope prefix, breaking changes MUST be indicated by a
+`!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the
+body or footer section, and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages.
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
-1. A `!` MAY be appended prior to the `:` in the type/scope prefix, to further draw attention to breaking changes. `BREAKING CHANGE: description` MUST also be included in the body
-or footer, along with the `!` in the prefix.
 
 ## Why Use Conventional Commits
 
