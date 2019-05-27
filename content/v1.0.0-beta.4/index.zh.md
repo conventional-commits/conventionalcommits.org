@@ -3,7 +3,7 @@ draft: false
 aliases: ["/zh/"]
 ---
 
-# 约定式提交 1.0.0-beta.3
+# 约定式提交 1.0.0-beta.4
 
 ## 概述
 
@@ -48,6 +48,13 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
+### 包含了可选的 `!` 以提醒注意破坏性变更的提交说明
+```
+chore!: drop Node 6 from testing matrix
+
+BREAKING CHANGE: dropping Node 6 which hits end of life in April
+```
+
 ### 不包含正文的提交说明
 ```
 docs: correct spelling of CHANGELOG
@@ -55,35 +62,34 @@ docs: correct spelling of CHANGELOG
 
 ### 包含作用域的提交说明
 ```
-feat(lang): added polish language
+feat(lang): add polish language
 ```
 
 ### 为 fix 编写的提交说明，包含（可选的） issue 编号
 ```
-fix: minor typos in code
+fix: correct minor typos in code
 
 see the issue for details on the typos fixed
 
-fixes issue #12
+closes issue #12
 ```
 
 ## 约定式提交规范
 
-本文中的关键词 “必须（MUST）”、“禁止（MUST NOT）”、“需要（REQUIRED）”、“应当（SHALL）”、“不应当（SHALL NOT）”、“应该（SHOULD）”、“不应该（SHOULD NOT）”、“推荐（RECOMMENDED）”、“可以（MAY）” 和 “可选（OPTIONAL）” ，解释参考 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) 中所述。
+本文中的关键词 “必须（MUST）”、“禁止（MUST NOT）”、“必要（REQUIRED）”、“应当（SHALL）”、“不应当（SHALL NOT）”、“应该（SHOULD）”、“不应该（SHOULD NOT）”、“推荐（RECOMMENDED）”、“可以（MAY）” 和 “可选（OPTIONAL）” ，解释参考 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) 中所述。
 
-1. 每个提交都**必须**使用类型字段前缀，它由一个名词组成，诸如 `feat` 或 `fix` ，其后接冒号（英文半角）和空格。
+1. 每个提交都**必须**使用类型字段前缀，它由一个名词组成，诸如 `feat` 或 `fix` ，其后接一个**可选的**作用域字段，和一个**必要的**冒号（英文半角）和空格。
 1. 当一个提交为应用或类库实现了新特性时，**必须**使用 `feat` 类型。
 1. 当一个提交为应用修复了 bug 时，**必须**使用 `fix` 类型。
-1. 可选的作用域字段**可以**在类型后提供。作用域是描述代码库中某个部分的词组，封装在圆括号中，例如： `fix(parser):`。
-1. 描述字段**必须**紧接在类型或作用域前缀之后。
-描述指的是对代码变更的简短描述，例如： _fix: array parsing issue when multiple spaces were contained in string._
+1. 作用域字段**可以**跟随在类型字段后面。作用域**必须**是一个描述某部分代码的名词，并用圆括号包围，例如： `fix(parser):`。
+1. 描述字段**必须**紧接在类型/作用域前缀的空格之后。描述指的是对代码变更的简短总结，例如： _fix: array parsing issue when multiple spaces were contained in string._
 1. 在简短描述之后，**可以**编写更长的提交正文，为代码变更提供额外的上下文信息。正文**必须**起始于描述字段结束的一个空行后。
-1. 在正文结束的一个空行后，**可以**编写脚注。
-  脚注**应当**为代码变更包含额外的 issue 引用信息（比如它所修复的 issue，例如： `Fixes #13`）。
-1. 破坏性变更**必须**在提交的正文或脚注加以展示。一个破坏性变更**必须**包含大写的文本 `BREAKING CHANGE`，紧跟冒号和空格。
+1. 在正文结束的一个空行之后，**可以**编写一行或多行脚注。脚注**必须**包含关于提交的元信息，例如：关联的合并请求、Reviewer、破坏性变更，每条元信息一行。
+1. 破坏性变更**必须**标示在正文区域最开始处，或脚注区域中某一行的开始。一个破坏性变更**必须**包含大写的文本 `BREAKING CHANGE`，紧跟冒号和空格。
 1. 在 `BREAKING CHANGE: ` 之后**必须**提供描述，以描述对 API 的变更。例如： _BREAKING CHANGE: environment variables now take precedence over config files._
-1. 脚注**必须**只包含 `BREAKING CHANGE`、外部链接、issue 引用和其它元信息。
 1. 在提交说明中，**可以**使用 `feat` 和 `fix` 之外的类型。
+1. 工具的实现**必须不**区分大小写地解析构成约定式提交的信息单元，只有 `BREAKING CHANGE` **必须**是大写的。
+1.**可以**在类型/作用域前缀之后，`:` 之前，附加 `!` 字符，以进一步提醒注意破坏性变更。当有 `!` 前缀时，正文或脚注内**必须**包含 `BREAKING CHANGE: description`。
 
 ## 为什么使用约定式提交
 
@@ -154,12 +160,12 @@ fixes issue #12
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen)：一个用于创建遵循约定式提交规范提交信息的工具。
 可配置，并且可以作为 composer 依赖项用于 PHP 项目，或可在非 PHP 项目中全局使用。
 * [conform](https://github.com/autonomy/conform)：一个可用以在 git 仓库上施加配置的工具，包括约定式提交。
+* [standard-version](https://github.com/conventional-changelog/standard-version) 基于 GitHub 的新 squash 按钮与推荐的约定式提交工作流，自动管理版本和 CHANGELOG。
 
 ## 使用约定式提交的项目
 
 * [yargs](https://github.com/yargs/yargs)：广受欢迎的命令行参数解析器。
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs)：一套为 JavaScript 测试生成测试覆盖率的开源工具和类库。
-* [standard-version](https://github.com/conventional-changelog/standard-version) 基于 GitHub 的新 squash 按钮与推荐的约定式提交工作流，自动管理版本和 CHANGELOG。
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) 和 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame)：用于增强 [Apereo uPortal](https://www.apereo.org/projects/uportal) 的可选用户界面。
 * [massive.js](https://github.com/dmfay/massive-js)：一个用于 Node 和 PostgreSQL 的数据访问类库。
 * [electron](https://github.com/electron/electron)：用 JavaScript、HTML 和 CSS 构建跨平台应用。
