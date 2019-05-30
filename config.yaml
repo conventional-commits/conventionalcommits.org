@@ -153,3 +153,20 @@ languages:
       current: v1.0.0-beta.2
       list:
       - v1.0.0-beta.2
+
+  ko:
+    weight: 2
+    languageName: "한국어"
+    title: Conventional Commits
+    description: 커밋 메세지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
+    actions:
+    - label: 요약
+      url: '#summary'
+    - label: 전체 스펙
+      url: '#specification'
+    - label: Github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.4
+      list:
+      - v1.0.0-beta.4
