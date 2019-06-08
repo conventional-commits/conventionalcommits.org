@@ -170,3 +170,20 @@ languages:
       current: v1.0.0-beta.4
       list:
       - v1.0.0-beta.4
+
+  pt-br:
+    weight: 2
+    languageName: "Português Brasileiro"
+    title: Conventional Commits
+    description: Uma especificação para dar um significado legível as mensagens de commit para humanos e maquinas
+    actions:
+    - label: Resumo
+      url: '#summary'
+    - label: Especificação Completa
+      url: '#specification'
+    - label: Github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0-beta.4
+      list:
+      - v1.0.0-beta.4
