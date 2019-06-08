@@ -9,7 +9,7 @@ aliases: ["/pt-br/"]
 
 A especificação do Conventional Commits é uma convenção simples para utilizar nas
 mensagens de commit.
-Ela define um conjunto de regras para criar pra criar um histórico de commit
+Ela define um conjunto de regras para criar um histórico de commit
 explícito, o que facilita a criação de ferramentas automatizadas.
 Esta convenção segue o [SemVer](http://semver.org),
 descrevendo os recursos, correções e modificações que quebram a compatibilidade
@@ -37,7 +37,7 @@ utilizador da sua biblioteca:
 1. **feat:** um commit do _tipo_ `feat` inclui um novo recurso na sua base
  de código (isso se correlaciona com [`MINOR`](http://semver.org/#summary) do versionamento semântico).
 1. **BREAKING CHANGE:** um commit que contém o texto `BREAKING CHANGE:`, no começo
- do texto do corpo opcional ou do rodapé opicional, inclui uma modificação que quebra
+ do texto do corpo opcional ou do rodapé opcional, inclui uma modificação que quebra
  a compatibilidade da API (isso se correlaciona com [`MAJOR`](http://semver.org/#summary)
  do versionamento semântico). Uma BREAKING CHANGE pode fazer parte de commits de qualquer _tipo_.
 1. Outros: _tipos_ adicionais são permitidos além de `fix:` e `feat:`, por exemplo
@@ -88,7 +88,7 @@ fix: corrige pequenos erros de digitação no código
 
 veja o ticket para detalhes sobre os erros de digitação corrigidos
 
-finaliza ticket #12
+closes issue #12
 ```
 
 ## Especificação
@@ -123,11 +123,11 @@ As palavras-chaves “DEVE” (“MUST”), “NÃO DEVE” (“MUST NOT”), �
  que quebra a compatibilidade DEVE consistir de um texto em maiúsculas
  BREAKING CHANGE, seguido por dois-pontos e um espaço.
 1. Uma descrição DEVE ser fornecida após o texto "BREAKING CHANGE:", descrevendo
- o que mudou na API, por exemplo, _BREAKING CHANGE: as variáveis ​​de ambiente agora
+ o que mudou na API, por exemplo, _BREAKING CHANGE: as variáveis de ambiente agora
  têm preferência sobre os arquivos de configuração._
-1. Além de `feat` e `fix`, outro tipo PODE ser usados ​​em suas mensagens de commit.
+1. Além de `feat` e `fix`, outro tipo PODE ser usados em suas mensagens de commit.
 1. Cada bloco de informação que compõem o commit convencional NÃO DEVE ser
- tratado sensível a maiúscula e minúscula pelos implementadores, com exceção de
+ tratado como sensível a maiúscula e minúscula pelos implementadores, com exceção de
  BREAKING CHANGE, que DEVE ser maiúscula.
 1. Um `!` PODE ser acrescentado antes do `:` no prefixo tipo/escopo, para chamar
  a atenção para modificações que quebram a compatibilidade. `BREAKING CHANGE: description`
@@ -141,7 +141,7 @@ As palavras-chaves “DEVE” (“MUST”), “NÃO DEVE” (“MUST NOT”), �
 * Comunicar a natureza das mudanças para colegas de equipe, o público e outras
  partes interessadas.
 * Disparar processos de build e deploy.
-* Facilitando a contribuição de outras pessoas em seus projetos, permitindo que
+* Facilitar a contribuição de outras pessoas em seus projetos, permitindo que
  eles explorem um histórico de commits mais estruturado.
 
 ## Perguntas Frequentes
@@ -163,14 +163,11 @@ Volte e faça vários commits sempre que possível. Parte do benefício do Conve
 
 ### Isso não desencoraja o desenvolvimento rápido e a iteração rápida?
 
-Desencoraja a movimentação rápida de forma desorganizada. Ele ajuda você a ser
- capaz de rápido a longo prazo em vários projetos com vários colaboradores.
+Desencoraja a movimentação rápida de forma desorganizada. Ele ajuda você a ser capaz de se mover rapidamente a longo prazo em vários projetos com vários colaboradores.
 
 ### O Conventional Commits leva os desenvolvedores a limitar o tipo de commits que eles fazem porque estarão pensando nos tipos fornecidos?
 
-O Conventional Commits nos encorajam a fazer mais commits de tipos específicos,
- por exemplo correções. Além disso, a flexibilidade do Conventional Commits
- permite que sua equipe crie seus próprios tipos e altere ao longo do tempo.
+O Conventional Commits nos encorajam a fazer mais commits de tipos específicos, por exemplo correções. Além disso, a flexibilidade do Conventional Commits permite que sua equipe crie seus próprios tipos e altere ao longo do tempo.
 
 ### Qual a relação com o SemVer?
 
