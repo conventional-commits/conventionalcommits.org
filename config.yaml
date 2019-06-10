@@ -181,7 +181,7 @@ languages:
       url: '#summary'
     - label: Especificação Completa
       url: '#specification'
-    - label: Github
+    - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
       current: v1.0.0-beta.4
