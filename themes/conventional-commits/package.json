@@ -19,8 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "anchor-js": "^4.1.1",
-    "github-markdown-css": "^2.10.0",
-    "tar": "^4.4.8"
+    "github-markdown-css": "^2.10.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.3",
