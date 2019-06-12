@@ -94,7 +94,7 @@ closes issue #12
 ## Especificação
 
 As palavras-chaves “DEVE” (“MUST”), “NÃO DEVE” (“MUST NOT”), “OBRIGATÓRIO” (“REQUIRED”),
- “DEVERÁ” (“SHALL”), “NÃO DEVERÁ” (“SHALL NOT”), “PODEM” (“SHOULD), “NÃO PODEM” (“SHOULD NOT”),
+ “DEVERÁ” (“SHALL”), “NÃO DEVERÁ” (“SHALL NOT”), “PODEM” (“SHOULD"), “NÃO PODEM” (“SHOULD NOT”),
  “RECOMENDADO” (“RECOMMENDED”), “PODE” (“MAY”) e “OPCIONAL” (“OPTIONAL”), nesse
  documento, devem ser interpretados como descrito na [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
