@@ -178,9 +178,9 @@ languages:
     description: Uma especificação para dar um significado legível as mensagens de commit para humanos e maquinas
     actions:
     - label: Resumo
-      url: '#summary'
+      url: '#resumo'
     - label: Especificação Completa
-      url: '#specification'
+      url: '#especificação'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
