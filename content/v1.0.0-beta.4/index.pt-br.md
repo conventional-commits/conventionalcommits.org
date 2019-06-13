@@ -133,7 +133,7 @@ As palavras-chaves “DEVE” (“MUST”), “NÃO DEVE” (“MUST NOT”), �
  a atenção para modificações que quebram a compatibilidade. `BREAKING CHANGE: description`
  também DEVE ser incluído no corpo ou no rodapé, junto com o `!` no prefixo.
 
-## Porque User Conventional Commits
+## Porque utilizar Conventional Commits
 
 * Criação automatizada de CHANGELOGs.
 * Determinar automaticamente um aumento de versionamento semântico (com base nos
