@@ -94,7 +94,7 @@ closes issue #12
 ## Especificação
 
 As palavras-chaves “DEVE” (“MUST”), “NÃO DEVE” (“MUST NOT”), “OBRIGATÓRIO” (“REQUIRED”),
- “DEVERÁ” (“SHALL”), “NÃO DEVERÁ” (“SHALL NOT”), “PODEM” (“SHOULD), “NÃO PODEM” (“SHOULD NOT”),
+ “DEVERÁ” (“SHALL”), “NÃO DEVERÁ” (“SHALL NOT”), “PODEM” (“SHOULD"), “NÃO PODEM” (“SHOULD NOT”),
  “RECOMENDADO” (“RECOMMENDED”), “PODE” (“MAY”) e “OPCIONAL” (“OPTIONAL”), nesse
  documento, devem ser interpretados como descrito na [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
@@ -133,7 +133,7 @@ As palavras-chaves “DEVE” (“MUST”), “NÃO DEVE” (“MUST NOT”), �
  a atenção para modificações que quebram a compatibilidade. `BREAKING CHANGE: description`
  também DEVE ser incluído no corpo ou no rodapé, junto com o `!` no prefixo.
 
-## Porque User Conventional Commits
+## Porque utilizar Conventional Commits
 
 * Criação automatizada de CHANGELOGs.
 * Determinar automaticamente um aumento de versionamento semântico (com base nos
