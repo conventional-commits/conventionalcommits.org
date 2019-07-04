@@ -46,13 +46,17 @@ languages:
     title: Commit Convenzionali
     description: Una specifica per aggiungere un significato leggibile da umani e macchine ai messaggi dei commit
     actions:
+    - label: Riepilogo
+      url: '#riepilogo'
     - label: Leggi la specifica
       url: '#specifica'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.2
+      current: v1.0.0-beta.4
       list:
+      - v1.0.0-beta.4
+      - v1.0.0-beta.3
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
