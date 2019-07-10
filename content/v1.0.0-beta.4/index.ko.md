@@ -7,16 +7,15 @@ aliases: ["/ko/"]
 
 ## 개요
 
-Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 규칙으로 명확한 커밋 히스토리를 생성하기 위한 간단한 룰을 제공합니다.
-이렇게 만들어진 커밋 히스토리를 통해서 더 쉽게 자동화된 도구를 만들 수 있습니다.
-이러한 규칙은 커밋 메세지에 신규 기능 추가, 문제 수정, 커다란 변화가 있음을 기술함으로써 [유의적 버전(Sementic Versioning)](https://semver.org/lang/ko/)과의 궁합이 잘 맞도록 해줍니다.
+Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤션으로 명확한 커밋 히스토리를 생성하기 위한 간단한 규칙을 제공합니다. 이렇게 만들어진 커밋 히스토리를 이용하여 더 쉽게 자동화된 도구를 만들 수 있습니다.
+이 컨벤션은 커밋 메세지에 신규 기능 추가, 문제 수정, 커다란 변화가 있음을 기술함으로써 [유의적 버전(Sementic Versioning)](https://semver.org/lang/ko/)과 일맥상통한 면이 있습니다.
 
-커밋 메세지는 다음과 같은 구조가 되어야 한다:
+커밋 메세지는 다음과 같은 구조가 되어야 합니다:
 
 ---
 
 ```
-<type>[적용 범위(선택 사항)]: <설명>
+<타입>[적용 범위(선택 사항)]: <설명>
 
 [본문(선택 사항)]
 
@@ -26,14 +25,14 @@ Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 규칙
 
 <br />
 
-커밋에는 라이브러리를 사용하는 사람들에게 의도를 전달하기 위한 다음과 같은 구조적 요소가 포함되어 있습니다.
+커밋에는 라이브러리를 사용하는 사람들에게 의도를 전달하기 위해 다음과 같은 구조적 요소가 포함되어 있습니다.
 
-1. **fix:** 코드베이스에서 버그를 패치하는 _type_ `fix` 타입의 커밋 (이는 유의적 버전에서의 [`PATCH`](http://semver.org/#summary)와 관련이 있습니다).
-1. **feat:** 코드베이스에서 새 기능이 추가되는 _type_ `feat` 타입의 커밋 (이는 유의적 버전에서의 [`MINOR`](http://semver.org/#summary)와 관련이 있습니다).
+1. **fix:** 코드베이스에서 버그를 패치하는 `fix` _타입_ 의 커밋 (이는 유의적 버전에서의 [`PATCH`](http://semver.org/#summary)와 관련이 있습니다).
+1. **feat:** 코드베이스에서 새 기능이 추가되는 `feat` _타입_ 의 커밋 (이는 유의적 버전에서의 [`MINOR`](http://semver.org/#summary)와 관련이 있습니다).
 1. **BREAKING CHANGE:** 본문이나 꼬리말의 시작 부분에 `BREAKING CHANGE:`이라는 문자열을 가진 커밋은 커다란 API 변경 있다는 것을 의미합니다 (이는 유의적 버전에서의 [`MAJOR`](http://semver.org/#summary)와 관련이 있습니다). 어떤 커밋 타입이라도 BREAKING CHANGE는 해당 커밋의 일부가 될 수 있습니다.
-1. 다른 타입: `fix:`와 `feat` 이외의 커밋 타입을 말합니다, 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
+1. 다른 타입: `fix:`와 `feat:` 이외의 커밋 타입을 말합니다, 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
 
-또한, 새로운 기능이나 버스 수정없이 현재 구현체를 개선하는 커밋에 대해 `improvement`을 사용할 것이 좋습니다. 이 타입은 BREAKING CHANGES를 포함하지 않는 한 Conventional Commits 스펙에 의해 강제되는 부분이 아니고 유의적 버전에도 암묵적 영향을 가지지 않습니다.
+또한, 새로운 기능이나 버그 수정없이 현재 구현체를 개선하는 커밋에 대해서는 `improvement`을 사용하는 것이 좋습니다. 이 타입은 BREAKING CHANGES를 포함하지 않는 한 Conventional Commits 스펙에 의해 강제되는 부분은 아니고 유의적 버전에도 암묵적 영향을 가지지 않습니다.
 <br />
 추가적인 문맥 정보를 제공하기 위한 목적으로 사용되는 적용 범위는 커밋의 타입에 덧붙여질 수 있는데 괄호 안에 포함됩니다, 예를 들면, `feat(parser): add ability to parse arrays`.
 
@@ -91,17 +90,17 @@ closes issue #12
 
 ## 왜 Conventional Commits를 사용할까요?
 
-* CHANGELOG를 자동으로 생성
-* 포함된 커밋의 타입에 기반하여 유의적 버전 변경을 자동으로 결정
-* 팀 동료, 대중, 그리고 기타 이해당사자에게 변화의 본질을 전달
-* 빌드와 배포 프로세스를 트리거
-* 더 구조화된 커밋 히스토리를 보여줘서 사람들이 프로젝트에 기여하기 더 쉽도록 만들기
+* CHANGELOG를 자동으로 생성하기 위해서
+* (포함된 커밋의 타입에 기반하여) 유의적 버전을 자동으로 변경하기 위해서
+* 팀 동료, 타인, 그리고 기타 이해당사자에게 변화의 본질을 전달하기 위해서
+* 빌드와 배포 프로세스를 수행하기 위해서
+* 더 구조화된 커밋 히스토리를 보여줘서 사람들이 프로젝트에 기여하기 더 쉽도록 하기 위해서
 
 ## FAQ
 
 ### 초기 개발 단계에서 커밋 메세지를 어떻게 다루어야 하나요?
 
-제품을 이미 출시한 것처럼 진행하세요. 일반적으로 *누군가* 는 여러분의 소프트웨어를 사용하고 있는데 그게 동료 개발자일 수도 있고 그들은 무엇이 고쳐졌는지, 무엇이 고장났는지 등을 알고 싶어할 것입니다.
+제품을 이미 출시한 것처럼 진행하세요. 일반적으로 *누군가* 는 여러분의 소프트웨어를 사용하고 있는데 그게 동료 개발자일 수도 있고 그들은 무엇이 고쳐졌는지, 무엇이 문제인지 등을 알고 싶어 할 것입니다.
 
 ### 커밋 제목에서 타입은 대문자로 쓰나요 소문자로 쓰나요?
 
@@ -125,13 +124,13 @@ Conventional Commits는 fix 같은 특정 종류의 커밋 타입을 더 많이 
 
 ### Conventional Commit 스펙을 개인적으로 확장한 형태의 버전을 어떻게 사용할 수 있을까요? 예를 들어, `@jameswomack/conventional-commit-spec`
 
-SemVer를 사용해서 이 규격에 대한 사용자 자신의 확장판을 릴리스할 것을 추천하며, 이러한 확장하여 사용하는 것을 권장합니다!
+SemVer를 사용해서 이 규격에 대한 사용자 자신의 확장판을 릴리즈할 것을 추천하며, 이러한 확장하여 사용하는 것을 권장합니다!
 
 ### 실수로 잘못된 커밋 타입을 사용하면 어떻게 해야 하나요?
 
 #### 스펙에 맞는 타입을 사용하고 있지만 올바른 타입이 아닌 경우, 예를 들어, `feat` 대신 `fix`
 
-실수를 병합 또는 리베이스하기 전에, `git rebase -i`를 사용하여 커밋 히스토리을 편집할 것을 권장합니다. 릴리스 후에는 사용하는 툴과 프로세스에 따라 정리하는 방법이 다를 수 있습니다.
+실수를 병합 또는 리베이스하기 전에, `git rebase -i`를 사용하여 커밋 히스토리를 편집할 것을 권장합니다. 릴리즈 후에는 사용하는 툴과 프로세스에 따라 정리하는 방법이 다를 수 있습니다.
 
 #### 스펙에 맞지 않은 타입을 사용하는 경우, 예를 들어, `feat` 대신 `feet`
 
@@ -144,13 +143,13 @@ SemVer를 사용해서 이 규격에 대한 사용자 자신의 확장판을 릴
 
 ## About
 
-Conventional Commits 규격은 [앵귤러 컴밋 가이드라인](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)에서 영감을 받았으며 이를 토대로 하고 있습니다.
+Conventional Commits 규격은 [앵귤러 커밋 가이드라인](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)에서 영감을 받았으며 이를 토대로 하고 있습니다.
 
-이 규격의 첫 번째 초안은 아래 언급된 프로젝트에 기여하고 있는 분들관의 협업으로 작성되었습니다:
+이 규격의 첫 번째 초안은 아래 언급된 프로젝트에 기여하고 있는 분들과의 협업으로 작성되었습니다:
 
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): Git 히스토리에서 conventional commit 메시지를 구문 분석하기 위한 도구 모음
-* [bumped](https://bumped.github.io): 소프트웨어의 새 버전을 릴리스하기 전후에 작업을 쉽게 수행할 수 있는 소프트웨어를 릴리스하기 위한 도구.
-* [unleash](https://github.com/netflix/unleash): 소프트웨어 릴리스 및 배포 수명 주기를 자동화하기 위한 도구.
+* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): Git 히스토리에서 conventional commit 메시지를 구문 분석하기 위한 도구 모음.
+* [bumped](https://bumped.github.io): 소프트웨어의 새 버전을 릴리즈하기 전후에 작업을 쉽게 수행할 수 있는 소프트웨어를 릴리즈하기 위한 도구.
+* [unleash](https://github.com/netflix/unleash): 소프트웨어 릴리즈 및 배포 수명 주기를 자동화하기 위한 도구.
 * [lerna](https://github.com/lerna/lerna): Babel 프로젝트에서 성장한 monorepo를 관리 도구.
 
 ## Conventional Commits를 위한 도구
@@ -161,12 +160,12 @@ Conventional Commits 규격은 [앵귤러 컴밋 가이드라인](https://github
 
 ## Conventional Commits를 이용하고 있는 프로젝트
 
-* [yargs](https://github.com/yargs/yargs): 모두가 가장 좋아하는 해적 테마의 커맨드 라인 인자 구문 분석기
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): 자바스크립트 테스트에 테스트 적용 범위를 추가하는 오픈 소스 도구 및 라이브러리 모음입니다.
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal)와 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): [Apereo uPortal](https://www.apereo.org/projects/uportal)을 향상시켜주는 옵션으로 추가 가능한 사용자 인터페이스
+* [yargs](https://github.com/yargs/yargs): 모두가 가장 좋아하는 해적 테마의 커맨드 라인 인자 구문 분석기.
+* [istanbuljs](https://github.com/istanbuljs/istanbuljs): 자바스크립트 테스트에 테스트 적용 범위를 추가하는 오픈 소스 도구 및 라이브러리 모음.
+* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal)와 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): [Apereo uPortal](https://www.apereo.org/projects/uportal)을 향상시켜주는 옵션으로 추가 가능한 사용자 인터페이스.
 * [massive.js](https://github.com/dmfay/massive-js): Node와 PostgreSQL을 위한 데이터 접근 라이브러리
-* [electron](https://github.com/electron/electron): 자바스크립트, HTML, 그리고 CSS를 이용하여 크로스 클랫폼 데스크탑 앱을 만들어보세요
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): 사용하기 쉬운, 요소 중앙 정렬 및 부드러운 애니메이션을 위한 스크롤 유틸리티 패키지
+* [electron](https://github.com/electron/electron): 자바스크립트, HTML, 그리고 CSS를 이용하여 크로스 클랫폼 데스크탑 앱을 만드는 프레임워크.
+* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): 사용하기 쉬운, 요소 중앙 정렬 및 부드러운 애니메이션을 위한 스크롤 유틸리티 패키지.
 * [Blaze UI](https://github.com/BlazeUI/blaze): 프레임워크가 필요 없는 오픈소스 UI 툴킷.
 * [Monica](https://github.com/monicahq/monica): 오픈 소스 개인 관계 관리 시스템.
 * [mhy](https://mhy.js.org): 🧩 설정이 필요 없고 바로 사용 가능한 다목적 툴 박스와 개발 환경
