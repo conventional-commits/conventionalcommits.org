@@ -191,6 +191,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source UI toolkit.
 * [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
 * [mhy](https://mhy.js.org): 🧩 A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
+* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo of ~100 TypeScript projects for data driven development
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
