@@ -221,7 +221,8 @@ Conventional Commit вдохновлены и основаны на
  элементов и плавной анимации.
 * [Blaze UI](https://github.com/BlazeUI/blaze): независимы от фреймворктов набор UI.
 * [Monica](https://github.com/monicahq/monica): свободный менеджер персональных связей.
-* [mhy](https://mhy.js.org): набор инструментов и окружение для разработки с нулевой конфигурацией, котовое работать из коробки.
+* [mhy](https://mhy.js.org): набор инструментов и окружение для разработки с нулевой конфигурацией, которые работают из коробки.
+* [sharec](https://github.com/lamartire/sharec): минималистичный инструмент для скаффолдинга и версионирования конфигурации.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
