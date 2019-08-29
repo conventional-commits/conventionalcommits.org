@@ -34,7 +34,7 @@ consumers of your library:
 1. **BREAKING CHANGE:** a commit that has the footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` maybe be provided and must follow
+1. _footers_ other than `BREAKING CHANGE: <description>` may be be provided and must follow
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Additional types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
