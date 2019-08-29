@@ -35,7 +35,7 @@ consumers of your library:
 A BREAKING CHANGE can be part of commits of any _type_.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
 1. _footers_ other than `BREAKING CHANGE: <description>` maybe be provided and must follow
-  [git trailer format(https://git-scm.com/docs/git-interpret-trailers).
+  [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Additional types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
 <br />
@@ -43,7 +43,7 @@ A scope may be provided to a commit's type, to provide additional contextual inf
 
 ## Examples
 
-### Commit message with description and breaking change trailer
+### Commit message with description and breaking change footer
 ```
 feat: allow provided config object to extend other configs
 
@@ -55,7 +55,7 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 chore!: drop Node 6 from testing matrix
 ```
 
-### Commit message with both `!` and BREAKING CHANGE trailer
+### Commit message with both `!` and BREAKING CHANGE footer (with folding text)
 ```
 chore!: drop Node 6 from testing matrix
 
@@ -73,7 +73,7 @@ docs: correct spelling of CHANGELOG
 feat(lang): add polish language
 ```
 
-### Commit message with multi-paragraph body and trailer
+### Commit message with multi-paragraph body and multiple footers
 ```
 fix: correct minor typos in code
 
@@ -82,6 +82,7 @@ see the issue for details
 on typos fixed.
 
 Reviewed-by: Z
+Refs: #133
 ```
 
 ## Specification
@@ -112,9 +113,9 @@ _BREAKING CHANGE: environment variables now take precedence over config files._
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
 `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the
 body or footer section, and the commit description SHALL be used to describe the breaking change.
-1. Types other than `feat` and `fix` MAY be used in your commit messages.
+1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
-1. BREAKING CHANGE MAY instead be written as BREAKING-CHANGE in trailers.
+1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used in footer.
 
 ## Why Use Conventional Commits
 
