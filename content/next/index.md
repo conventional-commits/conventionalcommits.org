@@ -2,7 +2,7 @@
 draft: true
 ---
 
-# Conventional Commits 1.0.0.next
+# Conventional Commits 1.0.1
 
 ## Summary
 
@@ -171,6 +171,22 @@ In a worst case scenario, it's not the end of the world if a commit lands that d
 
 No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
+
+### How does Conventional Commits handle revert commits?
+
+Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release
+instead be a patch?
+
+Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
+authors to use the flexility of _types_ and _footers_ to develop their logic for handling reverts.
+
+One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
+
+```
+revert: let us never again speak of the noodle incident
+
+Refs: #676104e, #a215868
+```
 
 ## About
 
