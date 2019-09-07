@@ -34,7 +34,7 @@ consumers of your library:
 1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be be provided and must follow
+1. _footers_ other than `BREAKING CHANGE: <description>` may be be provided and and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Additional types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
@@ -55,12 +55,12 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 chore!: drop Node 6 from testing matrix
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer (with folding text)
+### Commit message with both `!` and BREAKING CHANGE footer
 ```
 chore!: drop Node 6 from testing matrix
 
 BREAKING CHANGE: dropping Node 6 as it hits end of
- life in April
+life in April
 ```
 
 ### Commit message with no body
@@ -104,18 +104,18 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
   [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
   the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
-1. A footer's value MAY contain spaces and newlines, and parses MUST terminate parsing when the next valid footer
+1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
   token/separator pair is observed.
 1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as a trailer
   in the footer.
 1. If included as a trailer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
 _BREAKING CHANGE: environment variables now take precedence over config files._
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
-`!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the
-body or footer section, and the commit description SHALL be used to describe the breaking change.
+  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the footer section,
+  and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
-1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used in footer.
+1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 
 ## Why Use Conventional Commits
 
