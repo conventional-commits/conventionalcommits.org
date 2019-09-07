@@ -99,13 +99,13 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string._
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
 1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
-1. One or more footer lines MAY be provided one blank line after the body. Each footer MUST
- follow the [git trailer convention](https://git-scm.com/docs/git-interpret-trailers): consisting of
- a word token, a colon and space, followed by a string value.
+1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
+ a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
+  [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
   the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
-1. A footer's value MAY contain spaces and newlines, but MUST follow the folding conventions described
-  in [RFC 822](https://www.ietf.org/rfc/rfc822.txt) (each newline MUST have a leading space).
+1. A footer's value MAY contain spaces and newlines, and parses MUST terminate parsing when the next valid footer
+  token/separator pair is observed.
 1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as a trailer
   in the footer.
 1. If included as a trailer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
