@@ -21,6 +21,7 @@
     font-size: 2.6em;
     margin-bottom: $gap-sm;
     @include desktop {
+      width: 85%;
       font-size: 3.6em;
     }
   }
@@ -49,9 +50,11 @@
     margin-bottom: $gap-md;
     transition: background-color .3s ease, color .3s ease;
     min-width: fit-content;
+
     &:last-child {
       margin-right: 0;
     }
+
     &:hover {
       background-color: $welcome-action-color;
       color: get-color-accessible-for-background($welcome-action-color)
@@ -76,6 +79,7 @@
     width: 24%;
     overflow: hidden;
     transform: translate(0, -50%);
+
     img {
       display: block;
       margin: auto;
