@@ -163,7 +163,7 @@ Un processus courant consiste à ce que votre système git écrase automatiqueme
 
 La spécification Conventional Commits s’inspire largement de [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) et s’appuie fortement sur celles-ci.
 
-La première version de ces spécifications a été rédigée en collaboration avec certains des les gens qui contribuent à:
+La première version de cette spécification a été écrite en collaboration avec certaines personnes contribuant à:
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): Un ensemble d'outils permettant d'analyser les messages des commits classiques à partir des historiques git.
 * [bumped](https://bumped.github.io): Un outil de publication de logiciel qui facilite l'exécution d'actions avant et après la publication d'une nouvelle version de votre logiciel.
