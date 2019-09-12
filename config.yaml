@@ -197,7 +197,7 @@ languages:
     weight: 2
     languageName: "Português Brasileiro"
     title: Conventional Commits
-    description: Uma especificação para dar um significado legível as mensagens de commit para humanos e maquinas
+    description: Uma especificação para dar um significado legível às mensagens de commit para humanos e máquinas
     actions:
     - label: Resumo
       url: '#resumo'
