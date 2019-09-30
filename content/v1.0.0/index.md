@@ -1,8 +1,9 @@
 ---
-draft: true
+draft: false
+aliases: ["/en/"]
 ---
 
-# Conventional Commits 1.0.0-next
+# Conventional Commits 1.0.0
 
 ## Summary
 
