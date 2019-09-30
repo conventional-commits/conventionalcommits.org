@@ -2,7 +2,7 @@
 draft: true
 ---
 
-# Conventional Commits 1.0.1
+# Conventional Commits 1.0.0-next
 
 ## Summary
 
@@ -35,7 +35,7 @@ consumers of your library:
 A BREAKING CHANGE can be part of commits of any _type_.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `chore:`,
   `ci', `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be be provided and and follow a convention similar to
+1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Additional types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
@@ -53,15 +53,14 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Commit message with `!` to draw attention to breaking change
 ```
-chore!: drop Node 6 from testing matrix
+refactor!: drop support for Node 6
 ```
 
 ### Commit message with both `!` and BREAKING CHANGE footer
 ```
-chore!: drop Node 6 from testing matrix
+refactor!: drop support for Node 6
 
-BREAKING CHANGE: dropping Node 6 as it hits end of
-life in April
+BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 ```
 
 ### Commit message with no body
@@ -97,7 +96,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
   section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
 1. A description MUST immediately follow the colon and space after the type/scope prefix.
-The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string._
+The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
 1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
 1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
@@ -107,10 +106,10 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
   the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
 1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
   token/separator pair is observed.
-1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as a trailer
-  in the footer.
-1. If included as a trailer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
-_BREAKING CHANGE: environment variables now take precedence over config files._
+1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
+  footer.
+1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
+_BREAKING CHANGE: environment variables now take precedence over config files_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
   `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
