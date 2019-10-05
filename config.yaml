@@ -183,9 +183,9 @@ languages:
     description: 커밋 메세지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
     actions:
     - label: 요약
-      url: '#summary'
+      url: '#개요'
     - label: 전체 스펙
-      url: '#specification'
+      url: '#규격'
     - label: Github
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
