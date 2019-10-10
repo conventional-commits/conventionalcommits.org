@@ -88,7 +88,7 @@ docs: correct spelling of CHANGELOG
 feat(lang): add polish language
 ```
 
-### (オプション) issuenの番号を修正用のコミットメッセージに含めます
+### (オプション) issueの番号を修正用のコミットメッセージに含めます
 
 ```
 fix: correct minor typos in code
