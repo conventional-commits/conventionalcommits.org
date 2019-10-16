@@ -67,6 +67,13 @@ docs: correct spelling of CHANGELOG
 feat(lang): add polish language
 ```
 
+### Commit message indicating the initial stable release
+```
+docs: polish for initial release
+
+INITIAL STABLE RELEASE
+```
+
 ### Commit message for a fix using an (optional) issue number.
 ```
 fix: correct minor typos in code
