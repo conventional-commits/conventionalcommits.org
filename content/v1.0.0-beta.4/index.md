@@ -100,7 +100,7 @@ per-line.
 or footer, along with the `!` in the prefix.
 1. The effect of commits types on a release version bump SHOULD be as follows:
     1. If there are any breaking changes _and_ the library is _not_ in its "initial devlopment" status [as defined by semver](https://semver.org/#spec-item-4) _then_ bump the major version.
-    1. If there is an `INITIAL STABLE RELEASE` indication _and_ the library is in its "initial development" status [as defined by semver](https://semver.org/#spec-item-4) _then_ bump the major version.
+    1. If there is an `INITIAL STABLE RELEASE` indication at the very beginning of the body section, or at the beginning of a line in the footer section _and_ the library is in its "initial development" status [as defined by semver](https://semver.org/#spec-item-4) _then_ bump the major version.
     1. Otherwise if there are any `feat` type commits then bump the minor version.
     1. Otherwise if there are any `fix` type commits then bump the patch version.
     1. Otherwise if there are other types of commits, other than `chore`, then bump the patch version.
