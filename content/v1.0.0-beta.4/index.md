@@ -101,7 +101,10 @@ or footer, along with the `!` in the prefix.
 1. The effect of commits types on a release version bump SHOULD be as follows:
     1. If there are any breaking changes _and_ the library is _not_ in its "initial devlopment" status [as defined by semver](https://semver.org/#spec-item-4) _then_ bump the major version.
     1. Otherwise if there are any `feat` type commits bump the minor version.
-    2. Otherwise if there are any `fix` type commits bump the patch version.
+    1. Otherwise if there are any `fix` type commits bump the patch version.
+    1. Otherwise if there are other types of commits, other than `chore`, bump the patch version.
+    1. Otherwise there should be no bump.
+
 
 ## Why Use Conventional Commits
 
