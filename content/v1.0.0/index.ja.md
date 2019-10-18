@@ -9,7 +9,7 @@ aliases: ["/ja/"]
 
 Conventional Commitsの仕様は、コミットメッセージのための軽量の規約です。
 明示的なコミット履歴を作成するための簡単なルールを提供します、この規則に従うことで自動化ツールの導入を簡単にします。
-この規約は[SemVer](http://semver.org)と組み合わせることで、コミットメッセージへ機能、修正、重大な変更を入れることで、さらに詳細な説明を可能にします。
+この規約は[SemVer](http://semver.org)と組み合わせることで、コミットメッセージへ機能、修正、破壊的変更を入れることで、さらに詳細な説明を可能にします。
 
 コミットメッセージは次のような形にする必要があります
 
@@ -43,7 +43,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 
 1. **fix:** _型_ `fix` はコードベースのバグにパッチを当てる場合です。（これは セマンティックバージョン管理における[`PATCH`](http://semver.org/#summary)に相当します)
 1. **feat:** _型_ `feat` はコードベースに新しい機能を追加した場合です。(これはセマンティックバージョン管理における [`MINOR`](http://semver.org/#summary)に相当します)
-1. **BREAKING CHANGE:** _本文_ または _脚注_ に `BREAKING CHANGE:`が存在する、または _型_ 、 _範囲_ の直後に`!`が追加されているコミットは、APIの破壊的な変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
+1. **BREAKING CHANGE:** _本文_ または _脚注_ に `BREAKING CHANGE:`が存在する、または _型_ 、 _範囲_ の直後に`!`が追加されているコミットは、APIの破壊的変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
 `BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
 1. `fix:` and `feat:` 以外の _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約] (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `build:`, `chore:`, `ci:`,`docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
 1. 次のような規則に従うことで、`BREAKING CHANGE: <説明>` 以外の _脚注_ を使うこともできます。 [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
@@ -56,7 +56,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 
 ## 例
 
-### 説明と重大な変更を含む脚注のメッセージをコミットに含める
+### 説明と破壊的変更を含む脚注のメッセージをコミットに含める
 
 ```
 feat: allow provided config object to extend other configs
@@ -64,13 +64,14 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### 重大な変更であることに気づいてもらうために `!` を付けてメッセージをコミットする
+### 破壊的変更であることに気づいてもらうために `!` を付けてメッセージをコミットする
 
 ```
 refactor!: drop support for Node 6
 ```
 
 ### `!` と BREAKING CHANGE の両方を脚注に追加して、メッセージをコミットする
+
 ```
 refactor!: drop support for Node 6
 
@@ -109,34 +110,23 @@ Refs #133
 1. コミットは名詞、`feat`、`fix`などから始まる（ REQUIRED ） _型_ から始まり、次に選択できる（ OPTIONAL ） _範囲_ と、必須の`!` 末尾に要求されている（ REQUIRED ）コロンとスペースで成り立ちます。
 1. コミットがあなたのアプリケーションやライブラリに新しい機能を追加するとき、 _型_ は`feat`にしなければならない（ MUST ）。
 1. コミットがあなたのアプリケーションのためのバグ修正を表すとき、 _型_ は `fix`にしなければならない（ MUST ）。
-1. _範囲_ は _型_ の後に記述してもよい（ MAY ）。 _範囲_ は括弧で囲まれたコードベースのセクションを記述する名詞にしなければならない（ MUST ）。例： `fix(構文解析ツール): '
+1. _範囲_ は _型_ の後に記述してもよい（ MAY ）。 _範囲_ は括弧で囲まれたコードベースのセクションを記述する名詞にしなければならない（ MUST ）。例： `fix(構文解析ツール):`
 1. _説明_ は型/範囲の後にあるコロンとスペースの直後にしなければならない（ MUST ）。
-_説明_ はコード変更の要約です。 _fix：文字列に複数の空白がある場合の配列解析における問題_
+_説明_ はコード変更の要約です。 例： _fix：文字列に複数の空白がある場合の配列解析における問題_
 1. 短い _説明_ の後に、より長いコミットの本文を追加してもよく（ MAY ）、コード変更に関する追加の情報を提供することができます。
 本文は、_説明_ の下に1行の空行を追加しなければならない（ MUST ）。
-
-<!-- 1. 1行以上の _脚注_ は、本文の後ろに1行の空白行を入れてもよい（ MAY ）。 _脚注_ はコミットに関するメタ情報、例えば関連するプルリクエスト、レビュアー、変更の中断などを1行につき1つのメタ情報として含めなければならない（ MUST ）。
-1. 重大な変更(`BREAKING CHANGE`)は、本文セクションの一番最初、または脚注の先頭にしなければいけません（ MUST ）。
-重大な変更は大文字のテキスト `BREAKING CHANGE` と続くコロンとスペースから構成されなければいけません（ MUST ）。
-1. APIについて何が変わったのかを説明する`BREAKING CHANGE:`の後には説明を描かなければいけません（ MUST ）。
-例、 _BREAKING CHANGE: 環境変数が設定ファイルよりも優先されるようになりました。_
-1. `feat`と`fix` 以外の _型_ をあなたのコミットメッセージに仕様してもよい（ MAY ）。
-1. Conventional Commitsを構成する情報の単位は、必ず大文字の`BREAKING CHANGE`を除いて、実装側は大文字と小文字を別の物して扱ってはいけない（ MUST NOT ）
-1. さらに重大な変更の注意を引くために、  _種類_ / _範囲_ の `:` の前に `!`を追加することができます（ MAY ）。`BREAKING CHANGE: description`は、接頭辞の`!`とともに、本文または脚注にも含めなければなりません（ MUST ）。 -->
-
 1. コミットの本文は自由形式であってよく（ MAY ）、改行で区切られた複数の段落で構成することが可能です。
 1. １つ以上のフッターを持つことができます（ MAY ）、フッターは改行の後に一つの空白を持ちます。
 各フッターは文字トークンで構成されてなければいけません（ MUST ）、その後に `:<space>` か `<space>#` による区切りが続き、最後に文字列が入ります。（これは[git trailer convention](https://git-scm.com/docs/git-interpret-trailers)にインスパイアされています）
 1. _脚注_ のトークンには空白の代わりに `-` を使う必要があります（ MUST ）、例えば `Acked-by` などです（_脚注_ と _本文_ を区別するのに役立ちます ）。
 `BREAKING CHANGE`の例外を作ることができ、これはトークンとして使用することもできます（ MAY ）。
 1. _脚注_ の本文にはスペースと改行を含めることができます（ MAY ）、そして次の _脚注_ トークンとセパレーターのペアが見つかった時、以前の _脚注_ の解析は終了しなければなりません（ MUST ）。
-1. 破壊的な変更は、コミットの _型_ / _範囲_ の接頭辞か、_脚注_ に指定する必要があります（ MUST ）
+1. 破壊的変更は、コミットの _型_ / _範囲_ の接頭辞か、_脚注_ に指定する必要があります（ MUST ）
 1. 破壊的変更がフッターに含まれる場合、大文字の REAKING CHANGE の後にコロンとスペース、そして説明を続ける必要があります（ MUST ）。例： _BREAKING CHANGE: 環境変数が設定ファイルよりも優先されるようになりました_
 1. 破壊的変更がある場合、_型_ や _範囲_ の接頭辞には `:` の直前に `!` を用いて明示的にしなければなりません（ MUST ）。 `!` を使用する場合には、 _脚注_ セクションから `BREAKING CHANGE:` を省略できます（ MAY ）。そうすると、コミットの _説明_ 部分で破壊的変更の内容を説明することになるでしょう（ SHALL ）。
 1. コミットメッセージでは `feat` と `fix` 以外の _型_ を使うことができます（ MAY ）。 （例：_docs: ドキュメントの参照を更新_）
 1. Conventional Commitsを構成する情報の単位は、必ず大文字の`BREAKING CHANGE`を除いて、実装側は大文字と小文字を別の物して扱ってはいけない（ MUST NOT ）
 1. _脚注_ の BREAKING-CHANGE は BREAKING CHANGE と同じトークンとして解釈されなければいけません（ MUST ）。
-
 
 ## 何故 Conventional Commits を使うのか
 
@@ -200,7 +190,7 @@ SemVerを使用して、この仕様に対する独自の拡張仕様をリリ�
 
 ### Conventional Commitsは`revert`コミットをどのように扱いますか？
 
-コードを元に戻すのは様々な要因が絡みます。
+コードを元に戻すのは複雑な場合があります。
 複数のコミットを元に戻していますか？機能をもとに戻す時にリリースはパッチにまとめる必要がありますか？
 
 Conventional Commitsはrevertの振る舞いを定義するための明示的な努力をしません、代わりにツールに任せます。
@@ -236,7 +226,6 @@ composerに依存するPHPプロジェクトに対して設定、使用可能で
 * [commitsar](https://github.com/commitsar-app/commitsar): ブランチのコミットがconventional commitに準拠しているかどうかを確認するためのGo言語で書かれたツール。 CI用のDockerイメージがあります。
 * [semantic-release](https://github.com/semantic-release/semantic-release): 次のバージョン番号の決定、リリースノートの生成、パッケージの公開など、パッケージリリースのワークフロー全体を自動化するツール。
 
-
 ## Conventional Commitsを利用しているプロジェクト
 
 * [yargs](https://github.com/yargs/yargs): 多くの人に人気な海賊をテーマにしたコマンドライン引数パーサ。
@@ -251,7 +240,6 @@ composerに依存するPHPプロジェクトに対して設定、使用可能で
 * [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): 〜１００からなるデータ駆動型開発用のTypeScriptプロジェクトのMonorepo。
 * [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 強化されたYii2アプリテンプレート。
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 オンライン履歴書を素早く簡単に作成できるテンプレート。
-
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
