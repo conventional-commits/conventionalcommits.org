@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile.dev
       context: .
     ports:
-     - "1313:1313"
+      - '1313:1313'
     working_dir: /src/
     volumes:
       - ./:/src/
