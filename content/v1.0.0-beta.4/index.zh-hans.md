@@ -1,6 +1,6 @@
 ---
 draft: false
-aliases: ["/zh/", "/zh-cn/"]
+aliases: ["/zh/", "/zh-hans/"]
 ---
 
 # 约定式提交 1.0.0-beta.4
