@@ -151,6 +151,7 @@ closes issue #12
 该规范的首个草案来自下面这些项目中若干贡献者们的协作：
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)：一套从 git 历史中解析出约定式提交说明的工具。
+* [parse-commit-message](https://github.com/olstenlarck/parse-commit-message)：兼容规范的解析工具，可以将给定提交信息的字符串解析成对象，结果形如 `{ header: { type, scope, subject }, body, footer }`。
 * [bumped](https://bumped.github.io)：一个用于发布软件的工具，可以在为你的软件发布新版本前后轻松地执行操作。
 * [unleash](https://github.com/netflix/unleash)：一个用于自动化软件发行和发布生命周期的工具。
 * [lerna](https://github.com/lerna/lerna)：一个用于管理宏仓库（monorepo）的工具，源自 Babel 项目。
@@ -161,6 +162,7 @@ closes issue #12
 可配置，并且可以作为 composer 依赖项用于 PHP 项目，或可在非 PHP 项目中全局使用。
 * [conform](https://github.com/autonomy/conform)：一个可用以在 git 仓库上施加配置的工具，包括约定式提交。
 * [standard-version](https://github.com/conventional-changelog/standard-version) 基于 GitHub 的新 squash 按钮与推荐的约定式提交工作流，自动管理版本和 CHANGELOG。
+* [commitsar](https://github.com/commitsar-app/commitsar)： 一个检查提交信息是否符合约定式提交规范的 Go 语言工具。可在 CI 的 Docker 镜像中使用。
 
 ## 使用约定式提交的项目
 
@@ -172,6 +174,8 @@ closes issue #12
 * [scroll-utility](https://github.com/LeDDGroup/scroll-utility)：一个居中元素和平滑动画的滚屏工具包实例。
 * [Blaze UI](https://github.com/BlazeUI/blaze)：无框架开源 UI 套件。
 * [Monica](https://github.com/monicahq/monica)：一个开源的人际关系管理系统。
+* [mhy](https://mhy.js.org)：🧩 一个零配置、开箱即用的、多用途工具箱与开发环境。
+* [sharec](https://github.com/lamartire/sharec)：一个用于模板和配置文件版本化的极简工具。
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
