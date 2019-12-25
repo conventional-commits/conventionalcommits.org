@@ -3,7 +3,7 @@ draft: false
 aliases: ["/es/"]
 ---
 
-# Commits Convencionales 1.0.0-beta.3
+# Convención de Commits 1.0.0-beta.3
 
 ## Resumen
 
