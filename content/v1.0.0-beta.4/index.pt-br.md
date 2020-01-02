@@ -11,7 +11,7 @@ A especificação do Conventional Commits é uma convenção simples para utiliz
 mensagens de commit.
 Ela define um conjunto de regras para criar um histórico de commit
 explícito, o que facilita a criação de ferramentas automatizadas.
-Esta convenção segue o [SemVer](http://semver.org),
+Esta convenção segue o [SemVer](https://semver.org),
 descrevendo os recursos, correções e modificações que quebram a compatibilidade
 nas mensagens de commit.
 
@@ -33,12 +33,12 @@ O commit contém os seguintes elementos estruturais, para comunicar a intenção
 utilizador da sua biblioteca:
 
 1. **fix:** um commit do _tipo_ `fix` soluciona um problema na sua base de código
- (isso se correlaciona com [`PATCH`](http://semver.org/#summary) do versionamento semântico).
+ (isso se correlaciona com [`PATCH`](https://semver.org/lang/pt-BR/#sum%C3%A1rio) do versionamento semântico).
 1. **feat:** um commit do _tipo_ `feat` inclui um novo recurso na sua base
- de código (isso se correlaciona com [`MINOR`](http://semver.org/#summary) do versionamento semântico).
+ de código (isso se correlaciona com [`MINOR`](https://semver.org/lang/pt-BR/#sum%C3%A1rio) do versionamento semântico).
 1. **BREAKING CHANGE:** um commit que contém o texto `BREAKING CHANGE:`, no começo
  do texto do corpo opcional ou do rodapé opcional, inclui uma modificação que quebra
- a compatibilidade da API (isso se correlaciona com [`MAJOR`](http://semver.org/#summary)
+ a compatibilidade da API (isso se correlaciona com [`MAJOR`](https://semver.org/lang/pt-BR/#sum%C3%A1rio)
  do versionamento semântico). Uma BREAKING CHANGE pode fazer parte de commits de qualquer _tipo_.
 1. Outros: _tipos_ adicionais são permitidos além de `fix:` e `feat:`, por exemplo
  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
