@@ -1,6 +1,6 @@
 ---
 draft: false
-aliases: ["/zh-tw/"]
+aliases: ["/zh-hant/"]
 ---
 
 # 約定式提交 1.0.0-beta.4

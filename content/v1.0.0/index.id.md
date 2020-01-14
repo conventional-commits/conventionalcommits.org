@@ -27,31 +27,30 @@ Pesan komit harus tersusun sebagai berikut:
 ---
 
 <br />
-Komit berisi elemen struktural sebagai berikut, untuk menyampaikan maksud kepada
-konsumen library anda:
+Komit berisi elemen struktural sebagai berikut, untuk menyampaikan maksud kepada konsumen perpustakaan anda:
 
 1. **fix:** komit _tipe_ `fix` untuk perbaikan celah (bug) dalam kode anda (ini berkolerasi dengan [`PATCH`](http://semver.org/#summary) di semantic versioning).
 1. **feat:** komit _tipe_ `feat` memperkenalkan suatu fitur (feature) baru dalam kode anda (ini berkolerasi dengan [`MINOR`](http://semver.org/#summary) di semantic versioning).
-1. **BREAKING CHANGE:** komit yang berisi teks `BREAKING CHANGE:`, atau tambahkan `!` setelah type/scope untuk mengenalkan perubahan yang merusak API (ini berkolerasi dengan [`MAJOR`](http://semver.org/#summary) di semantic versioning).
-BREAKING CHANGE dapat menjadi bagian dari komit _tipe_ apapun.
-1. Lainya: komit dengan _tipe-tipe_ selain dari `fix:` and `feat:` diperbolehkan, misalnya [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) direkomendasikan `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainya.
-1. _footers_ selain `BREAKING CHANGE: <description>` dapat dicantukman dan mengikuti format
-  [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+1. **BREAKING CHANGE:** komit yang berisi footer `BREAKING CHANGE:`, atau tambahkan `!` setelah type/scope, memperkenalkan perusakan perubahan API (ini berkolerasi dengan [`MAJOR`](http://semver.org/#summary) di semantic versioning). BREAKING CHANGE dapat menjadi bagian dari komit _type_ apapun.
+1. _types_ daripada `fix:` dan `feat:` diperbolehkan, sebagai contoh [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) direkomendasikan `build:`, `chore:`,
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainya.
+1. _footers_ daripada `BREAKING CHANGE: <description>` dapat disediakan dan mengikuti konvensi yang mirip dengan
+  [format git trailer](https://git-scm.com/docs/git-interpret-trailers).
 
-Tipe tambahan tidak diamanatkan oleh spesifikasi komit konvensional, dan tidak memiliki efek implisit dalam versi semantik (kecuali mereka termasuk BREAKING CHANGE).
-<br /><br />
-sebuah scope dapat di cantumkan ke dalam tipe komit. untuk memberikan informasi kontekstual tambahan dan terkandung dalam kurung, misalnya, `feat(parser): add ability to parse arrays`.
+Tipe tambahan tidak di amanatkan oleh spesifikasi conventional commits, dan tidak ada efek implisit dalam semantic versioning (kecuali mereka termasuk BREAKING CHANGE).
+<br /> < br/>
+Cakupan dapat disediakan ke tipe komit. untuk memberikan informasi kontekstual tambahan dan terkandung dalam kurung, misalnya, `feat(parser): add ability to parse arrays`.
 
-## Examples
+## Contoh
 
-### Pesan komit dengan deskripsi dan breaking change footer
+### Pesan komit dengan deskripsi dan breaking change di footer
 ```
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Pesan Komit dengan` !` untuk menarik perhatian pada breaking changes
+### Pesan komit dengan `!` untuk menarik perhatian pada breaking change
 ```
 refactor!: drop support for Node 6
 ```
@@ -87,37 +86,34 @@ Refs #133
 
 ## Spesifikasi
 
-Kata “HARUS”, “TIDAK BOLEH”, “DIBUTUHKAN”, “SEHARUSNYA”, “JANGAN SAMPAI”, “SEBAIKNYA”, “SEBAIKNYA TIDAK”, “DIREKOMENDASIKAN”, “BISA”, dan “OPSIONAL” di dokumen ini sesuai dengan [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+Kata kunci “HARUS”, “TIDAK BOLEH”, “DIBUTUHKAN”, “SEHARUSNYA”, “JANGAN SAMPAI”, “SEBAIKNYA”, “SEBAIKNYA TIDAK”, “DIREKOMENDASIKAN”, “BISA”, dan “OPSIONAL” di dokumen ini sesuai dengan [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+ 
+1. Komit HARUS (MUST) diawali dengan tipe, yang terdiri dari kata benda, `feat`, `fix`, dll., diikuti dengan scope OPSIONAL (OPTIONAL) `!`, dan DIBUTUHKAN (REQUIRED) terminal colon dan spasi.
+1. Tipe `feat` HARUS (MUST) digunakan ketika komit menambahkan fitur baru ke aplikasi atau pustaka Anda.
+1. Tipe `fix` HARUS (MUST) digunakan ketika komit merepresentasikan perbaikan bug untuk aplikasi Anda.
+1. Scope BISA (MAY) dicantumkan setelah tipe. Scope HARUS (MAY) terdiri dari kata benda yang menggambarkan bagian dari kode yang dikelilingi tanda kurung, misalnya, e.g., `fix(parser):`
+1. Deskripsi HARUS (MUST) segera mengikuti spasi setelah awalan type/scope. Deskripsi adalah ringkasan singkat dari perubahan kode, misalnya, _fix: array parsing issue when multiple spaces were contained in string_.
+1. Body yang lebih panjang BISA (MAY) disediakan setelah deskripsi singkat, memberikan informasi kontekstual tambahan tentang perubahan kode. Body HARUS (MUST) memulai satu baris kosong setelah deskripsi.
+1. Body komit adalah bentuk bebas dan BISA (MAY) terdiri dari sejumlah paragraf terpisah baris baru.
+1. Satu atau lebih footer BISA (MAY) disediakan satu baris kosong setelah badan. Setiap footer HARUS (MUST) terdiri dari token kata, diikuti oleh pemisah `:<space>` atau `<space>#`, diikuti oleh nilai string (ini terinspirasi oleh [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
+1. Token footer HARUS (MUST) menggunakan `-` sebagai ganti karakter spasi putih, mis., `Acked-by` (ini membantu membedakan bagian footer dari badan multi-paragraf). Pengecualian dibuat untuk `BREAKING CHANGE`, yang BISA (MAY) juga digunakan sebagai token.
+1. Nilai footer BISA (MAY) berisi spasi dan baris baru, dan penguraian HARUS (MUST) berakhir ketika pasangan token/pemisah footer yang berlaku berikutnya diamati.
+1. Melanggar perubahan HARUS (MUST) ditunjukkan dalam tipe / lingkup awalan dari komit, atau sebagai entri dalam catatan kaki.
+1. Jika dimasukkan sebagai footer, perubahan yang melanggar HARUS (MUST) terdiri dari teks huruf besar BREAKING CHANGE, diikuti oleh titik dua, spasi, dan deskripsi, mis., _BREAKING CHANGE: variabel lingkungan sekarang diutamakan daripada file konfigurasi_.
+1. Jika termasuk dalam 
 
-1. Komit HARUS (MUST) diawali dengan tipe, yang terdiri dari kata benda, `feat`, `fix`, dll., diikuti
- dengan OPSIONAL (OPTIONAL) scope, OPSIONAL (OPTIONAL) `!` ,dan DIBUTUHKAN (REQUIRED) terminal colon dan spasi.
-1. tipe `feat` HARUS (MUST) digunakan ketika komit menambahkan fitur baru ke aplikasi atau library anda.
-1. tipe `fix` HARUS (MUST) digunakan ketika komit mewakili perbaikan celah (bug) untuk aplikasi anda.
-1. scope BISA (MAY) dicantumkan setelah tipe. scope HARUS terdiri dari kata benda yang menggambarkan
- bagian dari kode yang dikelilingi tanda kurung, misalnya, `fix(parser):`
-1. Deskripsi HARUS (MUST) segera diikuti dengan spasi setelah awalan tipe/scope.
-Deskripsi adalah ringkasan singkat dari perubahan kode, misalnya, _fix: array parsing issue when multiple spaces were contained in string._
-1. Komit body yang lebih panjang BISA (MAY) dicantumkan setelah deskripsi pendek, memberikan informasi kontekstual tambahan tentang perubahan kode. body HARUS (MUST) diawalin dengan satu barus kosong setelah deskripsi.
-1. komit body adalah bentuk bebas dan BISA (MAY) terdiri dari sejumlah paragraf terpisah baris baru.
-1. Satu atau lebih baris footer BISA (MAY) disediakan satu baris kosong setelah body. Setiap footer HARUS terdiri dari token kata, diikuti oleh pemisah `:<space>` atau `<space>#`, diikuti oleh nilai string (ini terinspirasi oleh konvensi [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
-1. Token footer HARUS (MUST) digunakan `-` sebagai ganti karakter spasi putih, mis. `Acked-by` (ini membantu membedakan bagian footer dari body multi-paragraf). Pengecualian dibuat untuk `BREAKING CHANGE`, yang BISA (MAY) juga dapat digunakan sebagai token.
-1. Nilai footer BISA (MAY) berisi spasi dan baris baru, dan penguraian HARUS (MUST) berakhir ketika pasangan token / separator footer yang valid berikutnya telah diamati.
-1. Breaking changes HARUS (MUST) ditunjukkan dalam type/scope awalan dari komit, atau sebagai entri dalam footer.
-1. Jika dimasukkan sebagai footer, breaking change HARUS (HARUS) terdiri dari teks huruf besar BREAKING CHANGE, diikuti oleh titik dua, spasi, dan deskripsi, mis., _BREAKING CHANGE: variabel lingkungan sekarang diutamakan daripada file konfigurasi._
-1. Jika termasuk dalam awalan type/scope, breaking changes HARUS (MUST) ditunjukan oleh `!` segera sebelum `:`. Jika `!` digunakan, `BREAKING CHANGE:` BISA (MAY) dihapus dari bagian footer,
-  dan deskripsi komit SEHARUSNYA (SHALL) digunakan untuk menggambarkan breaking change.
+awalan, memecah perubahan HARUS (MUST) ditunjukkan oleh `!` Segera sebelum `:`. Jika `!` Digunakan, `BREAKING CHANGE:` BISA (MAY) dihapus dari bagian footer, dan deskripsi commit HARUS (MUST) digunakan untuk menjelaskan perubahan yang melanggar.
 1. Jenis selain `feat` dan `fix` BISA (MAY) digunakan dalam pesan komit Anda, mis., _docs: updated ref docs._
-1. Unit-unit informasi yang membentuk conventional commits TIDAK BOLEH (MUST NOT) diperlakukan case sensitif oleh pelaksana, dengan pengecualian BREAKING CHANGE yang HARUS (MUST) huruf besar.
+1. Unit-unit informasi yang membentuk konvensional melakukan TIDAK BOLEH (MUST NOT) diperlakukan sebagai case sensitif oleh implementor, dengan pengecualian BREAKING CHANGE yang HARUS (MUST) huruf besar.
 1. BREAKING-CHANGE HARUS (MUST) identik dengan BREAKING CHANGE, bila digunakan sebagai token di footer.
 
-## Mengapa menggunakan Conventional Commits
+## Mengapa menggunakan Conventional Konvensional
 
 * Secara automatis menghasilkan CHANGELOGs.
 * Secara automatis menentukan versi semantic (Berdasarkan tipe komit yang dilakukan).
 * Mengkomunikasikan sifat perubahan kepada rekan setim, publik, dan pemangku kepentingan lainnya.
 * Memicu proses pembuatan dan publikasi.
-* Mempermudah orang untuk berkontribusi pada proyek Anda, dengan memungkinkan mereka untuk menjelajah
-  riwayat komit yang lebih terstruktur.
+* Mempermudah orang untuk berkontribusi pada proyek Anda, dengan memungkinkan mereka untuk menjelajah riwayat komit yang lebih terstruktur.
 
 ## FAQ
 
@@ -169,7 +165,7 @@ Alur kerja umum untuk ini adalah membuat sistem git Anda secara otomatis squash 
 
 Mengembalikan kode bisa rumit: apakah Anda mengembalikan banyak komit? jika Anda mengembalikan fitur, haruskah rilis berikutnya sebagai tambalan?
 
-Komitmen Konvensional tidak membuat upaya eksplisit untuk mendefinisikan perilaku kembalikan. Alih-alih, kami menyerahkannya kepada perkakas penulis untuk menggunakan fleksibilitas _type_ dan _footers_ untuk mengembangkan logika mereka untuk menangani orang yang kembali.
+Conventional Commits tidak membuat upaya eksplisit untuk mendefinisikan perilaku kembalikan. Alih-alih, kami menyerahkannya kepada perkakas penulis untuk menggunakan fleksibilitas _type_ dan _footers_ untuk mengembangkan logika mereka untuk menangani orang yang kembali.
 
 Satu rekomendasi adalah menggunakan tipe `revert`, dan foter yang merujuk komit SHA yang sedang dikembalikan:
 
@@ -179,7 +175,7 @@ revert: let us never again speak of the noodle incident
 Refs: 676104e, a215868
 ```
 
-## About 
+## Tentang
 
 Spesifikasi Conventional Commit terinspirasi oleh, dan didasarkan pada, [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
@@ -191,8 +187,9 @@ Draf pertama spesifikasi ini telah ditulis bersama dengan beberapa orang yang be
 * [unleash](https://github.com/netflix/unleash): alat untuk mengotomatiskan rilis perangkat lunak dan siklus penerbitan.
 * [lerna](https://github.com/lerna/lerna): alat untuk mengelola monorepos, yang tumbuh dari proyek Babel.
 
-## Alat untuk Conventional Commits
+## Alat untuk Komit Konvensional
 
+* [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): mengikuti spesifikasi untuk mengelola versi dan menghasilkan changelog secara otomatis.
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): 
 alat yang dibuat untuk membuat pesan komit mengikuti spesifikasi Komitmen Konvensional. 
 Dapat dikonfigurasi dan digunakan untuk proyek PHP sebagai dependensi komposer atau dapat digunakan secara global untuk proyek non-PHP.
@@ -202,7 +199,7 @@ Dapat dikonfigurasi dan digunakan untuk proyek PHP sebagai dependensi komposer a
 * [commitsar](https://github.com/commitsar-app/commitsar): Alat go (golang) untuk pengecekan jika komit dalam branch patuh pada conventional commit. Dilengkapi dengan docker image untuk kebutuhan CI.
 * [semantic-release](https://github.com/semantic-release/semantic-release): Alat yang mengotomatiskan seluruh alur kerja rilis paket termasuk: menentukan nomor versi berikutnya, menghasilkan catatan rilis dan menerbitkan paket.
 
-## Proyek Menggunakan Komitmen Konvensional
+## Proyek Menggunakan Conventional Commits
 
 * [yargs](https://github.com/yargs/yargs): parser argumen baris perintah bertema bajak laut favorit semua orang.
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): koleksi alat dan pustaka sumber terbuka untuk menambahkan cakupan tes ke tes JavaScript Anda.
@@ -213,9 +210,10 @@ Dapat dikonfigurasi dan digunakan untuk proyek PHP sebagai dependensi komposer a
 * [Blaze UI](https://github.com/BlazeUI/blaze): Kerangka kerja perangkat UI sumber bebas terbuka.
 * [Monica](https://github.com/monicahq/monica): Sumber Terbuka sistem manajemen hubungan pribadi.
 * [mhy](https://mhy.js.org): 🧩 Toolbox nol-konfigurasi, out-of-the-box, multiguna dan lingkungan pengembangan.
-* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo dari ~100 TypeScript projects untuk data driven development
-* [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 An enhanced Yii2 app template.
-* [dcyou/resume](https://github.com/dcyou/resume): 😎 Template untuk mempermudah dan mempercepat pembuatan online CV.
+* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo dari ~100 proyek TypeScript untuk pengembangan berbasis data
+* [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 Templat aplikasi Yii2 yang disempurnakan.
+* [dcyou/resume](https://github.com/dcyou/resume): 😎 Templat untuk membuat CV online Anda dengan mudah dan cepat.
+* [Belajarpython](https://github.com/belajarpythoncom/belajarpython.com) Situs Open Source Tutorial Pemrograman Python.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
