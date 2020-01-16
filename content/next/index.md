@@ -136,7 +136,7 @@ We recommend that you proceed as if you've already released the product. Typical
 
 Any casing may be used, but it's best to be consistent.
 
-### What do I do if the commit conforms to more than one of the commit types?
+### What do I do if the commit contains changes of more than one type?
 
 Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
 
