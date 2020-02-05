@@ -208,6 +208,7 @@ composerに依存するPHPプロジェクトに対して設定、使用可能で
 * [Blaze UI](https://github.com/BlazeUI/blaze): フレームワークに依存しないオープンソースUIツールキット。
 * [Monica](https://github.com/monicahq/monica): オープンソースの人的関係管理システム。
 * [mhy](https://mhy.js.org): 🧩 設定不要ですぐに使える多目的ツールボックスおよび開発環境。
+* [Nintex fōmuzu](https://www.nintex.jp/process-platform/#forms): 動的なオンラインフォームを簡単に作成して、正確で最新のデータをキャプチャして送信します。
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

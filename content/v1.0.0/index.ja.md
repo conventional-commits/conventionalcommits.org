@@ -240,6 +240,7 @@ composerに依存するPHPプロジェクトに対して設定、使用可能で
 * [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): 〜１００からなるデータ駆動型開発用のTypeScriptプロジェクトのMonorepo。
 * [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 強化されたYii2アプリテンプレート。
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 オンライン履歴書を素早く簡単に作成できるテンプレート。
+* [Nintex fōmuzu](https://www.nintex.jp/process-platform/#forms): 動的なオンラインフォームを簡単に作成して、正確で最新のデータをキャプチャして送信します。
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
