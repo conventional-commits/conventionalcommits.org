@@ -190,6 +190,7 @@ Configurable et utilisable pour les projets PHP en tant que dépendance composer
 * [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free d'outilsmodulaire open source.
 * [Monica](https://github.com/monicahq/monica): Un système de gestion de relations personnelles open source.
 * [mhy](https://mhy.js.org): 🧩 Une boîte à outils polyvalente et un environnement de développement prêts à l'emploi.
+* [Formulaires Nintex](https://www.nintex.fr/plateforme-de-processus/#forms): Créez facilement des formulaires en ligne dynamiques pour capturer et soumettre des données précises et actuelles.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

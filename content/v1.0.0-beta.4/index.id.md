@@ -185,6 +185,7 @@ Dapat dikonfigurasi dan digunakan untuk proyek PHP sebagai dependensi komposer a
 * [Blaze UI](https://github.com/BlazeUI/blaze): Kerangka kerja perangkat UI sumber bebas terbuka.
 * [Monica](https://github.com/monicahq/monica): Sumber Terbuka sistem manajemen hubungan pribadi.
 * [mhy](https://mhy.js.org): 🧩 Toolbox nol-konfigurasi, out-of-the-box, multiguna dan lingkungan pengembangan.
+* [Formulir Nintex](https://www.nintex.com/workflow-automation/modern-forms/): Membuat formulir online dinamis dengan mudah untuk menangkap dan mengirimkan data yang akurat dan terkini.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

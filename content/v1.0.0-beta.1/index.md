@@ -152,6 +152,7 @@ folks contributing to:
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools
   and libraries for adding test coverage to your JavaScript tests.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
+* [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

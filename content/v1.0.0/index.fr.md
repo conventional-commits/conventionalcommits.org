@@ -217,6 +217,7 @@ Configurable et utilisable pour les projets PHP en tant que dépendance composer
 * [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo de ~100 projets TypeScript pour le développement piloté par les données
 * [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 Un modèle d'application Yii2 amélioré.
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 Un modèle pour créer facilement et rapidement son CV en ligne.
+* [Formulaires Nintex](https://www.nintex.fr/plateforme-de-processus/#forms): Créez facilement des formulaires en ligne dynamiques pour capturer et soumettre des données précises et actuelles.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
