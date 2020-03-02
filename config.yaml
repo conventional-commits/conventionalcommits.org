@@ -251,3 +251,20 @@ languages:
       list:
       - v1.0.0-beta.4
       - v1.0.0-beta.3
+
+  de:
+    weight: 2
+    languageName: "Deutsch"
+    title: Konventionelle Commits
+    description: Eine Spezifikation für menschlich und maschinell lesbare Commit-Nachrichten
+    actions:
+    - label: Zusammenfassung
+      url: '#zusammenfassung'
+    - label: Spezifikation
+      url: '#spezifikation'
+    - label: Contribute
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
