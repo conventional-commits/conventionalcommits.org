@@ -73,7 +73,7 @@ closes issue #12
 
 ## 규격
 
-이 문서에서 언급되는 주요 단어들인 “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, 그리고 “OPTIONAL”는 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)에 기술된 그대로 해석해야 합니다.
+이 문서에서 언급되는 주요 단어들인 “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, 그리고 “OPTIONAL”는 [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)에 기술된 그대로 해석해야 합니다.
 
 1. 모든 커밋은 `feat`, `fix` 같은 명사로 된 접두어를 포함해야 하고 그 뒤로 옵션인 적용 범위, 그리고 필수인 `:`과 공백이 있어야 합니다.
 1. `feat` 타입은 커밋에 애플리케이션이나 라이브러리에 새로운 기능이 추가될 때 사용되어야 합니다.
