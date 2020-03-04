@@ -84,7 +84,7 @@ closes issue #12
 1. 한 줄 이상을 가진 꼬리말은 본문 다음 빈 행 다음에 위치합니다. 꼬리말은 커밋에 대한 메타 정보를 포함해야 합니다. 예를 들어, 한 줄에 하나의 메타 정보로 관련 있는 PR, 리뷰어, BREAKING CHANGES를 포함합니다.
 1. Breaking changes는 본문 영역의 시작이나 꼬리말 영역의 시작 부분에 위치합니다. Breaking changes는 대문자로 된 BREAKING CHANGE 문자열을 포함하고 그 뒤로 콜론과 공백이 옵니다.
 1. 설명은 반드시 `BREAKING CHANGE: ` 다음에 와야하는데 이는 API에서 변경된 사항을 기술해야 합니다, 예를 들어, _BREAKING CHANGE: environment variables now take precedence over config files._
-1. `feat`와 `fix` 이외의 타입이 커멧 메세지에 사용될 수 있습니다.
+1. `feat`와 `fix` 이외의 타입이 커밋 메세지에 사용될 수 있습니다.
 1. Conventional Commit을 구성하는 정보의 단위는 반드시 문자여야 하는 BREAKING CHANGES를 제외하고 구현자에 의해 대소문자를 구분하는 것으로 처리되어서는 안됩니다.
 1. `!`는 타입/적용 범위 접두어에서 `:` 앞에 붙어야 하는데 큰 변화에 대한 주의를 주기 위함입니다. `BREAKING CHANGE: description`는 반드시 접두어에 `!`와 함께 본문이나 꼬리말에 포함되어야 합니다.
 
