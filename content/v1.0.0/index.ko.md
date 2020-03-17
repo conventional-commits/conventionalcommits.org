@@ -134,7 +134,7 @@ Conventional Commits는 fix 같은 특정 종류의 커밋 타입을 더 많이 
 
 ### 이것이 SemVer와 어떤 관련이 있나요?
 
-`fix` 타입의 커밋은 PATCH 버전으로 번역해야 합니다. `feat` 형식 커밋은 MINOR 버전으로 번역해야 합니다. 타입과 관계없이 BREAKING CHANGE를 포함한 커밋은 MAJOR(MAJOR)로 번역해야 한다.
+`fix` 타입의 커밋은 `PATCH` 버전으로 번역해야 합니다. `feat` 형식 커밋은 `MINOR` 버전으로 번역해야 합니다. 타입과 관계없이 `BREAKING CHANGE`를 포함한 커밋은 `MAJOR`로 번역해야 합니다.
 
 ### Conventional Commit 스펙을 개인적으로 확장한 형태의 버전을 어떻게 사용할 수 있을까요? 예를 들어, `@jameswomack/conventional-commit-spec`
 
@@ -178,17 +178,17 @@ Conventional Commits 규격은 [앵귤러 커밋 가이드라인](https://github
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): Git 히스토리에서 conventional commit 메시지를 구문 분석하기 위한 도구 모음.
 * [bumped](https://bumped.github.io): 소프트웨어의 새 버전을 릴리즈하기 전후에 작업을 쉽게 수행할 수 있는 소프트웨어를 릴리즈하기 위한 도구.
 * [unleash](https://github.com/netflix/unleash): 소프트웨어 릴리즈 및 배포 수명 주기를 자동화하기 위한 도구.
-* [lerna](https://github.com/lerna/lerna): Babel 프로젝트에서 성장한 monorepo를 관리 도구.
+* [lerna](https://github.com/lerna/lerna): Babel 프로젝트에서 성장한 monorepo를 관리하기  도구.
 
 ## Conventional Commits를 위한 도구
 
-* [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically
+* [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): 규격에 따라 버전을 관리하고 changelog를 자동으로 만드는 도구.
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): Conventional Commits 규격에 따라 커밋 메시지를 생성하기 위해 사용되는 도구로 PHP 프로젝트에서 컴포저 의존성으로 구성 및 사용할 수 있거나 PHP 이외의 프로젝트에서 전 세계적으로 사용할 수 있습니다.
 * [conform](https://github.com/autonomy/conform): Conventional Commits를 포함한 git 저장소에서 정책을 강제하는데 사용되는 도구.
-* [standard-version](https://github.com/conventional-changelog/standard-version): GitHub의 스쿼시 버튼과 Conventional Commits 워크플로우를 이용한 자동 버전 지정 및 CHANGELOG 관리
-* [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Add _Conventional Commits_ support to [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
-* [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
-* [semantic-release](https://github.com/semantic-release/semantic-release): A tool that automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
+* [standard-version](https://github.com/conventional-changelog/standard-version): GitHub의 스쿼시 버튼과 Conventional Commits 워크플로우를 이용한 자동 버전 지정 및 CHANGELOG 관리.
+* [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): [JetBrains 편집기](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...)에 _Conventional Commits_ 지원 추가.
+* [commitsar](https://github.com/commitsar-app/commitsar): 브랜치의 커밋이 Conventional Commit을 지켰는지 검사하는 Go 언어 도구. CI 용으로 Docker 이미지도 제공.
+* [semantic-release](https://github.com/semantic-release/semantic-release): 패키지 배포 워크플로우를 자동화해주는 툴. 다음 버전 번호 결정, 릴리즈 노트 생성, 패키지 배포 등의 자동화된 기능 포함.
 
 ## Conventional Commits를 이용하고 있는 프로젝트
 
@@ -201,10 +201,11 @@ Conventional Commits 규격은 [앵귤러 커밋 가이드라인](https://github
 * [Blaze UI](https://github.com/BlazeUI/blaze): 프레임워크가 필요 없는 오픈소스 UI 툴킷.
 * [Monica](https://github.com/monicahq/monica): 오픈 소스 개인 관계 관리 시스템.
 * [mhy](https://mhy.js.org): 설정이 필요 없고 바로 사용 가능한 다목적 툴 박스와 개발 환경
-* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo of ~100 TypeScript projects for data driven development
-* [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): An enhanced Yii2 app template.
-* [dcyou/resume](https://github.com/dcyou/resume): Template to easily and quickly create your online CV.
-* [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
+* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): 데이터 중심 개발을 위한 ~100개의 TypeScript 프로젝트 monorepo
+* [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 향상된 Yii2 앱 템플릿.
+* [dcyou/resume](https://github.com/dcyou/resume): 쉽고 빠르게 온라인 이력서를 만들어주는 템플릿.
+* [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): 정확하고 최신의 데이터를 수집하기 위한 쉬운 동적 온라인 설문 생성기.
+* [Tina CMS](https://tinacms.org): CMS 프론트엔드를 만들어주는 오픈 소스 툴킷.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
