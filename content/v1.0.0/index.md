@@ -39,7 +39,7 @@ A BREAKING CHANGE can be part of commits of any _type_.
 1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
-Additional types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
+Additional types are not mandated by the Conventional Commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
 <br /><br />
 A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
 
@@ -115,7 +115,7 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
   `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
+1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 
 ## Why Use Conventional Commits
@@ -166,9 +166,9 @@ Prior to merging or releasing the mistake, we recommend using `git rebase -i` to
 
 #### When you used a type *not* of the spec, e.g. `feet` instead of `feat`
 
-In a worst case scenario, it's not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the spec.
+In a worst case scenario, it's not the end of the world if a commit lands that does not meet the Conventional Commits specification. It simply means that commit will be missed by tools that are based on the spec.
 
-### Do all my contributors need to use the conventional commit specification?
+### Do all my contributors need to use the Conventional Commits specification?
 
 No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
@@ -190,11 +190,11 @@ Refs: 676104e, a215868
 
 ## About
 
-The Conventional Commit specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
+The Conventional Commits specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
 The first draft of this specification has been written in collaboration with some of the folks contributing to:
 
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing conventional commit messages from git histories.
+* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing Conventional Commits messages from git histories.
 * [bumped](https://bumped.github.io): a tool for releasing software that makes it easy to perform actions before and after releasing a new version of your software.
 * [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
@@ -202,12 +202,12 @@ The first draft of this specification has been written in collaboration with som
 ## Tooling for Conventional Commits
 
 * [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs.
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): A PHP tool built to create commit messages following the Conventional Commits specs.
 Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
-* [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
+* [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including Conventional Commits.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
-* [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Add _Conventional Commits_ support to [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
-* [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
+* [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Add Conventional Commits support to [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
+* [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are Conventional Commits compliant. Comes with Docker image for CI uses.
 * [semantic-release](https://github.com/semantic-release/semantic-release): A tool that automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
 
 ## Projects Using Conventional Commits
