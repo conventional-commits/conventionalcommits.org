@@ -202,7 +202,7 @@ The first draft of this specification has been written in collaboration with som
 ## Tooling for Conventional Commits
 
 * [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs. 
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs.
 Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
@@ -224,6 +224,8 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo of ~100 TypeScript projects for data driven development
 * [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 An enhanced Yii2 app template.
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 Template to easily and quickly create your online CV.
+* [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
+* [Tina CMS](https://tinacms.org): An open source toolkit for building front-end content-management into your website.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

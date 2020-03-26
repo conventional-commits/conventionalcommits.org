@@ -1,17 +1,29 @@
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2173276-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<title>{{ .Param "Title" }}</title>
-<meta name="description" content="{{ .Param "Description" }}"/>
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
+    gtag('config', 'UA-2173276-5');
+  </script>
+  
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
-<!-- Twitter Card data -->
-<meta name="twitter:card" content="{{ .Param "Description" }}">
-<meta name="twitter:title" content="{{ .Param "Title" }}">
-<meta name="twitter:description" content="{{ .Param "Description" }}">
+  <title>{{ .Param "Title" }}</title>
+  <meta name="description" content="{{ .Param "Description" }}"/>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-<!-- Open Graph data -->
-<meta property="og:title" content="{{ .Param "Title" }}"/>
-<meta property="og:type" content="article"/>
-<meta property="og:url" content="{{ .Permalink }}"/>
-<meta property="og:description" content="{{ .Param "Description" }}"/>
-<meta property="og:site_name" content="{{ .Param "Title" }}"/>
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="{{ .Param "Description" }}">
+  <meta name="twitter:title" content="{{ .Param "Title" }}">
+  <meta name="twitter:description" content="{{ .Param "Description" }}">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ .Param "Title" }}"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="{{ .Permalink }}"/>
+  <meta property="og:description" content="{{ .Param "Description" }}"/>
+  <meta property="og:site_name" content="{{ .Param "Title" }}"/>
+</head>

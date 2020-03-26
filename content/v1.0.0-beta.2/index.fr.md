@@ -181,6 +181,7 @@ les gens qui contribuent à:
  et bibliothèques pour ajouter une couverture de test à vos tests JavaScript.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Le versioning automatique et la gestion de CHANGELOG, en  utilisant le nouveau bouton squash de GitHub et le flux de travail Conventional Commits recommandé.
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) et [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Amélioration optionnelle de l'interface utilisateur [Apereo uPortal](https://www.apereo.org/projects/uportal).
+* [Formulaires Nintex](https://www.nintex.fr/plateforme-de-processus/#forms): Créez facilement des formulaires en ligne dynamiques pour capturer et soumettre des données précises et actuelles.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
