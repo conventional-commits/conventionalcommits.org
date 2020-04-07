@@ -175,7 +175,7 @@ La prima bozza di questa specifica è stata scritta in collaborazione con alcuni
 Totalmente configurabile ed eè utilizzabile per progetti PHP installandola come dipendenza locale o globale per progetti non basati su PHP.
 * [conform](https://github.com/autonomy/conform): un tool che può essere usato per introdurre regole sui repository basasti su git, includendo conventional commits.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Automatizza il versionamento e la gestione del CHANGELOG utilizzando il nuovo pulsante squash di GitHub e il flusso di lavoro consigliato da Commit Convenzionali.
-
+* [Conventional Commit](https://github.com/lppedd/idea-conventional-commit): offre completamento estensibile basato sul contesto o su template, ed ispezioni, per Conventional Commits all'interno del dialogo di commit per il VCS configurato. Disponibile per tutti gli [IDE JetBrains](https://www.jetbrains.com/).
 
 ## Progetti che usano Commit Convenzionali
 
