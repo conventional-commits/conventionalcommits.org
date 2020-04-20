@@ -195,6 +195,7 @@ The Conventional Commits specification is inspired by, and based heavily on, the
 The first draft of this specification has been written in collaboration with some of the folks contributing to:
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing Conventional Commits messages from git histories.
+* [parse-commit-message](https://npmjs.com/package/parse-commit-message): Extensible utilities for parsing, stringify and validating Conventional Commit messages.
 * [bumped](https://bumped.github.io): a tool for releasing software that makes it easy to perform actions before and after releasing a new version of your software.
 * [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
@@ -205,7 +206,6 @@ The first draft of this specification has been written in collaboration with som
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): A PHP tool built to create commit messages following the Conventional Commits specs.
 Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including Conventional Commits.
-* [parse-commit-message](https://npmjs.com/package/parse-commit-message): Extensible utilities for parsing, stringify and validating Conventional Commit messages.
 * [detect-next-version](https://npmjs.com/package/detect-next-version): Parse, detect and get more metadata about given Conventional Commits.
 * [recommended-bump](https://www.npmjs.com/package/recommended-bump): Calculcates the recommended version bump based on given Conventional Commits.
 * [git-commits-since](https://www.npmjs.com/package/git-commits-since): Get all (raw) commits since given period of time or (by default) from latest git SemVer tag, plus plugins support.
