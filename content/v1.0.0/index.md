@@ -112,7 +112,7 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
 1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
 _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
-  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the footer section,
+  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
 1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
