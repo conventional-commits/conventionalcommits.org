@@ -237,6 +237,8 @@ algunos de los colaboradores de:
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): una colección de herramientas y librerías de código abierto para agregar cobertura de código a sus tests.
 * [standard-version](https://github.com/conventional-changelog/standard-version): versionado automático y manejos de CHANGELOG, usando el botón de squash de GitHub y siguiendo el flujo de trabajo de los Commits Convencionales.
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) y [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): mejoramiento opcional para la interfaz de usuario [Apereo uPortal](https://www.apereo.org/projects/uportal).
+* [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser para archivos Diff (formato unified diff).
+* [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Herramienta fácil para separar .diff y .patch en sus archivos de diferencias contenidos.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
