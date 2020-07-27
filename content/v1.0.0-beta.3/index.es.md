@@ -231,6 +231,8 @@ algunos de los colaboradores de:
 * [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Un paquete de utilidades de desplazamiento fácil de usar para centrar elementos y realizar animaciones
 * [Blaze UI](https://github.com/BlazeUI/blaze): Kit de herramientas modular de código abierto sin frameworks.
 * [Monica](https://github.com/monicahq/monica): Un sistema de gestión de relaciones personales de código abierto.
+* [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser para archivos Diff (formato unified diff).
+* [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Herramienta fácil para separar .diff y .patch en sus archivos de diferencias contenidos.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

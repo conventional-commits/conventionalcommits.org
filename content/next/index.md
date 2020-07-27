@@ -111,7 +111,7 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
 1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
 _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
-  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be ommitted from the footer section,
+  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
@@ -209,6 +209,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
 * [semantic-release](https://github.com/semantic-release/semantic-release): A tool that automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
 * [ngx-semantic-version](https://github.com/d-koppenhagen/ngx-semantic-version): Automate your Angular app commit- and release-workflow by integrating _commitizen_, _commitlint_, _husky_ and _standard-version_ in your project and configuring it for using _Conventional Commits_.
+* [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
 
 ## Projects Using Conventional Commits
 
@@ -221,12 +222,15 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source UI toolkit.
 * [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
 * [mhy](https://mhy.js.org): 🧩 A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
+* [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser for Diff files (unified diff format).
+* [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Easy split of .diff & .patch into its files.
 * [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo of ~100 TypeScript projects for data driven development
 * [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 An enhanced Yii2 app template.
 * [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
 * [Tina CMS](https://tinacms.org): An open source toolkit for building front-end content-management into your website.
 * [Uno Platform](https://platform.uno): Build Mobile, Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.
 * [AutoSort.NetCore](https://www.nuget.org/packages/AutoSort.NetCore/): Use entity attributes for default sorting
+* [Undercut](https://github.com/the-spyke/undercut): JavaScript lazy data processing pipelines and utilities.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
