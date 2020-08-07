@@ -3,11 +3,11 @@ draft: false
 aliases: ["/th/"]
 ---
 
-# ข้อตกลงในการ Commits 1.0.0
+# Conventional Commits 1.0.0
 
 ## ข้อสรุป
 
-ข้อกำหนดของข้อตกลงในการ Commits คือข้อตกลงอย่างง่ายที่สร้างขึ้นสำหรับข้อความที่ commit
+ข้อกำหนดของข้อตกลงในการ Commits (Conventional Commits) คือข้อตกลงอย่างง่ายที่สร้างขึ้นสำหรับข้อความที่ commit
 ข้อกำหนดนี้จะรวมข้อกำหนดในการสร้างข้อความในการ commit อย่างชัดเจน
 ซึ่งจะช่วยให้สามารถเขียนชุดเครื่องมืออัตโนมัติต่อยอดได้ง่ายขึ้น
 ข้อตกลงนี้จะใช้รูปแบบเดียวกับ [SemVer](http://semver.org)
@@ -18,63 +18,62 @@ aliases: ["/th/"]
 ---
 
 ```
-<type>[optional scope]: <description>
+<ชนิด>[ละได้ ขอบเขต]: <รายละเอียด>
 
-[optional body]
+[ละได้ เนื้อหา]
 
-[optional footer(s)]
+[ละได้ ข้อความลงท้าย]
 ```
 ---
 
 <br />
-The commit contains the following structural elements, to communicate intent to the
-consumers of your library:
+โดย commit จะมีหน่วยโครงสร้างย่อย ๆ ตามนี้ เพื่อใช้ในการสื่อสารถึงความตั้งใจให้กับคนที่นำไลบรารี่ของคุณไปใช้งาน
 
-1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in semantic versioning).
-2. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in semantic versioning).
-3. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning).
-A BREAKING CHANGE can be part of commits of any _type_.
-1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
-  [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+1. **fix:** commit ที่มี _ชนิด_ `fix` หมายถึงมีการแก้ไขบักในโค้ดของคุณ (จะสอดคล้องกับ [`PATCH`](http://semver.org/#summary) ใน semantic versioning)
+2. **feat:** commit ที่มี _ชนิด_ `feat` หมายถึงมีการเพิ่มฟีเจอร์ใหม่เข้าไปในโค้ด (จะสอดคล้องกับ [`MINOR`](http://semver.org/#summary) ใน semantic versioning)
+3. **BREAKING CHANGE:** commit ที่ลงท้ายด้วย `BREAKING CHANGE:` ในข้อความลงท้าย หรือ ต่อท้ายด้วย `!` หลังจาก type หรือ scope จะหมายถึงมีการเพิ่มการเปลี่ยนแปลงที่กระทบกับ API เดิม (จะสอดคล้องกับ [`MAJOR`](http://semver.org/#summary) ใน semantic versioning)
+โดยที่ BREAKING CHANGE สามารถเป็นส่วนหนึ่งของ commit _ชนิด_ ไหนก็ได้
+1. _ชนิด_ อื่น ๆ ที่ไม่ใช่ `fix:` and `feat:` สามารถใช้ได้เช่นกัน เช่น [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (อ้างอิงจาก [ข้อตกลงของ Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) ได้แนะนำชนิด `build:`, `chore:`,
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` และอื่น ๆ
+1. _ข้อความลงท้าย_ ที่นอกเหนือจาก `BREAKING CHANGE: <รายละเอียด>` สามารถใช้ได้ และเขียนตามข้อตกลงเดียวกันกับ
+  [git trailer format](https://git-scm.com/docs/git-interpret-trailers)
 
-Additional types are not mandated by the Conventional Commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE).
+ชนิดอื่น ๆ เพิ่มเติมไม่ได้อยู่ในขอบเขตตามข้อกำหนดของข้อตกลงในการ Commits นี้ และไม่ได้มีผลกระทบอะไรใน semantic versioning (ถ้าไม่ได้ระบุใน BREAKING CHANGE)
 <br /><br />
-A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
+ขอบเขตอาจจะถูกระบุไปกับชนิดของ commit เพื่อบอกข้อมูลของบริบทเพิ่มเติม โดยจะระบุอยู่ในเครื่องหมายวงเล็บ เช่น `feat(parser): add ability to parse arrays`
 
-## Examples
+## ตัวอย่าง
 
-### Commit message with description and breaking change footer
+### ข้อความ commit ที่มีการระบุรายละเอียด และลงท้ายด้วย breaking change footer
 ```
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Commit message with `!` to draw attention to breaking change
+### ข้อความ commit ที่มี `!` เพื่อบ่งบอก breaking change
 ```
 refactor!: drop support for Node 6
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
+### ข้อความ commit ที่มีทั้ง `!` และ BREAKING CHANGE ลงท้าย
 ```
 refactor!: drop support for Node 6
 
 BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 ```
 
-### Commit message with no body
+### ข้อความ commit ที่ไม่มีเนื้อหา
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### Commit message with scope
+### ข้อความ commit ที่ระบุขอบเขต
 ```
 feat(lang): add polish language
 ```
 
-### Commit message with multi-paragraph body and multiple footers
+### ข้อความ commit ที่มีเนื้อหาหลายย่อหน้า และมีข้อความลงท้ายหลายข้อความ
 ```
 fix: correct minor typos in code
 
@@ -86,9 +85,9 @@ Reviewed-by: Z
 Refs #133
 ```
 
-## Specification
+## ข้อกำหนด
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+คำสำคัญ “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, และ “OPTIONAL” ในเอกสารฉบับนี้จะถูกแปลตามที่อธิบายไว้ใน [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)
 
 1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
   by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
