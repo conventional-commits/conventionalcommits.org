@@ -187,11 +187,11 @@ revert: let us never again speak of the noodle incident
 Refs: 676104e, a215868
 ```
 
-## About
+## เกี่ยวกับ
 
-The Conventional Commits specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
+ข้อกำหนดของ The Conventional Commits ได้รับแรงบันดาลใจ และอ้างอิงมาจาก [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
-The first draft of this specification has been written in collaboration with some of the folks contributing to:
+แบบร่างฉบับแรกของข้อกำหนดนี้ถูกเขียนขึ้นโดยความร่วมมือของกลุ่มคนที่มีส่วนร่วมในโปรเจกต์เหล่านี้
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing Conventional Commits messages from git histories.
 * [parse-commit-message](https://npmjs.com/package/parse-commit-message): Extensible utilities for parsing, stringify and validating Conventional Commit messages.
@@ -199,7 +199,7 @@ The first draft of this specification has been written in collaboration with som
 * [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
 
-## Tooling for Conventional Commits
+## เครื่องมือสำหรับ Conventional Commits
 
 * [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically
 * [commitizen/cz-cli](https://github.com/commitizen/cz-cli): A Node.js tool to create commit messages following the Conventional Commits specs.
@@ -221,7 +221,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): Add Conventional Commits supports for VSCode.
 * [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
 
-## Projects Using Conventional Commits
+## โปรเจกต์ที่ใช้ Conventional Commits
 
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools and libraries for adding test coverage to your JavaScript tests.
@@ -243,4 +243,4 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-_want your project on this list?_ [send a pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
+_ต้องการเพิ่มโปรเจกต์ของคุณลงในรายชื่อนี้?_ [ส่ง pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
