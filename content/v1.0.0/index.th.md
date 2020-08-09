@@ -190,12 +190,11 @@ Refs: 676104e, a215868
 
 ## เครื่องมือสำหรับ Conventional Commits
 
-* [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically
-* [commitizen/cz-cli](https://github.com/commitizen/cz-cli): A Node.js tool to create commit messages following the Conventional Commits specs.
-* [commitizen-tools/commitizen](https://github.com/commitizen-tools/commitizen): A tool written in Python to create commiting rules for projects, auto bump versions and auto changelog generation.
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): A PHP tool built to create commit messages following the Conventional Commits specs.
-Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
-* [commitlint](https://github.com/conventional-changelog/commitlint): A linter to check that your commit messages meet the Conventional Commits format.
+* [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): สอดคล้องกับข้อกำหนดในการจัดการเวอร์ชั่น และสร้างบันทึกการเปลี่ยนแปลงโดยอัตโนมัติ
+* [commitizen/cz-cli](https://github.com/commitizen/cz-cli): เครื่องมือสำหรับ Node.js เพื่อใช้สร้างข้อความ commit ที่สอดคล้องตามข้อกำหนดของข้อตกลงในการ commit
+* [commitizen-tools/commitizen](https://github.com/commitizen-tools/commitizen): เครื่องมือที่เขียนด้วยภาษาไพธอนในการสร้างกฏในการ commit สำหรับโปรเจ็กต์ และช่วยปรับเลขเวอร์ชั่น และสร้างบันทึกการเปลี่ยนแปลงโดยอัตโนมัติ
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): เครื่องมือสำหรับภาษา PHP เพื่อใช้สร้างข้อความ messages ที่สอดคล้องตามข้อกำหนดของข้อตกลงในการ commit โดยที่สามารถปรับแต่ง และใช้เป็น depedency ของ composer สำหรับโปรเจ็กต์ PHP หรือใช้โดยทั่วไปสำหรับโปรเจ็กต์ที่ไม่ใช่ PHP
+* [commitlint](https://github.com/conventional-changelog/commitlint): ตัวตรวจสอบที่จะตรวจสอบว่าข้อความ commit ของคุณสอดคล้องกับรูปแบบของข้อตกลงในการ commit หรือไม่
 * [gitlint](https://github.com/jorisroovers/gitlint): Git commit message linter written in Python, which can be configured to [enforce Conventional Commits format](https://jorisroovers.com/gitlint/contrib_rules/#ct1-contrib-title-conventional-commits).
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including Conventional Commits.
 * [detect-next-version](https://npmjs.com/package/detect-next-version): Parse, detect and get more metadata about given Conventional Commits.
