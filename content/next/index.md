@@ -211,6 +211,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [ngx-semantic-version](https://github.com/d-koppenhagen/ngx-semantic-version): Automate your Angular app commit- and release-workflow by integrating _commitizen_, _commitlint_, _husky_ and _standard-version_ in your project and configuring it for using _Conventional Commits_.
 * [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
 * [commitizen-tools/commitizen](https://github.com/commitizen-tools/commitizen): A Python tool built to create committing rules for projects (default: conventional commit), bump project versions, and generate changelog. Configurable and usable for both Python and non-Python project. It's highly extensible through Python.
+* [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply semantic versioning to git repositories based on _Conventional Commits_.
 
 ## Projects Using Conventional Commits
 

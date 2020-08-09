@@ -221,6 +221,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [python-semantic-release](https://github.com/relekang/python-semantic-release): Automatic semantic versioning for Python projects. This is a Python implementation of the [semantic-release](https://github.com/semantic-release/semantic-release) for Node.js.
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): Add Conventional Commits supports for VSCode.
 * [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
+* [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply semantic versioning to git repositories based on _Conventional Commits_.
 
 ## Projects Using Conventional Commits
 
