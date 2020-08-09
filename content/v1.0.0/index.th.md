@@ -119,58 +119,56 @@ _BREAKING CHANGE: environment variables now take precedence over config files_
 
 ## คำถามที่พบบ่อย
 
-### How should I deal with commit messages in the initial development phase?
+### ฉันจะจัดการกับข้อความ commit ในช่วงเริ่มต้นของการพัฒนาได้อย่างไร?
 
-We recommend that you proceed as if you've already released the product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+เราแนะนำให้คุณทำเหมือนกับคุณได้ปล่อยผลิตภัณฑ์ของคุณออกสู่ตลาดแล้ว โดยปกติ *บางคน* ถึงแม้จะหมายถึงเพื่อนร่วมทีมพัฒนาซอฟต์แวร์ของคุณก็ตาม มาใช้ซอฟต์แวร์ของคุณ เขาก็อยากที่จะรู้ว่าส่วนไหนถูกแก้ไขแล้ว ส่วนไหนที่มีการเปลี่ยนแปลง และรายละเอียดส่วนอื่น ๆ
 
-### Are the types in the commit title uppercase or lowercase?
+### ชนิดของ commit ควรจะเป็นตัวใหญ่ หรือตัวเล็ก?
 
-Any casing may be used, but it's best to be consistent.
+จะเป็นตัวใหญ่หรือตัวเล็กก็ได้ แต่มันจะเยี่ยมมากถ้ามันสอดคล้องกันทั้งหมด
 
-### What do I do if the commit conforms to more than one of the commit types?
+### ฉันควรจะทำอย่างไรถ้า commit นั้นเป็นไปได้มากกว่าหนึ่งชนิด​?
 
-Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
+กลับไปแก้ไขและพยายามแบ่งออกให้เป็นหลาย commit เท่าที่จะเป็นไปได้ ประโยชน์ส่วนหนึ่งของ Conventional Commits คือการที่มันช่วยให้เราสามารถจัดการกับ commit และ PR ได้ดีกว่าเดิม
 
-### Doesn’t this discourage rapid development and fast iteration?
+### นี่มันจะไม่ทำให้การพัฒนาและรอบการทำงานช้าลงกว่าเดิมหรือ?
 
-It discourages moving fast in a disorganized way. It helps you be able to move fast long term across multiple projects with varied contributors.
+มันทำให้การทำงานแบบไม่มีการจัดการช้าลง แต่มันจะช่วยให้คุณทำงานได้เร็วขึ้นในระยะยาวกับหลาย ๆ โปรเจกต์ที่มีส่วนร่วมจากหลาย ๆ คน
 
-### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
+### Conventional Commits จะทำให้นักพัฒนาจำกัดจำนวนของชนิดที่พวกเขาทำเพราะจะทำให้พวกเขาติดอยู่กับชนิดที่มีอยู่หรือไม่?
 
-Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Conventional Commits สนับสนุนเราให้สามารถสร้างชนิดได้มากกว่านั้น เช่น fixes นอกจากนั้นแล้ว ความยืดหยุ่นของ Conventional Commits ยังอนุญาตให้ทีมของคุณสร้างชนิดของพวกเขาขึ้นมาเอง และปรับเปลี่ยนมันได้ตลอดเวลาอีกด้วย
 
-### How does this relate to SemVer?
+### นี่เกี่ยวข้องกับ SemVer อย่างไร?
 
-`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
+commit ที่มีชนิดเป็น `fix` จะถูกมองเป็น `PATCH` ใน release ส่วน commit ชนิดที่เป็น `feat` จะถูกมองเป็น `MINOR` release และ commits ที่เป็น `BREAKING CHANGE` ไม่ว่าจะเป็นชนิดใดก็ตาม จะถูกมองเป็น `MAJOR` release
 
-### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
+### ฉันควรจะใส่เวอร์ชั่นของส่วนขยายให้กับข้อกำหนดของข้อตกลงในการ commit อย่างไร เช่น `@jameswomack/conventional-commit-spec`?
 
-We recommend using SemVer to release your own extensions to this specification (and
-encourage you to make these extensions!)
+เราแนะนำให้ใช้ SemVer ในการที่จะปล่อยส่วนขยายของคุณให้กับข้อกำหนดนี้ (และสนับสนุนให้คุณสร้างส่วนขยายนี้ด้วย!)
 
-### What do I do if I accidentally use the wrong commit type?
+### ฉันจะทำอย่างไรถ้าฉันใส่ชนิดของ commit ผิดโดยไม่ได้ตั้งใจ?
 
-#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+#### เมื่อคุณใช้ชนิดที่เป็นส่วนหนึ่งในข้อตกลง แต่ผิดชนิด เช่น ใช้ `fix` แทนที่จะเป็น `feat`
 
-Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
+ก่อนที่จะรวม หรือปล่อยความผิดนั้นออกสู่ตลาด เราแนะนำให้ใช้ `git rebase -i` เพื่อแก้ไขข้อความใน commit ย้อนหลัง แต่ถ้าทำหลังจากที่ปล่อยสู่ตลาดไปแล้ว การแก้ไขจะแตกต่างกันไปขึ้นอยู่กับเครื่องมือและวิธีการที่คุณใช้
 
-#### When you used a type *not* of the spec, e.g. `feet` instead of `feat`
+#### เมื่อคุณใช้ชนิดที่ *ไม่ได้* เป็นส่วนหนึ่งในข้อตกลง เช่น ใช้ `feet` แทนที่จะเป็น `feat`
 
-In a worst case scenario, it's not the end of the world if a commit lands that does not meet the Conventional Commits specification. It simply means that commit will be missed by tools that are based on the spec.
+ในสถานการณ์ที่แย่ที่สุด มันไม่ใช่วันสิ้นโลกถ้าคุณจะใส่ commit ที่ไม่สอดคล้องกับข้อกำหนดของข้อตกลงในการ commit มันมีความหมายง่าย ๆ คือ commit นั้นจะถูกมองข้ามไปถ้าใช้เครื่องมือที่อ้างอิงตามข้อกำหนดนี้เท่านั้นเอง
 
-### Do all my contributors need to use the Conventional Commits specification?
+### คนที่มีส่วนร่วมในโปรเจกต์ทั้งหมดจะต้องใช้ข้อกำหนดของข้อตกลงในการ commit นี้หรือไม่?
 
-No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
-A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
+ไม่! ถ้าคุณใช้ลำดับการทำงานแบบที่ต้องยุบรวม commit บน Git คนที่เป็นผู้ดูแลจะสามารถจัดการกับข้อความ commit ในขณะที่รวม commit เข้ามาโดยที่ไม่เป็นภาระกับผู้ที่ไม่ค่อยได้ commit
+ลำดับการทำงานโดยทั่วไปสำหรับแบบนี้คือต้องทำให้ระบบ git ของคุณทำการยุบรวม commit ที่มาจาก pull request โดยอัตโนมัติ และแนะนำฟอร์มให้กับผู้ดูแลเพื่อใส่ข้อความ commit ที่เหมาะสมในการรวม commit เข้ามา
 
-### How does Conventional Commits handle revert commits?
+### Conventional Commits จะจัดการกับการย้อนกลับ commit ได้อย่างไร?
 
-Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release instead be a patch?
+การย้อนกลับโค้ดอาจจะซับซ้อนได้: คุณกำลังย้อนกลับหลาย ๆ commit หรือไม่? ถ้าคุณกำลังย้อนกลับฟีเจอร์ ในการปล่อยซอฟต์แวร์สู่ตลาดครั้งถัดไปจะกลายเป็นเพียงการ patch หรือไม่?
 
-Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
-authors to use the flexility of _types_ and _footers_ to develop their logic for handling reverts.
+Conventional Commits ไม่ได้บอกถึงวิธีการอย่างชัดเจนว่าจะต้องทำอย่างไรเมื่อเกิดการย้อนกลับ แต่เราปล่อยให้เป็นการจัดการของนักพัฒนาเครื่องมือเป็นผู้ใช้ความยืดหยุ่นของ _ชนิด_ และ _ข้อความลงท้าย_ ในการพัฒนาตรรกะในการจัดการการย้อนกลับ
 
-One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
+คำแนะนำหนึ่งคือการใช้ชนิด `revert` และข้อความลงท้ายที่มีการอ้างถึงหมายเลข commit ที่จะถูกย้อนกลับ
 
 ```
 revert: let us never again speak of the noodle incident
