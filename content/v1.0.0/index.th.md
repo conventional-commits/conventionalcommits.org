@@ -182,11 +182,11 @@ Refs: 676104e, a215868
 
 แบบร่างฉบับแรกของข้อกำหนดนี้ถูกเขียนขึ้นโดยความร่วมมือของกลุ่มคนที่มีส่วนร่วมในโปรเจกต์เหล่านี้
 
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing Conventional Commits messages from git histories.
-* [parse-commit-message](https://npmjs.com/package/parse-commit-message): Extensible utilities for parsing, stringify and validating Conventional Commit messages.
-* [bumped](https://bumped.github.io): a tool for releasing software that makes it easy to perform actions before and after releasing a new version of your software.
-* [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
-* [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
+* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): ชุดของเครื่องมือที่จะใช้อ่านข้อความ commit ที่สอดคล้องตามข้อตกลงจากประวัติใน git
+* [parse-commit-message](https://npmjs.com/package/parse-commit-message): เครื่องมือที่สามารถสร้างส่วนต่อขยายสำหรับในการอ่าน แปลงให้เป็นข้อความ และตรวจสอบความถูกต้องสำหรับข้อความ commit ที่สอดคล้องตามข้อตกลง
+* [bumped](https://bumped.github.io): เครื่องมือที่ใช้ในการปล่อยซอฟต์แวร์ออกสู่ตลาดที่ช่วยให้ทำกิจกรรมบางอย่างก่อนและหลังการปล่อยซอฟต์แวร์เวอร์ชั่นใหม่ออกไป
+* [unleash](https://github.com/netflix/unleash): เครื่องมือที่จะช่วยในการจัดการวัฏจักรการปล่อยซอฟต์แวร์และเผยแพร่อย่างอัตโนมัติ
+* [lerna](https://github.com/lerna/lerna): เครื่องมือในการจัดการซอฟต์แวร์ที่เป็นแบบ monorepo ซึ่งต่อยอดมาจากโปรเจ็กต์ Babel
 
 ## เครื่องมือสำหรับ Conventional Commits
 
