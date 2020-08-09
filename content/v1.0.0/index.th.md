@@ -89,44 +89,35 @@ Refs #133
 
 คำสำคัญ “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, และ “OPTIONAL” ในเอกสารฉบับนี้จะถูกแปลตามที่อธิบายไว้ใน [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)
 
-1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-  by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
-1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
-1. The type `fix` MUST be used when a commit represents a bug fix for your application.
-1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
-  section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
-1. A description MUST immediately follow the colon and space after the type/scope prefix.
-The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
-1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
-1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
-1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
- a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
-  [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
-1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
-  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
-1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
-  token/separator pair is observed.
-1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
-  footer.
-1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
-_BREAKING CHANGE: environment variables now take precedence over config files_.
-1. If included in the type/scope prefix, breaking changes MUST be indicated by a
-  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
-  and the commit description SHALL be used to describe the breaking change.
-1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
-1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+1. ข้อความ commit จะต้องขึ้นต้นด้วย ชนิด ซึ่งประกอบด้วยคำนาม `feat`, `fix`, ฯลฯ และตามด้วยขอบเขตซึ่งอาจจะละไว้ได้ และตามด้วย `!` ซึ่งอาจจะละไว้ได้ และเครื่องหมายโคล่อน (:) และเว้นวรรค
+2. ชนิด `feat` จะถูกใช้เมื่อใน commit นั้นมีการเพ่ิมฟีเจอร์ใหม่เข้าไปในแอพพลิเคชั่น หรือไลบรารี่ของคุณ
+3. ชนิด `fix` จะถูกใช้เมื่อ commit นั้นเป็นการแก้ไขบักสำหรับแอพพลิเคชั่นของคุณ
+4. ขอบเขตอาจจะถูกเขียนหลังจากชนิด โดยขอบเขตจะต้องอธิบายได้ถูกส่วนของโค้ด และอยู่ภายใต้วงเล็บ เช่น `fix(parser):`
+5. คำอธิบายจะต้องอยู่ต่อจากเครื่องหมายโคล่อนและเว้นวรรคที่อยู่หลังจากชนิดและขอบเขตในตอนแรกทันที
+คำอธิบายจะเป็นข้อความสรุปอย่างสั้นสำหรับการเปลี่ยนแปลงของโค้ด เช่น _fix: array parsing issue when multiple spaces were contained in string_
+1. เนื้อหา commit ที่ยาวกว่าสามารถใส่เพิ่มหลังจากข้อความ commit แบบสั้นแล้วได้ โดยให้ใส่ข้อมูลในบริบทเพิ่มเติมที่เกี่ยวข้องกับความเปลี่ยนแปลงของโค้ด โดยเนื้อหานี้จะต้องเริ่มด้วยการเว้นบรรทัดว่างหนึ่งบรรทัดหลังจากรายละเอียดของ commit ในบรรทัดแรก
+2. เนื้อหา commit ใส่ได้ตามอิสระ และอาจจะมีหลายย่อหน้าก็ได้
+3. ข้อความลงท้ายอาจจะมีมากกว่าหนึ่ง และจะต้องอยู่หลังจากเนื้อหาโดยการเว้นบรรทัดว่างหนึ่งบรรทัด โดยข้อความลงท้ายแต่ละข้อความจะต้องประกอบด้วย กลุ่มคำ และตามด้วย `:<เว้นวรรค>` หรือ `<เว้นวรรค>#` เป็นตัวคั่น และตามด้วยข้อความ (ส่วนนี้ได้แรงบันดาลใจมาจาก
+  [git trailer convention](https://git-scm.com/docs/git-interpret-trailers))
+4. กลุ่มคำในข้อความลงท้ายจะต้องใช้ `-` แทนช่องว่าง เช่น `Acked-by` (ซึ่งจะช่วยแยกแยะส่วนที่เป็นข้อความลงท้ายกับเนื้อหาที่มีหลายย่อหน้าออกจากกัน) ข้อยกเว้นเดียวคือ `BREAKING CHANGE` ซึ่งอาจจะถูกใช้เป็นกลุ่มคำได้เช่นกัน
+5. ข้อความในข้อความลงท้ายอาจจะมีเว้นวรรค และมีการขึ้นบรรทัดใหม่ก็ได้ การอ่านข้อความลงท้ายหนึ่งข้อความจะสิ้นสุดเมื่อเจอกลุ่มคำและตัวคั่นในข้อความลงท้ายถัดไป
+6. การเปลี่ยนแปลงที่มีผลกระทบจะต้องมีการบ่งชี้ให้เห็นในส่วนของชนิด หรือขอบเขตในตอนต้น หรือเป็นส่วนหนึ่งของข้อความลงท้าย
+7. ถ้าการเปลี่ยนแปลงที่มีผลกระทบเป็นส่วนหนึ่งของข้อความลงท้าย การเปลี่ยนแปลงนั้นจะต้องขึ้นต้นด้วยคำว่า BREAKING CHANGE (ตัวอักษรตัวใหญ่ทั้งหมด) และตามด้วยเครื่องหมายโคลอน `:` เว้นวรรค และรายละเอียด เช่น
+_BREAKING CHANGE: environment variables now take precedence over config files_
+1. ถ้าการเปลี่ยนแปลงที่มีผลกระทบเป็นส่วนหนึ่งของชนิดหรือขอบเขตในตอนต้น จะต้องใส่ `!` ต่อท้ายทันที ก่อนเครื่องหมายโคลอน `:` และเมื่อใช้ `!` อาจจะไม่ต้องใส่ `BREAKING CHANGE:` ในข้อความลงท้ายก็ได้ และรายละเอียดของ commit จะถูกใช้เพื่ออธิบายถึงสิ่งที่กระทบนั้น ๆ
+2. ชนิดของ commit อื่น ๆ นอกเหนือจาก `feat` และ `fix` อาจจะถูกใช้ในข้อความ commit ได้ เช่น _docs: updated ref docs._
+3. ส่วนประกอบอื่น ๆ ใน Conventional Commits จะไม่ไม่ให้ความสำคัญกับตัวอักษรใหญ่หรือเล็ก ยกเว้นแต่คำว่า BREAKING CHANGE ซึ่งจะต้องเป็นตัวใหญ่เสมอ
+4. BREAKING-CHANGE จะมีความหมายเดียวกันกับ BREAKING CHANGE เมื่อถูกใช้เป็นกลุ่มคำในข้อความลงท้าย
 
-## Why Use Conventional Commits
+## ทำไมถึงควรใช้ Conventional Commits
 
-* Automatically generating CHANGELOGs.
-* Automatically determining a semantic version bump (based on the types of commits landed).
-* Communicating the nature of changes to teammates, the public, and other stakeholders.
-* Triggering build and publish processes.
-* Making it easier for people to contribute to your projects, by allowing them to explore
-  a more structured commit history.
+* ใช้ในการสร้าง CHANGELOG โดยอัตโนมัติ
+* ใช้ช่วยในการตัดสินใจในการปรับเวอร์ชั่นตาม semantic version โดยอัตโนมัติ (โดยดูจากชนิดของ commit ที่บันทึก)
+* ใช้สื่อสารถึงธรรมชาติของการเปลี่ยนแปลงให้กับเพื่อนร่วมทีม สาธารณะ และผู้ที่เกี่ยวข้องอื่น ๆ
+* ใช้เริ่มกระบวนการ build และการเผยแพร่
+* ช่วยให้ผู้ที่จะมีส่วนร่วมในโปรเจกต์ทำงานได้ง่ายขึ้นโดยช่วยให้พวกเขาสามารถดูข้อความ commit ย้อนหลังแบบมีโครงสร้างได้
 
-## FAQ
+## คำถามที่พบบ่อย
 
 ### How should I deal with commit messages in the initial development phase?
 
