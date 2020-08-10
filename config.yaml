@@ -272,3 +272,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  th:
+    weight: 2
+    languageName: "ไทย"
+    title: Conventional Commits
+    description: ข้อกำหนดในการทำให้มนุษย์และเครื่องจักรเข้าใจความหมายของข้อความ commit
+    actions:
+    - label: ข้อสรุปอย่างเร็ว
+      url: '#ข้อสรุป'
+    - label: ข้อกำหนดฉบับเต็ม
+      url: '#ข้อกำหนด'
+    - label: มีส่วนร่วม
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
