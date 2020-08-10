@@ -201,7 +201,7 @@ Refs: 676104e, a215868
 * [recommended-bump](https://www.npmjs.com/package/recommended-bump): ช่วยคำนวณเลขเวอร์ชั่นโดยอ้างอิงจาก Conventional Commits
 * [git-commits-since](https://www.npmjs.com/package/git-commits-since): ดึงข้อความ commit แบบดิบจากช่วงเวลาหรือจาก tag ใน git ที่อยู่ในรูปแบบ SemVer (โดยปริยาย) และรองรับปลักอิน
 * [standard-version](https://github.com/conventional-changelog/standard-version): ช่วยกำหนดเลขเวอร์ชั่นให้โดยอัตโนมัติ และจัดการ CHANGELOG โดยใช้ปุ่มยุบรวม commit (squash) ใหม่ใน GitHub และลำดับการทำงานแบบที่สอดคล้องกับ Conventional Commits
-* [Conventional Commit](https://github.com/lppedd/idea-conventional-commit): provides extensible context and template-based completion, and inspections, for Conventional Commits inside the VCS Commit dialog. Available for all [JetBrains IDEs](https://www.jetbrains.com/).
+* [Conventional Commit](https://github.com/lppedd/idea-conventional-commit): จัดเตรียมรูปแบบสำหรับการสร้าง และตรวจสอบ Conventional Commits ที่สามารถเพิ่มเติมได้ภายใต้หน้าจอ ทุกคนสามารถเข้าใช้งานได้ผ่าน [JetBrains IDEs](https://www.jetbrains.com/).
 * [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): เพิ่มการสนับสนุนการใช้ Conventional Commits ในโปรแกรม [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
 * [commitsar](https://github.com/commitsar-app/commitsar): เครื่องมือสำหรับภาษาโกในการตรวจสอบว่ามี branch ไหนใน git สอดคล้องกับ Conventional Commits หรือไม่ มาพร้อมกับ Docker image สำหรับการใช้งาน CI
 * [semantic-release](https://github.com/semantic-release/semantic-release): เครื่องมือที่ช่วยในการจัดการลำดับทั้งหมดในการรีลีสแพ็กเกจแบบอัตโนมัติ รวมไปถึงการกำหนดเลขเวอร์ชั่นถัดไป การสร้างบันทึกในการรีลีส และการปล่อยแพ็คเกจสู่สาธารณะ
