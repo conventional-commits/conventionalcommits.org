@@ -44,7 +44,7 @@ aliases: ["/th/"]
 
 ## ตัวอย่าง
 
-### ข้อความ commit ที่มีการระบุรายละเอียด และลงท้ายด้วย breaking change footer
+### ข้อความ commit ที่มีการระบุรายละเอียด และลงท้ายด้วย breaking change ในข้อความลงท้าย
 ```
 feat: allow provided config object to extend other configs
 
