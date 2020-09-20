@@ -222,6 +222,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): Add Conventional Commits supports for VSCode.
 * [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
 * [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply semantic versioning to git repositories based on _Conventional Commits_.
+* [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling/language agnostic utility to calculate the next Semantic Versioning based upon the _Conventional Commits_ Git commit messages since the last version.
 
 ## Projects Using Conventional Commits
 
