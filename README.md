@@ -12,7 +12,7 @@ We use [HUGO](https://gohugo.io/) as static site generator, so we use the [direc
 
 * `./content`: contains all the versions of the specification.
 * `./content/next/`: contains the version of the specification (where all the changes SHOULD be made).
-* `./content/**/index[.lang].md`: contains the content of the specification, if a language is specified it's a translation.
+* `./content/**/index.[lang].md`: contains the content of the specification, if a language is specified it's a translation.
 
 ## Contributing
 
@@ -22,7 +22,7 @@ to send a pull request.
 
 ### Adding a translation
 
-1. Create a new file in `./content/version/index.{lang}.md` using the hugo command `hugo new {version}/index.{lang}.md`.
+1. Create a new file in `./content/version/index.[lang].md` using the hugo command `hugo new [version]/index.[lang].md`.
 1. Ensure all files have the appropriate fields required (see others as an example)..
 1. Add the language to the `config.yaml` file (see others as an example).
 
@@ -43,9 +43,9 @@ Tell your users that you use the Conventional Commits specification:
 
 ## Thank you
 
-To ***[Lorenzo D'Ianni](https://github.com/lorenzodianni)*** for the great effort creating the CSS and the HTML for the new UI.
+To **[Lorenzo D'Ianni](https://github.com/lorenzodianni)** for the great effort creating the CSS and the HTML for the new UI.
 
-To [Netlify](https://www.netlify.com/) to host our project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
+To **[Netlify](https://www.netlify.com/)** to host our project, giving us a lot of [amazing built in functionality](https://www.netlify.com/features/) for free.
 
-To `semver.org`: we used [semver.org](https://github.com/mojombo/semver.org) as a blueprint for
+To **[semver.org](https://github.com/mojombo/semver.org)**: we used [semver.org](https://github.com/mojombo/semver.org) as a blueprint for
 the structure of this specification and the first version of the website.
