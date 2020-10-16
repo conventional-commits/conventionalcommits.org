@@ -52,6 +52,7 @@ The first draft of this specification has been written in collaboration with som
     * [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
     * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
     * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
+* [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 
 ## Projects Using Conventional Commits
 
