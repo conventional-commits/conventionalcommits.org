@@ -98,7 +98,7 @@ Refs #133
 1. 단절적 변경은 반드시 커밋의 타입/적용범위 접두어에 표시하거나 꼬리말에 기입되어야 합니다.
 1. 꼬리말로 포함된 경우 단절적 변경은 반드시 대문자 문자열 BREAKING CHANGE과 뒤따르는 콜론(:), 공백, 그리고 설명으로 구성되어야 합니다. 예를 들면 _BREAKING CHANGE: environment variables now take precedence over config files._
 1. 타입/범위 접두어에 포함된 경우, 단절적 변경은 반드시 `:` 바로 앞의 `!` 를 명시해야 합니다. 만약 `!` 가 사용되면, `BREAKING CHANGE:` 는 꼬리말 섹션에서 생략할 수 있으며, 커밋 설명은 단절적 변경을 설명하기 위해 사용되어야 합니다.
-1. `feat`와 `fix` 이외의 타입이 커멧 메세지에 사용될 수 있습니다. 예: _docs: updated ref docs._
+1. `feat`와 `fix` 이외의 타입이 커밋 메세지에 사용될 수 있습니다. 예: _docs: updated ref docs._
 1. Conventional Commit을 구성하는 정보의 단위는 반드시 대문자여야 하는 BREAKING CHANGES를 제외하고 구현자에 의해 대소문자를 구분하는 것으로 처리되어서는 안됩니다.
 1. BREAKING-CHANGE는 꼬리말에서 토큰으로 사용될 때 반드시 BREAKING CHANGE와 동의어야 합니다.
 
