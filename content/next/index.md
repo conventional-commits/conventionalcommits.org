@@ -200,6 +200,8 @@ The first draft of this specification has been written in collaboration with som
 
 ## Tooling for Conventional Commits
 
+* [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit14): go library for parsing comit messages following the specification.
+* [chglog](https://github.com/goreleaser/chglog): a tool for parsing Conventional Commits messages from git histories and turning them into templateable change logs.
 * [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically.
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs.
 Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
@@ -217,6 +219,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 
 ## Projects Using Conventional Commits
 
+* [NFPM](https://github.com/goreleaser/nfpm): NFPM is Not FPM - a simple deb, rpm and apk packager written in Go
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools and libraries for adding test coverage to your JavaScript tests.
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) and [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Optional supplemental user interface enhancing [Apereo uPortal](https://www.apereo.org/projects/uportal).
