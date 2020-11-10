@@ -222,6 +222,8 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): Add Conventional Commits supports for VSCode.
 * [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
 * [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply semantic versioning to git repositories based on _Conventional Commits_.
+* [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling/language agnostic utility to calculate the next Semantic Versioning based upon the _Conventional Commits_ Git commit messages since the last version.
+* [Turbogit](https://b4nst.github.io/turbogit) A command line tool to help you follow _Conventional Commits_ flow.
 
 ## Projects Using Conventional Commits
 
@@ -242,6 +244,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
 * [Tina CMS](https://tinacms.org): An open source toolkit for building front-end content-management into your website.
 * [Uno Platform](https://platform.uno): Build Mobile, Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.
+* [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
