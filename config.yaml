@@ -32,8 +32,9 @@ languages:
     - label: Contribute
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.4
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.4
       - v1.0.0-beta.3
       - v1.0.0-beta.2
@@ -53,8 +54,9 @@ languages:
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.4
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.4
       - v1.0.0-beta.3
       - v1.0.0-beta.2
@@ -162,8 +164,9 @@ languages:
       - label: GitHub
         url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.4
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.4
 
   fr:
@@ -177,8 +180,9 @@ languages:
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.2
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.2
 
   ko:
@@ -263,6 +267,23 @@ languages:
     - label: Spezifikation
       url: '#spezifikation'
     - label: Contribute
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
+
+  th:
+    weight: 2
+    languageName: "ไทย"
+    title: Conventional Commits
+    description: ข้อกำหนดในการทำให้มนุษย์และเครื่องจักรเข้าใจความหมายของข้อความ commit
+    actions:
+    - label: ข้อสรุปอย่างเร็ว
+      url: '#ข้อสรุป'
+    - label: ข้อกำหนดฉบับเต็ม
+      url: '#ข้อกำหนด'
+    - label: มีส่วนร่วม
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
       current: v1.0.0

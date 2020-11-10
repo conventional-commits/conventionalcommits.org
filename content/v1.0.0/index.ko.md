@@ -29,8 +29,8 @@ Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤
 
 1. **fix:** 코드베이스에서 버그를 패치하는 `fix` _타입_ 의 커밋 (이는 유의적 버전에서의 [`PATCH`](http://semver.org/#summary)와 관련이 있습니다).
 1. **feat:** 코드베이스에서 새 기능이 추가되는 `feat` _타입_ 의 커밋 (이는 유의적 버전에서의 [`MINOR`](http://semver.org/#summary)와 관련이 있습니다).
-1. **BREAKING CHANGE:** `BREAKING CHANGE:`이라는 꼬리말을 가지거나 타입/스코트 뒤에 !문자열을 붙인 커밋은 단절적 API 변경(breaking API change) 있다는 것을 의미합니다 (이는 유의적 버전에서의 [`MAJOR`](http://semver.org/#summary)와 관련이 있습니다). 어떤 커밋 타입이라도 BREAKING CHANGE는 해당 커밋의 일부가 될 수 있습니다.
-1. `fix:`와 `feat:` 이외의 다른 _타입_ 도 허용됩니다. 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `build:`, chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
+1. **BREAKING CHANGE:** `BREAKING CHANGE:`이라는 꼬리말을 가지거나 타입/스코프 뒤에 !문자열을 붙인 커밋은 단절적 API 변경(breaking API change) 있다는 것을 의미합니다 (이는 유의적 버전에서의 [`MAJOR`](http://semver.org/#summary)와 관련이 있습니다). 어떤 커밋 타입이라도 BREAKING CHANGE는 해당 커밋의 일부가 될 수 있습니다.
+1. `fix:`와 `feat:` 이외의 다른 _타입_ 도 허용됩니다. 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
 1. `BREAKING CHANGE:<description>` 이외의 _꼬리말_ 을 규정 할 수 있으며 다음과 비슷한 컨벤션을 따를 수 있습니다. [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 추가 타입들은 컨벤션 커밋 규격에 의해 의무화되지 않으며, 유의적 버전에 잠재적인 영향을 주지 않습니다(그것이 BREAKING CHANGE를 포함하지 않는 한).
@@ -98,7 +98,7 @@ Refs #133
 1. 단절적 변경은 반드시 커밋의 타입/적용범위 접두어에 표시하거나 꼬리말에 기입되어야 합니다.
 1. 꼬리말로 포함된 경우 단절적 변경은 반드시 대문자 문자열 BREAKING CHANGE과 뒤따르는 콜론(:), 공백, 그리고 설명으로 구성되어야 합니다. 예를 들면 _BREAKING CHANGE: environment variables now take precedence over config files._
 1. 타입/범위 접두어에 포함된 경우, 단절적 변경은 반드시 `:` 바로 앞의 `!` 를 명시해야 합니다. 만약 `!` 가 사용되면, `BREAKING CHANGE:` 는 꼬리말 섹션에서 생략할 수 있으며, 커밋 설명은 단절적 변경을 설명하기 위해 사용되어야 합니다.
-1. `feat`와 `fix` 이외의 타입이 커멧 메세지에 사용될 수 있습니다. 예: _docs: updated ref docs._
+1. `feat`와 `fix` 이외의 타입이 커밋 메세지에 사용될 수 있습니다. 예: _docs: updated ref docs._
 1. Conventional Commit을 구성하는 정보의 단위는 반드시 대문자여야 하는 BREAKING CHANGES를 제외하고 구현자에 의해 대소문자를 구분하는 것으로 처리되어서는 안됩니다.
 1. BREAKING-CHANGE는 꼬리말에서 토큰으로 사용될 때 반드시 BREAKING CHANGE와 동의어야 합니다.
 
@@ -155,11 +155,11 @@ SemVer를 사용해서 이 규격에 대한 사용자 자신의 확장판을 릴
 아니요! Git를 기반으로 스쿼시를 사용하는 경우, 리드 유지관리자는 커밋된 메시지를 병합할 때 정리할 수 있으므로 일반 커밋자에 작업량이 추가되지 않습니다.
 이에 대한 일반적인 작업 흐름은 Git 시스템이 자동으로 풀 요청에서 커밋되도록 하고 리드 유지관리자가 병합에 대한 적절한 Git 커밋 메시지를 입력할 수 있는 양식을 제시하도록 하는 것입니다.
 
-### Conventional Commits은 revert commits은 어떻게 다루어야 하나요?
+### Conventional Commits은 revert commits을 어떻게 다루어야 하나요?
 
 코드를 되돌리는 것은 복잡해질 수 있습니다: 여러 개의 커밋을 되돌리고 있는가요? 기능을 되돌리는 경우 패치가 아니라 다음 릴리즈여야 하는가요?
 
-Conventional Commits는 되돌리기 행동을 정의하기 위해 명확한 작업을 하지 않습니다. 툴 개발자에게 되돌리기를 다루는 로직 개발에 _타입_ 과 _꼬리말_의 유연함을 사용하도록 맡길 것입니다. 
+Conventional Commits는 되돌리기 행동을 정의하기 위해 명확한 작업을 하지 않습니다. 툴 개발자에게 되돌리기를 다루는 로직 개발에 _타입_ 과 _꼬리말_ 의 유연함을 사용하도록 맡길 것입니다. 
 
 한 가지 권장 사항은 `revert` 타입과 되돌려지는 커밋들의 SHA들을 참조하는 꼬리말를 사용하는 것입니다:
 
