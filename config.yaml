@@ -114,8 +114,9 @@ languages:
     - label: 貢獻
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.4
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.4
 
   es:
