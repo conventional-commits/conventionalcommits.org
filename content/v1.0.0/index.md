@@ -250,6 +250,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Belajarpython](https://github.com/belajarpythoncom/belajarpython.com) Open source Indonesian python programming tutorial site.
 * [Uno Platform](https://platform.uno): Build Mobile, Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.
 * [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
+* [dotenv-linter](https://github.com/dotenv-linter/dotenv-linter): ⚡️ Lightning-fast linter for `.env` files. Written in Rust 🦀
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
