@@ -1,11 +1,12 @@
 .idea
 .DS_Store
+
 package-lock.json
 
-themes/conventional-commits/static/css/index.css
-themes/conventional-commits/static/css/style.css
-themes/conventional-commits/static/css/style.min.css
-themes/conventional-commits/static/js/bundle.js
+static/css/index.css
+static/css/style.css
+static/css/style.min.css
+static/js/bundle.js
 
 # Logs
 logs
@@ -65,6 +66,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# next.js build output
-.next
