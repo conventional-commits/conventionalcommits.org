@@ -41,7 +41,7 @@ Zawiera się on w nawiasach następujących bezpośrednio po typie, np. `feat(pa
 ```
 feat: pozwól dostarczonemu obiektowi konfiguracyjnemu na rozszerzanie innych konfiguracji
 
-BREAKING CHANGE: klucz `extends` i pliku konfiguracyjnym jest teraz używany do rozszerzania innych konfiguracji
+BREAKING CHANGE: klucz `extends` w pliku konfiguracyjnym jest teraz używany do rozszerzania innych konfiguracji
 ```
 
 ### Commit bez ciała wiadomości
