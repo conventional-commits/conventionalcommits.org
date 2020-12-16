@@ -227,6 +227,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling/language agnostic utility to calculate the next Semantic Versioning based upon the _Conventional Commits_ Git commit messages since the last version.
 * [change](https://github.com/adamtabrams/change): A tool for generating and updating a changelog using Conventional Commits.
 * [Turbogit](https://b4nst.github.io/turbogit) A command line tool to help you follow _Conventional Commits_ flow.
+* [what-bump](https://github.com/sky-uk/what-bump): Zero-configuration utility to detect release type, calculate next version, and generate or update the changelog with customizable layouts.
 
 ## Projects Using Conventional Commits
 
