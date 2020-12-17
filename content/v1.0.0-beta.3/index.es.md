@@ -8,7 +8,7 @@ aliases: ["/es/"]
 ## Resumen
 
 La especificación de Commit Convencionales es una convención liviana que se aplica a los mensajes de los commits.
-Esta especificación proporciona un conjunto fácil de reglas para crear un historial de commits explícito;
+Esta especificación proporciona un conjunto fácil de reglas para crear un historial de commits explícito.
 Esta convención se ajusta a [SemVer](http://semver.org), al describir las características, correcciones y cambios que rompen la compatibilidad en los mensajes de los commits.
 
 El mensaje del commit debe estar estructurado de la siguiente forma:
@@ -182,7 +182,7 @@ Antes de combinar o liberar el error, recomendamos usar `git rebase -i` para
 editar el historial de los commits. Después de que se ha liberado, la limpieza
 será distinta de acuerdo con las herramientas y procesos que usted use.
 
-#### Cuando se usa un tipo que no está en la especificación, e.g. `feet` instead of `feat`
+#### Cuando se usa un tipo que no está en la especificación, e.g. `feet` en lugar de `feat`
 
 En el peor de los escenarios, no es el fin del mundo si aparece un commit que no
 cumple con las especificaciones de los commits convencionales. Simplemente, el
@@ -216,7 +216,7 @@ algunos de los colaboradores de:
 
 ## Herramientas para Commit Convencionales
 
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): una desarrollada para crear mensajes de confirmación según las especificaciones de Commits Convencionales.
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): una herramienta desarrollada para crear mensajes de confirmación según las especificaciones de Commits Convencionales.
   Configurable y usable en proyectos de PHP como una dependencia de composer o utilizable globalmente para proyectos no PHP.
 * [conform](https://github.com/autonomy/conform): una herramienta que se puede utilizar para aplicar políticas en los repositorios de git, incluidos los Commits Convencionales.
 
