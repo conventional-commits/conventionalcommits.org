@@ -173,6 +173,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
 * [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
 * [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
+* [enforce-githooks](https://github.com/Sulaiman-SM/enforce-githooks): A customizable program that helps you make a better git experience, it standardized your team git commits through the known conventions and adds emojies to your commit out of the box :heart_eyes:.
 
 ## Projects Using Conventional Commits
 
