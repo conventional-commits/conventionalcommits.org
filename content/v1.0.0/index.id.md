@@ -32,8 +32,8 @@ Komit berisi elemen struktural sebagai berikut, untuk menyampaikan maksud kepada
 1. **fix:** komit _tipe_ `fix` untuk perbaikan celah (bug) dalam kode anda (ini berkolerasi dengan [`PATCH`](http://semver.org/#summary) di semantic versioning).
 1. **feat:** komit _tipe_ `feat` memperkenalkan suatu fitur (feature) baru dalam kode anda (ini berkolerasi dengan [`MINOR`](http://semver.org/#summary) di semantic versioning).
 1. **BREAKING CHANGE:** komit yang berisi footer `BREAKING CHANGE:`, atau tambahkan `!` setelah type/scope, memperkenalkan perusakan perubahan API (ini berkolerasi dengan [`MAJOR`](http://semver.org/#summary) di semantic versioning). BREAKING CHANGE dapat menjadi bagian dari komit _type_ apapun.
-1. _types_ daripada `fix:` dan `feat:` diperbolehkan, sebagai contoh [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) direkomendasikan `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainya.
+1. _types_ daripada `fix` dan `feat` diperbolehkan, sebagai contoh [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) direkomendasikan `build`, `chore`,
+  `ci`, `docs`, `style`, `refactor`, `perf`, `test`, dan lainya.
 1. _footers_ daripada `BREAKING CHANGE: <description>` dapat disediakan dan mengikuti konvensi yang mirip dengan
   [format git trailer](https://git-scm.com/docs/git-interpret-trailers).
 

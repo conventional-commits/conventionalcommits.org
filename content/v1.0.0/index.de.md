@@ -33,8 +33,8 @@ Der Commit enthält die folgenden Strukturelemente, um den Benutzern Ihrer Bibli
 1. **feat:** ein Commit des _Typs_ `feat` führt eine neue Funktion in Ihrer Codebasis ein (dies entspricht einem [`MINOR`](http://semver.org/#summary) in semantischer Versionierung).
 1. **BREAKING CHANGE:** ein Commit mit `BREAKING CHANGE:` in der Fußzeile, oder einem angehängten `!` nach dem Typ/Gültigkeitsbereich, führt tiefgreifende Änderungen an der API ein (dies entspricht einem [`MAJOR`](http://semver.org/#summary) in semantischer Versionierung).
 Ein BREAKING CHANGE kann Teil eines Commits jeden _Typs_ sein.
-1. Andere _Typen_ als `fix:` und `feat:` sind erlaubt, z. B. erlaubt [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (basierend auf [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, und andere.
+1. Andere _Typen_ als `fix` und `feat` sind erlaubt, z. B. erlaubt [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (basierend auf [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) `build`, `chore`,
+  `ci`, `docs`, `style`, `refactor`, `perf`, `test`, und andere.
 1. Andere _Fußzeilen_ als `BREAKING CHANGE: <Beschreibung>` können angegeben werden und folgen der Konvention ähnlich zum [git Trailer Format](https://git-scm.com/docs/git-interpret-trailers).
 
 Zusätzliche Typen sind in der konventionellen Commit-Spezifikation nicht vorgeschrieben und haben keine impliziten Auswirkungen auf die semantische Versionierung (sofern sie keinen BREAKING CHANGE enthalten).

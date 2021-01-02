@@ -45,7 +45,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 1. **feat:** _型_ `feat` はコードベースに新しい機能を追加した場合です。(これはセマンティックバージョン管理における [`MINOR`](http://semver.org/#summary)に相当します)
 1. **BREAKING CHANGE:** _本文_ または _脚注_ に `BREAKING CHANGE:`が存在する、または _型_ 、 _範囲_ の直後に`!`が追加されているコミットは、APIの破壊的変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
 `BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
-1. `fix:` and `feat:` 以外の _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約] (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `build:`, `chore:`, `ci:`,`docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
+1. `fix` and `feat` 以外の _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約] (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `build`, `chore`, `ci`,`docs`, `style`, `refactor`, `perf`, `test`, などがあります。
 1. 次のような規則に従うことで、`BREAKING CHANGE: <説明>` 以外の _脚注_ を使うこともできます。 [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 追加された _型_ はconventional commitsで強制されているものではなく、セマンティックバージョン管理に暗黙的な影響も与えません。（それが、BREAKING CHANGEを含めない限り）

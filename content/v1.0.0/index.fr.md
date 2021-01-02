@@ -34,8 +34,8 @@ consommateurs de votre bibliothèque:
 1. **feat:** un commit de _type_ `feat` introduit une nouvelle fonctionnalité dans le code (cela est en corrélation avec [`MINOR`](http://semver.org/#summary) en versioning sémantique).
 1. **BREAKING CHANGE:** un commit qui a dans le pied de page le mot clef `BREAKING CHANGE:`, ou ajoute un `!` après le type/scope, introduit un changement cassant l'API (cela est en corrélation avec [`MAJOR`](http://semver.org/#summary) en versioning sémantique).
 Un BREAKING CHANGE peut faire partie des commits de n'importe quel _type_.
-1. Les _types_ autre que `fix:` et `feat:` sont autorisés, par exemple [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (basé sur [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommande `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, etc.
+1. Les _types_ autre que `fix` et `feat` sont autorisés, par exemple [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (basé sur [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommande `build`, `chore`,
+  `ci`, `docs`, `style`, `refactor`, `perf`, `test`, etc.
 1. Les _pieds de pages_ autre que `BREAKING CHANGE: <description>` peuvent être fourni et suivre une convention similaire à
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
