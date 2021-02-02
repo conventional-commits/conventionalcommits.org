@@ -55,6 +55,11 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 refactor!: drop support for Node 6
 ```
 
+### Pesan komit dengan scope dan `!` untuk menarik perhatian pada breaking change
+```
+refactor(runtime)!: drop support for Node 6
+```
+
 ### Pesan komit dengan keduanya `!` dan footer BREAKING CHANGE
 ```
 refactor!: drop support for Node 6
