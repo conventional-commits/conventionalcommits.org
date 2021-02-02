@@ -55,7 +55,7 @@ BREAKING CHANGE: a chave `extends`, no arquivo de configuração, agora é utili
 refactor!: remove suporte para Node 6
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
+### Mensagem de commit com rodapé `!` e BREAKING CHANGE
 
 ```
 refactor!: remove suporte para Node 6
