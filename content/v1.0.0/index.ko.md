@@ -189,6 +189,7 @@ Conventional Commits 규격은 [앵귤러 커밋 가이드라인](https://github
 * [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): [JetBrains 편집기](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...)에 _Conventional Commits_ 지원 추가.
 * [commitsar](https://github.com/commitsar-app/commitsar): 브랜치의 커밋이 Conventional Commit을 지켰는지 검사하는 Go 언어 도구. CI 용으로 Docker 이미지도 제공.
 * [semantic-release](https://github.com/semantic-release/semantic-release): 패키지 배포 워크플로우를 자동화해주는 툴. 다음 버전 번호 결정, 릴리즈 노트 생성, 패키지 배포 등의 자동화된 기능 포함.
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): 표준화 된 의미 커밋을 생성하기위한 실용적인 생성기입니다.
 
 ## Conventional Commits를 이용하고 있는 프로젝트
 

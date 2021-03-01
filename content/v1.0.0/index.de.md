@@ -193,6 +193,7 @@ Konfigurierbar und verwendbar für PHP-Projekte als Composer-Abhängigkeit oder 
 * [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Unterstützung für _konventionelle Commits_ für [JetBrains-Editoren](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
 * [commitsar](https://github.com/commitsar-app/commitsar): In Go geschriebenes Tool, um zu überprüfen, ob die Commits für einen Branch konventionellen Commits entsprechen. Kommt mit Docker-Image für CI-Anwendungen.
 * [semantic-release](https://github.com/semantic-release/semantic-release): Ein Tool, das den gesamten Workflow für die Paketfreigabe automatisiert, einschließlich: Ermitteln der nächsten Versionsnummer, Generieren der Versionshinweise und Veröffentlichen des Pakets.
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): Ein praktischer Generator zum Erstellen standardisierter semantischer Commits.
 
 ## Projekte, die konventionelle Commits benutzen
 

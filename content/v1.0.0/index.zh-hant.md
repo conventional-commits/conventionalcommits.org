@@ -203,6 +203,7 @@ Refs: 676104e, a215868
 * [commitsar](https://github.com/commitsar-app/commitsar): 用於確認分支上的提交是否符合約定式提交的 Go 工具。並提供 Docker 鏡像以供 CI 使用。
 * [semantic-release](https://github.com/semantic-release/semantic-release): 自動化整個軟體包的釋出流程，提供包含：判斷下一個版本編號、產生更新日誌以及發佈軟體包。
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): 為 VSCode 提供約定式提交支援。
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): 创建标准化语义提交的实用生成器。
 
 ## 使用約定式提交的專案
 

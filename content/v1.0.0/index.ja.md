@@ -225,6 +225,7 @@ composerに依存するPHPプロジェクトに対して設定、使用可能で
 * [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): [JetBrains Editors](https://www.jetbrains.com/)に_Conventional Commits_サポートを追加します。(IntelliJ IDEA, PyCharm, PhpStorm...).
 * [commitsar](https://github.com/commitsar-app/commitsar): ブランチのコミットがconventional commitに準拠しているかどうかを確認するためのGo言語で書かれたツール。 CI用のDockerイメージがあります。
 * [semantic-release](https://github.com/semantic-release/semantic-release): 次のバージョン番号の決定、リリースノートの生成、パッケージの公開など、パッケージリリースのワークフロー全体を自動化するツール。
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): 標準化されたセマンティックコミットを作成するための実用的なジェネレーター。
 
 ## Conventional Commitsを利用しているプロジェクト
 

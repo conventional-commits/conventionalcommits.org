@@ -198,6 +198,7 @@ Dapat dikonfigurasi dan digunakan untuk proyek PHP sebagai dependensi komposer a
 * [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Menambahkan _Conventional Commits_ support untuk [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
 * [commitsar](https://github.com/commitsar-app/commitsar): Alat go (golang) untuk pengecekan jika komit dalam branch patuh pada conventional commit. Dilengkapi dengan docker image untuk kebutuhan CI.
 * [semantic-release](https://github.com/semantic-release/semantic-release): Alat yang mengotomatiskan seluruh alur kerja rilis paket termasuk: menentukan nomor versi berikutnya, menghasilkan catatan rilis dan menerbitkan paket.
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): Generator praktis untuk membuat komitmen semantik standar.
 
 ## Proyek Menggunakan Conventional Commits
 

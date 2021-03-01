@@ -208,6 +208,7 @@ Refs: 676104e, a215868
 * [python-semantic-release](https://github.com/relekang/python-semantic-release): ตัวช่วยกำหนดเลขเวอร์ชั่นแบบ SemVer สำหรับโปรเจกต์ของภาษาไพธอน ส่วนนี่เป็นการพัฒนาด้วยภาษาไพธอนสำหรับ [semantic-release](https://github.com/semantic-release/semantic-release) Node.js
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): เพิ่มการสนับสนุนการใช้ Conventional Commits ลงใน VSCode
 * [Pyhist](https://github.com/jgoodman8/pyhist): เครื่องมือสำหรับภาษาไพธอนในการปรับค่าเวอร์ชั่นจากข้อมูลย้อนหลังใน git และช่วยสร้างบันทึกการเปลี่ยนแปลง
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): เครื่องกำเนิดไฟฟ้าที่ใช้งานได้จริงสำหรับการสร้างข้อตกลงเชิงความหมายที่เป็นมาตรฐาน
 
 ## โปรเจกต์ที่ใช้ Conventional Commits
 

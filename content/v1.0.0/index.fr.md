@@ -203,6 +203,7 @@ Configurable et utilisable pour les projets PHP en tant que dépendance composer
 * [commitsar](https://github.com/commitsar-app/commitsar): Outil pour Go pour vérifier si les commits sur la branche sont conformes à Conventional Commits. Livré avec l'image Docker pour les utilisations de CI.
 * [semantic-release](https://github.com/semantic-release/semantic-release): Un outil qui automatise l'intégralité du workflow de publication du package, notamment: déterminer le numéro de version suivant, générer les notes de publication et publier le package.
 * [Turbogit](https://b4nst.github.io/turbogit) Un outils en ligne de commande pour vous aider a respecter _Conventional Commits_.
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): Un générateur pratique pour créer des commits sémantiques standardisés.
 
 ## Projets Utilisant Conventional Commits
 

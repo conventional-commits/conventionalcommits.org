@@ -198,6 +198,7 @@ Bu şartnamenin ilk taslağı aşağıdakilere katkıda bulunan bazı kişilerle
 - [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template) : [JetBrains Editörlerine](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm ...) Conventional Commits desteği ekleyin.
 - [commitsar](https://github.com/commitsar-app/commitsar): Yapılan commit'lerin Conventional Commits uyumlu olup olmadığını kontrol etmek için kullanılabilecek Go ile yazılmış bir araç. CI kullanımları için Docker image ile birlikte gelir.
 - [semantic-release](https://github.com/semantic-release/semantic-release) : Bir sonraki sürüm numarasının belirlenmesi, sürüm notlarının oluşturulması ve paketin yayınlanması dahil olmak üzere tüm paket sürümü iş akışını otomatikleştiren bir araç.
+- [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): Standartlaştırılmış anlamsal taahhütler oluşturmak için pratik bir jeneratör.
 
 ## Conventional Commits Kullanan Projeler
 
