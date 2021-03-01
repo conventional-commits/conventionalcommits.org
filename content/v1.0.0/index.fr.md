@@ -220,6 +220,7 @@ Configurable et utilisable pour les projets PHP en tant que dépendance composer
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 Un modèle pour créer facilement et rapidement son CV en ligne.
 * [Formulaires Nintex](https://www.nintex.fr/plateforme-de-processus/#forms): Créez facilement des formulaires en ligne dynamiques pour capturer et soumettre des données précises et actuelles.
 * [Tina CMS](https://tinacms.org): Une boîte à outil open source pour permettre la gestion de contenu côté client sur votre site web.
+* [Semantic Commit Generator](https://jadsonlucena.github.io/semantic-commit-generator/): Un générateur pratique pour créer des commits sémantiques standardisés.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
