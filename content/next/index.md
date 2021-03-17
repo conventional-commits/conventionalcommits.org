@@ -53,14 +53,14 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Commit message with `!` to draw attention to breaking change
 ```
-refactor!: drop support for Node 6
+feat!: drop support for Node 6
 ```
 
 ### Commit message with both `!` and BREAKING CHANGE footer
 ```
-refactor!: drop support for Node 6
+feat!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### Commit message with no body
