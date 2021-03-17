@@ -29,16 +29,16 @@ aliases: ["/th/"]
 <br />
 โดย commit จะมีหน่วยโครงสร้างย่อย ๆ ตามนี้ เพื่อใช้ในการสื่อสารถึงความตั้งใจให้กับคนที่นำไลบรารี่ของคุณไปใช้งาน
 
-1. **fix:** commit ที่มี _ชนิด_ `fix` หมายถึงมีการแก้ไขบักในโค้ดของคุณ (จะสอดคล้องกับ [`PATCH`](http://semver.org/#summary) ใน semantic versioning)
-2. **feat:** commit ที่มี _ชนิด_ `feat` หมายถึงมีการเพิ่มฟีเจอร์ใหม่เข้าไปในโค้ด (จะสอดคล้องกับ [`MINOR`](http://semver.org/#summary) ใน semantic versioning)
-3. **BREAKING CHANGE:** commit ที่ลงท้ายด้วย `BREAKING CHANGE:` ในข้อความลงท้าย หรือ ต่อท้ายด้วย `!` หลังจาก type หรือ scope จะหมายถึงมีการเพิ่มการเปลี่ยนแปลงที่กระทบกับ API เดิม (จะสอดคล้องกับ [`MAJOR`](http://semver.org/#summary) ใน semantic versioning)
+1. **fix:** commit ที่มี _ชนิด_ `fix` หมายถึงมีการแก้ไขบักในโค้ดของคุณ (จะสอดคล้องกับ [`PATCH`](http://semver.org/#summary) ใน Semantic Versioning)
+2. **feat:** commit ที่มี _ชนิด_ `feat` หมายถึงมีการเพิ่มฟีเจอร์ใหม่เข้าไปในโค้ด (จะสอดคล้องกับ [`MINOR`](http://semver.org/#summary) ใน Semantic Versioning)
+3. **BREAKING CHANGE:** commit ที่ลงท้ายด้วย `BREAKING CHANGE:` ในข้อความลงท้าย หรือ ต่อท้ายด้วย `!` หลังจาก type หรือ scope จะหมายถึงมีการเพิ่มการเปลี่ยนแปลงที่กระทบกับ API เดิม (จะสอดคล้องกับ [`MAJOR`](http://semver.org/#summary) ใน Semantic Versioning)
 โดยที่ BREAKING CHANGE สามารถเป็นส่วนหนึ่งของ commit _ชนิด_ ไหนก็ได้
 1. _ชนิด_ อื่น ๆ ที่ไม่ใช่ `fix` and `feat` สามารถใช้ได้เช่นกัน เช่น [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (อ้างอิงจาก [ข้อตกลงของ Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) ได้แนะนำชนิด `build`, `chore`,
   `ci`, `docs`, `style`, `refactor`, `perf`, `test` และอื่น ๆ
 1. _ข้อความลงท้าย_ ที่นอกเหนือจาก `BREAKING CHANGE: <รายละเอียด>` สามารถใช้ได้ และเขียนตามข้อตกลงเดียวกันกับ
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers)
 
-ชนิดอื่น ๆ เพิ่มเติมไม่ได้อยู่ในขอบเขตตามข้อกำหนดของ Conventional Commits นี้ และไม่ได้มีผลกระทบอะไรใน semantic versioning (ถ้าไม่ได้ระบุใน BREAKING CHANGE)
+ชนิดอื่น ๆ เพิ่มเติมไม่ได้อยู่ในขอบเขตตามข้อกำหนดของ Conventional Commits นี้ และไม่ได้มีผลกระทบอะไรใน Semantic Versioning (ถ้าไม่ได้ระบุใน BREAKING CHANGE)
 <br /><br />
 ขอบเขตอาจจะถูกระบุไปกับชนิดของ commit เพื่อบอกข้อมูลของบริบทเพิ่มเติม โดยจะระบุอยู่ในเครื่องหมายวงเล็บ เช่น `feat(parser): add ability to parse arrays`
 
