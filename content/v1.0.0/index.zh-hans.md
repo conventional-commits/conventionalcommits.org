@@ -45,8 +45,8 @@ aliases: ["/zh/", "/zh-hans/"]
 2. **feat:** _类型_ 为 `feat` 的提交表示在代码库中新增了一个功能（这和语义化版本中的 [`MINOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
 3. **BREAKING CHANGE:** 在脚注中包含 `BREAKING CHANGE:` 或 <类型>(范围) 后面有一个 `!` 的提交，表示引入了破坏性 API 变更（这和语义化版本中的 [`MAJOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
 破坏性变更可以是任意 _类型_ 提交的一部分。
-1. 除 `fix:` 和 `feat:` 之外，也可以使用其它提交 _类型_ ，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)（基于 [Angular 约定](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)）中推荐的 `build:`、`chore:`、
-  `ci:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:`，等等。
+1. 除 `fix` 和 `feat` 之外，也可以使用其它提交 _类型_ ，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)（基于 [Angular 约定](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)）中推荐的 `build`、`chore`、
+  `ci`、`docs`、`style`、`refactor`、`perf`、`test`，等等。
 1. 脚注中除了 `BREAKING CHANGE: <description>` ，其它条目应该采用类似
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers) 这样的惯例。
 
