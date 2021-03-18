@@ -1,8 +1,6 @@
 .idea
 .DS_Store
 
-package-lock.json
-
 static/css/index.css
 static/css/style.css
 static/css/style.min.css
