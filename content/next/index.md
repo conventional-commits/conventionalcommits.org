@@ -245,6 +245,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Integration RSQL query language and Querydsl framework.
+* [Changeloguru](https://github.com/haunt98/changeloguru): Auto-generate changelog from conventional commits, written in Go.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
