@@ -217,6 +217,8 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply Semantic Versioning to git repositories based on _Conventional Commits_.
 * [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling and language agnostic utility to calculate the next semantic version based on the _Conventional Commits_ since the prior version. Supports monorepos.
 * [change](https://github.com/adamtabrams/change): A tool for generating and updating a changelog using Conventional Commits.
+* [semantic-gitlog](https://github.com/semantic-gitlog) A simple Semantic Versioning management tool based on Conventional Commits. It automatically derives and manage version numbers and generate angular-style changelogs. supports [Maven](https://github.com/semantic-gitlog/maven-semantic-gitlog) and [Gradle](https://github.com/semantic-gitlog/gradle-semantic-gitlog).
+* [idea-conventional-commit](https://github.com/lppedd/idea-conventional-commit) Context and template-based completion for conventional/semantic commits.
 
 ## Projects Using Conventional Commits
 
@@ -242,6 +244,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): A stats builder for [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
 * [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
+* [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Integration RSQL query language and Querydsl framework.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
