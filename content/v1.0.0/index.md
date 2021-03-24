@@ -228,6 +228,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling and language agnostic utility to calculate the next semantic version based on the _Conventional Commits_ since the prior version. Supports monorepos.
 * [change](https://github.com/adamtabrams/change): A tool for generating and updating a changelog using Conventional Commits.
 * [Turbogit](https://b4nst.github.io/turbogit) A command line tool to help you follow _Conventional Commits_ flow.
+* [Versio](https://github.com/chaaz/versio): A monorepo-compatible tool that updates version numbers based on conventional commits and project dependencies. It can generate tags and changelogs, too.
 
 ## Projects Using Conventional Commits
 
