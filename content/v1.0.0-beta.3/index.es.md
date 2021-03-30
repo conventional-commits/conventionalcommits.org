@@ -42,7 +42,7 @@ intención al consumidor de la librería:
    de commits de _tipo_. e.g., a `fix:`, `feat:` & `chore:` todos tipos
    válidos, adicional a cualquier otro _tipo_.
 1. Otros: _tipos_ de commits distintos a `fix:` y `feat:` están permitidos, por
-   ejemplo [commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional)
+   ejemplo [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
    (basado en [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines))
    recomienda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` y
    otros. También recomendamos `improvement` para commits que mejorar una
@@ -226,7 +226,7 @@ algunos de los colaboradores de:
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): una colección de herramientas y librerías de código abierto para agregar cobertura de código a sus tests.
 * [standard-version](https://github.com/conventional-changelog/standard-version): versionado automático y manejos de CHANGELOG, usando el botón de squash de GitHub y siguiendo el flujo de trabajo de los Commits Convencionales.
 * [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) y [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): mejoramiento opcional para la interfaz de usuario [Apereo uPortal](https://www.apereo.org/projects/uportal).
-* [massive.js](https://github.com/dmfay/massive-js): una librería para el acceso a datos para Node y PostgreSQL
+* [massive.js](https://gitlab.com/dmfay/massive-js): una librería para el acceso a datos para Node y PostgreSQL
 * [electron](https://github.com/electron/electron): Construya aplicaciones multi-plataforma con JavaScript, HTML y CSS.
 * [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Un paquete de utilidades de desplazamiento fácil de usar para centrar elementos y realizar animaciones
 * [Blaze UI](https://github.com/BlazeUI/blaze): Kit de herramientas modular de código abierto sin frameworks.
