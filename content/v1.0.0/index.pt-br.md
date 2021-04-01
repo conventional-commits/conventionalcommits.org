@@ -210,6 +210,7 @@ O primeiro rascunho desta especificação foi escrito em colaboração com algum
 - [Pyhist](https://github.com/jgoodman8/pyhist): Um utilitário Python para atualizar automaticamente a versão do pacote do histórico do git e gerar o Changelog.
 - [git-mkver](https://github.com/idc101/git-mkver): Uma ferramenta para aplicar automaticamente semantic-version aos repositórios git com base no Conventional Commits.
 - [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): Um utilitário agnóstico de ferramenta/linguagem para calcular o próximo semantic-release com base nas mensagens de confirmação Git do Conventional Commits desde a última versão.
+- [sv4git](https://github.com/bvieira/sv4git): Um CLI para ajudar na validação das mensagens de commit (hooks do git), criação de tags, versões e geração de changelogs.
 
 ## Projetos Utilizando Conventional Commits
 
