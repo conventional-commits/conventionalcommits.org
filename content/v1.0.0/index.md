@@ -230,6 +230,11 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Turbogit](https://b4nst.github.io/turbogit): A command line tool to help you follow _Conventional Commits_ flow.
 * [sv4git](https://github.com/bvieira/sv4git): A command line tool (CLI) to validate commit messages, bump versions, create tags and generate changelogs.
 * [Versio](https://github.com/chaaz/versio): A monorepo-compatible tool that updates version numbers based on conventional commits and project dependencies. It can generate tags and changelogs, too.
+* [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib): A Java library that supports rendering a changelog given a context derived from Git. Supports conventional commits with [Handlebars Helpers](https://github.com/tomasbjerre/git-changelog-lib#helpers). It is used in:
+  * [Gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin)
+  * [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
+  * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
+  * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
 
 ## Projects Using Conventional Commits
 

@@ -221,6 +221,11 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [semantic-gitlog](https://github.com/semantic-gitlog) A simple Semantic Versioning management tool based on Conventional Commits. It automatically derives and manage version numbers and generate angular-style changelogs. supports [Maven](https://github.com/semantic-gitlog/maven-semantic-gitlog) and [Gradle](https://github.com/semantic-gitlog/gradle-semantic-gitlog).
 * [idea-conventional-commit](https://github.com/lppedd/idea-conventional-commit) Context and template-based completion for conventional/semantic commits.
 * [Versio](https://github.com/chaaz/versio): A monorepo-compatible tool that updates version numbers based on conventional commits and project dependencies. It can generate tags and changelogs, too.
+* [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib): A Java library that supports rendering a changelog given a context derived from Git. Supports conventional commits with [Handlebars Helpers](https://github.com/tomasbjerre/git-changelog-lib#helpers). It is used in:
+  * [Gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin)
+  * [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
+  * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
+  * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
 
 ## Projects Using Conventional Commits
 
