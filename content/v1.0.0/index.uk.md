@@ -8,18 +8,12 @@ aliases: ["/uk/"]
 ## Вступ
 
 Політика Комітів - це полегшена угода понад стандартними повідомленнями про коміти.
-The Conventional Commits specification is a lightweight convention on top of commit messages.
 Вона надає легкий набір правил для створення зручної історії комітів;
-It provides an easy set of rules for creating an explicit commit history;
 що робить простішим процес написання автоматичних утиліт для цього.
-which makes it easier to write automated tools on top of.
 Дана угода узгоджується з [Семантичними Версіями](https://semver.org/lang/uk/)
-This convention dovetails with [SemVer](http://semver.org),
 шляхом вказування можливостей, латок, та великих змін, зроблених в коміт повідомленнях
-by describing the features, fixes, and breaking changes made in commit messages.
 
 Повідомлення коміту має бути структуровано наступним чином:
-The commit message should be structured as follows:
 
 
 ---
@@ -36,17 +30,11 @@ The commit message should be structured as follows:
 <br />
 Коміт містить наступні елементи структури, для спілкування інтенціх для споживачів
 вашої бібліотеки:
-The commit contains the following structural elements, to communicate intent to the
-consumers of your library:
 
 1. **fix:** коміт _типу_ `fix` виправляє ваду в вашому коді (це корелюється з [`PATCH`](https://semver.org/lang/uk/) в Семантичних Версіях).
-1. **fix:** a commit of the _type_ `fix`  a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in Semantic Versioning).
 3. **feat:** коміт _типу_ `feat` додає новий функціонал до коду (це корелюється з [`MINOR`](https://semver.org/lang/uk/) в Семантичних Версіях).
-3. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
 4. **BREAKING CHANGE:** коміт, що має додаток `BREAKING CHANGE:`, або суфікс `!` після типу, додає зміну в API (це корелюється з [`MAJOR`](https://semver.org/lang/uk/) в Семантичних Версіях).
-4. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in Semantic Versioning).
 BREAKING CHANGE може бути частиною будь якого _type_.
-A BREAKING CHANGE can be part of commits of any _type_.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
   `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
 1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
