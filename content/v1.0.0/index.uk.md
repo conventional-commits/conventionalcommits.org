@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 aliases: ["/uk/"]
 ---
 
@@ -124,56 +124,46 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 
 ### Як потрібно поводити себе на початковій фазі розробки?
 
-We recommend that you proceed as if you've already released the product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+Рекомендуємо продовжувати так, наче ви вже створили реліз продукту. Типічно *хтось*, навіть, якщо це ваші розробники, вже використовують ваше програмне забезпечення. Вони будуть знати, що виправлено, що поламано тощо.
 
-### Are the types in the commit title uppercase or lowercase?
+### Як поводити себе з великими і малими літерами?
 
-Any casing may be used, but it's best to be consistent.
+Будь які можуть використовуватися, вле варто притримуватися якогось одного підходу.
 
-### What do I do if the commit conforms to more than one of the commit types?
+### Що робити, якщо коміт підходить для кількох типів одночасно?
 
-Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
+Зробіть декілька комітів, наскільки це можливо. Частина вигоди від Політики Комітів є можливіть спонукати нас робити більш організовані коміти і PR/MRs
 
-### Doesn’t this discourage rapid development and fast iteration?
+### Чи погіршує це швидку розробку і швидкі операції?
 
-It discourages moving fast in a disorganized way. It helps you be able to move fast long term across multiple projects with varied contributors.
+Погіршення відбувається в результаті неорганізованості. Дана Політика дає можливість рухатися швидше в довготривалій перспективі з різними контрибуторами.
 
-### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
+### Чи може Політика Комітів спонукати розробників обмежуватися окремими типами комітів через відношення до цих типів?
 
-Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Політика Комітів мотивує нас робити більше комітів по типу *виправлення*. Але Політика Комітів дає гнучкість з якою команда може створювати власні типи собі в зручність.
 
-### How does this relate to SemVer?
+### Як це корелюється з Семантичними Версіями?
 
-`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
+Тип `fix` має бути як `PATCH` релізами. Тип `feat` має бути як `MINOR` релізи. Коміти з `BREAKING CHANGE`, незалежно від типу мають йти в `MAJOR` релізи.
 
-### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
+#### Коли використано тип із специфікації, але `fix` замість `feat`, як діяти?
 
-We recommend using SemVer to release your own extensions to this specification (and
-encourage you to make these extensions!)
+Перед тим, як мержити і релізити помилку, ми рекомендуємо використовувати `git rebase -i` для редагування історії комітів. Після релізу однак, виправлення буде залежати від утиліт і процесів, які ви використовуєте в себе.
 
-### What do I do if I accidentally use the wrong commit type?
+#### Якщо використано помилково тип не з специфікації, наприклад `feet` замість `feat`
 
-#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+В найгіршому випадку, це не є кінцем світу і коміт просто не буде враховано утилітами, бо вони про це нічого не знають.
 
-Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
+### Чи всі мої контрибутори мають використовувати Політику Комітів згідно спеціфікації?
 
-#### When you used a type *not* of the spec, e.g. `feet` instead of `feat`
+Ні! Якщо ви використовуєте політику об'єднання комітів, тоді в дане повідомлення лід може вписувати коміт згідно Політики Комітів, збагачуючи таким чином історію.
 
-In a worst case scenario, it's not the end of the world if a commit lands that does not meet the Conventional Commits specification. It simply means that commit will be missed by tools that are based on the spec.
+### Як Політика Комітів діє в якості повернення комітів(revert)?
 
-### Do all my contributors need to use the Conventional Commits specification?
+Відновлення коду може бути насправді складним, особливо, якщо відновлюється багато комітів. Якщо повертається функціонал, наступний реліз має бути латкою чи релізом?
+Політика Комітів ніяк не визначає поведінку щодо повернень коду. Ми залишаємо це на розсуд авторів відповідних утиліт для стратегії логіки, для чого можна використовувати типи та додатки.
 
-No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
-A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
-
-### How does Conventional Commits handle revert commits?
-
-Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release instead be a patch?
-
-Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
-authors to use the flexibility of _types_ and _footers_ to develop their logic for handling reverts.
-
-One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
+Наша рекомендація - використовувати тип `revert`, і додаток, що зсилається на SHA комітів, які повертаються:
 
 ```
 revert: let us never again speak of the noodle incident
@@ -181,11 +171,11 @@ revert: let us never again speak of the noodle incident
 Refs: 676104e, a215868
 ```
 
-## About
+## Про цей документ
 
-The Conventional Commits specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
+Політика комітів створена в більшості своїй з [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
 
-The first draft of this specification has been written in collaboration with some of the folks contributing to:
+Перша чернетка була створена спільними зусиллями нижчевказаних:
 
 * [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing Conventional Commits messages from git histories.
 * [parse-commit-message](https://npmjs.com/package/parse-commit-message): Extensible utilities for parsing, stringify and validating Conventional Commit messages.
@@ -193,7 +183,7 @@ The first draft of this specification has been written in collaboration with som
 * [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
 * [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
 
-## Tooling for Conventional Commits
+## Інструменти для Політики Комітів
 
 * [go-conventionalcommits](https://github.com/leodido/go-conventionalcommits): Full Go powers to parse conventional commits
 * [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit14): go library for parsing commit messages following the specification.
@@ -230,7 +220,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
   * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
   * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
 
-## Projects Using Conventional Commits
+## Проєкти, що використовують Політику Комітів
 
 * [NFPM](https://github.com/goreleaser/nfpm): NFPM is Not FPM - a simple deb, rpm and apk packager written in Go
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
@@ -256,4 +246,4 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-_want your project on this list?_ [send a pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
+_хочете ваш проєкт в списку?_ [надсилайте запит про додавання](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
