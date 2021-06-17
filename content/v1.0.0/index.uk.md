@@ -32,50 +32,50 @@ aliases: ["/uk/"]
 вашої бібліотеки:
 
 1. **fix:** коміт _типу_ `fix` виправляє ваду в вашому коді (це корелюється з [`PATCH`](https://semver.org/lang/uk/) в Семантичних Версіях).
-3. **feat:** коміт _типу_ `feat` додає новий функціонал до коду (це корелюється з [`MINOR`](https://semver.org/lang/uk/) в Семантичних Версіях).
-4. **BREAKING CHANGE:** коміт, що має додаток `BREAKING CHANGE:`, або суфікс `!` після типу, додає зміну в API (це корелюється з [`MAJOR`](https://semver.org/lang/uk/) в Семантичних Версіях).
+2. **feat:** коміт _типу_ `feat` додає новий функціонал до коду (це корелюється з [`MINOR`](https://semver.org/lang/uk/) в Семантичних Версіях).
+3. **BREAKING CHANGE:** коміт, що має додаток `BREAKING CHANGE:`, або суфікс `!` після типу, додає зміну в API (це корелюється з [`MAJOR`](https://semver.org/lang/uk/) в Семантичних Версіях).
 BREAKING CHANGE може бути частиною будь якого _type_.
-1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
+4. _types_ інші ніж `fix:` та `feat:` дозволені, для прикладу [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (базовано на [Angular домовленостях](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) рекомендовані `build:`, `chore:`,
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, та інші.
+5. _footers_ інші ніж `BREAKING CHANGE: <опис>` можуть бути теж і наслідувати угоду схожу до
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
-Additional types are not mandated by the Conventional Commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE).
+Додаткові типи не заборонені угодою про Політику Комітів, і не накладають додаткові умови в Семантичних Версія ( окрім випадків коли вони містять BREAKING CHANGE).
 <br /><br />
-A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
+Область(сфера) може бути доданою до типу коміту в дужках, для надання додаткової контекстної інформації, наприклад `feat(parser): add ability to parse arrays`.
 
-## Examples
+## Приклади
 
-### Commit message with description and breaking change footer
+### Коміт повідомлення з описом і BREAKING CHANGE додатком
 ```
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Commit message with `!` to draw attention to breaking change
+### Коміт повідомлення з `!` для додаткового наголосу щодо BREAKING CHANGE
 ```
 refactor!: drop support for Node 6
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
+### Коміт повідомлення з `!` та BREAKING CHANGE додатком
 ```
 refactor!: drop support for Node 6
 
 BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 ```
 
-### Commit message with no body
+### Коміт повідомлення без тіла
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### Commit message with scope
+### Коміт повідомлення з областю(сферою)
 ```
 feat(lang): add polish language
 ```
 
-### Commit message with multi-paragraph body and multiple footers
+### Коміт повідомлення з тілом з кількома абзацами і додатками
 ```
 fix: correct minor typos in code
 
@@ -87,7 +87,7 @@ Reviewed-by: Z
 Refs #133
 ```
 
-## Specification
+## Специфікація
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
