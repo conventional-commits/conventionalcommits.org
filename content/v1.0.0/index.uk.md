@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 aliases: ["/uk/"]
 ---
 
@@ -89,48 +89,40 @@ Refs #133
 
 ## Специфікація
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+Ключові слова “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, та “OPTIONAL” в цьому документі потрібно інтерпретувати як описано в [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-  by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
-1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
-1. The type `fix` MUST be used when a commit represents a bug fix for your application.
-1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
-  section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
-1. A description MUST immediately follow the colon and space after the type/scope prefix.
-The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
-1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
-1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
-1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
- a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
+1. Коміти MUST(повинні) бути з префіксом типу, що складається з іменника `feat`, `fix`, тощо., наступним йде
+OPTIONAL(необов'язково) область(сфера), OPTIONAL(необов'язково) `!`, та REQUIRED(обов'язково) завершити двокрапкою та пропуском.
+2. Тип `feat` MUST(повинен) використовуватися, коли коміт додає новий функціонал в ваш додаток або бібліотеку.
+3. Тип `fix` MUST(повинен) використовуватися якщо коміт є латкою для вашого додатку.
+4. Область(сфера) MAY(може) бути вказана після типу. Область(сфера) MUST(повинна) містити іменник, що описує секцію коду виділену лапками, наприклад, `fix(parser):`
+5. Опис MUST(повинен) одразу завершатися двокрапкою і пропуском після області(сфери).
+Опис - це короткий підсумок змін в коді, наприклад, _fix: array parsing issue when multiple spaces were contained in string_.
+6. Довге тіло коміту MAY(може) бути додано після короткого опису, надаючи додаткову контекстру інформацію про зміни в коді. Тіло MUST(повинне) починатися з однієї пустої строки після опису.
+7. Тіло коміту - це вільна форма і може містити будь яку кількість нових рядків і параграфів.
+8. Один або два додатки MAY(можуть) бути надані після одного пустого рядка після тіла. Кожен додаток MUST(повинен) містити слово токен, після якого має бути або `:<space>` або `<space>#` роздільник, після якого має йти строкове значення (запозичено з
   [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
-1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
-  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
-1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
-  token/separator pair is observed.
-1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
-  footer.
-1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
+9. Токен додатка MUST(повинен) використовувати `-` на місці пропусків, наприкла, `Acked-by` ( це допомагає відрізнити додаток від тіла з багатьма параграфами. Виключення зроблене для `BREAKING CHANGE`, що MAY(може) також використовуватися як токен.
+10. Значення додатку MAY(може) містити пропуски та нові рядки, і зчитування MUST(повинне) припинятися коли наступний коректний токен/роздільник додатку знайдено.
+11. BREAKING CHANGE MUST(повинні) бути виділені в типі/області префіксі коміту, або як вміст додатку.
+12. Якщо виділено в додатку, BREAKING CHANGE MUST(повинно) містити великими літерами BREAKING CHANGE, потім двокрапка, пропуск, та опис, наприклад,
 _BREAKING CHANGE: environment variables now take precedence over config files_.
-1. If included in the type/scope prefix, breaking changes MUST be indicated by a
-  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
-  and the commit description SHALL be used to describe the breaking change.
-1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
-1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+14. Якщо вставлене в типі/області префіксом, BREAKING CHANGE MUST(повинно) бути виділено `!` одразу перед `:`. Якщо `!` використане, `BREAKING CHANGE:` MAY(може) бути упущене в додатку, і опис коміту SHALL(має) бути використаний для опису BREAKING CHANGE.
+15. Типи, інші за `feat` та `fix` MAY(можуть) бути використані в ваших коміт повідомленнях, наприклад, _docs: updated ref docs._
+16. Одиниці інформаціх, що роблять Політику Комітів MUST NOT(не повинні) бути сприйняті як чутливими до регістру творцями інструментів, за виключенням BREAKING CHANGE, що MUST(мусить) бути великими літерами.
+17. BREAKING-CHANGE MUST(повинно) бути синонімом до BREAKING CHANGE, коли використовується в додатку.
 
-## Why Use Conventional Commits
+## Для чого використовувати Політику Комітів.
 
-* Automatically generating CHANGELOGs.
-* Automatically determining a semantic version bump (based on the types of commits landed).
-* Communicating the nature of changes to teammates, the public, and other stakeholders.
-* Triggering build and publish processes.
-* Making it easier for people to contribute to your projects, by allowing them to explore
-  a more structured commit history.
+* Автоматичне створення Нотаток про Реліз(Changelog)
+* Автоматичне визначення наступної версії в Семантичних Версіях(базуючись на типах комітів, що увійшли).
+* Комунікування природи змін для команди, в публічному просторі, до власників.
+* Запуск процесів компіляції та публіації.
+* Полегшує людям шлях до контрибуції в ваш проєкт, надаючи їм більш структуровану історію комітів.
 
-## FAQ
+## ЧЗП
 
-### How should I deal with commit messages in the initial development phase?
+### Як потрібно поводити себе на початковій фазі розробки?
 
 We recommend that you proceed as if you've already released the product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
