@@ -45,7 +45,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 1. **feat:** _型_ `feat` はコードベースに新しい機能を追加した場合です。(これはセマンティックバージョン管理における [`MINOR`](http://semver.org/#summary)に相当します)
 1. **BREAKING CHANGE:** _本文_ または _脚注_ に `BREAKING CHANGE:`が存在する、または _型_ 、 _範囲_ の直後に`!`が追加されているコミットは、APIの破壊的変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
 `BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
-1. `fix:` and `feat:` 以外の _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約] (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `build:`, `chore:`, `ci:`,`docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
+1. `fix:` and `feat:` 以外の _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `build:`, `chore:`, `ci:`,`docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
 1. 次のような規則に従うことで、`BREAKING CHANGE: <説明>` 以外の _脚注_ を使うこともできます。 [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 追加された _型_ はconventional commitsで強制されているものではなく、セマンティックバージョン管理に暗黙的な影響も与えません。（それが、BREAKING CHANGEを含めない限り）
@@ -122,7 +122,7 @@ _説明_ はコード変更の要約です。 例： _fix：文字列に複数�
 `BREAKING CHANGE`の例外を作ることができ、これはトークンとして使用することもできます（ MAY ）。
 1. _脚注_ の本文にはスペースと改行を含めることができます（ MAY ）、そして次の _脚注_ トークンとセパレーターのペアが見つかった時、以前の _脚注_ の解析は終了しなければなりません（ MUST ）。
 1. 破壊的変更は、コミットの _型_ / _範囲_ の接頭辞か、_脚注_ に指定する必要があります（ MUST ）
-1. 破壊的変更がフッターに含まれる場合、大文字の REAKING CHANGE の後にコロンとスペース、そして説明を続ける必要があります（ MUST ）。例： _BREAKING CHANGE: 環境変数が設定ファイルよりも優先されるようになりました_
+1. 破壊的変更がフッターに含まれる場合、大文字の BREAKING CHANGE の後にコロンとスペース、そして説明を続ける必要があります（ MUST ）。例： _BREAKING CHANGE: 環境変数が設定ファイルよりも優先されるようになりました_
 1. 破壊的変更がある場合、_型_ や _範囲_ の接頭辞には `:` の直前に `!` を用いて明示的にしなければなりません（ MUST ）。 `!` を使用する場合には、 _脚注_ セクションから `BREAKING CHANGE:` を省略できます（ MAY ）。そうすると、コミットの _説明_ 部分で破壊的変更の内容を説明することになるでしょう（ SHALL ）。
 1. コミットメッセージでは `feat` と `fix` 以外の _型_ を使うことができます（ MAY ）。 （例：_docs: ドキュメントの参照を更新_）
 1. Conventional Commitsを構成する情報の単位は、必ず大文字の`BREAKING CHANGE`を除いて、実装側は大文字と小文字を別の物して扱ってはいけない（ MUST NOT ）

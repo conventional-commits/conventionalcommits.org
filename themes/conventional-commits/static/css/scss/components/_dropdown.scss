@@ -51,6 +51,7 @@
   &__options {
     visibility: visible;
     min-width: 100%;
+    max-height: 50vh;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -59,6 +60,7 @@
     background-color: $dropdown-options-background-color;
     border-radius: $dropdown-border-radius;
     box-shadow: $shadow-soft;
+    overflow: auto;
     animation: hide $dropdown-animation-timing/2 ease forwards;
     &:before {
       content: '';
