@@ -7,11 +7,11 @@ aliases: ["/ja/"]
 
 ## 概要
 
-Conventional Commitsの仕様は、コミットメッセージのための軽量の規約です。
-明示的なコミット履歴を作成するための簡単なルールを提供します、この規則に従うことで自動化ツールの導入を簡単にします。
-この規約は[SemVer](http://semver.org)と組み合わせることで、コミットメッセージへ機能、修正、破壊的変更を入れることで、さらに詳細な説明を可能にします。
+Conventional Commits の仕様はコミットメッセージのための軽量の規約です。
+明示的なコミット履歴を作成するための簡単なルールを提供します。この規則に従うことで自動化ツールの導入を簡単にします。
+コミットメッセージで機能追加・修正・破壊的変更などを説明することで、この規約は [SemVer](http://semver.org) と協調動作します。
 
-コミットメッセージは次のような形にする必要があります
+コミットメッセージは次のような形にする必要があります:
 
 ---
 
@@ -28,35 +28,35 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 訳：
 
 ```
-<型>[任意 範囲]: <説明>
+<型>[任意 スコープ]: <タイトル>
 
 [任意 本文]
 
-[任意 脚注]
+[任意 フッター]
 ```
 
 ---
 
 <br />
 
-コミットにはあなたのライブラリの利用者に思想を伝えるために、次の構造要素を持ちます：
+あなたのライブラリの利用者に意図を伝えるために、コミットは以下の構造化された要素を持ちます：
 
-1. **fix:** _型_ `fix` はコードベースのバグにパッチを当てる場合です。（これは セマンティックバージョン管理における[`PATCH`](http://semver.org/#summary)に相当します)
-1. **feat:** _型_ `feat` はコードベースに新しい機能を追加した場合です。(これはセマンティックバージョン管理における [`MINOR`](http://semver.org/#summary)に相当します)
-1. **BREAKING CHANGE:** _本文_ または _脚注_ に `BREAKING CHANGE:`が存在する、または _型_ 、 _範囲_ の直後に`!`が追加されているコミットは、APIの破壊的変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
-`BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
-1. `fix:` and `feat:` 以外の _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `build:`, `chore:`, `ci:`,`docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
-1. 次のような規則に従うことで、`BREAKING CHANGE: <説明>` 以外の _脚注_ を使うこともできます。 [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+1. **fix:** _型_ `fix` を持つコミットはコードベースのバグにパッチを当てます (これは Semantic Versioning における [`PATCH`](http://semver.org/#summary) に相当します)。
+1. **feat:** _型_ `feat` を持つコミットはコードベースに新しい機能を追加します (これは Semantic Versioning における [`MINOR`](http://semver.org/#summary) に相当します)。
+1. **BREAKING CHANGE:** _フッター_ に `BREAKING CHANGE:` が書かれているか型/スコープの直後に `!` が追加されているコミットは API の破壊的変更を導入します (Semantic Versioning における [`MAJOR`](http://semver.org/#summary) に相当します)。
+`BREAKING CHANGE` は任意の _型_ のコミットに含めることができます。
+1. `fix:` や `feat:` 以外の _型_ も許されています。たとえば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (これは [Angular の規約](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) が基になっています) は  `build:`, `chore:`, `ci:`,`docs:`, `style:`, `refactor:`, `perf:`, `test:`, などを推奨しています。
+1. [git trailer format](https://git-scm.com/docs/git-interpret-trailers) に似た規約に従って、`BREAKING CHANGE: <タイトル>` 以外の _フッター_ が与えられるかもしれません。
 
-追加された _型_ はconventional commitsで強制されているものではなく、セマンティックバージョン管理に暗黙的な影響も与えません。（それが、BREAKING CHANGEを含めない限り）
+追加の型たちは Conventional Commits の仕様で義務付けられているものではなく、(BREAKING CHANGE を含まない限り) Semantic Versioning に対する暗黙的な効果を持ちません。
 
 <br /><br />
 
-コミットの _型_ には、追加の情報として _範囲_ を追加することができ、それは括弧で囲みます。例 `feat(parser): add ability to parse arrays`
+コミットの型には追加の文脈の情報として _スコープ_ を追加することができます。スコープは括弧で囲みます。たとえば `feat(parser): add ability to parse arrays` のようになります。
 
 ## 例
 
-### 説明と破壊的変更を含む脚注のメッセージをコミットに含める
+### タイトルおよび破壊的変更のフッターを持つコミットメッセージ
 
 ```
 feat: allow provided config object to extend other configs
@@ -64,13 +64,13 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### 破壊的変更であることに気づいてもらうために `!` を付けてメッセージをコミットする
+### 破壊的変更を目立たせるために `!` を持つコミットメッセージ
 
 ```
 refactor!: drop support for Node 6
 ```
 
-### `!` と BREAKING CHANGE の両方を脚注に追加して、メッセージをコミットする
+### `!` と BREAKING CHANGE フッターの両方を持つコミットメッセージ
 
 ```
 refactor!: drop support for Node 6
@@ -78,19 +78,19 @@ refactor!: drop support for Node 6
 BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 ```
 
-### 本文無しでメッセージをコミットする
+### 本文を持たないコミットメッセージ
 
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### _範囲_ のあるメッセージをコミットする
+### スコープを持つコミットメッセージ
 
 ```
 feat(lang): add polish language
 ```
 
-### 複数の _本文_ と _脚注_ を持ったメッセージをコミットする
+### 複数段落からなる本文と複数のフッターを持ったコミットメッセージ
 
 ```
 fix: correct minor typos in code
@@ -105,35 +105,35 @@ Refs #133
 
 ## 仕様
 
-この文書における次の各キーワード「しなければならない（ MUST ）」、 「してはならない（ MUST NOT ）」、「要求されている（ REQUIRED ）」、 「することになる（ SHALL ）」、「することはない（ SHALL NOT ）」、 「する必要がある（ SHOULD ）」、「しないほうがよい（ SHOULD NOT ）」、 「推奨される（ RECOMMENDED ）」、「してもよい（ MAY ）」、 「選択できる（ OPTIONAL ）」は、 [RFC 2119 (IPA 日本語)](https://www.ipa.go.jp/security/rfc/RFC2119JA.html) で述べられているように 解釈されるべきものです。
+この文書におけるキーワード「しなければならない (MUST)」「してはならない (MUST NOT)」「要求されている (REQUIRED)」「することになる (SHALL)」「することはない(SHALL NOT)」「する必要がある (SHOULD)」「しないほうがよい (SHOULD NOT)」「推奨される (RECOMMENDED)」「してもよい (MAY)」「選択できる (OPTIONAL)」は [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) ([IPA 日本語訳](https://www.ipa.go.jp/security/rfc/RFC2119JA.html)) で述べられているように解釈されるべきものです。
 
-1. コミットは名詞、`feat`、`fix`などから始まる（ REQUIRED ） _型_ から始まり、次に選択できる（ OPTIONAL ） _範囲_ と、必須の`!` 末尾に要求されている（ REQUIRED ）コロンとスペースで成り立ちます。
-1. コミットがあなたのアプリケーションやライブラリに新しい機能を追加するとき、 _型_ は`feat`にしなければならない（ MUST ）。
-1. コミットがあなたのアプリケーションのためのバグ修正を表すとき、 _型_ は `fix`にしなければならない（ MUST ）。
-1. _範囲_ は _型_ の後に記述してもよい（ MAY ）。 _範囲_ は括弧で囲まれたコードベースのセクションを記述する名詞にしなければならない（ MUST ）。例： `fix(構文解析ツール):`
-1. _説明_ は型/範囲の後にあるコロンとスペースの直後にしなければならない（ MUST ）。
-_説明_ はコード変更の要約です。 例： _fix：文字列に複数の空白がある場合の配列解析における問題_
-1. 短い _説明_ の後に、より長いコミットの本文を追加してもよく（ MAY ）、コード変更に関する追加の情報を提供することができます。
-本文は、_説明_ の下に1行の空行を追加しなければならない（ MUST ）。
-1. コミットの本文は自由形式であってよく（ MAY ）、改行で区切られた複数の段落で構成することが可能です。
-1. １つ以上のフッターを持つことができます（ MAY ）、フッターは改行の後に一つの空白を持ちます。
-各フッターは文字トークンで構成されてなければいけません（ MUST ）、その後に `:<space>` か `<space>#` による区切りが続き、最後に文字列が入ります。（これは[git trailer convention](https://git-scm.com/docs/git-interpret-trailers)にインスパイアされています）
-1. _脚注_ のトークンには空白の代わりに `-` を使う必要があります（ MUST ）、例えば `Acked-by` などです（_脚注_ と _本文_ を区別するのに役立ちます ）。
-`BREAKING CHANGE`の例外を作ることができ、これはトークンとして使用することもできます（ MAY ）。
-1. _脚注_ の本文にはスペースと改行を含めることができます（ MAY ）、そして次の _脚注_ トークンとセパレーターのペアが見つかった時、以前の _脚注_ の解析は終了しなければなりません（ MUST ）。
-1. 破壊的変更は、コミットの _型_ / _範囲_ の接頭辞か、_脚注_ に指定する必要があります（ MUST ）
-1. 破壊的変更がフッターに含まれる場合、大文字の BREAKING CHANGE の後にコロンとスペース、そして説明を続ける必要があります（ MUST ）。例： _BREAKING CHANGE: 環境変数が設定ファイルよりも優先されるようになりました_
-1. 破壊的変更がある場合、_型_ や _範囲_ の接頭辞には `:` の直前に `!` を用いて明示的にしなければなりません（ MUST ）。 `!` を使用する場合には、 _脚注_ セクションから `BREAKING CHANGE:` を省略できます（ MAY ）。そうすると、コミットの _説明_ 部分で破壊的変更の内容を説明することになるでしょう（ SHALL ）。
-1. コミットメッセージでは `feat` と `fix` 以外の _型_ を使うことができます（ MAY ）。 （例：_docs: ドキュメントの参照を更新_）
-1. Conventional Commitsを構成する情報の単位は、必ず大文字の`BREAKING CHANGE`を除いて、実装側は大文字と小文字を別の物して扱ってはいけない（ MUST NOT ）
-1. _脚注_ の BREAKING-CHANGE は BREAKING CHANGE と同じトークンとして解釈されなければいけません（ MUST ）。
+1. コミットは `feat` や `fix` などの型から始まり (MUST)、その後ろにはスコープ (OPTIONAL) と `!` (OPTIONAL) が続き、その後ろにコロンとスペース (REQUIRED) が続く。
+1. コミットがあなたのアプリケーションやライブラリに新しい機能を追加するとき、型 `feat` が使われなければならない (MUST)。
+1. コミットがあなたのアプリケーションのためのバグ修正を行うとき、型 `fix` が使われなければならない (MUST)。
+1. スコープを型の後ろに記述してもよい (MAY)。スコープは、コードベースのセクションを記述する括弧で囲まれた名詞にしなければならない (MUST)。例: `fix(parser):`。
+1. 型/スコープの後ろのコロンとスペースの直後にタイトルが続かなければならない (MUST)。
+タイトルはコード変更の短かい要約である。例: `fix: array parsing issue when multiple spaces were contained in string`。
+1. 短いタイトルの後ろにより長いコミットの本文を追加してもよい (MAY)。これはコード変更に関する追加の情報を提供する。
+本文はタイトルの下の 1 行の空行から始めなければならない (MUST)。
+1. コミットの本文は自由な形式であり、改行で区切られた複数の段落で構成することができる (MAY)。
+1. ひとつ以上のフッターを、本文の下の 1 行の空行に続けて書くことができる (MAY)。
+それぞれのフッターは、ひとつの単語トークン、それに続く `:<space>` か `<space>#` によるセパレータ、そして文字列の値から構成されなければならない (MUST) (これは [git trailer convention](https://git-scm.com/docs/git-interpret-trailers) に触発されている)。
+1. フッターのトークンは空白の代わりに `-` を使わなければならない (MUST)。例えば `Acked-by` とする (これは複数段落からなる本文からフッターを区別するのに役立つ)。
+例外として `BREAKING CHANGE` があり、これをトークンとして使用することができる (MAY)。
+1. フッターの値にはスペースと改行を含めることができる (MAY)。そして次のフッターのトークンとセパレータの組が見つかった時、以前のフッターのパースは終了しなければならない (MUST)。
+1. 破壊的変更は、コミットの型/スコープの接頭辞か、フッターによって明示されなければならない (MUST)。
+1. 破壊的変更がフッターとして含まれる場合は、大文字の BREAKING CHANGE の後ろにコロンとスペース、そしてタイトルを続けなければならない (MUST)。例: `BREAKING CHANGE: environment variables now take precedence over config files`。
+1. 破壊的変更が型/スコープの接頭辞として含まれる場合は、`:` の直前に `!` を用いて明示されねばならない (MUST)。`!` が使用すれた場合には、 フッターから `BREAKING CHANGE:` を省略してもよい (MAY)。その場合はコミットのタイトル部分で破壊的変更の内容を説明することになる (SHALL)。
+1. `feat` と `fix` 以外の型を使うことができる (MAY)。例: `docs: updated ref docs.`。
+1. Conventional Commits を構成する情報の単位は、大文字の `BREAKING CHANGE` を除いて、実装は大文字と小文字を区別してはならない (MUST NOT)。
+1. フッターのトークンにおいて BREAKING-CHANGE は BREAKING CHANGE と同じトークンとして解釈されなければならない (MUST)。
 
 ## 何故 Conventional Commits を使うのか
 
-* 変更履歴(CHANGELOG)を自動的に生成できます。
-* semantic version単位で自動的に履歴を纏めれます（コミットされた _型_ に基づきます）。
-* チームメイトや一般のユーザー、およびその他の利害関係者へ変更の内容を伝えることができる。
-* ビルドおよび公開プロセスをトリガーにできます。
+* 変更履歴 (CHANGELOG) を自動的に生成できます。
+* semantic version 単位で自動的に履歴をまとめられます (コミットの型に基づきます)。
+* チームメイトや一般のユーザー、およびその他の利害関係者へ変更の内容を伝えることができます。
+* ビルドや公開の処理をトリガーできます。
 * より構造化されたコミット履歴を調査できるようにすることで、人々があなたのプロジェクトに貢献しやすくなります。
 
 ## よくある質問
@@ -142,61 +142,61 @@ _説明_ はコード変更の要約です。 例： _fix：文字列に複数�
 
 すでに製品をリリースしているかのように進めることをお勧めします。
 あなたの仲間のソフトウェア開発者であっても、普通は *誰か* があなたのソフトウェアを使っています。
-何が修正されたのか、何が壊れたのかなどを知りたいでしょう。
+何が修正されたのかや何が壊れたのかなどを彼らは知りたいでしょう。
 
-### コミットタイトル(1行目)の型は大文字か小文字のどちらが良いですか？
+### コミットタイトル (1 行目) の型は大文字か小文字のどちらがよいですか？
 
-どちらでも問題はありません、一貫性を保つことが最善です。
+どちらでも問題はありませんが、一貫性を保つべきです。
 
-### コミットが複数のコミットタイプ( _型_ )に準拠している場合はどうすればいいですか？
+### コミットが複数のコミット型からなるような場合はどうすればよいですか？
 
-可能な限り前に戻り複数のコミットに分割します。
-Conventional Commits の利点の一つは、より組織化されたコミットとプルリクエストを行う事を可能にする事です。
+可能な限り、引き返して複数のコミットに分割します。
+Conventional Commits の利点のひとつは、より組織化されたコミットとプルリクエストを行う事を可能にする事です。
 
 ### これは開発速度とインテグレーションを遅くしたりはしませんか？
 
 無秩序にただ早く開発することはお勧めではありません。
-それはあなたがさまざまな貢献者との複数のプロジェクト間で長期的に素早く動けるようにするのを助けます。
+これはあなたがさまざまな貢献者との複数のプロジェクト間で長期的に素早く動けるようにするのを助けます。
 
-### Conventional Commitsで開発者は提供された _型_ を検討することになるため、コミットの _型_ を制限することができますか？
+### Conventional Commits では開発者は与えられた型の中で考える必要があるため、作ることのできるコミットの種類が制限されてしまうのではありませんか？
 
-Conventional Commitsは、修正などの特定の _型_ のコミットメントを行うように促します。
-それ以外の点では、Conventional Commitsの柔軟性により、あなたのチームは彼ら自身の _型_ を新しく作り、時間の経過とともにそれらの _型_ を変更することもできます。
+Conventional Commits は `fix` などの特定の型を持つコミットを作るように促します。
+それ以外には、Conventional Commits の柔軟性は、あなたのチームが独自の型を提案し作り、また時間の経過とともにそれらの型を変更していくことを許します。
 
-### これはSemVerとどのような関係を持っていますか？
+### これは SemVer とどのような関係を持っていますか？
 
-`fix` _型_ のコミットは`PATCH`リリースへ変換します。 `feat` _型_ のコミットは`MINOR`リリースに変換します。 _型_ にかかわらずコミット内で `BREAKING CHANGE`を使ったコミットは`MAJOR`リリースに変換するべきでしょう。
+`fix` 型のコミットは `PATCH` リリースへ変換されます。`feat` 型のコミットは `MINOR` リリースへ変換されます。型にかかわらずコミット内で `BREAKING CHANGE` を使ったコミットは `MAJOR` リリースに変換されるべきでしょう。
 
-### 私の拡張仕様をどのようにしてConventional Commitsの仕様にバージョンアップするべきでしょうか？、例： `@jameswomack/conventional-commit-spec`
+### Conventional Commits の仕様についての私の拡張はどのようにバージョンを振るべきでしょうか？ 例: `@jameswomack/conventional-commit-spec`
 
-SemVerを使用して、この仕様に対する独自の拡張仕様をリリースすることをお勧めします（そしてこれらの拡張仕様を作成することをお勧めします）。
+SemVer を使用して、この仕様に対する独自の拡張をリリースすることをお勧めします (そしてそのような拡張仕様の作成を推奨します！)。
 
-### 間違ったコミットタイプを使用してしまった時はどうしたらいいですか？
+### 間違ったコミット型を使用してしまった時はどうしたらいいですか？
 
-#### 仕様的に正しい型だが意味を間違った _型_ を使用した場合、例えば `feat`の代わりに`fix`
+#### 仕様的に正しい型だが意味的にを間違った型を使用した場合、たとえば `feat` の代わりに `fix`
 
-間違いをマージやリリースする前に、コミット履歴を編集する`git rebase -i`を使うことを勧めます。
-リリース後、どのツールやプロセスを使用するかによってクリーンアップは異なってくるでしょう。
+間違いをマージやリリースする前に、`git rebase -i` を使ってコミット履歴を編集することをお勧めします。
+リリース後であれば、どのようなツールやプロセスを使用しているかによって後始末は異なってくるでしょう。
 
-#### 仕様に *ない* _型_ を使った時、例えば`feat` ではなく`feet`
+#### 仕様に *ない* 型を使った場合、例えば `feat` ではなく `feet`
 
-最悪のシナリオはコミットが conventional commit の仕様を満たさない場合です、しかしそれは世界の終わりではありません。
+最悪のシナリオはコミットが Conventional Commits の仕様を満たさない場合です。しかしそれは世界の終わりではありません。
 それは単に仕様に基づいているツールによってコミットが見逃されるだけでしかありません。
 
-### 貢献者全員が conventional commit を使用する必要がありますか？
+### 貢献者全員が Conventional Commits の仕様を使用する必要がありますか？
 
-いいえ！ Gitでsquashベースのワークフローを使用するなら、主要メンテナはマージ時にコミットメッセージをクリーンアップすることができるため、通常のコミッタには作業負荷がかかりません。
-また一般的なワークフローの場合は、あなたのgitシステムが自動的にpull requestからコミットを破棄し、主要メンテナにマージのための適切なgit commitメッセージを入力するためのフォームを提示することです。
+いいえ！ Git で squash ベースのワークフローを使用する場合は、主要メンテナがマージ時にコミットメッセージをクリーンアップすることができるため、臨時のコミッタには作業負荷がかかりません。
+また、これをするための一般的な方法としては、プルリクエストからのコミットを git システムが自動的に squash し、主要メンテナによるマージ時に適切な git コミットメッセージを入力するためのフォームを表示するというものです。
 
-### Conventional Commitsは`revert`コミットをどのように扱いますか？
+### Conventional Commits は `revert` コミットをどのように扱いますか？
 
-コードを元に戻すのは複雑な場合があります。
-複数のコミットを元に戻していますか？機能をもとに戻す時にリリースはパッチにまとめる必要がありますか？
+コードを revert するのは複雑な場合があります。
+複数のコミットを revert しますか？ 機能を revert するとき、次のリリースはただのパッチでしょうか？
 
-Conventional Commitsはrevertの振る舞いを定義するための明示的な努力をしません、代わりにツールに任せます。
-作者は _型_ と _脚注_ の柔軟性を利用して、revertを処理するためのロジックを開発します。
+Conventional Commits は revert の振る舞いを定義するための明示的な努力をしません。
+その代わりに、revert を処理するためのロジックを型とフッターの柔軟性を利用して開発するようなツールの作者に、これを任せます。
 
-おすすめの方法として、ひとつは `revert` _型_ とrevertされるコミットのSHAを参照するフッターを使うようにすることです。
+我々のおすすめの方法としては、ひとつは `revert` 型と revert されるコミットの SHA を参照するフッターを使うようにすることです。
 
 ```
 revert: let us never again speak of the noodle incident
@@ -206,42 +206,42 @@ Refs: 676104e, a215868
 
 ## 要約
 
-Conventional Commitの仕様は、[Angular Commitのガイドライン](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)に触発されており、それに基づいています。
+Conventional Commits の仕様は [Angular Commit Guidlines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) に触発されており、これに大きく基づいています。
 
-この仕様書の最初のドラフトは、以下に何人かのコントリビューターと共同して書かれました:
+この仕様書の最初のドラフトは、何人かの以下のツールのコントリビューターたちとの協力によって書かれました:
 
-* [traditional-changelog](https://github.com/conventional-changelog/conventional-changelog): git履歴からconventional commitのメッセージを変換するためのツールのセット。
+* [traditional-changelog](https://github.com/conventional-changelog/conventional-changelog): git 履歴から Conventional Commits のメッセージを解析するツールのセット。
 * [bumped](https://bumped.github.io): ソフトウェアの新しいバージョンをリリースする前後にアクションを実行することを手助けするためのツール。
 * [unleash](https://github.com/netflix/unleash): ソフトウェアのリリースを自動化し、ライフサイクルを公開するためのツール。
-* [lerna](https://github.com/lerna/lerna): Babelプロジェクトから生まれたモノレポを管理するためのツール。
+* [lerna](https://github.com/lerna/lerna): Babel プロジェクトから生まれたモノレポを管理するためのツール。
 
-## Conventional Commitsのためのツール一覧
+## Conventional Commits のためのツール一覧
 
 * [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): 仕様に従ってバージョンを管理し、更新ログを自動的生成します。
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): Conventional Commit の仕様に従ってコミットメッセージを作成するためのツール。
-composerに依存するPHPプロジェクトに対して設定、使用可能であり、非PHPプロジェクトに対してもグローバルに使用可能。
-* [conform](https://github.com/autonomy/conform): conventional commitsを含めたgitリポジトリにポリシーを強制するために使用できるツール。
-* [standard-version](https://github.com/conventional-changelog/standard-version): GitHubの新しいsquashボタンと推奨されているConventional Commitワークフローを使用した、自動のバージョン管理とCHANGELOG管理。
-* [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): [JetBrains Editors](https://www.jetbrains.com/)に_Conventional Commits_サポートを追加します。(IntelliJ IDEA, PyCharm, PhpStorm...).
-* [commitsar](https://github.com/commitsar-app/commitsar): ブランチのコミットがconventional commitに準拠しているかどうかを確認するためのGo言語で書かれたツール。 CI用のDockerイメージがあります。
+* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): Conventional Commits の仕様に従ってコミットメッセージを作成するためのツール。
+composer に依存する PHP プロジェクトに対して設定、使用可能であり、非 PHP プロジェクトに対してもグローバルに使用可能。
+* [conform](https://github.com/autonomy/conform): Conventional Commits を含めた git リポジトリにポリシーを強制するために使用できるツール。
+* [standard-version](https://github.com/conventional-changelog/standard-version): GitHub の新しい squash ボタンと推奨されている Conventional Commits ワークフローを使用した、自動のバージョン管理と CHANGELOG 管理。
+* [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): [JetBrains Editors](https://www.jetbrains.com/)にConventional Commitsサポートを追加します。(IntelliJ IDEA, PyCharm, PhpStorm...).
+* [commitsar](https://github.com/commitsar-app/commitsar): ブランチのコミットが Conventional Commits に準拠しているかどうかを確認するための Go 言語で書かれたツール。CI 用の Docker イメージがあります。
 * [semantic-release](https://github.com/semantic-release/semantic-release): 次のバージョン番号の決定、リリースノートの生成、パッケージの公開など、パッケージリリースのワークフロー全体を自動化するツール。
 
-## Conventional Commitsを利用しているプロジェクト
+## Conventional Commits を利用しているプロジェクト
 
 * [yargs](https://github.com/yargs/yargs): 多くの人に人気な海賊をテーマにしたコマンドライン引数パーサ。
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): JavaScriptテストにテストのカバレッジを追加するためのオープンソースのツールとライブラリのコレクション。
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) と [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): 追加の[Apereo uPortal](https://www.apereo.org/projects/uportal)でユーザーインターフェースを強化できます。
-* [massive.js](https://github.com/dmfay/massive-js): NodeとPostgreSQL用のデータアクセスライブラリ。
-* [electron](https://github.com/electron/electron): JavaScript、HTML、およびCSSを使用してクロスプラットフォームのデスクトップアプリケーションを構築します。
+* [istanbuljs](https://github.com/istanbuljs/istanbuljs): JavaScript のテストにテストのカバレッジを追加するためのオープンソースのツールとライブラリのコレクション。
+* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) と [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): 追加の [Apereo uPortal](https://www.apereo.org/projects/uportal) でユーザーインターフェースを強化できます。
+* [massive.js](https://github.com/dmfay/massive-js): Node と PostgreSQL 用のデータアクセスライブラリ。
+* [electron](https://github.com/electron/electron): JavaScript、HTML および CSS を使用してクロスプラットフォームのデスクトップアプリケーションを構築します。
 * [scroll-utility](https://github.com/LeDDGroup/scroll-utility): 要素のセンタリング、スムーズなスクロールアニメーションを簡単に実現するためのスクロールユーティリティパッケージです。
-* [Blaze UI](https://github.com/BlazeUI/blaze): フレームワークに依存しないオープンソースUIツールキット。
+* [Blaze UI](https://github.com/BlazeUI/blaze): フレームワークに依存しないオープンソース UI ツールキット。
 * [Monica](https://github.com/monicahq/monica): オープンソースの人的関係管理システム。
 * [mhy](https://mhy.js.org): 🧩 設定不要ですぐに使える多目的ツールボックスおよび開発環境。
-* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): 〜１００からなるデータ駆動型開発用のTypeScriptプロジェクトのMonorepo。
-* [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 強化されたYii2アプリテンプレート。
+* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): ~100 個ほどのデータ駆動型開発用の TypeScript プロジェクトを集めたのモノレポ。
+* [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 強化された Yii2 アプリテンプレート。
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 オンライン履歴書を素早く簡単に作成できるテンプレート。
 * [Nintex fōmuzu](https://www.nintex.jp/process-platform/#forms): 動的なオンラインフォームを簡単に作成して、正確で最新のデータをキャプチャして送信します。
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-_あなたのプロジェクトをこのリストに載せたいですか？_ [プルリクエストを送ってください](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
+_あなたのプロジェクトをこのリストに載せたいですか？_ [プルリクエストを送ってください](https://github.com/conventional-changelog/conventionalcommits.org/pulls)。
