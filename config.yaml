@@ -64,7 +64,7 @@ languages:
       - v1.0.0-beta
 
   pl:
-    weight: 2
+    weight: 3
     languageName: "Polish"
     title: Konwencjonalne Commity
     description: Specyfikacja dodawania znaczenia czytelnego dla człowieka do commit komunikatów
@@ -84,7 +84,7 @@ languages:
   # zh-hans specification usage from IETF language tag
   # check https://www.ietf.org/rfc/rfc4646.txt
   zh-hans:
-    weight: 2
+    weight: 4
     languageName: "简体中文"
     title: 约定式提交
     description: 一种用于给提交信息增加人机可读含义的规范
@@ -103,7 +103,7 @@ languages:
       - v1.0.0-beta.1
       - v1.0.0-beta
   zh-hant:
-    weight: 2
+    weight: 5
     languageName: "繁體中文"
     title: 約定式提交
     description: 一種用於增加提交說明之人機可讀性意義的規範
@@ -121,7 +121,7 @@ languages:
       - v1.0.0-beta.4
 
   es:
-    weight: 2
+    weight: 6
     languageName: "Spanish"
     title: Commits Convencionales
     description: Especificación para dar significado a los mensajes de los commits haciéndolos legibles para máquinas y humanos
@@ -137,7 +137,7 @@ languages:
       - v1.0.0-beta.2
 
   ru:
-    weight: 2
+    weight: 7
     languageName: "Русский"
     title: Соглашение о коммитах
     description: Простое соглашение о том, как нужно писать сообщения коммитов
@@ -157,7 +157,7 @@ languages:
         - v1.0.0-beta.2
 
   ja:
-    weight: 2
+    weight: 8
     languageName: "日本語"
     title: Conventional Commits
     description: 人間と機械が読みやすく、意味のあるコミットメッセージにするための仕様
@@ -175,7 +175,7 @@ languages:
       - v1.0.0-beta.4
 
   fr:
-    weight: 2
+    weight: 9
     languageName: "Français"
     title: Commits Conventionnels
     description: Une spécification ajoutant une signification lisible pour l'homme et pour la machine dans les messages des commits
@@ -191,7 +191,7 @@ languages:
       - v1.0.0-beta.2
 
   ko:
-    weight: 2
+    weight: 10
     languageName: "한국어"
     title: Conventional Commits
     description: 커밋 메세지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
@@ -208,7 +208,7 @@ languages:
       - v1.0.0-beta.4
 
   pt-br:
-    weight: 2
+    weight: 11
     languageName: "Português Brasileiro"
     title: Conventional Commits
     description: Uma especificação para dar um significado legível às mensagens de commit para humanos e máquinas
@@ -226,7 +226,7 @@ languages:
         - v1.0.0-beta.4
 
   id:
-    weight: 2
+    weight: 12
     languageName: "Indonesia"
     title: Komit Konvensional
     description: Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk pesan komit
@@ -245,7 +245,7 @@ languages:
         - v1.0.0
 
   hy:
-    weight: 2
+    weight: 13
     languageName: "Հայերեն"
     title: Համաձայնեցված «Commit»֊ներ
     description: Սպեցիֆիկացիա, որը ընթեռնելի է դարձնում «commit» մեսիջները մեքենաների և մարդկանց համար
@@ -263,7 +263,7 @@ languages:
       - v1.0.0-beta.3
 
   de:
-    weight: 2
+    weight: 14
     languageName: "Deutsch"
     title: Konventionelle Commits
     description: Eine Spezifikation für menschlich und maschinell lesbare Commit-Nachrichten
@@ -280,7 +280,7 @@ languages:
       - v1.0.0
 
   th:
-    weight: 2
+    weight: 15
     languageName: "ไทย"
     title: Conventional Commits
     description: ข้อกำหนดในการทำให้มนุษย์และเครื่องจักรเข้าใจความหมายของข้อความ commit
@@ -290,6 +290,23 @@ languages:
     - label: ข้อกำหนดฉบับเต็ม
       url: '#ข้อกำหนด'
     - label: มีส่วนร่วม
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
+
+  uk:
+    weight: 16
+    languageName: "Ukrainian - Українська"
+    title: Політика Комітів
+    description: Угода для додавання зручних для читання коміт повідомлень для людей та роботів
+    actions:
+    - label: Швидкий Огляд
+      url: '#summary'
+    - label: Повна Специфікація
+      url: '#specification'
+    - label: Контрибуція
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
       current: v1.0.0
