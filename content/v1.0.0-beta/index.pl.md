@@ -131,24 +131,3 @@ Po prostu znaczy to, że będzie pominięty przez narzędzia bazujące na specyf
 Nie! Jeśli używasz trybu bazującego na spłaszczaniu historii dostarczeń, wtedy główni opiekunowie projektu mogą posprzątać wiadomości
 podczas dostarczania. Takie podejście nie narzuca żadnego obowiązku na osoby dostarczające od czasu do czasu. Powszechnym podejściem
 jest używanie automatycznego spłaszczania historii dostarczeń z pull requestóœ oraz wyświetlenie formularza osobie dostarczającej w celu wypełnienia wiadomości poprawną treścią.
-
-## O twórcy
-
-Specyfikacja Konwencjonalnych Commitów jest inspirowana oraz mocno bazuje na [Wytycznych Wiadomości Angulara](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
-
-Pierwsza wersja tej specyfikacji została stworzona we współpracy z kilkoma kontrybutorami takich projektów jak:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): zbiór narzędziprośby wciągnięcia
-  pozwalających na parsowanie konwencjonalnych commitów z historii `git`owych dostarczeń.
-* [unleash](https://github.com/netflix/unleash): narzędzie do automatyzacji wydawania oraz publikowania.
-* [lerna](https://github.com/lerna/lerna): narzędzie do zarządzania mono-repozytoriami, które wyrosło z projektu Babel.
-
-## Projekty używające Konwencjonalnych Commitów
-
-* [yargs](https://github.com/yargs/yargs): uwielbiany przez wszystkich, piracko stylizowany parser argumentów linii komend.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): kolekcja otwarto-źródłowych narzędzi oraz bibliotek do dodawania miar pokrycia kodu do Twoich testów jednostkowych
-* [standard-version](https://github.com/conventional-changelog/standard-version): Automatyczne zarządzanie wersjami oraz DZIENNIKIEM ZMIAN, używający nowego przycisku Spłaszcz na GitHubie oraz trybu pracy opartego o Konwencjonalne Wiadomości.
-
-[![Konwencjonalne Commity](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_chcesz, aby Twój projekt znajdował się na tej liście?_ [stwórz pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
