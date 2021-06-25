@@ -70,7 +70,7 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 refactor!: drop support for Node 6
 ```
 
-### 破壊的変更であることに気づいてもらうために `!` を付けて範囲のあるメッセージをコミットする
+### スコープおよび破壊的変更を目立たせるための `!` を持つコミットメッセージ
 
 ```
 refactor(runtime)!: drop support for Node 6
