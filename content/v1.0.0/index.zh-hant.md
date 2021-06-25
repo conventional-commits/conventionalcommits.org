@@ -32,7 +32,7 @@ aliases: ["/zh-hant/"]
 1. **fix:** 為 `fix` _類型_ 的提交，表示對程式修正了一個臭蟲（bug）（對應到語意化版本中的 [`修訂號 PATCH`](https://semver.org/lang/zh-TW/#%E6%91%98%E8%A6%81)）。
 1. **feat:** 為 `feat` _類型_ 的提交，表示對程式增加了一個功能（對應到語意化版本中的 [`次版本 MINOR`](https://semver.org/lang/zh-TW/#%E6%91%98%E8%A6%81)）。
 1. **BREAKING CHANGE:** 重大變更，在可選的正文或是頁腳的起始文字為 `BREAKING CHANGE:` 的提交，表示有重大的 API 變更（對應到語意化版本中的 [`主版本 MAJOR`](https://semver.org/lang/zh-TW/#%E6%91%98%E8%A6%81)）。
-1. **BREAKING CHANGE:** 重大變更，如果提交的頁腳以 `REAKING CHANGE:` 開頭，或是在類型、作用範圍後有 `!`，代表包含了重大 API 變更（對應到語意化版本中的 [`主版本 MAJOR`](https://semver.org/lang/zh-TW/#%E6%91%98%E8%A6%81)）。
+1. **BREAKING CHANGE:** 重大變更，如果提交的頁腳以 `BREAKING CHANGE:` 開頭，或是在類型、作用範圍後有 `!`，代表包含了重大 API 變更（對應到語意化版本中的 [`主版本 MAJOR`](https://semver.org/lang/zh-TW/#%E6%91%98%E8%A6%81)）。
   重大變更可以是任何 _類型_ 提交的一部分。
 1. 其他: 除 `fix:` 與 `feat:` 以外，其他的提交 _類型_ 也是被允許的，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (基於 [Angular 慣例](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) 中推薦的 `chore:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:` 以及更多。
 
@@ -65,6 +65,13 @@ refactor!: drop support for Node 6
 ### 包含作用範圍和提示重大變更的 `!` 的提交說明
 ```
 refactor(runtime)!: drop support for Node 6
+```
+
+### 包含 `!` 以及頁腳有重大變更的提交說明
+```
+refactor!: drop support for Node 6
+
+BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 ```
 
 ### 不包含正文的提交說明
