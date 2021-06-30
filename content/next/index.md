@@ -117,6 +117,95 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 
+## 💈 Emoji patterns
+
+<table>
+  <thead>
+    <tr>
+      <th>Commit Type</th>
+      <th>Emojis</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr>
+      <td>Initial commit</td>
+      <td> 🎉 <code>:tada:</code>   </td>
+    </tr>
+    <tr>
+      <td> Version tag  </td>
+      <td> 🔖 <code>:bookmark:</code>   </td>
+    </tr>
+    <tr>
+      <td>  New feature   </td>
+      <td> ✨ <code>:sparkles:</code>   </td>
+    </tr>
+    <tr>
+      <td>  List of ideas (tasks)    </td>
+      <td> 🔜 <code> :soon: </code>   </td>
+    </tr>
+    <tr>
+      <td>  Bugfix  </td>
+      <td> 🐛 <code>:bug:</code>   </td>
+    </tr>
+    <tr>
+      <td>  Documentation  </td>
+      <td> 📚 <code>:books:</code>   </td>
+    </tr>
+    <tr>
+      <td>  Tests  </td>
+      <td> 🧪 <code>:test_tube: </code>   </td>
+    </tr>
+    <tr>
+      <td>Test added</td>
+      <td> ✅ <code> :white_check_mark: </code>   </td>
+    </tr>
+    <tr>
+      <td>  Accessibility    </td>
+      <td> ♿ <code> :wheelchair: </code>   </td>
+    </tr>
+    <tr>
+      <td>  Text     </td>
+      <td> 📝 <code> :pencil: </code>   </td>
+    </tr>
+    <tr>
+      <td>  Package.json em JS      </td>
+      <td> 📦 <code> :package: </code>   </td>
+    </tr>
+    <tr>
+      <td>  In progress        </td>
+      <td> 🚧 <code> :construction: </code>   </td>
+    </tr>
+    <tr>
+      <td>   Configuration files        </td>
+      <td> 🔧 <code> :wrench: </code>   </td>
+    </tr>
+    <tr>
+      <td>   Dependency removed        </td>
+      <td> ➖ <code> :heavy_minus_sign: </code>   </td>
+    </tr>
+    <tr>
+      <td>   Added dependency        </td>
+      <td> ➕ <code> :heavy_plus_sign: </code>   </td>
+    </tr>
+    <tr>
+      <td>   Reversing changes         </td>
+      <td> 💥 <code> :boom: </code>   </td>
+    </tr>
+    <tr>
+      <td>   Code Review Changes        </td>
+      <td> 👌 <code> :ok_hand: </code>   </td>
+    </tr>
+   <tr>
+      <td>   Refactoring        </td>
+      <td> ♻️ <code> :recycle: </code>   </td>
+   </tr>
+    <tr>
+      <td>   Move/Rename        </td>
+      <td> 🚚 <code> :truck: </code>   </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Why Use Conventional Commits
 
 * Automatically generating CHANGELOGs.
