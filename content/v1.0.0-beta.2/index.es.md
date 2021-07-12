@@ -214,32 +214,3 @@ adicionales a quienes contribuyen casualmente. Un flujo de trabajo común para
 esto es configurar su sistema de git para que haga el `squash` de manera
 automática de un pull request y presente al líder del proyecto un formulario
 para que ingrese el mensaje de commit correcto al momento de hacer el merge.
-
-## Acerca de
-
-La especificación de Commits Convencionales está inspirada, y fuertemente
-basada, en [Angular Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
-
-El primer borrador de esta especificación ha sido escrito en colaboración con
-algunos de los colaboradores de:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog):
-  una serie de herramientas para analizar los mensajes de los commits de los
-  historiales de git.
-* [unleash](https://github.com/netflix/unleash): una herramienta para
-  automatizar la liberación de software y ciclo de vida de publicación.
-* [lerna](https://github.com/lerna/lerna): una herramienta para manejar
-  mono-repositorios, que creció a partir del proyecto Babel.
-
-## Proyectos usando Commits Convencionales
-
-* [yargs](https://github.com/yargs/yargs): el analizador de argumentos de la línea de comandos preferido por todos.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): una colección de herramientas y librerías de código abierto para agregar cobertura de código a sus tests.
-* [standard-version](https://github.com/conventional-changelog/standard-version): versionado automático y manejos de CHANGELOG, usando el botón de squash de GitHub y siguiendo el flujo de trabajo de los Commits Convencionales.
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) y [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): mejoramiento opcional para la interfaz de usuario [Apereo uPortal](https://www.apereo.org/projects/uportal).
-* [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser para archivos Diff (formato unified diff).
-* [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Herramienta fácil para separar .diff y .patch en sus archivos de diferencias contenidos.
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_¿Quiere ver su proyecto en esta lista?_ [haga un pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

@@ -17,6 +17,22 @@
     color: $color-neutral-light;
   }
 
+  .mini_container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: $welcome-min-height;
+    color: $color-neutral-light;
+    width: 100%;
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gap-md;
+    padding-right: $gap-md;
+  }
+
   &__title {
     font-size: 2.6em;
     margin-bottom: $gap-sm;

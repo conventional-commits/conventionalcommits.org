@@ -140,36 +140,3 @@ SemVer를 사용해서 이 규격에 대한 사용자 자신의 확장판을 릴
 
 아니요! Git를 기반으로 스쿼시를 사용하는 경우, 리드 유지관리자는 커밋된 메시지를 병합할 때 정리할 수 있으므로 일반 커밋자에 작업량이 추가되지 않습니다.
 이에 대한 일반적인 작업 흐름은 Git 시스템이 자동으로 풀 요청에서 커밋되도록 하고 리드 유지관리자가 병합에 대한 적절한 Git 커밋 메시지를 입력할 수 있는 양식을 제시하도록 하는 것입니다.
-
-## About
-
-Conventional Commits 규격은 [앵귤러 커밋 가이드라인](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)에서 영감을 받았으며 이를 토대로 하고 있습니다.
-
-이 규격의 첫 번째 초안은 아래 언급된 프로젝트에 기여하고 있는 분들과의 협업으로 작성되었습니다:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): Git 히스토리에서 conventional commit 메시지를 구문 분석하기 위한 도구 모음.
-* [bumped](https://bumped.github.io): 소프트웨어의 새 버전을 릴리즈하기 전후에 작업을 쉽게 수행할 수 있는 소프트웨어를 릴리즈하기 위한 도구.
-* [unleash](https://github.com/netflix/unleash): 소프트웨어 릴리즈 및 배포 수명 주기를 자동화하기 위한 도구.
-* [lerna](https://github.com/lerna/lerna): Babel 프로젝트에서 성장한 monorepo를 관리 도구.
-
-## Conventional Commits를 위한 도구
-
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): Conventional Commits 규격에 따라 커밋 메시지를 생성하기 위해 사용되는 도구로 PHP 프로젝트에서 컴포저 의존성으로 구성 및 사용할 수 있거나 PHP 이외의 프로젝트에서 전 세계적으로 사용할 수 있습니다.
-* [conform](https://github.com/autonomy/conform): Conventional Commits를 포함한 git 저장소에서 정책을 강제하는데 사용되는 도구.
-* [standard-version](https://github.com/conventional-changelog/standard-version): GitHub의 스쿼시 버튼과 Conventional Commits 워크플로우를 이용한 자동 버전 지정 및 CHANGELOG 관리
-
-## Conventional Commits를 이용하고 있는 프로젝트
-
-* [yargs](https://github.com/yargs/yargs): 모두가 가장 좋아하는 해적 테마의 커맨드 라인 인자 구문 분석기.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): 자바스크립트 테스트에 테스트 적용 범위를 추가하는 오픈 소스 도구 및 라이브러리 모음.
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal)와 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): [Apereo uPortal](https://www.apereo.org/projects/uportal)을 향상시켜주는 옵션으로 추가 가능한 사용자 인터페이스.
-* [massive.js](https://github.com/dmfay/massive-js): Node와 PostgreSQL을 위한 데이터 접근 라이브러리
-* [electron](https://github.com/electron/electron): 자바스크립트, HTML, 그리고 CSS를 이용하여 크로스 클랫폼 데스크탑 앱을 만드는 프레임워크.
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): 사용하기 쉬운, 요소 중앙 정렬 및 부드러운 애니메이션을 위한 스크롤 유틸리티 패키지.
-* [Blaze UI](https://github.com/BlazeUI/blaze): 프레임워크가 필요 없는 오픈소스 UI 툴킷.
-* [Monica](https://github.com/monicahq/monica): 오픈 소스 개인 관계 관리 시스템.
-* [mhy](https://mhy.js.org): 🧩 설정이 필요 없고 바로 사용 가능한 다목적 툴 박스와 개발 환경
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_위의 목록에 여러분의 프로젝트를 남기고 싶으세요??_ [PR을 만들어보세요](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

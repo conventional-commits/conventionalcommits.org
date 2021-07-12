@@ -156,39 +156,3 @@ Non è la fine del mondo se un commit non segue la specifica Commit Convenzional
 ### Devono tutti i contributori seguire la specifica Commit Convenzionali?
 
 No. Se usi un workflow basato sugli squash di Git, i mantenitori possono pulire i messaggi dei commit mentre vengono inseriti nel branch principale (merge), non aggiungendo alcun carico di lavoro ai committer occasionali. Un workflow comune è quello di unire (con lo squash) automaticamente i commit dalle pull request e far utilizzare un form ai mantenitori per riscrivere un messaggio più adeguato.
-
-## A proposito
-
-La specifica Commit Convenzionali è ispirata e fortemente basata su [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-
-La prima bozza di questa specifica è stata scritta in collaborazione con alcuni contributori di:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): un set di tool per analizzare messagi dei commit convenzionali dalla cronologia git.
-* [bumped](https://bumped.github.io): un tool per il rilascio di software il quale rende più semplice eseguire azioni prima o dopo il rilascio di una versione del vostro software.
-* [unleash](https://github.com/netflix/unleash): un tool per automatizzare rilasci e cicli di pubblicazioni di un software.
-* [lerna](https://github.com/lerna/lerna): un tool per la gestione di monorepos, nato del progetto Babel.
-
-
-## Strumenti per Conventional Commits
-
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): un tool realizzato per creare dei messaggi che si basano sulla specifica Conventional Commits. 
-Totalmente configurabile ed eè utilizzabile per progetti PHP installandola come dipendenza locale o globale per progetti non basati su PHP.
-* [conform](https://github.com/autonomy/conform): un tool che può essere usato per introdurre regole sui repository basasti su git, includendo conventional commits.
-* [standard-version](https://github.com/conventional-changelog/standard-version): Automatizza il versionamento e la gestione del CHANGELOG utilizzando il nuovo pulsante squash di GitHub e il flusso di lavoro consigliato da Commit Convenzionali.
-* [Conventional Commit](https://github.com/lppedd/idea-conventional-commit): offre completamento estensibile basato sul contesto o su template, ed ispezioni, per Conventional Commits all'interno del dialogo di commit per il VCS configurato. Disponibile per tutti gli [IDE JetBrains](https://www.jetbrains.com/).
-
-## Progetti che usano Commit Convenzionali
-
-* [yargs](https://github.com/yargs/yargs): Parser di argomenti da CLI, a tema pirati.
-* [parse-commit-message](https://github.com/olstenlarck/parse-commit-message): Tool per analizzare i messaggi dei commit e creare oggetti simili a `{ header: { type, scope, subject }, body, footer }`.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): Una collezione di strumenti e librerie open source per aggiungere la coverage dei test JavaScript.
-* [massive.js](https://github.com/dmfay/massive-js): un DBAL per Node e PostgreSQL.
-* [electron](https://github.com/electron/electron): Realizza app desktop cross platform utilizzando JavaScript, HTML e CSS.
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Un package dal semplice utilizzo per centrare elementi e animazioni fluide.
-* [Blaze UI](https://github.com/BlazeUI/blaze): Set di tool open source per UI.
-* [Monica](https://github.com/monicahq/monica): Una piattaforma open source per gestire relazioni.
-* [mhy](https://mhy.js.org): 🧩 Un set di tool per l'ambiente di sviluppo senza configurazione.
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_vuoi aggingere il tuo progetto alla lista?_ [invia una pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
