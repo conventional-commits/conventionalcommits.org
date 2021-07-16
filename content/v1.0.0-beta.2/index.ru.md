@@ -176,35 +176,3 @@ fixes issue #12
 историю всех предыдущих коммитов при их слияния, не добавляя рабочей нагрузки на случайные коммиты. Обычно, 
 рабочий процесс строится на том, что ваша система Git автоматически объединяет (squash) все предыдущие коммиты пред 
 перед pull-запросом и предоставляет форму сопровождающему проекта для ввода нового коммита.
-
-## О спецификации
-
-Общепринятые Коммиты вдохновлены и основаны на 
-[Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-
-Первый черновик спецификации был написан в сотрудничестве с некоторыми участниками:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): набор утилит для парсинга
- стандартных сообщений коммитов из истории git.
-* [bumped](https://bumped.github.io): утилита для релиза приложений, которая позволяет легко выполнять действия
- до и после релиза новой версии ваших приложений.
-* [unleash](https://github.com/netflix/unleash): утилита для автоматического релиза и публикации приложений.
-* [lerna](https://github.com/lerna/lerna): утилита для управления моно-репозиториями, которая выросла и проекта Babel.
-
-## Проекты, использующие Общепринятые Коммиты
-
-* [yargs](https://github.com/yargs/yargs): всеми любимый парсер параметров командной строки.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): коллекция утилит и библиотек с открытым исходным кодом для оценки покрытия 
- тестами вашего кода.
-* [standard-version](https://github.com/conventional-changelog/standard-version): автоматический менеджер версий
- и CHANGELOG'ов, использующий GitHub `new squash` кнопку, который рекомендует использовать Общепринятые Коммиты.
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) и [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): 
- новый дополнительный пользовательский интерфейс [Apereo uPortal](https://www.apereo.org/projects/uportal).
-* [massive.js](https://github.com/dmfay/massive-js): библиотека для доступа к данным PostrgeSQL для Node.
-* [electron](https://github.com/electron/electron): утилита для создания крос-платформенных приложений на JavaScript, HTM и CSS.
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): простая в использовании утилита контроля прокрутки центральных 
- элементов и плавной анимации.
-
-[![Общепринятые Коммиты](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_Хотите, чтоб ваш проект появился в этом списке?_ [Отправьте Pull Request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

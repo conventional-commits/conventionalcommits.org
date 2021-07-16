@@ -178,38 +178,3 @@ SemVerを使用して、この仕様に対する独自の拡張仕様をリリ�
 
 いいえ！ Gitでsquashベースのワークフローを使用するなら、主要メンテナはマージ時にコミットメッセージをクリーンアップすることができるため、通常のコミッタには作業負荷がかかりません。
 また一般的なワークフローの場合は、あなたのgitシステムが自動的にpull requestからコミットを破棄し、主要メンテナにマージのための適切なgit commitメッセージを入力するためのフォームを提示することです。
-
-## 要約
-
-Conventional Commitの仕様は、[Angular Commitのガイドライン](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)に触発されており、それに基づいています。
-
-この仕様書の最初のドラフトは、以下に何人かのコントリビューターと共同して書かれました:
-
-* [traditional-changelog](https://github.com/conventional-changelog/conventional-changelog): git履歴からconventional commitのメッセージを変換するためのツールのセット。
-* [bumped](https://bumped.github.io): ソフトウェアの新しいバージョンをリリースする前後にアクションを実行することを手助けするためのツール。
-* [unleash](https://github.com/netflix/unleash): ソフトウェアのリリースを自動化し、ライフサイクルを公開するためのツール。
-* [lerna](https://github.com/lerna/lerna): Babelプロジェクトから生まれたモノレポを管理するためのツール。
-
-## Conventional Commitsのためのツール一覧
-
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): Conventional Commit の仕様に従ってコミットメッセージを作成するためのツール。
-composerに依存するPHPプロジェクトに対して設定、使用可能であり、非PHPプロジェクトに対してもグローバルに使用可能。
-* [conform](https://github.com/autonomy/conform): conventional commitsを含めたgitリポジトリにポリシーを強制するために使用できるツール。
-* [standard-version](https://github.com/conventional-changelog/standard-version): GitHubの新しいsquashボタンと推奨されているConventional Commitワークフローを使用した、自動のバージョン管理とCHANGELOG管理。
-
-## Conventional Commitsを利用しているプロジェクト
-
-* [yargs](https://github.com/yargs/yargs): 多くの人に人気な海賊をテーマにしたコマンドライン引数パーサ。
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): JavaScriptテストにテストのカバレッジを追加するためのオープンソースのツールとライブラリのコレクション。
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) と [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): 追加の[Apereo uPortal](https://www.apereo.org/projects/uportal)でユーザーインターフェースを強化できます。
-* [massive.js](https://github.com/dmfay/massive-js): NodeとPostgreSQL用のデータアクセスライブラリ。
-* [electron](https://github.com/electron/electron): JavaScript、HTML、およびCSSを使用してクロスプラットフォームのデスクトップアプリケーションを構築します。
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): 要素のセンタリング、スムーズなスクロールアニメーションを簡単に実現するためのスクロールユーティリティパッケージです。
-* [Blaze UI](https://github.com/BlazeUI/blaze): フレームワークに依存しないオープンソースUIツールキット。
-* [Monica](https://github.com/monicahq/monica): オープンソースの人的関係管理システム。
-* [mhy](https://mhy.js.org): 🧩 設定不要ですぐに使える多目的ツールボックスおよび開発環境。
-* [Nintex fōmuzu](https://www.nintex.jp/process-platform/#forms): 動的なオンラインフォームを簡単に作成して、正確で最新のデータをキャプチャして送信します。
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_あなたのプロジェクトをこのリストに載せたいですか？_ [プルリクエストを送ってください](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

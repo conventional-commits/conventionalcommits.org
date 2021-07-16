@@ -137,23 +137,3 @@ Semplicemente il commit verrà ignorato dai tool che sono basati su questa speci
 
 No. Se usi un workflow basato sugli squash di Git, i mantenitori possono pulire i messaggi dei commit mentre vengono inseriti nel branch principale (merge), non aggiungendo alcun carico di lavoro ai committer occasionali.
 Un workflow comune è quello di unire (con lo squash) automaticamente i commit dalle pull request e far utilizzare un form ai mantenitori per riscrivere un messaggio più adeguato.
-
-## Riguardo
-
-La specifica Commit Convenzionali è ispirata e fortemente basata su [Angular Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
-
-La prima bozza di questa specifica è stata scritta in collaborazione con alcuni contributori di:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): un set di tool per analizzare messagi dei commit convenzionali dalla cronologia git.
-* [unleash](https://github.com/netflix/unleash): un tool per automatizzare rilasci e cicli di pubblicazioni di un software.
-* [lerna](https://github.com/lerna/lerna): un tool per la gestione di monorepos, nato del progetto Babel.
-
-## Progetti che usano Commit Convenzionali
-
-* [yargs](https://github.com/yargs/yargs): Parser di argomenti da CLI, a tema pirati.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): Una collezione di strumenti e librerie open source per aggiungere la coverage dei test JavaScript.
-* [standard-version](https://github.com/conventional-changelog/standard-version): Automatizza il versionamento e la gestione del CHANGELOG utilizzando il nuovo pulsante squash di GitHub e il flusso di lavoro consigliato da Commit Convenzionali.
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_vuoi aggingere il tuo progetto alla lista?_ [invia una pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

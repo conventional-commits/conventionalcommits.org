@@ -104,25 +104,3 @@ draft: false
 ### 所有的贡献者都需要使用约定式提交规范吗？
 
 并不！如果你使用基于 squash 的 Git 工作流，主管维护者可以在合并时清理提交信息——这不会对普通提交者产生额外的负担。有种常见的工作流是让 git 系统自动从 pull request 中 squash 出提交，向主管维护者提供表单，来在合并时输入合适的 git 提交信息。
-
-## 关于
-
-约定式提交规范受到了 [Angular 提交准则](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit)的启发，并在很大程度上以其为依据。
-
-该规范的首个草案来自下面这些项目中若干贡献者们的协作：
-
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)：一套从 git 历史中解析出约定式提交说明的工具。
-* [unleash](https://github.com/netflix/unleash)：一个用于自动化软件发行和发布生命周期的工具。
-* [lerna](https://github.com/lerna/lerna)：一个用于管理宏仓库的工具，源自 Babel 项目。
-
-## 使用约定式提交的项目
-
-* [yargs](https://github.com/yargs/yargs)：广受欢迎的命令行参数解析器。
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs)：一套为 JavaScript 测试生成测试覆盖率的开源工具和类库。
-* [standard-version](https://github.com/conventional-changelog/standard-version) 基于 GitHub 的新 squash 按钮与推荐的约定式提交工作流，自动管理版本和 CHANGELOG。
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) 和 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame)：用于增强 [Apereo uPortal](https://www.apereo.org/projects/uportal) 的可选用户界面。
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_想让你的项目出现在上面吗？_[提交 pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls) 吧。

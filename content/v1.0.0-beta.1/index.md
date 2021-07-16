@@ -131,29 +131,3 @@ In a worst case scenario, it's not the end of the world if a commit lands that d
 ### Do all my contributors need to use the conventional commit specification?
 
 No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers. A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
-
-## About
-
-The Conventional Commit specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
-
-The first draft of this specification has been written in collaboration with some of the
-folks contributing to:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a
-  set of tools for parsing conventional commit messages from git histories.
-* [unleash](https://github.com/netflix/unleash): a tool for automating the
-  software release and publishing lifecycle.
-* [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out
-  of the Babel project.
-
-## Projects Using Conventional Commits
-
-* [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools
-  and libraries for adding test coverage to your JavaScript tests.
-* [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
-* [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_want your project on this list?_ [send a pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

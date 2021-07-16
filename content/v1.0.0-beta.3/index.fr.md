@@ -143,38 +143,3 @@ Dans le pire des cas, ce n'est pas la fin du monde si un commit atterrit sans re
 ### Est-ce que tous mes contributeurs doivent utiliser les spécifications de Conventional Commits ?
 
 Non! Si vous utilisez un flux de travail basé sur squash sur Git, les responsables principaux peuvent nettoyer les messages des commits au fur et à mesure de leur fusion, ce qui permet de ne pas ajouter de charge de travail aux committers occasionnels. Un processus courant consiste à ce que votre système git écrase automatiquement les commits d'une demande d'extraction et présente un formulaire permettant au responsable de la maintenance d'entrer le message du commit git approprié pour la fusion.
-
-## À Propos
-
-La spécifications de Conventional Commits s’inspire largement de [Angular Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit).
-
-La première version de ces spécifications a été rédigée en collaboration avec certains des les gens qui contribuent à:
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): Un ensemble d'outils permettant d'analyser les messages des commits classiques à partir des historiques git.
-* [bumped](https://bumped.github.io): Un outil de publication de logiciel qui facilite l'exécution d'actions avant et après la publication d'une nouvelle version de votre logiciel.
-* [unleash](https://github.com/netflix/unleash): Un outil pour automatiser le versioning d'un logiciel et du cycle de publication.
-* [lerna](https://github.com/lerna/lerna): Un outil de gestion de monorepos, qui a grandi du projet Babel.
-
-## Outils pour Conventional Commits
-
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): Un outil conçu pour créer des messages de commite en suivant les spécifications de Conventional Commits.
-Configurable et utilisable pour les projets PHP en tant que dépendance composer ou utilisable globalement pour les projets non-PHP.
-* [conform](https://github.com/autonomy/conform): Un outil qui peut être utilisé pour appliquer des stratégies sur les référentiels git, y compris les commites classiques.
-
-## Projets Utilisant Conventional Commits
-
-* [yargs](https://github.com/yargs/yargs): Le parseur d'arguments en ligne de commande sur le thème des pirates préféré de tous.
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs): une collection d'outils open-source
- et bibliothèques pour ajouter une couverture de test à vos tests JavaScript.
-* [standard-version](https://github.com/conventional-changelog/standard-version): Le versioning automatique et la gestion de CHANGELOG, en  utilisant le nouveau bouton squash de GitHub et le flux de travail Conventional Commits recommandé.
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) et [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Amélioration optionnelle de l'interface utilisateur [Apereo uPortal](https://www.apereo.org/projects/uportal).
-* [massive.js](https://github.com/dmfay/massive-js): Une bibliothèque d'accès aux données pour Node et PostgreSQL.
-* [electron](https://github.com/electron/electron): Créez des applications de bureau multiplates-formes avec JavaScript, HTML et CSS.
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Un utilitaire de défilement simple à utiliser pour le centrage des éléments et des animations fluides.
-* [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free d'outilsmodulaire open source.
-* [Monica](https://github.com/monicahq/monica): Un système de gestion de relations personnelles open source.
-* [Formulaires Nintex](https://www.nintex.fr/plateforme-de-processus/#forms): Créez facilement des formulaires en ligne dynamiques pour capturer et soumettre des données précises et actuelles.
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_envie d'avoir votre projet sur cette liste?_ [envoyer une pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).

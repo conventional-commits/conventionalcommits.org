@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+<body class="conventional-commits--loading">
+{{- partial "header.html" . -}}
+{{- partial "mini_welcome.html" . -}}
+<main>
+  <article class="container markdown-body">
+    {{.Content}}
+  </article>
+</main>
+{{- partial "footer.html" . -}}
+{{- partial "scripts.html" . -}}
+</body>
+</html>

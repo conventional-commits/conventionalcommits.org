@@ -137,36 +137,3 @@ fixes issue #12
 
 并不！如果你使用基于 squash 的 Git 工作流，主管维护者可以在合并时清理提交信息——这不会对普通提交者产生额外的负担。
 有种常见的工作流是让 git 系统自动从 pull request 中 squash 出提交，并向主管维护者提供一份表单，用以在合并时输入合适的 git 提交信息。
-
-## 关于
-
-约定式提交规范受到了 [Angular 提交准则](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit)的启发，并在很大程度上以其为依据。
-
-该规范的首个草案来自下面这些项目中若干贡献者们的协作：
-
-* [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)：一套从 git 历史中解析出约定式提交说明的工具。
-* [bumped](https://bumped.github.io)：一个用于发布软件的工具，可以在为你的软件发布新版本前后轻松地执行操作。
-* [unleash](https://github.com/netflix/unleash)：一个用于自动化软件发行和发布生命周期的工具。
-* [lerna](https://github.com/lerna/lerna)：一个用于管理宏仓库（monorepo）的工具，源自 Babel 项目。
-
-## 用于约定式提交的工具
-
-* [php-commitizen](https://github.com/damianopetrungaro/php-commitizen)：一个用于创建遵循约定式提交规范提交信息的工具。
-可配置，并且可以作为 composer 依赖项用于 PHP 项目，或可在非 PHP 项目中全局使用。
-* [conform](https://github.com/autonomy/conform)：一个可用以在 git 仓库上施加配置的工具，包括约定式提交。
-
-## 使用约定式提交的项目
-
-* [yargs](https://github.com/yargs/yargs)：广受欢迎的命令行参数解析器。
-* [istanbuljs](https://github.com/istanbuljs/istanbuljs)：一套为 JavaScript 测试生成测试覆盖率的开源工具和类库。
-* [standard-version](https://github.com/conventional-changelog/standard-version) 基于 GitHub 的新 squash 按钮与推荐的约定式提交工作流，自动管理版本和 CHANGELOG。
-* [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) 和 [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame)：用于增强 [Apereo uPortal](https://www.apereo.org/projects/uportal) 的可选用户界面。
-* [massive.js](https://github.com/dmfay/massive-js)：一个用于 Node 和 PostgreSQL 的数据访问类库。
-* [electron](https://github.com/electron/electron)：用 JavaScript、HTML 和 CSS 构建跨平台应用。
-* [scroll-utility](https://github.com/LeDDGroup/scroll-utility)：一个居中元素和平滑动画的滚屏工具包实例。
-* [Blaze UI](https://github.com/BlazeUI/blaze)：无框架开源 UI 套件。
-* [Monica](https://github.com/monicahq/monica)：一个开源的人际关系管理系统。
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_想让你的项目出现在上面吗？_ [提交 pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls) 吧。
