@@ -227,6 +227,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
   * [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
   * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
   * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
+* [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 
 ## Projects Using Conventional Commits
 
@@ -251,7 +252,6 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Undercut](https://github.com/the-spyke/undercut): JavaScript lazy data processing pipelines and utilities.
 * [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): A stats builder for [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
 * [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
-* [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Integration RSQL query language and Querydsl framework.
 * [Changeloguru](https://github.com/haunt98/changeloguru): Auto-generate changelog from conventional commits, written in Go.
 
