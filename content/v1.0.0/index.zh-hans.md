@@ -68,6 +68,11 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 refactor!: drop support for Node 6
 ```
 
+### 包含了范围和破坏性变更 `!` 的提交說明
+```
+refactor(runtime)!: drop support for Node 6
+```
+
 ### 包含了 `!` 和 BREAKING CHANGE 脚注的提交说明
 ```
 refactor!: drop support for Node 6
