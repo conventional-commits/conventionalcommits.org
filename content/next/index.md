@@ -228,6 +228,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
   * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
   * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
+* [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 
 ## Projects Using Conventional Commits
 
