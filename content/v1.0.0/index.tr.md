@@ -56,6 +56,12 @@ BREAKING CHANGE: `extends` artık başka bir ayar dosyasından türetildiğini b
 refactor!: Node 6 desteği kaldırıldı
 ```
 
+### Kapsamı belirtilen ve `!` ile yıkıcı değişikliğe dikkat çeken commit mesajı
+
+```
+refactor(runtime)!: Node 6 desteği kaldırıldı
+```
+
 ### `!` ve BREAKING CHANGE alt metni içeren commit mesajı
 
 ```
