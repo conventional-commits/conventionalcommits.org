@@ -56,6 +56,11 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 feat!: drop support for Node 6
 ```
 
+### Commit message with scope and `!` to draw attention to breaking change
+```
+refactor(runtime)!: drop support for Node 6
+```
+
 ### Commit message with both `!` and BREAKING CHANGE footer
 ```
 feat!: drop support for Node 6
@@ -228,6 +233,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
   * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
   * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
+* [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI
 
 ## Projects Using Conventional Commits

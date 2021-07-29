@@ -55,6 +55,11 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 refactor!: drop support for Node 6
 ```
 
+### Commit-Nachricht mit Gültigkeitsbereich und `!` um auf einen Breaking Change aufmerksam zu machen
+```
+refactor(runtime)!: drop support for Node 6
+```
+
 ### Commit-Nachricht mit `!` als auch BREAKING CHANGE Fußzeile
 ```
 refactor!: drop support for Node 6
