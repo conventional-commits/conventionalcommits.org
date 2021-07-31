@@ -257,3 +257,9 @@ revert: let us never again speak of the noodle incident
 
 Refs: 676104e, a215868
 ```
+
+[semver]: https://semver.org/lang/ru
+[@commitlint/config-conventional]: https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
+[angular-convention]: https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
+[git-trailer-format]: https://git-scm.com/docs/git-interpret-trailers
+[rfc-2119]: https://www.ietf.org/rfc/rfc2119.txt
