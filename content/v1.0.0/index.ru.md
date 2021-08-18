@@ -63,7 +63,7 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Чтобы привлечь внимание к критическим изменением, к сообщению коммита добавляется `!`
+### Сообщение коммита с `!` для привлечения внимания к `BREAKING CHANGE`
 ```
 refactor!: drop support for Node 6
 ```
@@ -73,7 +73,7 @@ refactor!: drop support for Node 6
 refactor(runtime)!: drop support for Node 6
 ```
 
-### Сообщение коммита вместе с `!` и _сноской_ `BREAKING CHANGE`.
+### Сообщение коммита вместе с `!` и _сноской_ `BREAKING CHANGE`
 ```
 refactor!: drop support for Node 6
 
@@ -85,7 +85,7 @@ BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 docs: correct spelling of CHANGELOG
 ```
 
-### Сообщение коммита с _контекстом_.
+### Сообщение коммита с _контекстом_
 ```
 feat(lang): add polish language
 ```
