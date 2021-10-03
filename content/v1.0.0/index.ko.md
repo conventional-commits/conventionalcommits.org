@@ -76,13 +76,13 @@ feat(lang): add polish language
 
 ### 다중-단락 본문과 다수의 꼬리말을 가진 커밋 메세지
 ```
-refactor: simplify event distribution
+fix: prevent racing of requests
 
-Standardize event distribution, reduce varying boiler code and increase
-maintainability.
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-As a further result implementation of #123 as a subscriber to newly
-introduced EventSource is now easily possible.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
 Reviewed-by: Z
 Refs: #123

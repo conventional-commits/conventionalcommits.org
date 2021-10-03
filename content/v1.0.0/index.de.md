@@ -79,13 +79,13 @@ feat(lang): add polish language
 
 ### Commit-Nachricht mit mehreren Absätzen und Fußzeilen
 ```
-refactor: simplify event distribution
+fix: prevent racing of requests
 
-Standardize event distribution, reduce varying boiler code and increase
-maintainability.
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-As a further result implementation of #123 as a subscriber to newly
-introduced EventSource is now easily possible.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
 Reviewed-by: Z
 Refs: #123
