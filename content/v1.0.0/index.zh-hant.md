@@ -86,14 +86,16 @@ feat(lang): add polish language
 
 ### 正文有多段落以及有多個頁腳的提交說明
 ```
-fix: correct minor typos in code
+refactor: simplify event distribution
 
-see the issue for details
+Standardize event distribution, reduce varying boiler code and increase
+maintainability.
 
-on typos fixed.
+As a further result implementation of #123 as a subscriber to newly
+introduced EventSource is now easily possible.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## 規範

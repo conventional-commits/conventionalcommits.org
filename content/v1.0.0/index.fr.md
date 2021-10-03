@@ -81,14 +81,16 @@ feat(lang): add polish language
 
 ### Message du commit avec plusieurs paragraphes et plusieurs pieds de page
 ```
-fix: correct minor typos in code
+refactor: simplify event distribution
 
-see the issue for details
+Standardize event distribution, reduce varying boiler code and increase
+maintainability.
 
-on typos fixed.
+As a further result implementation of #123 as a subscriber to newly
+introduced EventSource is now easily possible.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## Spécification

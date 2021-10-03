@@ -80,14 +80,16 @@ feat(lang): add polish language
 
 ### ข้อความ commit ที่มีเนื้อหาหลายย่อหน้า และมีข้อความลงท้ายหลายข้อความ
 ```
-fix: correct minor typos in code
+refactor: simplify event distribution
 
-see the issue for details
+Standardize event distribution, reduce varying boiler code and increase
+maintainability.
 
-on typos fixed.
+As a further result implementation of #123 as a subscriber to newly
+introduced EventSource is now easily possible.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## ข้อกำหนด

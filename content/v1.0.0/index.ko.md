@@ -76,14 +76,16 @@ feat(lang): add polish language
 
 ### 다중-단락 본문과 다수의 꼬리말을 가진 커밋 메세지
 ```
-fix: correct minor typos in code
+refactor: simplify event distribution
 
-see the issue for details
+Standardize event distribution, reduce varying boiler code and increase
+maintainability.
 
-on typos fixed.
+As a further result implementation of #123 as a subscriber to newly
+introduced EventSource is now easily possible.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## 규격
