@@ -92,14 +92,16 @@ feat(lang): add polish language
 
 ### 包含多行正文和多行脚注的提交说明
 ```
-fix: correct minor typos in code
+fix: prevent racing of requests
 
-see the issue for details
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-on typos fixed.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## 约定式提交规范

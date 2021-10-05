@@ -76,14 +76,16 @@ feat(lang): add polish language
 
 ### 다중-단락 본문과 다수의 꼬리말을 가진 커밋 메세지
 ```
-fix: correct minor typos in code
+fix: prevent racing of requests
 
-see the issue for details
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-on typos fixed.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## 규격

@@ -92,14 +92,16 @@ feat(lang): add polish language
 
 ### Сообщение коммита с _телом_ из нескольких абзацев и несколькими _сносками_
 ```
-fix: correct minor typos in code
+fix: prevent racing of requests
 
-see the issue for details
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-on typos fixed.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## Спецификация

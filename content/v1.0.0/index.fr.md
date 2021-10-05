@@ -81,14 +81,16 @@ feat(lang): add polish language
 
 ### Message du commit avec plusieurs paragraphes et plusieurs pieds de page
 ```
-fix: correct minor typos in code
+fix: prevent racing of requests
 
-see the issue for details
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
 
-on typos fixed.
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
 
 Reviewed-by: Z
-Refs #133
+Refs: #123
 ```
 
 ## Spécification
