@@ -65,12 +65,12 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Сообщение коммита с `!` для привлечения внимания к `BREAKING CHANGE`
 ```
-refactor!: drop support for Node 6
+feat!: enforce authentication for all requests
 ```
 
 ### Сообщение коммита с _контекстом_ и `!` для привлечения внимания к `BREAKING CHANGE`
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: enforce authentication for all requests
 ```
 
 ### Сообщение коммита вместе с `!` и _сноской_ `BREAKING CHANGE`

@@ -53,12 +53,12 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### ข้อความ commit ที่มี `!` เพื่อบ่งบอก breaking change
 ```
-refactor!: drop support for Node 6
+feat!: enforce authentication for all requests
 ```
 
 ### ข้อความ commit ที่ระบุขอบเขต และมี `!` เพื่อบ่งบอก breaking change
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: enforce authentication for all requests
 ```
 
 ### ข้อความ commit ที่มีทั้ง `!` และ BREAKING CHANGE ลงท้าย

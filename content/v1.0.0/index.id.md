@@ -52,12 +52,12 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Pesan komit dengan `!` untuk menarik perhatian pada breaking change
 ```
-refactor!: drop support for Node 6
+feat!: enforce authentication for all requests
 ```
 
 ### Pesan komit dengan scope dan `!` untuk menarik perhatian pada breaking change
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: enforce authentication for all requests
 ```
 
 ### Pesan komit dengan keduanya `!` dan footer BREAKING CHANGE

@@ -67,13 +67,13 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 ### 破壊的変更を目立たせるために `!` を持つコミットメッセージ
 
 ```
-refactor!: drop support for Node 6
+feat!: enforce authentication for all requests
 ```
 
 ### スコープおよび破壊的変更を目立たせるための `!` を持つコミットメッセージ
 
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: enforce authentication for all requests
 ```
 
 ### `!` と BREAKING CHANGE フッターの両方を持つコミットメッセージ

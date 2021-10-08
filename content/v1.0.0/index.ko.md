@@ -49,12 +49,12 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### 단절적 변경(breaking change)에 주의를 주기 위해 `!`를 포함한 커밋 메세지
 ```
-refactor!: drop support for Node 6
+feat!: enforce authentication for all requests
 ```
 
 ### 단절적 변경(breaking change)에 주의를 주기위해 적용 범위와 `!` 를 포함한 커밋 메세지
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: enforce authentication for all requests
 ```
 
 ### BREAKING CHANGE 꼬리말과 `!`를 함께 포함한 커밋 메세지
