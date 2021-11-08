@@ -52,19 +52,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Pesan komit dengan `!` untuk menarik perhatian pada breaking change
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Pesan komit dengan scope dan `!` untuk menarik perhatian pada breaking change
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Pesan komit dengan keduanya `!` dan footer BREAKING CHANGE
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### Pesan komit tanpa body

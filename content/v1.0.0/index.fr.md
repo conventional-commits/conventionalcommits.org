@@ -54,19 +54,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Message du commit avec `!` attire l'attention sur un BREAKING CHANGE
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Message du commit avec _scope_ et `!` attire l'attention sur un BREAKING CHANGE
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Message du commit avec `!` et BREAKING CHANGE dans le pied de page
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### Message du commit sans corps de texte

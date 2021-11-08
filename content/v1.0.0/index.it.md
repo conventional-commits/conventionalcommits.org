@@ -54,17 +54,17 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Messaggio di un commit con un `!` per attirare l'attenzione su una breaking change
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Messaggio di un commit con uno contesto e `!` per attirare attenzione ad una breaking change
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Messaggio di un commit con entrambe `!` e _BREAKING CHANGE_ a piè di pagina
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 
 BREAKING CHANGE: dropping Node 6 which hits end of life in April
 ```

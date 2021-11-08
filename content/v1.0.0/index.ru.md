@@ -65,19 +65,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Сообщение коммита с `!` для привлечения внимания к `BREAKING CHANGE`
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Сообщение коммита с _контекстом_ и `!` для привлечения внимания к `BREAKING CHANGE`
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Сообщение коммита вместе с `!` и _сноской_ `BREAKING CHANGE`
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### Сообщение коммита без _тела_

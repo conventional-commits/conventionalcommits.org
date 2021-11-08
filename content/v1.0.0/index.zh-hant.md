@@ -59,19 +59,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### 包含用以提示重大變更的 `!` 的提交說明
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### 包含作用範圍和提示重大變更的 `!` 的提交說明
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### 包含 `!` 以及頁腳有重大變更的提交說明
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### 不包含正文的提交說明

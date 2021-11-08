@@ -53,17 +53,17 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Commit message with `!` to draw attention to breaking change
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Commit message with scope and `!` to draw attention to breaking change
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Commit message with both `!` and BREAKING CHANGE footer
 ```
-feat!: drop support for Node 6
+chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

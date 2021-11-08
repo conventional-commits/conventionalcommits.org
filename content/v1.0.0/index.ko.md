@@ -49,19 +49,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### 단절적 변경(breaking change)에 주의를 주기 위해 `!`를 포함한 커밋 메세지
 ```
-feat!: enforce authentication for all requests
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### 단절적 변경(breaking change)에 주의를 주기위해 적용 범위와 `!` 를 포함한 커밋 메세지
 ```
-feat(api)!: enforce authentication for all requests
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### BREAKING CHANGE 꼬리말과 `!`를 함께 포함한 커밋 메세지
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### 본문이 없는 커밋 메세지
