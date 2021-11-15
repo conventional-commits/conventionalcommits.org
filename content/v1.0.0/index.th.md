@@ -53,19 +53,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### ข้อความ commit ที่มี `!` เพื่อบ่งบอก breaking change
 ```
-refactor!: drop support for Node 6
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### ข้อความ commit ที่ระบุขอบเขต และมี `!` เพื่อบ่งบอก breaking change
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### ข้อความ commit ที่มีทั้ง `!` และ BREAKING CHANGE ลงท้าย
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### ข้อความ commit ที่ไม่มีเนื้อหา

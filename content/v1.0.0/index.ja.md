@@ -67,21 +67,21 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 ### 破壊的変更を目立たせるために `!` を持つコミットメッセージ
 
 ```
-refactor!: drop support for Node 6
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### スコープおよび破壊的変更を目立たせるための `!` を持つコミットメッセージ
 
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### `!` と BREAKING CHANGE フッターの両方を持つコミットメッセージ
 
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### 本文を持たないコミットメッセージ

@@ -55,19 +55,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Коміт повідомлення з `!` для додаткового наголосу щодо BREAKING CHANGE
 ```
-refactor!: drop support for Node 6
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Коміт повідомлення з контекстом та `!` аби привернути увагу до BREAKING CHANGE
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Коміт повідомлення з `!` та BREAKING CHANGE додатком
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### Коміт повідомлення без тіла

@@ -52,19 +52,19 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 
 ### Commit-Nachricht mit `!` um auf einen Breaking Change aufmerksam zu machen
 ```
-refactor!: drop support for Node 6
+feat!: send an email to the customer when a product is shipped
 ```
 
 ### Commit-Nachricht mit Gültigkeitsbereich und `!` um auf einen Breaking Change aufmerksam zu machen
 ```
-refactor(runtime)!: drop support for Node 6
+feat(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Commit-Nachricht mit `!` als auch BREAKING CHANGE Fußzeile
 ```
-refactor!: drop support for Node 6
+chore!: drop support for Node 6
 
-BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
+BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
 ### Commit-Nachricht ohne Textkörper
