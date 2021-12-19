@@ -165,12 +165,7 @@ En el peor de los escenarios, no es el fin del mundo si aparece un commit que no
 
 ### ¿Deben todos los que contribuyen a mi proyecto usar esta especificación?
 
-¡No! Si usas un flujo de trabajo basado en `squash` los líderes del proyecto
-pueden limpiar el mensaje en el momento en que se incorpora, sin agregar cargas
-adicionales a quienes contribuyen casualmente. Un flujo de trabajo común para
-esto es configurar tu sistema de git para que haga el `squash` de manera
-automática de un pull request y presente al líder del proyecto un formulario
-para que ingrese el mensaje de commit correcto al momento de hacer el merge.
+¡No! Si usas un flujo de trabajo basado en `squash` los líderes del proyecto pueden limpiar el mensaje en el momento en que se incorpora, sin agregar cargas adicionales a quienes contribuyen casualmente. Un flujo de trabajo común para esto es configurar tu sistema de git para que haga el `squash` de manera automática de un pull request y presente al líder del proyecto un formulario para que ingrese el mensaje de commit correcto al momento de hacer el merge.
 
 ### ¿Cómo maneja Commits Convencionales el revertir código?
 
