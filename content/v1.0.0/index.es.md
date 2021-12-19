@@ -1,5 +1,6 @@
 ---
 draft: false
+aliases: ["/es/"]
 ---
 
 # Commits Convencionales 1.0.0
