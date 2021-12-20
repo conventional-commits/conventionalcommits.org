@@ -323,7 +323,7 @@ languages:
     - label: Сціслы агляд
       url: '#Сціслы агляд'
     - label: Поўная Спецыфікацыя
-      url: 'Поўная Спецыфікацыя'
+      url: '#Поўная Спецыфікацыя'
     - label: Github
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
