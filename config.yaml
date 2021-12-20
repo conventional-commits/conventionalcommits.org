@@ -321,9 +321,9 @@ languages:
     description: Спецыфікацыя па дадаванню лёгкачытэльных паведамленняў у камітах для людзей і робатаў
     actions:
     - label: Сціслы агляд
-      url: '#Сціслы агляд'
+      url: '#сціслы-агляд'
     - label: Поўная Спецыфікацыя
-      url: '#Поўная Спецыфікацыя'
+      url: '#поўная-спецыфікацыя'
     - label: Github
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
