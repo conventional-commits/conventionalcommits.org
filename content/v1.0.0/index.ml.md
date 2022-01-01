@@ -34,7 +34,7 @@ aliases: ["/ml/"]
 1. **feat:** _type_ `feat` ന്റെ ഒരു പ്രതിബദ്ധത കോഡ്ബേസിലേക്ക് ഒരു പുതിയ സവിശേഷത അവതരിപ്പിക്കുന്നു (ഇത് സെമാന്റിക് വേർഷനിംഗിലെ [`MINOR`](http://semver.org/#summary) എന്നതുമായി ബന്ധപ്പെട്ടിരിക്കുന്നു).
 1. **ബ്രേക്കിംഗ് മാറ്റം:** 'BREAKING CHANGE:' എന്ന അടിക്കുറിപ്പുള്ള ഒരു പ്രതിബദ്ധത, അല്ലെങ്കിൽ തരം/സ്കോപ്പിന് ശേഷം `!` ചേർക്കുക, ഒരു ബ്രേക്കിംഗ് API മാറ്റം അവതരിപ്പിക്കുന്നു ([`MAJOR`](http:/ /semver.org/#summary) സെമാന്റിക് പതിപ്പിൽ).
 ഒരു ബ്രേക്കിംഗ് മാറ്റം ഏത് _തരം
-1. `fix:`, `feat:` എന്നിവ ഒഴികെയുള്ള _types_ അനുവദനീയമാണ്, ഉദാഹരണത്തിന് [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config -പരമ്പരാഗത) ([കോണീയ കൺവെൻഷൻ](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) ശുപാർശ ചെയ്യുന്നത് `build:`, `chore: `,
+1. `fix:`, `feat:` എന്നിവ ഒഴികെയുള്ള _types_ അനുവദനീയമാണ്, ഉദാഹരണത്തിന് [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([കോണീയ കൺവെൻഷൻ](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) ശുപാർശ ചെയ്യുന്നത് `build:`, `chore: `,
   `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` എന്നിവയും മറ്റുള്ളവയും.
 1. `BREAKING CHANGE: <description>` ഒഴികെയുള്ള _footers_ നൽകുകയും സമാനമായ ഒരു കൺവെൻഷൻ പിന്തുടരുകയും ചെയ്യാം
   [git ട്രെയിലർ ഫോർമാറ്റ്](https://git-scm.com/docs/git-interpret-trailers).
