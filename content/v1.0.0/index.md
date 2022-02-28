@@ -76,7 +76,7 @@ docs: correct spelling of CHANGELOG
 
 ### Commit message with scope
 ```
-feat(lang): add polish language
+feat(lang): add Polish language
 ```
 
 ### Commit message with multi-paragraph body and multiple footers
