@@ -60,7 +60,7 @@ refactor!: remove suporte para Node 6
 refactor(execução)!: remove suporte para Node 6
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
+### Mensagem de commit com `!` e BREAKING CHANGE no rodapé
 
 ```
 refactor!: remove suporte para Node 6
