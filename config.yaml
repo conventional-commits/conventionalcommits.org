@@ -40,6 +40,7 @@ languages:
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
+    about: true
 
   it:
     weight: 2
@@ -62,6 +63,7 @@ languages:
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
+    about: false
 
   pl:
     weight: 3
@@ -79,6 +81,7 @@ languages:
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
+    about: false
 
   # zh-cn/zh-tw/zh-chs are legacy
   # zh-hans specification usage from IETF language tag
@@ -102,6 +105,7 @@ languages:
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
+    about: false
   zh-hant:
     weight: 5
     languageName: "繁體中文"
@@ -119,6 +123,7 @@ languages:
       list:
       - v1.0.0
       - v1.0.0-beta.4
+    about: false
 
   es:
     weight: 6
@@ -135,6 +140,7 @@ languages:
       list:
       - v1.0.0-beta.3
       - v1.0.0-beta.2
+    about: false
 
   ru:
     weight: 7
@@ -155,6 +161,7 @@ languages:
         - v1.0.0-beta.4
         - v1.0.0-beta.3
         - v1.0.0-beta.2
+    about: false
 
   ja:
     weight: 8
@@ -173,6 +180,7 @@ languages:
       list:
       - v1.0.0
       - v1.0.0-beta.4
+    about: false
 
   fr:
     weight: 9
@@ -189,6 +197,7 @@ languages:
       list:
       - v1.0.0
       - v1.0.0-beta.2
+    about: false
 
   ko:
     weight: 10
@@ -206,6 +215,7 @@ languages:
       current: v1.0.0-beta.4
       list:
       - v1.0.0-beta.4
+    about: false
 
   pt-br:
     weight: 11
@@ -225,6 +235,7 @@ languages:
         - v1.0.0
         - v1.0.0-beta.4
         - v1.0.0-beta.3
+    about: false
 
   id:
     weight: 12
@@ -244,6 +255,7 @@ languages:
         - v1.0.0
         - v1.0.0-beta.4
         - v1.0.0
+    about: false
 
   hy:
     weight: 13
@@ -262,6 +274,7 @@ languages:
       list:
       - v1.0.0-beta.4
       - v1.0.0-beta.3
+    about: false
 
   de:
     weight: 14
@@ -279,6 +292,7 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+    about: false
 
   th:
     weight: 15
@@ -296,6 +310,7 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+    about: false
 
   uk:
     weight: 16
@@ -313,6 +328,7 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+    about: false
 
   be:
     weight: 17
@@ -330,3 +346,4 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+    about: false
