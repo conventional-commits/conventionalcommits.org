@@ -1,5 +1,6 @@
 FROM jguyomard/hugo-builder:latest
-FROM node:latest
+FROM node:13-alpine
+RUN apk update && apk add python2 make gcc g++
 WORKDIR /src/
 COPY --from=0 /usr/local/bin/hugo /usr/local/bin/hugo
 COPY ./ /src/
