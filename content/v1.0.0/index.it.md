@@ -9,7 +9,7 @@ aliases: ["/it/"]
 
 La specifica Conventional Commits è una convenzione semplice da implementare per i messaggi dei commit.
 Fornisce un insieme di semplici regole per la creazione di una cronologia di commit esplicita;
-il che rende più facile utilizzare strumenti per automare processi.
+il che rende più facile utilizzare strumenti per automatizzare processi.
 Questa convenzione si completa con [SemVer](http://semver.org),
 descrivendo le funzionalità, la risoluzione di errori e l'introduzione di breaking changes fatte dei commit.
 
@@ -93,7 +93,7 @@ Refs #133
 
 Le parole “DEVE”, “NON DEVE”, “RICHIESTO”, “DOVRÀ”, “NON DOVRÀ”, “DOVREBBE”, “NON DOVREBBE”, “RACCOMANDATO”, “POTREBBE” e “OPZIONALE” devo essere interpretata come da specifica [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc., seguito da un OPZIOANLE `!`, e DEVE essere seguito dai due punti ed uno spazio.
+1. Un commit DEVE iniziare con un _tipo_, il quale consiste in un sostantivo, `feat`, `fix`, etc., seguito da un OPZIONALE `!`, e DEVE essere seguito dai due punti ed uno spazio.
 1. Il _tipo_ `feat` DEVE essere usato quando un commit aggiunge una funzionalità all'applicazione o libreria.
 1. Il _tipo_ `fix` DEVE essere usato quando un commit corregge un errore all'applicazione o libreria.
 1. Un _contesto_ opzionale POTREBBE essere fornito dopo il _tipo_.
