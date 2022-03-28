@@ -23,7 +23,7 @@
       </li>
       <li class="header__menu-item dropdown">
         <button class="dropdown__label">
-          <a href="/en/about" class="no-style-a">About</a>
+          <a href="{{ if .Site.Params.About }}/{{ .Page.Language }}/about{{ else }}/en/about{{ end }}" class="no-style-a">About</a>
         </button>
       </li>
     </ul>
