@@ -1,6 +1,6 @@
 # ConventionalCommits.org
 
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
 This repo is the home of the Conventional Commits specification.
 
@@ -38,7 +38,7 @@ Once the website will be compiled, you can see the website visiting `http://loca
 Tell your users that you use the Conventional Commits specification:
 
 ```markdown
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 ```
 
 ## Thank you
