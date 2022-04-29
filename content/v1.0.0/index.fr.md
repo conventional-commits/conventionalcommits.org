@@ -10,7 +10,7 @@ aliases: ["/fr/"]
 La spécification de Conventional Commits est une convention légère pour des messages de commit propre.
 Il fournit un ensemble simple de règles pour créer un historique de commit explicite;
 Ce qui facilite l'écriture d'outils automatisés.
-Cette convention est liée à [SemVer] (http://semver.org),
+Cette convention est liée à [SemVer](http://semver.org),
 en décrivant les fonctionnalités, les correctifs et les modifications importantes apportées aux messages de commit.
 
 Le message du commit doit être structuré comme suit:
