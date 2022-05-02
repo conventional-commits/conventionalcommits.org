@@ -86,7 +86,7 @@ fix: minor typos in code
 see the issue for details on the typos fixed
 
 Reviewed-by: Z
-Refs #133
+Refs: #133
 ```
 
 ## Specifica
@@ -106,7 +106,7 @@ Le parole “DEVE”, “NON DEVE”, “RICHIESTO”, “DOVRÀ”, “NON DOVR
    Il _corpo_ DEVE iniziare dopo una linea vuota dalla _descrizione_.
 1. Un _corpo_ può contenere qualsiasi contenuto e POTREBBE essere formato da qualsiasi numero di linee separate.
 1. Uno o più _pié di pagina_ POTREBBERO essere usati dopo una linea vuota dallo _spazio_.
-   Ogni _piè di pagina_ DEVE avere una parola chiave seguita da `:<space>` o `<space>#`, poi seguita da un _token_(ispirato a 
+   Ogni _piè di pagina_ DEVE avere una parola chiave seguita da `:<space>` o `<space>#`, poi seguita da un _token_ (ispirato a 
    [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. Un _token_ DEVE usare `-`  al posto degli spazi, ad esempio, `Acked-by` (questo serve a distinguere _piè di pagina_ e _corpo_). 
    Un eccezione è fatta per `BREAKING CHANGE`, ch POTREBBE essere utilizzata come _token_.
