@@ -330,3 +330,19 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+  tr:
+    weight: 18
+    languageName: "Türkçe"
+    title: Conventional Commits
+    description: Conventional Commits şartnamesi, commit mesajları hakkında kolayca takip edilebilecek bir sözleşmedir
+    actions:
+    - label: Özet
+      url: '#özet'
+    - label: Şartname
+      url: '#şartname'
+    - label: Github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
