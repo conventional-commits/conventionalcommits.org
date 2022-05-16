@@ -10,7 +10,7 @@ aliases: ["/de/"]
 Die Spezifikation für konventionelle Commits ist eine einfache Konvention, die auf Commit-Nachrichten aufbaut.
 Sie enthält einfache Regeln zum Erstellen einer expliziten Commit-Historie;
 das macht es einfacher, automatisierte Tools dazu zu schreiben.
-Diese Konvention knüpft an [SemVer](http://semver.org) an,
+Diese Konvention knüpft an [SemVer](http://semver.org/lang/de/) an,
 indem sie die Funktionen, Korrekturen und Änderungen beschreibt, die in Commit-Nachrichten vorgenommen wurden.
 
 Die Commit-Nachricht sollte wie folgt aufgebaut sein:
