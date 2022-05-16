@@ -11,7 +11,7 @@ aliases: ["/zh/", "/zh-hans/"]
 它提供了一组简单规则来创建清晰的提交历史；
 这更有利于编写自动化工具。
 通过在提交信息中描述功能、修复和破坏性变更，
-使这种惯例与 [SemVer](http://semver.org/lang/zh-CN) 相互对应。
+使这种惯例与 [SemVer](http://semver.org/lang/zh-CN/)相互对应。
 
 提交说明的结构如下所示：
 
