@@ -42,7 +42,7 @@ Commit'ы могут содержать следующие структурны�
 BREAKING CHANGE может быть частью commit'а любого _типа_.
 1. Другое: commit'ы с _типами_, которые отличаются от `fix:` и `feat:`, 
 также разрешены. Например, [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) 
-(основанный на [The Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines))
+(основанный на [The Angular convention](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit))
 рекомендует: `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, и другие.
 
 Мы также рекомендуем `improvement` для commit'ов, которые вносят улучшения в текущую
