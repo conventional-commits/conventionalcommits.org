@@ -34,7 +34,7 @@ konsumen perpustakaan anda:
 1. **feat:** komit _tipe_ `feat` memperkenalkan suatu fitur (feature) baru dalam kode anda (ini berkolerasi dengan [`MINOR`](http://semver.org/#summary) di semantic versioning).
 1. **BREAKING CHANGE:** komit yang berisi teks `BREAKING CHANGE:` di awal bagian opsi badan atau kaki mengenalkan merusak perubahan API (ini berkolerasi dengan [`MAJOR`](http://semver.org/#summary) di semantic versioning).
 BREAKING CHANGE dapat menjadi bagian dari komit _tipe_ apapun.
-1. Lainya: komit dengan _tipe-tipe_ selain dari `fix:` and `feat:` diperbolehkan, misalnya [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) direkomendasikan `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainya.
+1. Lainya: komit dengan _tipe-tipe_ selain dari `fix:` and `feat:` diperbolehkan, misalnya [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [Angular convention](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)) direkomendasikan `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainya.
 
 Kami juga merekomendasikan `improvement` untuk komit yang meningkatkan implementasi saat ini tanpa menambahkan fitur baru atau memperbaiki celah (bug).
 Perhatikan bahwa tipe-tipe ini tidak di amanatkan oleh spesifikasi conventional commits, dan tidak ada efek implisit dalam semantic versioning (kecuali mereka termasuk BREAKING CHANGE).
