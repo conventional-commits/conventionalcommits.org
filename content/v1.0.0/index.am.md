@@ -3,7 +3,7 @@ draft: false
 aliases: ["/am/"]
 ---
 
-# Conventional Commits 1.0.0 (Հայերեն)
+# Conventional Commits 1.0.0
 
 ## Ամփոփում
 
@@ -115,12 +115,12 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
   footer.
 1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
 _BREAKING CHANGE: environment variables now take precedence over config files_.
-1. If included in the type/scope prefix, breaking changes MUST be indicated by a
-  `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
-  and the commit description SHALL be used to describe the breaking change.
-1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
-1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+1. Եթե ներառված է տիպի(շրջանակի) նախածանցում, ապա խախտման փոփոխությունները պետք Է նշված լինեն 
+   `!` `:`-ից անմիջապես առաջ: Եթե `!`-ն օգտագործվում է, `BREAKING CHANGE`-ը կարող է բաց թողնել ստորագիր հատվածից,
+   և պարտավորության նկարագրությունը պետք Է օգտագործվի՝ նկարագրելու փոփոխությունը:
+1. `feat` և `fix` տիպերից բացի կարող են օգտագործվել Ձեր commit հաղորդագրություններում, օրինակ՝ _docs: updated ref docs._
+1. Այն ինֆորմացիոն տարրերը, որոնք կազմված են Conventional Commits-ի MUST NOT տեսակից իրականացնողների կողմից դիտարկվում են, որպես գործի զգայուն հատված, բացառությամբ BREAKING CHANGE-ի որը պետք է լինի մեծատառ։
+1. BREAKING-CHANGE MUST-ը BREAKING CHANGE հոմանիշն է, երբ օգտագործվում է, որպես վերջավորություն։
 
 ## Ինչ՞ու օգտագործել Conventional Commits-ը
 
