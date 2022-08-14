@@ -37,9 +37,10 @@ BREAKING CHANGE-ը կարող է հանդիսանալ ցանկացած տիպի 
 1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
-Additional types are not mandated by the Conventional Commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE).
+
+Լրացուցիչ տիպերը պարտադիր չեն Conventional Commitsի դասակարգմամբ և չունեն անուղղակի ազդեցություն իմաստային տարբերակման մեջ (եթե դրանք չեն ներառում BREAKING CHANGE):
 <br /><br />
-A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
+Հանձնարարականի տիպին կարող է տրվել շրջանակ՝ լրացուցիչ համատեքստային ինֆորմացիա տրամադրելու համար։ Այն օգտագործվում է փակագծերի մեջ, հետևյալ կերպ՝ `feat(parser): add ability to parse arrays`:
 
 ## Օրինակներ
 
