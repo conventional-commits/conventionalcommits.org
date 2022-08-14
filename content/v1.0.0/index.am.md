@@ -131,60 +131,60 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 * Ստեղծման և հրապարակման գործընթացների ակտիվացում:
 * Առավել հեշտացնում է նպաստումը Ձեր նախագծին այլ մարդկանց կողմից՝ թույլ տալով նրանց ուսումնասիրել ավելի ընթեռնելի commit-ների պատմություն:
 
-## ՀՏՀ
+## Հ․Տ․Հ․
 
 ### Ինչպե՞ս պետք է վարվեմ commit հաղորդագրությունների հետ նախնական զարգացման փուլում:
 
-We recommend that you proceed as if you've already released the product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+Մենք խորհուրդ ենք տալիս շարունակել այնպես, կարծես արդեն թողարկել եք պրոդուկտը: Սովորաբար *ինչ-որ մեկը*, նույնիսկ եթե դա ձեր գործընկեր ծրագրավորողներն են, օգտագործում է ձեր ծրագրաշարը: Նրանք կցանկանան իմանալ, թե ինչն է շտկված, ինչն է կոտրվում և այլն:
 
 ### Commit-ների վերնագրի տեսակները մեծատառե՞ն են, թե՞ փոքրատառ:
 
-Any casing may be used, but it's best to be consistent.
+Ցանկացած միջոց կարող է օգտագործվել, բայց ավելի լավ է հետևողական լինել և օգտագործել դրանցից որևէ մեկը:
 
 ### Ի՞նչ անել, եթե commit-ը համապատասխանում է commit-ների մեկից ավելի տեսակներին:
 
-Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
+Վերադարձեք և հնարավորության դեպքում մի քանի commit-ներ կատարեք: Conventional Commit-ներն օգտագործելու իմաստներից մեկը՝ մեր commit հաղորդագրություններն ու PR-ները ավելի կազմակերպված դարձնելն է:
 
 ### Արդյո՞ք սա չի խանգարում պրոյեկտի արագ զարգացմանը և արագ կրկնմանը:
 
-It discourages moving fast in a disorganized way. It helps you be able to move fast long term across multiple projects with varied contributors.
+Այն խանգարում է արագ շարժվել անկազմակերպ կերպով: Այն օգնում է Ձեզ երկարաժամկետ արագ շարժվել բազմաթիվ նախագծերի մեջ՝ տարբեր ներդրողների հետ:
 
 ### Հնարավո՞ր է, որ Conventional Commit-ները ծրագրավորողներին սահմանափակի իրենց կատարած commit-ների տեսակը, քանի որ նրանք կմտածեն տրամադրված տեսակների վրա:
 
-Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Conventional Commit-ները մեզ խրախուսում է ավելի շատ կատարել որոշակի տեսակի commit-ներ, ինչպիսիք են ուղղումները: Բացի դրանից, Conventional Commit-ների ճկունությունը թույլ է տալիս Ձեր թիմին գտնել իրենց տեսակները և ժամանակի ընթացքում փոխել դրանք:
 
 ### Ինչպե՞ս է դա կապված SemVer-ի հետ:
 
-`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
+`fix` տեսակի պարտավորությունները պետք է թարգմանվեն `PATCH` թողարկումներով: `feat` տեսակի պարտավորությունները պետք է թարգմանվեն `MINOR` թողարկումներով: Հանձնարարություններում `BREAKING CHANGE` ունեցող պարտավորությունները, անկախ տեսակից, պետք է թարգմանվեն `MAJOR` թողարկումներով:
 
 ### Ինչպես պետք է տարբերակեմ իմ ընդլայնումները Conventional Commit-ների սպեցիֆիկացիայի համար (օրինակ ՝@jameswomack/conventional-commit-spec՝):
 
-We recommend using SemVer to release your own extensions to this specification (and
-encourage you to make these extensions!)
+Մենք խորհուրդ ենք տալիս օգտագործել SemVer-ը, որպեսզի թողարկեք ձեր սեփական ընդլայնումները այս բնութագրին (և
+խրախուսում ենք ձեզ կատարել այս ընդլայնումները:)
 
 ### Ի՞նչ անեմ, եթե պատահաբար օգտագործեմ սխալ commit-ի տեսակը:
 
 #### Երբ դուք օգտագործում եք այնպիսի տեսակ, որը համապատասխանում է բնութագրին, բայց ոչ ճիշտ, օրինակ. `fix`՝ `feat`-ի փոխարեն
 
-Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
+Նախքան սխալը միաձուլելը կամ բաց թողնելը, մենք խորհուրդ ենք տալիս օգտագործել `git rebase -i`՝ կատարման պատմությունը խմբագրելու համար: Թողարկումից հետո մաքրումը կտարբերվի՝ կախված ձեր օգտագործած գործիքներից և գործընթացներից:
 
 #### Երբ դուք օգտագործում եք հատուկ *ոչ* տեսակ, օրինակ. `feet`՝ `feat`-ի փոխարեն
 
-In a worst case scenario, it's not the end of the world if a commit lands that does not meet the Conventional Commits specification. It simply means that commit will be missed by tools that are based on the spec.
+Վատագույն սցենարի դեպքում աշխարհի վերջը չէ, եթե commit-ը վայրէջք կատարի, որը չի համապատասխանում Conventional Commit-ների պահանջներին: Դա պարզապես նշանակում է, որ commit-ը բաց կթողնի այն գործիքները, որոնք հիմնված են բնութագրերի վրա:
 
 ### Արդյո՞ք իմ բոլոր մասնակիցները պետք է օգտագործեն Conventional Commit-ների հստակեցումը:
 
-No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
-A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
+Ո՛չ։ Եթե դուք օգտագործում եք squash-ի վրա հիմնված աշխատանքային հոսք Git-ի առաջատար սպասարկիչները կարող են մաքրել commit հաղորդագրությունները, քանի որ դրանք միաձուլվում են՝ առանց աշխատանքային ծանրաբեռնվածության ավելացման պատահական commiter-ին:
+Սրա համար ընդհանուր աշխատանքային հոսքն այն է, որ ձեր git համակարգը ինքնաբերաբար PR-ը կմիաձուլի մեկ squash commit-ի մեջ, որպեսզի առաջատար սպասարկիչը մուտքագրի համապատասխան git commit հաղորդագրությունը միաձուլման համար:
 
 ### Ինչպե՞ս են Conventional Commit-ները վերաբերվում վերադարձի(revert) commit-ներին:
 
-Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release instead be a patch?
+Կոդը վերադարձնելը կարող է բարդ լինել. դուք վերադարձնու՞մ եք մի քանի commit-ներ: եթե վերադարձնեք որևէ հատկանիշ(feature), հաջորդ թողարկումը դրա փոխարեն կարկատա՞կ պետք է լինի:
 
-Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
-authors to use the flexibility of _types_ and _footers_ to develop their logic for handling reverts.
+Conventional Commits-ը բացահայտ ջանքեր չի գործադրում հետադարձ վարքագիծը սահմանելու համար: Փոխարենը թողնում ենք
+հեղինակներին օգտագործել _types_-ի և _footers_-ի ճկունությունը՝ զարգացնելու իրենց տրամաբանությունը հետադարձումների հետ աշխատելու համար:
 
-One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
+Առաջարկություններից մեկն է օգտագործել `revert` տիպը և վերջավորություն, որը հղում է կատարում վերադարձվող SHA-ներին՝
 
 ```
 revert: let us never again speak of the noodle incident
