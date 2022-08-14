@@ -5,7 +5,7 @@ aliases: ["/am/"]
 
 # Conventional Commits 1.0.0
 
-## Summary
+## Ամփոփում
 
 The Conventional Commits specification is a lightweight convention on top of commit messages.
 It provides an easy set of rules for creating an explicit commit history;
@@ -13,23 +13,21 @@ which makes it easier to write automated tools on top of.
 This convention dovetails with [SemVer](http://semver.org),
 by describing the features, fixes, and breaking changes made in commit messages.
 
-The commit message should be structured as follows:
+Commit հաղորդագրությունները պետք է ունենան հետևյալ կառուցվածքը․
 
 ---
 
 ```
-<type>[optional scope]: <description>
+<տիպ>[ոչ պարտադիր շրջանակ]: <նկարագրություն>
 
-[optional body]
+[ոչ պարտադիր մարմին]
 
-[optional footer(s)]
+[ոչ պարտադիր վերջավորություն(ներ)]
 ```
 ---
 
 <br />
-Commit-ը պարունակում է հետևյալ կառուցվածքային տարրերը՝ ձեր գրադարանի սպառողներին մտադրությունը հաղորդելու համար.
-The commit contains the following structural elements, to communicate intent to the
-consumers of your library:
+Commit-ը պարունակում է հետևյալ կառուցվածքային տարրերը՝ ձեր փոփոխությունների մտադրությունը հաղորդելու համար.
 
 1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in Semantic Versioning).
 1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
