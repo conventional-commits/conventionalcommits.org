@@ -42,43 +42,43 @@ Additional types are not mandated by the Conventional Commits specification, and
 <br /><br />
 A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
 
-## Examples
+## Օրինակներ
 
-### Commit message with description and breaking change footer
+### Commit հաղորդագրություն՝ նկարագրով և breaking change վերջավորությունով
 ```
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Commit message with `!` to draw attention to breaking change
+### Commit հաղորդագրություն՝ `!` նշանով, որպեսզի ուշադրություն գրավենք կատարված կարևոր փոփոխությունների համար
 ```
 feat!: send an email to the customer when a product is shipped
 ```
 
-### Commit message with scope and `!` to draw attention to breaking change
+### Commit հաղորդագրություն՝ շրջանակով և `!` նշանով, որպեսզի ուշադրություն գրավենք կատարված կարևոր փոփոխությունների համար
 ```
 feat(api)!: send an email to the customer when a product is shipped
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
+### Commit հաղորդագրություն՝ միաժամանակ և՛ `!` նշանով, և՛ BREAKING CHANGE վերջավորությունով
 ```
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
-### Commit message with no body
+### Commit հաղորդագրություն՝ առանց մարմնի
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### Commit message with scope
+### Commit հաղորդագրություն՝ շրջանակով
 ```
 feat(lang): add Polish language
 ```
 
-### Commit message with multi-paragraph body and multiple footers
+### Commit հաղորդագրություն՝ մի քանի պարագրաֆ մարմնով և մի քանի վերջավորություններով
 ```
 fix: prevent racing of requests
 
