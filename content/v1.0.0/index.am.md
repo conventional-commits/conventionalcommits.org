@@ -3,15 +3,14 @@ draft: false
 aliases: ["/am/"]
 ---
 
-# Conventional Commits 1.0.0
+# Conventional Commits 1.0.0 (Հայերեն)
 
 ## Ամփոփում
 
-The Conventional Commits specification is a lightweight convention on top of commit messages.
-It provides an easy set of rules for creating an explicit commit history;
-which makes it easier to write automated tools on top of.
-This convention dovetails with [SemVer](http://semver.org),
-by describing the features, fixes, and breaking changes made in commit messages.
+Conventional Commit-ները իրենցից ներկայացնում են թեթև կոնվենցիաներ՝ commit հաղորդագրությունների վրա։
+Այն ապահովում է պարզ commit-ների պատմություն ստեղծելու հեշտ եղանակ, ինչը հեշտացնում է ավտոմատացման գործիքների օգտագործումը։
+Այս կոնվենցիան համընկնում է [SemVer](http://semver.org)-ի հետ,
+նկարագրելով commit հաղորդագրություններում կատարված առանձնահատկությունները, ուղղումները և փոփոխությունները:
 
 Commit հաղորդագրությունները պետք է ունենան հետևյալ կառուցվածքը․
 
