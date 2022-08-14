@@ -91,9 +91,10 @@ Reviewed-by: Z
 Refs: #123
 ```
 
-## Specification
+## Հստակեցում
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+«ՊԵՏՔ Է», «ՉՊԵՏՔ Է», «ՊԱՐՏԱԴԻՐ», «ՊԵՏՔ Է», «ՉՊԵՏՔ Է», «ՊԵՏՔ Է», «ՉՊԵՏՔ Է», «ԱՌԱՋԱՐԿՎԱԾ», «ԿԱՐՈՂ Է» և «ԿԱՄԸՆՏԻՐ» բառերն այս փաստաթղթում են. պետք է մեկնաբանվի այնպես, ինչպես նկարագրված է [RFC 2119] (https://www.ietf.org/rfc/rfc2119.txt):
+“MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” բառերն այս փաստաթղթում պետք է մեկնաբանվեն այնպես, ինչպես նկարագրված է [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)-ում։
 
 1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
   by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
