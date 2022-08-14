@@ -124,14 +124,13 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 
-## Why Use Conventional Commits
+## Ինչ՞ու օգտագործել Conventional Commit-ները
 
-* Automatically generating CHANGELOGs.
-* Automatically determining a semantic version bump (based on the types of commits landed).
+* Ավտոմատ կերպով գեներացնում են CHANGELOG-ներ։
+* Ավտոմատ կերպով կատարում են տարբերակների բարձրացում (հիմնվելով կատարված commit-ների տեսակի վրա)։
 * Communicating the nature of changes to teammates, the public, and other stakeholders.
-* Triggering build and publish processes.
-* Making it easier for people to contribute to your projects, by allowing them to explore
-  a more structured commit history.
+* Ստեղծման և հրապարակման գործընթացների ակտիվացում:
+* Առավել հեշտացնում է նպաստումը Ձեր նախագծին այլ մարդկանց կողմից՝ թույլ տալով նրանց ուսումնասիրել ավելի ընթեռնելի commit-ների պատմություն:
 
 ## FAQ
 
