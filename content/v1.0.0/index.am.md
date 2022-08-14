@@ -165,11 +165,11 @@ encourage you to make these extensions!)
 
 ### Ի՞նչ անեմ, եթե պատահաբար օգտագործեմ սխալ commit-ի տեսակը:
 
-#### Երբ դուք օգտագործում եք այնպիսի տեսակ, որը համապատասխանում է բնութագրին, բայց ոչ ճիշտ, օրինակ. `fix`` `feat`-ի փոխարեն
+#### Երբ դուք օգտագործում եք այնպիսի տեսակ, որը համապատասխանում է բնութագրին, բայց ոչ ճիշտ, օրինակ. `fix`՝ `feat`-ի փոխարեն
 
 Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
 
-#### Երբ դուք օգտագործում եք հատուկ *ոչ* տեսակ, օրինակ. `feet`` `feat`-ի փոխարեն
+#### Երբ դուք օգտագործում եք հատուկ *ոչ* տեսակ, օրինակ. `feet`՝ `feat`-ի փոխարեն
 
 In a worst case scenario, it's not the end of the world if a commit lands that does not meet the Conventional Commits specification. It simply means that commit will be missed by tools that are based on the spec.
 
