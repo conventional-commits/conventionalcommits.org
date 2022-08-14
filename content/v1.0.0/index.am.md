@@ -132,53 +132,53 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 * Ստեղծման և հրապարակման գործընթացների ակտիվացում:
 * Առավել հեշտացնում է նպաստումը Ձեր նախագծին այլ մարդկանց կողմից՝ թույլ տալով նրանց ուսումնասիրել ավելի ընթեռնելի commit-ների պատմություն:
 
-## FAQ
+## ՀՏՀ
 
-### How should I deal with commit messages in the initial development phase?
+### Ինչպե՞ս պետք է վարվեմ commit հաղորդագրությունների հետ նախնական զարգացման փուլում:
 
 We recommend that you proceed as if you've already released the product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
-### Are the types in the commit title uppercase or lowercase?
+### Commit-ների վերնագրի տեսակները մեծատառե՞ն են, թե՞ փոքրատառ:
 
 Any casing may be used, but it's best to be consistent.
 
-### What do I do if the commit conforms to more than one of the commit types?
+### Ի՞նչ անել, եթե commit-ը համապատասխանում է commit-ների մեկից ավելի տեսակներին:
 
 Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
 
-### Doesn’t this discourage rapid development and fast iteration?
+### Արդյո՞ք սա չի խանգարում պրոյեկտի արագ զարգացմանը և արագ կրկնմանը:
 
 It discourages moving fast in a disorganized way. It helps you be able to move fast long term across multiple projects with varied contributors.
 
-### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
+### Հնարավո՞ր է, որ Conventional Commit-ները ծրագրավորողներին սահմանափակի իրենց կատարած commit-ների տեսակը, քանի որ նրանք կմտածեն տրամադրված տեսակների վրա:
 
 Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
 
-### How does this relate to SemVer?
+### Ինչպե՞ս է դա կապված SemVer-ի հետ:
 
 `fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
 
-### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
+### Ինչպես պետք է տարբերակեմ իմ ընդլայնումները Conventional Commit-ների սպեցիֆիկացիայի համար (օրինակ ՝@jameswomack/conventional-commit-spec՝):
 
 We recommend using SemVer to release your own extensions to this specification (and
 encourage you to make these extensions!)
 
-### What do I do if I accidentally use the wrong commit type?
+### Ի՞նչ անեմ, եթե պատահաբար օգտագործեմ սխալ commit-ի տեսակը:
 
-#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+#### Երբ դուք օգտագործում եք այնպիսի տեսակ, որը համապատասխանում է բնութագրին, բայց ոչ ճիշտ, օրինակ. `fix`` `feat`-ի փոխարեն
 
 Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
 
-#### When you used a type *not* of the spec, e.g. `feet` instead of `feat`
+#### Երբ դուք օգտագործում եք հատուկ *ոչ* տեսակ, օրինակ. `feet`` `feat`-ի փոխարեն
 
 In a worst case scenario, it's not the end of the world if a commit lands that does not meet the Conventional Commits specification. It simply means that commit will be missed by tools that are based on the spec.
 
-### Do all my contributors need to use the Conventional Commits specification?
+### Արդյո՞ք իմ բոլոր մասնակիցները պետք է օգտագործեն Conventional Commit-ների հստակեցումը:
 
 No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
 
-### How does Conventional Commits handle revert commits?
+### Ինչպե՞ս են Conventional Commit-ները վերաբերվում վերադարձի(revert) commit-ներին:
 
 Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release instead be a patch?
 
