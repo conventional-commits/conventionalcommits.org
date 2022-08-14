@@ -94,10 +94,9 @@ Refs: #123
 
 “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” բառերն այս փաստաթղթում պետք է մեկնաբանվեն այնպես, ինչպես նկարագրված է [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)-ում։
 
-1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-  by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
-1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
-1. The type `fix` MUST be used when a commit represents a bug fix for your application.
+1. Commit-ները պետք է ունեն տիպ՝ նախածանցի տեսքով, որը պետք է բաղկացած լինի գոյականից, `feat`, `fix` և այլն, որին հաջորդում են ոչ պարտադիր շրջանակը, ոչ պարտադիր `!`-ը և պարտադիր վերջակետ ու բացատ:
+1. `feat` տիպը պետք է օգտագործել այն ժամանակ, երբ Ձեր ծրագրում ավելացնում եք նոր հատկանիշներ։
+1. `fix` տիպը պետք է օգտագործել այն ժամանակ, երբ Ձեր ծրագրում կատարում եք ուղղումներ։
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
   section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
 1. A description MUST immediately follow the colon and space after the type/scope prefix.
@@ -118,7 +117,7 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. Եթե ներառված է տիպի(շրջանակի) նախածանցում, ապա խախտման փոփոխությունները պետք Է նշված լինեն 
    `!` `:`-ից անմիջապես առաջ: Եթե `!`-ն օգտագործվում է, `BREAKING CHANGE`-ը կարող է բաց թողնել ստորագիր հատվածից,
    և պարտավորության նկարագրությունը պետք Է օգտագործվի՝ նկարագրելու փոփոխությունը:
-1. `feat` և `fix` տիպերից բացի կարող են օգտագործվել Ձեր commit հաղորդագրություններում, օրինակ՝ _docs: updated ref docs._
+1. `feat` և `fix` տիպերից բացի կարող են օգտագործվել Ձեր commit հաղորդագրություններում, օրինակ՝ _docs: updated ref docs._։
 1. Այն ինֆորմացիոն տարրերը, որոնք կազմված են Conventional Commits-ի MUST NOT տեսակից իրականացնողների կողմից դիտարկվում են, որպես գործի զգայուն հատված, բացառությամբ BREAKING CHANGE-ի որը պետք է լինի մեծատառ։
 1. BREAKING-CHANGE MUST-ը BREAKING CHANGE հոմանիշն է, երբ օգտագործվում է, որպես վերջավորություն։
 
