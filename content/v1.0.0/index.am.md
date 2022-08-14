@@ -32,11 +32,9 @@ Commit-ը պարունակում է հետևյալ կառուցվածքային 
 1. **feat:** այն commit-ները, որոնք պատականում են `feat` _տիպին_ , իրենցից ներկայացնում են նոր հատկանիշների ավելացում (այն համապատասխանում է Semantic Versioning-ի [`MINOR`](http://semver.org/#summary) տեսակին)։
 1. **BREAKING CHANGE:** այն commit-ները, որոնք ունեն `BREAKING CHANGE:` վերջավորությունը, կամ ընդգրկում են `!` նշանը, տիպից(շրջանակից) հետո, իրենցից ներկայացնում են կարևոր կամ բեկումնային փոփոխություններ (այն համապատասխանում է Semantic Versioning-ի [`MAJOR`](http://semver.org/#summary) տեսակին)։
 BREAKING CHANGE-ը կարող է հանդիսանալ ցանկացած տիպի commit-ի մաս։
-1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
-  [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
-
+1. `fix:`-ից և `feat:`-ից բացի այլ տիպերի օգտագործումը թույլատրվում է, օրինակ՝ [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config) (հիմնվելով [Angular-ի կոնվենցիայի](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) վրա) առաջարկում է `build:`, `chore:`,
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` և այլն:
+1. `BREAKING CHANGE: <description>` բացի այլ վերջավորություններ կարող են տրամադրվել և հետևել [git թրեյլերի ձևաչափ](https://git-scm.com/docs/git-interpret-trailers)-ին հարակից կոնվենցիաներին։
 
 Լրացուցիչ տիպերը պարտադիր չեն Conventional Commitsի դասակարգմամբ և չունեն անուղղակի ազդեցություն իմաստային տարբերակման մեջ (եթե դրանք չեն ներառում BREAKING CHANGE):
 <br /><br />
