@@ -97,23 +97,19 @@ Refs: #123
 1. Commit-ները պետք է ունեն տիպ՝ նախածանցի տեսքով, որը պետք է բաղկացած լինի գոյականից, `feat`, `fix` և այլն, որին հաջորդում են ոչ պարտադիր շրջանակը, ոչ պարտադիր `!`-ը և պարտադիր վերջակետ ու բացատ:
 1. `feat` տիպը պետք է օգտագործել այն ժամանակ, երբ Ձեր ծրագրում ավելացնում եք նոր հատկանիշներ։
 1. `fix` տիպը պետք է օգտագործել այն ժամանակ, երբ Ձեր ծրագրում կատարում եք ուղղումներ։
-1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
-  section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
-1. A description MUST immediately follow the colon and space after the type/scope prefix.
-The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
-1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
-1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
-1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
- a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
-  [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
-1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
-  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
-1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
-  token/separator pair is observed.
-1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
-  footer.
-1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
-_BREAKING CHANGE: environment variables now take precedence over config files_.
+1. Շրջանակը պետք է նշել տիպից հետո՝ փակագծերի մեջ։ Այն կարող է լինել Ձեր փոփոխած հատվածի վերնագիրը, օրինակ` `fix(parser):`։
+1. Նկարագիրը պետք է գրված լինի տիպից կամ շրջանակից հետո՝ պահելով դրանց միջև վերջակետ և բացատ։
+Այն Ձեր կատարած փոփոխությունների կարճ նկարագիրն է, օրինակ՝ _fix: array parsing issue when multiple spaces were contained in string_։
+1. Մարմինը կարելի է գրել նկարագրությունից հետո։ Այն Ձեր կատարած փոփոխությունների լայն նկարագիրն է։ Այն պետք է պահի մեկ դատարկ տող՝ նկարագրի միջև։
+1. Commit-ի մարմինը ունի ազատ գրելաձև, կարող է պարունակել տառեր, թվեր, մի քանի պարբերություններ և այլն։
+1. Մեկ կամ ավելի վերջավորությունները պետք է ունենան մեկ դատարկ տող՝ առանձնացվելով մարմնից(ավելին կարող եք կարդալ
+  [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)-ում)։
+1. Վերջավորության նշանը պետք Է օգտագործի `-`՝ բացատ նիշերի փոխարեն, օրինակ՝ `Acked-by` (սա օգնում է տարբերակել վերջավորությունը բազմաբնույթ պարբերությունից): Բացառություն է արվում `BREAKING CHANGE-ի համար, որը կարող Է օգտագործվել նաև որպես նշան:
+1. Վերջավորության արժեքը կարող Է պարունակել բացատներ և նոր տողեր, և վերլուծությունը պետք Է ավարտվի, երբ հաջորդ վավեր վերջավորությունը
+   նկատվում է:
+1. Breaking change-երը պետք է նշված լինեն տիպում կամ շրջանակում, և կամ էլ վերջավորության մեջ։
+1. Եթե գոյություն ունի վերջավորություն, ապա breaking change-ը պետք է լինի մեծատառ, օրինակ՝
+_BREAKING CHANGE: environment variables now take precedence over config files_։
 1. Եթե ներառված է տիպի(շրջանակի) նախածանցում, ապա խախտման փոփոխությունները պետք Է նշված լինեն 
    `!` `:`-ից անմիջապես առաջ: Եթե `!`-ն օգտագործվում է, `BREAKING CHANGE`-ը կարող է բաց թողնել ստորագիր հատվածից,
    և պարտավորության նկարագրությունը պետք Է օգտագործվի՝ նկարագրելու փոփոխությունը:
