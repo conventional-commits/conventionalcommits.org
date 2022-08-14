@@ -27,6 +27,7 @@ The commit message should be structured as follows:
 ---
 
 <br />
+Commit-ը պարունակում է հետևյալ կառուցվածքային տարրերը՝ ձեր գրադարանի սպառողներին մտադրությունը հաղորդելու համար.
 The commit contains the following structural elements, to communicate intent to the
 consumers of your library:
 
