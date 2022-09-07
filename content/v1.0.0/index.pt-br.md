@@ -52,18 +52,18 @@ BREAKING CHANGE: a chave `extends`, no arquivo de configuração, agora é utili
 ### Mensagem de commit com `!` para chamar a atenção para quebra a compatibilidade
 
 ```
-refactor!: remove suporte para Node 6
+feat!: envia email para o cliente quando o produto é enviado
 ```
 
 ### Mensagem de commit com escopo e `!` para chamar a atenção para quebra a compatibilidade
 ```
-refactor(execução)!: remove suporte para Node 6
+feat(api)!: envia email para o cliente quando o produto é enviado
 ```
 
 ### Mensagem de commit com `!` e BREAKING CHANGE no rodapé
 
 ```
-refactor!: remove suporte para Node 6
+chore!: remove suporte para Node 6
 
 BREAKING CHANGE: refatorar para usar recursos do JavaScript não disponíveis no Node 6.
 ```
