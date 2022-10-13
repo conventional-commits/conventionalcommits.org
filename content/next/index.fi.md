@@ -2,9 +2,9 @@
 draft: true
 ---
 
-# Conventional Commits 1.0.0-next
+# Tavanomaiset muutokset 1.0.0-next
 
-## Summary
+## Tiivistelmä
 
 The Conventional Commits specification is a lightweight convention on top of commit messages.
 It provides an easy set of rules for creating an explicit commit history;
@@ -42,7 +42,7 @@ Additional types are not mandated by the conventional commits specification, and
 <br /><br />
 A scope may be provided to a commit's type, to provide additional contextual information and is contained within parentheses, e.g., `feat(parser): add ability to parse arrays`.
 
-## Examples
+## Esimerkkejä
 
 ### Commit message with description and breaking change footer
 ```
@@ -92,7 +92,7 @@ Reviewed-by: Z
 Refs: #123
 ```
 
-## Specification
+## Määritelmä
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
