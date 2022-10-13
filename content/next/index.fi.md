@@ -12,16 +12,16 @@ joka tekee niihin liittyvien automaattisten työkalujen käytöstä helppoa.
 Tämä mahdollistaaa muutosviestien nivoutumisen [SemVerin](http://semver.org) kanssa
 luetellen ominaisuudet, korjaukset ja särkevät muutokset.
 
-The commit message should be structured as follows:
+Muutosviestin tulisi olla koostettu seuraavasti:
 
 ---
 
 ```
-<type>[optional scope]: <description>
+<tyyppi>[vaihtoehtoinen laajuus]: <kuvaus>
 
-[optional body]
+[vaihtoehtoinen sisältö]
 
-[optional footer(s)]
+[vaihtoehtoiset tunnisteet]
 ```
 ---
 
