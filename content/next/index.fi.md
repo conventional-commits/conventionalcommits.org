@@ -6,11 +6,11 @@ draft: true
 
 ## Tiivistelmä
 
-The Conventional Commits specification is a lightweight convention on top of commit messages.
-It provides an easy set of rules for creating an explicit commit history;
-which makes it easier to write automated tools on top of.
-This convention dovetails with [SemVer](http://semver.org),
-by describing the features, fixes, and breaking changes made in commit messages.
+Tavanomaiset muutokset-ohjeistus on kevyt menettelytapa muutosviesteille.
+Se tarjoaa selkeät, helposti noudettavat säännöt täsmälliselle muutoshistorialle,
+joka tekee niihin liittyvien automaattisten työkalujen käytöstä helppoa.
+Tämä mahdollistaaa muutosviestien nivoutumisen [SemVerin](http://semver.org) kanssa
+luetellen ominaisuudet, korjaukset ja särkevät muutokset.
 
 The commit message should be structured as follows:
 
