@@ -2,50 +2,50 @@
 draft: true
 ---
 
-# Conventional Commits 1.0.0-next
+# Tavanomaiset muutokset 1.0.0-next
 
-## Summary
+## Tiivistelmä
 
-The Conventional Commits specification is a lightweight convention on top of commit messages.
-It provides an easy set of rules for creating an explicit commit history;
-which makes it easier to write automated tools on top of.
-This convention dovetails with [SemVer](http://semver.org),
-by describing the features, fixes, and breaking changes made in commit messages.
+Tavanomaiset muutokset-ohjeistus on kevyt menettelytapa muutosviesteille.
+Se tarjoaa selkeät, helposti noudettavat säännöt täsmälliselle muutoshistorialle,
+joka tekee niihin liittyvien automaattisten työkalujen käytöstä helppoa.
+Tämä mahdollistaaa muutosviestien nivoutumisen [SemVerin](http://semver.org) kanssa
+luetellen ominaisuudet, korjaukset ja särkevät muutokset.
 
-The commit message should be structured as follows:
+Muutosviestin tulisi olla koostettu seuraavasti:
 
 ---
 
 ```
-<type>[optional scope]: <description>
+<tyyppi>[vaihtoehtoinen laajuus]: <kuvaus>
 
-[optional body]
+[vaihtoehtoinen sisältö]
 
-[optional footer(s)]
+[vaihtoehtoiset tunnisteet]
 ```
 
 ---
 
 <br />
-The commit contains the following structural elements, to communicate intent to the
-consumers of your library:
+Muutosviestit sisältävät seuraavat rakenteelliset elementit, jotka kommunikoivat
+niiden tarkoituksen tuotteesi käyttäjille:
 
-1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in Semantic Versioning).
-1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
-1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in Semantic Versioning).
-   A BREAKING CHANGE can be part of commits of any _type_.
-1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
-   `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
-   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+1. **korjaus:** _tyyppi_ `fix` korjaa bugin koodikannassasi (korreloi [`PATCH`](http://semver.org/#summary) kaavamaisessa versioinnissa).
+2. **ominaisuus:** _tyyppi_ `feat` tuo uuden ominaisuuden koodikantaan (korreloi [`MINOR`](http://semver.org/#summary) kaavamaisessa versioinnissa).
+3. **SÄRKEVÄ MUUTOS:** on muutos, jonka alatunnisteessa on `BREAKING CHANGE:`, sisältää `!`-merkin tyypin/scopen jälkeen tai tuo särkevän API-muutoksen (korreloi with [`MAJOR`](http://semver.org/#summary) kaavamaisessa versioinnissa).
+SÄRKEVÄ MUUTOS voi olla tyypiltään mikä tahansa _tyyppi_.
+1. _tyypit_ jotka ovat muita kuin `fix:` tai `feat:` ovat sallittuja, kuten esimerkiksi [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (pohjautuen [Angularin muutostyyliin](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) suosittelee `build:`, `chore:`,
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` jne.
+2. Muita _alatunnisteita_, kuin `BREAKING CHANGE: <description>` voidaan lisätä ja ne pohjautuvat [git trailer formaattiin](https://git-scm.com/docs/git-interpret-trailers).
 
-Additional types are not mandated by the conventional commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE).
+Muita _tyyppejä_ ei ole laadittu Tavanomaiset muutokset-menettelytavassa - eikä niillä ole välitöntä merkitystä kaavamaisessa versioinnisa, ellei ne sisällä särkevää muutosta.
+
 <br /><br />
-A scope may be provided to a commit's type, to provide additional contextual information and is contained within parentheses, e.g., `feat(parser): add ability to parse arrays`.
+Tyypille voidaan määritellä laajuus, eli scope. Laajuudessa annetaan sisällölle konteksti ja se merkitään huomautuksena suluissa, esim. `feat(parser): lisää ominaisuus muuntaa kokoelmia`.
 
-## Examples
+## Esimerkkejä
 
-### Commit message with description and breaking change footer
+### Muutosviesti kuvauksella ja särkevä muutos-alatunnisteella
 
 ```
 feat: allow provided config object to extend other configs
@@ -53,40 +53,37 @@ feat: allow provided config object to extend other configs
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### Commit message with `!` to draw attention to breaking change
 
+### Muutosviesti huutomerkillä `!` herättääkseen huomiota särkevään muutokseen
 ```
 feat!: send an email to the customer when a product is shipped
 ```
 
-### Commit message with scope and `!` to draw attention to breaking change
-
+### Muutosviesti laajuudella ja huutomerkillä `!` herättääkseen huomiota särkevään muutokseen
 ```
 feat(api)!: send an email to the customer when a product is shipped
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
 
+### Muutosviesti huutomerkillä `!` ja särkyvän muutoksen alatunnisteella
 ```
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
-### Commit message with no body
 
+### Muutosviesti ilman vaihtoehtoista sisältöä
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### Commit message with scope
-
+### Muutosviesti laajuudella
 ```
-feat(lang): add polish language
+feat(lang): add Finnish language
 ```
 
-### Commit message with multi-paragraph body and multiple footers
-
+### Muutosviesti vaihtoehtoisella sisällä ja useammalla alatunnisteella
 ```
 fix: prevent racing of requests
 
@@ -100,9 +97,9 @@ Reviewed-by: Z
 Refs: #123
 ```
 
-## Specification
+## Määritelmä
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“REQUIRED”), "PITÄISI" (“SHOULD”), EI PITÄISI (“SHOULD NOT)”, "SAA" (“MAY”), ja "VAPAAEHTOINEN" (“OPTIONAL”, “RECOMMENDED”) tässä dokumentissa viittaavat [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)-määritelmään.
 
 1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
    by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
