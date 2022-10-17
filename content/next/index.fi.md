@@ -105,8 +105,8 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
    VAPAAEHTOINEN laajuus, VAPAAEHTOINEN `!`, ja PAKOLLINEN kaksoispiste ja välilyönti.
 1. Typpiä `feat` PITÄÄ käyttää, kun muutos lisää uuden ominaisuuden sovelukseesi tai kirjastoosi.
 1. Tyyppiä `fix` PITÄÄ käyttää, kun muutos esittää bugin korjauksen sovellukseesi.
-1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
-   section of the codebase surrounded by parentheses, e.g., `fix(parser):`
+1. Laajuuden SAA laittaa tyypin jälkeen. Laajuuden PITÄÄ sisältää substantiivi, joka kuvaa
+   koodikanta osaa ympäröitynä sulkumerkeillä, esim., `fix(parser):`
 1. A description MUST immediately follow the colon and space after the type/scope prefix.
    The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
