@@ -133,7 +133,7 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 * Making it easier for people to contribute to your projects, by allowing them to explore
   a more structured commit history.
 
-## FAQ
+## UKK (Usein kysytyt kysymykset) 
 
 ### How should I deal with commit messages in the initial development phase?
 
