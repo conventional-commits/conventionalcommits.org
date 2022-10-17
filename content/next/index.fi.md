@@ -138,9 +138,9 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 -   Making it easier for people to contribute to your projects, by allowing them to explore
     a more structured commit history.
 
-## FAQ
+## UKK (Usein kysytyt kysymykset) 
 
-### How should I deal with commit messages in the initial development phase?
+### Miten minun tulisi käyttää muutosviestejä kehityksen alkuvaiheessa?
 
 We recommend that you proceed as if you've already released the product. Typically _somebody_, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
