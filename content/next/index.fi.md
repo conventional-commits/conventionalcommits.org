@@ -135,7 +135,7 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 
 ## UKK (Usein kysytyt kysymykset) 
 
-### How should I deal with commit messages in the initial development phase?
+### Miten minun tulisi käyttää muutosviestejä kehityksen alkuvaiheessa?
 
 We recommend that you proceed as if you've already released the product. Typically *somebody*, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
 
