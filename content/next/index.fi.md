@@ -101,14 +101,14 @@ Refs: #123
 
 Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“REQUIRED”), "PITÄISI" (“SHOULD”), EI PITÄISI (“SHOULD NOT)”, "SAA" (“MAY”), ja "VAPAAEHTOINEN" (“OPTIONAL”, “RECOMMENDED”) tässä dokumentissa viittaavat [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt)-määritelmään.
 
-1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-   by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
-1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
-1. The type `fix` MUST be used when a commit represents a bug fix for your application.
-1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
-   section of the codebase surrounded by parentheses, e.g., `fix(parser):`
-1. A description MUST immediately follow the colon and space after the type/scope prefix.
-   The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
+1. Muutoksissa PITÄÄ olla etuliitteenä tyyppi, mikä muodostuu substantiivista, `feat`, `fix`, jne., jota seuraa
+   VAPAAEHTOINEN laajuus, VAPAAEHTOINEN `!`, ja PAKOLLINEN kaksoispiste ja välilyönti.
+1. Typpiä `feat` PITÄÄ käyttää, kun muutos lisää uuden ominaisuuden sovelukseesi tai kirjastoosi.
+1. Tyyppiä `fix` PITÄÄ käyttää, kun muutos esittää bugin korjauksen sovellukseesi.
+1. Laajuuden SAA laittaa tyypin jälkeen. Laajuuden PITÄÄ sisältää substantiivi, joka kuvaa
+   koodikanta osaa ympäröitynä sulkumerkeillä, esim., `fix(parser):`
+1. Kuvauksen PITÄÄ välittömästi seurata kaksoispistettä ja välilyöntiä, tyyppi/laajuus etuliitteen jälkeen.
+   Kuvaus on lyhyt tiivistelmä koodimuutoksista, esim., _fix: array parsing issue when multiple spaces were contained in string_.
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
 1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
 1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
