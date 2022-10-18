@@ -144,7 +144,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 
 Suosittelemme, että toimisit kuin olisit jo julkaissut tuotteen. Yleensä _joku_, vähintään toiset kehittäjät, käyttävät jo ohjelmaasi. He tahtovat tietää, mitä on korjattu, mikä rikkoo ohjelman, jne.
 
-### Are the types in the commit title uppercase or lowercase?
+### Tulisiko muutosviestien tyypit kirjoittaa isoilla vai pienillä kirjaimilla?
 
 Any casing may be used, but it's best to be consistent.
 
