@@ -148,7 +148,7 @@ Suosittelemme, että toimisit kuin olisit jo julkaissut tuotteen. Yleensä _joku
 
 Kirjainkoolla ei ole väliä, mutta on hyvä käyttää niitä johdonmukaisesti.
 
-### What do I do if the commit contains changes of more than one type?
+### Mitä jos muutoksessani on useamman kuin yhden tyyppisiä muutoksia?
 
 Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
 
