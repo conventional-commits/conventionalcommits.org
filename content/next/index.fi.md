@@ -142,7 +142,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 
 ### Miten minun tulisi käyttää muutosviestejä kehityksen alkuvaiheessa?
 
-We recommend that you proceed as if you've already released the product. Typically _somebody_, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+Suosittelemme, että toimisit kuin olisit jo julkaissut tuotteen. Yleensä _joku_, vähintään toiset kehittäjät, käyttävät jo ohjelmaasi. He tahtovat tietää, mitä on korjattu, mikä rikkoo ohjelman, jne.
 
 ### Are the types in the commit title uppercase or lowercase?
 
