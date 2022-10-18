@@ -146,7 +146,7 @@ Suosittelemme, että toimisit kuin olisit jo julkaissut tuotteen. Yleensä _joku
 
 ### Tulisiko muutosviestien tyypit kirjoittaa isoilla vai pienillä kirjaimilla?
 
-Any casing may be used, but it's best to be consistent.
+Kirjainkoolla ei ole väliä, mutta on hyvä käyttää niitä johdonmukaisesti.
 
 ### What do I do if the commit contains changes of more than one type?
 
