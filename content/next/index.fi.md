@@ -150,7 +150,7 @@ Kirjainkoolla ei ole väliä, mutta on hyvä käyttää niitä johdonmukaisesti.
 
 ### Mitä jos muutoksessani on useamman kuin yhden tyyppisiä muutoksia?
 
-Peruuta ja tee useampia muutoksia mikäli vain mahdollista. Osa Tavanmukaisten muutosten hyödystä on sen rakenne, joka ohjaa tekemään paremmin järjesteltyjä muutoksia ja vetopyyntöjä.
+Peruuta ja tee useampia muutoksia mikäli vain mahdollista. Osa Tavanmukaisten muutosten hyödystä on sen rakenne, joka ohjaa tekemään paremmin järjesteltyjä muutoksia ja liitospyyntöjä.
 
 ### Doesn’t this discourage rapid development and fast iteration?
 
