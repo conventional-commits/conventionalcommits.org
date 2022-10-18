@@ -150,7 +150,7 @@ Kirjainkoolla ei ole väliä, mutta on hyvä käyttää niitä johdonmukaisesti.
 
 ### Mitä jos muutoksessani on useamman kuin yhden tyyppisiä muutoksia?
 
-Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
+Peruuta ja tee useampia muutoksia mikäli vain mahdollista. Osa Tavanmukaisten muutosten hyödystä on sen rakenne, joka ohjaa tekemään paremmin järjesteltyjä muutoksia ja vetopyyntöjä.
 
 ### Doesn’t this discourage rapid development and fast iteration?
 
