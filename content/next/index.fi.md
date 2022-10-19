@@ -152,9 +152,9 @@ Kirjainkoolla ei ole väliä, mutta on hyvä käyttää niitä johdonmukaisesti.
 
 Peruuta ja tee useampia muutoksia mikäli vain mahdollista. Osa Tavanmukaisten muutosten hyödystä on sen rakenne, joka ohjaa tekemään paremmin järjesteltyjä muutoksia ja liitospyyntöjä.
 
-### Doesn’t this discourage rapid development and fast iteration?
+### Eikö tämä menetelmä hankaloita nopeaa kehitystä ja iterointia?
 
-It discourages moving fast in a disorganized way. It helps you be able to move fast long term across multiple projects with varied contributors.
+Se hankaloittaa huonosti järjesteltyä nopeaa etenemistä. Se helpottaa pitkän tähtäimen nopeaa etenemistä useissa projekteissa, joissa on eri kehittäjiä.
 
 ### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
 
