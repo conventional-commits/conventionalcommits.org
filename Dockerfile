@@ -2,7 +2,6 @@ FROM node:alpine
 WORKDIR /src/
 COPY ./themes/conventional-commits /src/
 RUN apk add python make g++
-RUN npm rebuild node-sass
 RUN npm install
 RUN npm run build
 
