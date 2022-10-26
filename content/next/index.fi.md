@@ -264,7 +264,7 @@ The first draft of this specification has been written in collaboration with som
 - [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source UI toolkit.
 - [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
 - [mhy](https://mhy.js.org): 🧩 A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
-- [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser for Diff files (unified diff format).
+- [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simppeli jäsenteli Diff tiedostoille (määrittelemättömille diff formaateille)
 - [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Helppo jakaminen .diff & .patch tiedostoihin.
 - [@thi.ng/umbrella](https://github.com/thi-ng/umbrella):Monorepositorio ~100:sta TypeScript projekille data käyttöistä kehitystä varten.
 - [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 Paranneltu Yii2 sovellusmalli.
