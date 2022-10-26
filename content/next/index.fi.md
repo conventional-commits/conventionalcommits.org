@@ -265,17 +265,17 @@ The first draft of this specification has been written in collaboration with som
 - [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
 - [mhy](https://mhy.js.org): 🧩 A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
 - [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser for Diff files (unified diff format).
-- [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Easy split of .diff & .patch into its files.
-- [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo of ~100 TypeScript projects for data driven development.
-- [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 An enhanced Yii2 app template.
-- [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.
-- [Tina CMS](https://tinacms.org): An open source toolkit for building front-end content-management into your website.
-- [Uno Platform](https://platform.uno): Build Mobile, Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.
-- [AutoSort.NetCore](https://www.nuget.org/packages/AutoSort.NetCore/): Use entity attributes for default sorting.
-- [Undercut](https://github.com/the-spyke/undercut): JavaScript lazy data processing pipelines and utilities.
-- [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): A stats builder for [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
-- [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
-- [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Integration RSQL query language and Querydsl framework.
+- [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Helppo jakaminen .diff & .patch tiedostoihin.
+- [@thi.ng/umbrella](https://github.com/thi-ng/umbrella):Monorepositorio ~100:sta TypeScript projekille data käyttöistä kehitystä varten.
+- [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 Paranneltu Yii2 sovellusmalli.
+- [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Tee helposti dynaamisia verkkolomakkeita kaappaamiseen ja toimita tarkkaa ja ajankohtaista dataa.
+- [Tina CMS](https://tinacms.org): Avoimen lähdekoodin työkalut front-end ja sisällönhallinnan rakentamiseen verkkosivuillesi.
+- [Uno Platform](https://platform.uno): Rakenna mobiili, pöytä ja Webassembly sovelluksia C# ja XAML:lla. Tänään. Avoin lähdekoodi ja ammattilaisten tukema.
+- [AutoSort.NetCore](https://www.nuget.org/packages/AutoSort.NetCore/): Käytä itsenäisiä määritteitä oletuslajitteluun
+- [Undercut](https://github.com/the-spyke/undercut): JavaScriptin ajoitetun datan prosessointipuskuriputkia ja apuväline.
+- [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): Statistiikkan rakentaja Blox Fruitsille [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
+- [Jenkins X](https://jenkins-x.io/): Jenkins X tarjoaa puskuriputki-automaation, sisäisen Gitopsin ja esikatselu ympäristöjä avustamaan tiimejä yhteistoimintaan ja nopettamaan ohjelmistojen tuotantoa kaikilla skaaloilla.
+- [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Sisäinen RSQL kyselykieli ja Quarydsl kehitysympäristö.
 - [Changeloguru](https://github.com/haunt98/changeloguru): Luo automaattisesti muutoslokin tavanmukaisia muutoksia kirjoitettuna Go-ohjelmointikielellä.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
