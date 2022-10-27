@@ -168,7 +168,7 @@ Tavanmukaiset muutokset ohjaavat tekemään enemmän tietyn tyyppisiä muutoksia
 
 Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaatioon (ja rohkaisemme tekemään laajennuksia!)
 
-### What do I do if I accidentally use the wrong commit type?
+### Mitä jos käytän vahingossa väärää muutostyyppiä?
 
 #### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
 
