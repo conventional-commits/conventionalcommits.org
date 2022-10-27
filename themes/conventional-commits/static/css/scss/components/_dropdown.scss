@@ -21,7 +21,6 @@
 
 .dropdown {
   position: relative;
-  min-width: 110px;
 
   &__label {
     display: block;
@@ -34,7 +33,7 @@
     text-decoration: inherit;
     text-transform: inherit;
     text-align: center;
-    padding: $dropdown-padding;
+    padding: $dropdown-label-padding;
     background-color: $dropdown-label-background-color;
     border-radius: $dropdown-border-radius;
     &:after {
@@ -51,7 +50,8 @@
 
   &__options {
     visibility: visible;
-    min-width: 100%;
+    z-index: 1;
+    min-width: 110px;
     max-height: 50vh;
     position: absolute;
     top: 100%;
@@ -64,6 +64,11 @@
     box-shadow: $shadow-soft;
     overflow: auto;
     animation: hide math.div($dropdown-animation-timing, 2)  ease forwards;
+
+    @include up-to-mobile {
+      top: 75%;
+    }
+
     &:before {
       content: '';
       width: 0;
@@ -81,7 +86,7 @@
   &__option {
     a {
       display: block;
-      padding: $dropdown-padding;
+      padding: $dropdown-option-padding;
       color: rgba(black, .6);
       text-decoration: none;
       border-bottom: 1px solid $dropdown-option-border-bottom-color;
