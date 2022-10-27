@@ -160,7 +160,7 @@ Se hankaloittaa huonosti järjesteltyä nopeaa etenemistä. Se helpottaa pitkän
 
 Tavanmukaiset muutokset ohjaavat tekemään enemmän tietyn tyyppisiä muutoksia, kuten korjauksia. Tämän lisäksi Tavanmukaisten muutosten joustavuus sallii tiimien keksiä omat tyyppinsä ja muokata niitä ajan myötä.
 
-### How does this relate to SemVer?
+### Miten tämä suhteutuu SemVeriin?
 
 `fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
 
