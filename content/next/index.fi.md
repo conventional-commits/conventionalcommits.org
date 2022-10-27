@@ -166,8 +166,7 @@ Tavanmukaiset muutokset ohjaavat tekemään enemmän tietyn tyyppisiä muutoksia
 
 ### Miten minun tulisi versioida laajennukseni Tavanmukaiset muutokset -spesifikointiin, esim `@jameswomack/conventional-commit-spec`?
 
-We recommend using SemVer to release your own extensions to this specification (and
-encourage you to make these extensions!)
+Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaatioon (ja rohkaisemme tekemään laajennuksia!)
 
 ### What do I do if I accidentally use the wrong commit type?
 
