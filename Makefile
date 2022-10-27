@@ -1,5 +1,5 @@
 all: compile-assets compile-site
-all-dev: rebuild-node-sass compile-assets-dev serve-site-dev
+all-dev: compile-assets-dev serve-site-dev
 
 compile-site:
 	echo "Generating static website"
@@ -18,9 +18,4 @@ compile-assets:
 compile-assets-dev:
 	echo "Compiling assets"
 	cd themes/conventional-commits && npm install && npm run start &
-
-rebuild-node-sass:
-	echo "Rebuilding node sass"
-	cd themes/conventional-commits && npm rebuild node-sass
-	echo "node sass rebuilt"
 
