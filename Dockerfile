@@ -1,8 +1,7 @@
-FROM node:alpine
+FROM node:19.0.0-alpine
 WORKDIR /src/
 COPY ./themes/conventional-commits /src/
-RUN apk add python make g++
-RUN npm rebuild node-sass
+RUN apk add make
 RUN npm install
 RUN npm run build
 

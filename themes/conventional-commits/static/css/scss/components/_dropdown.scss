@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "./../abstracts/index";
 
 @keyframes show {
@@ -62,7 +63,7 @@
     border-radius: $dropdown-border-radius;
     box-shadow: $shadow-soft;
     overflow: auto;
-    animation: hide $dropdown-animation-timing/2 ease forwards;
+    animation: hide math.div($dropdown-animation-timing, 2)  ease forwards;
     &:before {
       content: '';
       width: 0;
@@ -71,7 +72,7 @@
       top: 0;
       left: 50%;
       border-style: solid;
-      border-width: 0 $dropdown-arrow-size ($dropdown-arrow-size/2) $dropdown-arrow-size;
+      border-width: 0 $dropdown-arrow-size math.div($dropdown-arrow-size, 2) $dropdown-arrow-size;
       border-color: transparent transparent $dropdown-options-background-color transparent;
       transform: translate(-50%, -100%);
     }
