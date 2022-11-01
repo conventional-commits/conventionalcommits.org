@@ -145,34 +145,33 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 
 ### Miten minun tulisi käyttää muutosviestejä kehityksen alkuvaiheessa?
 
-We recommend that you proceed as if you've already released the product. Typically _somebody_, even if it's your fellow software developers, is using your software. They'll want to know what's fixed, what breaks etc.
+Suosittelemme, että toimisit kuin olisit jo julkaissut tuotteen. Yleensä _joku_, vähintään toiset kehittäjät, käyttävät jo ohjelmaasi. He tahtovat tietää, mitä on korjattu, mikä rikkoo ohjelman, jne.
 
-### Are the types in the commit title uppercase or lowercase?
+### Tulisiko muutosviestien tyypit kirjoittaa isoilla vai pienillä kirjaimilla?
 
-Any casing may be used, but it's best to be consistent.
+Kirjainkoolla ei ole väliä, mutta on hyvä käyttää niitä johdonmukaisesti.
 
-### What do I do if the commit contains changes of more than one type?
+### Mitä jos muutoksessani on useamman kuin yhden tyyppisiä muutoksia?
 
-Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
+Peruuta ja tee useampia muutoksia mikäli vain mahdollista. Osa Tavanmukaisten muutosten hyödystä on sen rakenne, joka ohjaa tekemään paremmin järjesteltyjä muutoksia ja liitospyyntöjä.
 
-### Doesn’t this discourage rapid development and fast iteration?
+### Eikö tämä menetelmä hankaloita nopeaa kehitystä ja iterointia?
 
-It discourages moving fast in a disorganized way. It helps you be able to move fast long term across multiple projects with varied contributors.
+Se hankaloittaa huonosti järjesteltyä nopeaa etenemistä. Se helpottaa pitkän tähtäimen nopeaa etenemistä useissa projekteissa, joissa on eri kehittäjiä.
 
-### Might Conventional Commits lead developers to limit the type of commits they make because they'll be thinking in the types provided?
+### Voiko Tavanmukaisten muutosten käyttäminen johtaa kehittäjät rajoittamaan tekemiensä muutosten tyyppejä, koska he ajattelevat vain projektissa määriteltyjen tyyppien mukaisesti?
 
-Conventional Commits encourages us to make more of certain types of commits such as fixes. Other than that, the flexibility of Conventional Commits allows your team to come up with their own types and change those types over time.
+Tavanmukaiset muutokset ohjaavat tekemään enemmän tietyn tyyppisiä muutoksia, kuten korjauksia. Tämän lisäksi Tavanmukaisten muutosten joustavuus sallii tiimien keksiä omat tyyppinsä ja muokata niitä ajan myötä.
 
-### How does this relate to SemVer?
+### Miten tämä suhteutuu SemVeriin?
 
-`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
+`fix`-tyypin muutokset tulisi kääntää `PATCH`-julkaisuiksi. `feat`-tyypin muutokset tulisi kääntää `MINOR`-julkaisuiksi. Muutokset joiden muutosviestissä on `BREAKING CHANGE`, tyypistä riippumatta, tulisi kääntää`MAJOR`-julkaisuksi.
 
-### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
+### Miten minun tulisi versioida laajennukseni Tavanmukaiset muutokset -spesifikointiin, esim `@jameswomack/conventional-commit-spec`?
 
-We recommend using SemVer to release your own extensions to this specification (and
-encourage you to make these extensions!)
+Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaatioon (ja rohkaisemme tekemään laajennuksia!)
 
-### What do I do if I accidentally use the wrong commit type?
+### Mitä jos käytän vahingossa väärää muutostyyppiä?
 
 #### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
 
