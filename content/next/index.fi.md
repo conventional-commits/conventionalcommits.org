@@ -254,16 +254,16 @@ The first draft of this specification has been written in collaboration with som
 
 ## Projects Using Conventional Commits
 
-- [NFPM](https://github.com/goreleaser/nfpm): NFPM is Not FPM - a simple deb, rpm and apk packager written in Go
-- [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
-- [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools and libraries for adding test coverage to your JavaScript tests.
-- [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) and [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Optional supplemental user interface enhancing [Apereo uPortal](https://www.apereo.org/projects/uportal).
-- [massive.js](https://github.com/dmfay/massive-js): A data access library for Node and PostgreSQL.
-- [electron](https://github.com/electron/electron): Build cross-platform desktop apps with JavaScript, HTML, and CSS.
-- [scroll-utility](https://github.com/LeDDGroup/scroll-utility): A simple to use scroll utility package for centering elements, and smooth animations.
-- [Blaze UI](https://github.com/BlazeUI/blaze): Framework-free open source UI toolkit.
-- [Monica](https://github.com/monicahq/monica): An open source personal relationship management system.
-- [mhy](https://mhy.js.org): 🧩 A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
+- [NFPM](https://github.com/goreleaser/nfpm): Simppeli deb, rpm ja apk paketoija kirjoitettuna GO:lla
+- [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser. Kaikkien suosikki merirosvo-teemainen komentokehoteargumenttijäsennin.
+- [istanbuljs](https://github.com/istanbuljs/istanbuljs): Kokoelma avoimen lähdekoodin työkaluja ja kirjastoja Javascript testien näkyvyyden lisäämiseen.
+- [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) and [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Vaihtoehtoinen lisä käyttäjärajapinnan parannukseen.[Apereo uPortal](https://www.apereo.org/projects/uportal).
+- [massive.js](https://github.com/dmfay/massive-js): Datakäsittelykirjasto Node:lle ja PostGreSQL:lle.
+- [electron](https://github.com/electron/electron): Rakenna ristikkäisalusta työpöytäsovelluksia JavaScriptillä, HTML:llä ja CSS:llä.
+- [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Helposti käytettävä vieritys hyödykepakkaus elementtien keskittämiseen ja animaatioiden pehmentämiseen.
+- [Blaze UI](https://github.com/BlazeUI/blaze): Kehitysalustavapaa avoimen lähdekoodin UI työkalu
+- [Monica](https://github.com/monicahq/monica): Avoimen lähdekoodin henkilökohtainen relaatiosuhteiden hallintajärjestelmä. hallinnointisysteemi.
+- [mhy](https://mhy.js.org): 🧩 Ilman konfiguraatiota, suoraa pakasta, moni-käyttöinen kirjasto sekä tuotantolusta.
 - [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simppeli jäsenteli Diff tiedostoille (määrittelemättömille diff formaateille)
 - [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Helppo jakaminen .diff & .patch tiedostoihin.
 - [@thi.ng/umbrella](https://github.com/thi-ng/umbrella):Monorepositorio ~100:sta TypeScript projekille data käyttöistä kehitystä varten.
