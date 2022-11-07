@@ -173,7 +173,7 @@ Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaat
 
 ### Mitä jos käytän vahingossa väärää muutostyyppiä?
 
-#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+#### Kun käytit spesifikaation mukaista, mutta väärää muutostyyppiä, kuten `fix` `feat`:in sijaan
 
 Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
 
