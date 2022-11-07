@@ -182,7 +182,7 @@ Ennen virheen yhdistämistä tai vapauttamista, suosittelemme käyttämään git
 
 Pahimmassakaan tapauksessa ei ole maailmanloppu, jos repositorioon päätyy kommentti, joka ei ole spesifikaation mukainen. Se vain tarkoittaa, että spesifikaatioon perustuvat työkalut eivät löydä kyseistä muutosta.
 
-### Do all my contributors need to use the conventional commit specification?
+### Täytyykö kaikkien projektiin osallistuvien lehittäjien käyttää Tavanmukaisia muutoksia?
 
 No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
