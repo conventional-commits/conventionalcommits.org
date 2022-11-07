@@ -178,7 +178,7 @@ Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaat
 Ennen virheen yhdistämistä tai vapauttamista, suosittelemme käyttämään git rebase -i-komentoa sitoumushistorian muokkaamiseen. Julkaisun jälkeen virheen korjaus on erilainen sen mukaan, mitä työkaluja ja prosesseja käytät.
 
 
-#### When you used a type _not_ of the spec, e.g. `feet` instead of `feat`
+#### Kun käytit muutostyyppiä, joka ei ole spesifikaation mukainen, kuten `feet` `feat`:in sijaan
 
 In a worst case scenario, it's not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the spec.
 
