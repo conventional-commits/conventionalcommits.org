@@ -233,7 +233,7 @@ The first draft of this specification has been written in collaboration with som
 - [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
 - [semantic-release](https://github.com/semantic-release/semantic-release): A tool that automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
 - [ngx-semantic-version](https://github.com/d-koppenhagen/ngx-semantic-version): Automate your Angular app commit- and release-workflow by integrating _commitizen_, _commitlint_, _husky_ and _standard-version_ in your project and configuring it for using _Conventional Commits_.
-- [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
+- [Pyhist](https://github.com/jgoodman8/pyhist): Python apuväline joka päivittää automaattisesti pakettiversion gitin historiasta ja luo muutoslokin.
 - [commitizen-tools/commitizen](https://github.com/commitizen-tools/commitizen): A Python tool built to create committing rules for projects (default: conventional commit), bump project versions, and generate changelog. Configurable and usable for both Python and non-Python project. It's highly extensible through Python.
 - [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply Semantic Versioning to git repositories based on _Conventional Commits_.
 - [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling and language agnostic utility to calculate the next semantic version based on the _Conventional Commits_ since the prior version. Supports monorepos.
@@ -241,15 +241,15 @@ The first draft of this specification has been written in collaboration with som
 - [sv4git](https://github.com/bvieira/sv4git): A command line tool (CLI) to validate commit messages, bump versions, create tags and generate changelogs.
 - [semantic-gitlog](https://github.com/semantic-gitlog) A simple Semantic Versioning management tool based on Conventional Commits. It automatically derives and manage version numbers and generate angular-style changelogs. supports [Maven](https://github.com/semantic-gitlog/maven-semantic-gitlog) and [Gradle](https://github.com/semantic-gitlog/gradle-semantic-gitlog).
 - [idea-conventional-commit](https://github.com/lppedd/idea-conventional-commit) Context and template-based completion for conventional/semantic commits.
-- [Versio](https://github.com/chaaz/versio): A monorepo-compatible tool that updates version numbers based on conventional commits and project dependencies. It can generate tags and changelogs, too.
-- [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib): A Java library that supports rendering a changelog given a context derived from Git. Supports conventional commits with [Handlebars Helpers](https://github.com/tomasbjerre/git-changelog-lib#helpers). It is used in:
+- [Versio](https://github.com/chaaz/versio): Monorepo-yhteensopiva työkalu joka päivittää versionumeroita kommitointipohjaisesti sekä projektiriippuvaisesti. Se luo myös omat merkinnät ja muutoslokit
+- [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib): Javakirjasto joka tukee muutoslokin hahmontamista annetuilla konteksteilla juonnettuna Gitistä. Tukee tavanmukaisia kommitointeja [Handlebars Helpers](https://github.com/tomasbjerre/git-changelog-lib#helpers):lla. Se on käytössä seuraavissa:
   - [Gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin)
   - [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
   - [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
   - [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
-- [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
-- [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
-- [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI
+- [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto on sarja CLI työkaluja tavanomaiseen muutostekstiin ja semver erikoistumiseen.
+- [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter):Apuvälinöintiin ja kieliagnostiikkaan erikoistunut gitin kommittaus virheenkäsittelytyökalu _Conventional Commits_ :lle
+- [Uplift](https://github.com/gembaadvantage/uplift): Tavanomainen kommitointi. Rakennettu käytettäväksi helpolla CI:llä.
 
 ## Projects Using Conventional Commits
 
