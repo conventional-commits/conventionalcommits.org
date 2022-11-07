@@ -180,7 +180,7 @@ Ennen virheen yhdistämistä tai vapauttamista, suosittelemme käyttämään git
 
 #### Kun käytit muutostyyppiä, joka ei ole spesifikaation mukainen, kuten `feet` `feat`:in sijaan
 
-In a worst case scenario, it's not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the spec.
+Pahimmassakaan tapauksessa ei ole maailmanloppu, jos repositorioon päätyy kommentti, joka ei ole spesifikaation mukainen. Se vain tarkoittaa, että spesifikaatioon perustuvat työkalut eivät löydä kyseistä muutosta.
 
 ### Do all my contributors need to use the conventional commit specification?
 
