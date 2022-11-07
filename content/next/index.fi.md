@@ -175,7 +175,8 @@ Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaat
 
 #### Kun käytit spesifikaation mukaista, mutta väärää muutostyyppiä, kuten `fix` `feat`:in sijaan
 
-Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
+Ennen virheen yhdistämistä tai vapauttamista, suosittelemme käyttämään git rebase -i-komentoa sitoumushistorian muokkaamiseen. Julkaisun jälkeen virheen korjaus on erilainen sen mukaan, mitä työkaluja ja prosesseja käytät.
+
 
 #### When you used a type _not_ of the spec, e.g. `feet` instead of `feat`
 
