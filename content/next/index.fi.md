@@ -184,7 +184,7 @@ Pahimmassakaan tapauksessa ei ole maailmanloppu, jos repositorioon päätyy komm
 
 ### Täytyykö kaikkien projektiin osallistuvien lehittäjien käyttää Tavanmukaisia muutoksia?
 
-Ei! Jos käytät squash-pohjaista työnkulkua Gitissä, projektijohtajat voivat siistiä muutosviestit mergen yhteydessä.. adding no workload to casual committers.
+Ei! Jos käytät squash-pohjaista työnkulkua Gitissä, projektijohtajat voivat siistiä muutosviestit mergen yhteydessä. Näin vapaamuotoisemmille kehittäjile ei koidu ylimääräistä työtaakkaa.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
 
 ### How does Conventional Commits handle revert commits?
