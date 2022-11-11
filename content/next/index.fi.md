@@ -189,7 +189,7 @@ Yleinen työnkulku tähän on määrittää git-systeemi suorittamaan automaatti
 
 ### Miten Tavanmukaiset muutokset käsittelevät muutosten peruutuksia (revert)?
 
-Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release instead be a patch?
+Koodin peruuttaminen voi olla monimutkaista: peruutatko useita muutoksia? if you revert a feature, should the next release instead be a patch?
 
 Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
 authors to use the flexibility of _types_ and _footers_ to develop their logic for handling reverts.
