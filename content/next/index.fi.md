@@ -117,8 +117,8 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 1. Yhden tai useamman alatunnisteen SAA sisältää yhden tyhjän tivin jälkeen muutostekstistä. Jokaisen alatunnisteen PITÄÄ sisältää
    sanamerkki, jonka jälkeen joko `:<space>` tai `<space>#` erottaja, jonka jälkeen merkkijono arvo (idea on saatu
    [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
-1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
-   the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
+1. Alatunnisteen merkin PITÄÄ käyttää `-` välilyöntimerkkien tilalla, esim., `Acked-by` (tämä helpottaa erottamaan
+   alatunnisteosion monen kappaleen muutostekstistä). Poikkes tehdään `BREAKING CHANGE` kanssa, jota SAA myös käyttää merkkinä.
 1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
    token/separator pair is observed.
 1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
