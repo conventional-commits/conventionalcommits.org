@@ -112,7 +112,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
    koodikanta osaa ympäröitynä sulkumerkeillä, esim., `fix(parser):`
 1. Kuvauksen PITÄÄ välittömästi seurata kaksoispistettä ja välilyöntiä, tyyppi/laajuus etuliitteen jälkeen.
    Kuvaus on lyhyt tiivistelmä koodimuutoksista, esim., _fix: array parsing issue when multiple spaces were contained in string_.
-1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
+1. Pidemmän muutostekstin SAA kirjoittaa lyhyen kuvauksen jälkeen, joka tarjoaa lisää kontekstuaalista tietoa koodimuunnoksista. Muutostekstin PITÄÄ alkaa yhdellä tyhjällä rivillä kuvauksen jälkeen.
 1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
 1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
    a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
