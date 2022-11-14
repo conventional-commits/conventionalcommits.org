@@ -123,7 +123,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
    merkki/erottajapari huomataan.
 1. Rikkovat muutokset PITÄÄ ilmaista muutoksen tyyppi/laajuus etuliitteessä, tai kirjauksena
    alatunnisteessa.
-1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
+1. Jos se sisällytetään alatunnisteessa, rikkovan muutoksen PITÄÄ sisältää isoilla kirjaimillia BREAKING CHANGE, jota seuraa kaksoispiste, välilyönti, ja kuvaus, esim.,
    _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
    `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
