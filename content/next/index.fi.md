@@ -121,8 +121,8 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
    alatunnisteosion monen kappaleen muutostekstistä). Poikkes tehdään `BREAKING CHANGE` kanssa, jota SAA myös käyttää merkkinä.
 1. Alatunniste VOI sisältää välilyöntejä ja rivinvaihtoja, ja jäsentämisen PITÄÄ loppua kun seuraava kelpaava alatunniste
    merkki/erottajapari huomataan.
-1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
-   footer.
+1. Rikkovat muutokset PITÄÄ ilmaista muutoksen tyyppi/laajuus etuliitteessä, tai kirjauksena
+   alatunnisteessa.
 1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
    _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
