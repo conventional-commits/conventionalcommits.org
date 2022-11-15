@@ -130,7 +130,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
    ja muutoksen kuvausta PITÄÄ käyttää kuvailemaan rikkovaa muutosta.
 1. Muitakin tyyppeja kuin `feat` ja `fix` SAA käyttää muutosviesteissä, esim., _docs: updated ref docs._
 1. Toteuttajien EI PIDÄ pitää tietoa tavanmukaisissa muutoksissa merkkikokoriippuvaisina, poikkeuksena BREAKING CHANGE mikä PITÄÄ olla kirjoitettu isoilla kirjaimilla.
-1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+1. BREAKING-CHANGE PITÄÄ olla samanmerkityksinen BREAKING CHANGE kanssa, kun sitä käytetään merkkinä alatunnisteessa.
 
 ## Why Use Conventional Commits
 
