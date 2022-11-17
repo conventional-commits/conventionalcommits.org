@@ -203,7 +203,7 @@ Refs: 676104e, a215868
 
 ### Mitä kirjoitusmuotoa minun tulisi käyttää?
 
-We recommend writing a commit description and body using the [imperative](https://en.wikipedia.org/wiki/Imperative_mood) present tense writing form.
+Suosittelemme kirjoittamaan muutosviestin kuvauksen ja päätekstin [imperatiivin] (https://en.wikipedia.org/wiki/Imperative_mood) preesensissä.
 
 There are a significant number of examples of this writing form for commits [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
 
