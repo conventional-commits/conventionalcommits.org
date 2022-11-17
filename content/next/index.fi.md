@@ -193,7 +193,7 @@ Koodin peruuttaminen voi olla monimutkaista: peruutatko useita muutoksia? Jos pe
 
 Tavanmukaiset muutokset ei määritä suoraan, miten peruutusten kanssa tulisi toimia. Sen sijaan annamme tooling (kehitystyökalujen?)-kehittäjien käyttää _tyyppien_ ja _alatunnisteiden_ joustavuutta peruutusten logiikan kehittämiseen.
 
-One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
+Yksi suositus olisi käyttää `revert`-tyyppiä sekä alatunnistetta, joka viittaa peruutettavien muutosten SHA:han.
 
 ```
 revert: let us never again speak of the noodle incident
