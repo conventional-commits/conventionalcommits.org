@@ -201,7 +201,7 @@ revert: let us never again speak of the noodle incident
 Refs: 676104e, a215868
 ```
 
-### What writing form should I use?
+### Mitä kirjoitusmuotoa minun tulisi käyttää?
 
 We recommend writing a commit description and body using the [imperative](https://en.wikipedia.org/wiki/Imperative_mood) present tense writing form.
 
