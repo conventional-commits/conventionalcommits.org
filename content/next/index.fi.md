@@ -191,8 +191,7 @@ Yleinen työnkulku tähän on määrittää git-systeemi suorittamaan automaatti
 
 Koodin peruuttaminen voi olla monimutkaista: peruutatko useita muutoksia? Jos peruutat ominaisuuden, tulisiko seuraavan julkaisun olla bugikorjaus ominaisuuden sijaan?
 
-Tavanmukaiset muutokset ei määritä suoraan, miten peruutusten kanssa tulisi toimia. Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
-authors to use the flexibility of _types_ and _footers_ to develop their logic for handling reverts.
+Tavanmukaiset muutokset ei määritä suoraan, miten peruutusten kanssa tulisi toimia. Sen sijaan annamme tooling (kehitystyökalujen?)-kehittäjien käyttää _tyyppien_ ja _alatunnisteiden_ joustavuutta peruutusten logiikan kehittämiseen.
 
 One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
 
