@@ -134,7 +134,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 
 ## Miksi Käyttää Tavanmukaisia Muutoksia
 
-- Automatically generating CHANGELOGs.
+- Automaattisesti generoidut MUUTOSLOKIT
 - Automatically determining a semantic version bump (based on the types of commits landed).
 - Communicating the nature of changes to teammates, the public, and other stakeholders.
 - Triggering build and publish processes.
