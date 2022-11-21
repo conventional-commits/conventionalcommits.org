@@ -135,7 +135,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 ## Miksi Käyttää Tavanmukaisia Muutoksia
 
 - Automaattisesti generoidut MUUTOSLOKIT
-- Automatically determining a semantic version bump (based on the types of commits landed).
+- Automaattisesti määritely SemVer-spesifikaatio (muutosten tyypistä riippuen).
 - Communicating the nature of changes to teammates, the public, and other stakeholders.
 - Triggering build and publish processes.
 - Making it easier for people to contribute to your projects, by allowing them to explore
