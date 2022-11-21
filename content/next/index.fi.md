@@ -137,7 +137,7 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 - Automaattisesti generoidut MUUTOSLOKIT
 - Automaattisesti määritely SemVerin mukainen bump (muutosten tyypistä riippuen).
 - Muutosten luonteen kommunikoiminen tiimitoverille, yleisölle, ja muille sidosryhmille.
-- Triggering build and publish processes.
+- Luonti- ja julkaisuprosessien laukaiseminen.
 - Making it easier for people to contribute to your projects, by allowing them to explore
   a more structured commit history.
 
