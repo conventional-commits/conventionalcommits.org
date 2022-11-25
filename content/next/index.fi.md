@@ -132,14 +132,14 @@ Avainsanat "PITÄÄ" (“MUST”), "EI PIDÄ" (“MUST NOT"), "PAKOLLINEN" (“R
 1. Toteuttajien EI PIDÄ pitää tietoa tavanmukaisissa muutoksissa merkkikokoriippuvaisina, poikkeuksena BREAKING CHANGE mikä PITÄÄ olla kirjoitettu isoilla kirjaimilla.
 1. BREAKING-CHANGE PITÄÄ olla samanmerkityksinen BREAKING CHANGE kanssa, kun sitä käytetään merkkinä alatunnisteessa.
 
-## Why Use Conventional Commits
+## Miksi Käyttää Tavanmukaisia Muutoksia
 
-- Automatically generating CHANGELOGs.
-- Automatically determining a semantic version bump (based on the types of commits landed).
-- Communicating the nature of changes to teammates, the public, and other stakeholders.
-- Triggering build and publish processes.
-- Making it easier for people to contribute to your projects, by allowing them to explore
-  a more structured commit history.
+- Automaattisesti generoidut MUUTOSLOKIT
+- Automaattisesti määritely SemVerin mukainen bump (muutosten tyypistä riippuen).
+- Muutosten luonteen kommunikoiminen tiimitoverille, yleisölle, ja muille sidosryhmille.
+- Luonti- ja julkaisuprosessien laukaiseminen.
+- Helpottaa muiden osallistumista projektiisi, antamalla heidän tutustua
+  hyvin organisoituun muutoshistoriaan.
 
 ## UKK (Usein kysytyt kysymykset)
 
