@@ -14,6 +14,7 @@ $radius-lg: 8px;
 
 $shadow-soft: 0 2px 10px 0 rgba(0, 0, 0, .03), 0 2px 20px 10px rgba(0, 0, 0, 0.02);
 
+$mobile-width: 350px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -28,13 +29,14 @@ $main-background: $color-neutral-light;
 $article-background: $color-neutral-light;
 $article-offset-top: -$header-height + -$gap-sm;
 
-$dropdown-padding: 12px 16px;
 $dropdown-border-radius: $radius-md;
 $dropdown-animation-timing: .4s;
+$dropdown-label-padding: 12px 8px;
 $dropdown-label-background-color: transparent;
 $dropdown-arrow-size: 10px;
 $dropdown-options-background-color: $color-neutral-light;
 $dropdown-options-space-from-label: $gap-sm;
+$dropdown-option-padding: 12px 16px;
 $dropdown-option-border-bottom-color: rgba($color-neutral-dark, .04);
 
 $banner-image-height: 300px;
