@@ -2,11 +2,11 @@
 draft: true
 ---
 
-# Tavanomaiset muutokset 1.0.0-next
+# Tavanmukaiset muutokset 1.0.0-next
 
 ## Tiivistelmä
 
-Tavanomaiset muutokset-ohjeistus on kevyt menettelytapa muutosviesteille.
+Tavanmukaiset muutokset-ohjeistus on kevyt menettelytapa muutosviesteille.
 Se tarjoaa selkeät, helposti noudettavat säännöt täsmälliselle muutoshistorialle,
 joka tekee niihin liittyvien automaattisten työkalujen käytöstä helppoa.
 Tämä mahdollistaaa muutosviestien nivoutumisen [SemVerin](http://semver.org) kanssa
@@ -38,7 +38,7 @@ niiden tarkoituksen tuotteesi käyttäjille:
    `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` jne.
 5. Muita _alatunnisteita_, kuin `BREAKING CHANGE: <description>` voidaan lisätä ja ne pohjautuvat [git trailer formaattiin](https://git-scm.com/docs/git-interpret-trailers).
 
-Muita _tyyppejä_ ei ole laadittu Tavanomaiset muutokset-menettelytavassa - eikä niillä ole välitöntä merkitystä kaavamaisessa versioinnisa, ellei ne sisällä särkevää muutosta.
+Muita _tyyppejä_ ei ole laadittu Tavanmukaiset muutokset-menettelytavassa - eikä niillä ole välitöntä merkitystä kaavamaisessa versioinnisa, ellei ne sisällä särkevää muutosta.
 
 <br /><br />
 Tyypille voidaan määritellä laajuus, eli scope. Laajuudessa annetaan sisällölle konteksti ja se merkitään huomautuksena suluissa, esim. `feat(parser): lisää ominaisuus muuntaa kokoelmia`.
@@ -205,7 +205,7 @@ Refs: 676104e, a215868
 
 Suosittelemme kirjoittamaan muutosviestin kuvauksen ja päätekstin [imperatiivin] (https://en.wikipedia.org/wiki/Imperative_mood) preesensissä.
 
-There are a significant number of examples of this writing form for commits [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
+Tämän kirjoitusmuodon käytöstä muutosviesteissä on hyvin paljon esimerkkejä [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
 
 ## About
 
