@@ -2,11 +2,11 @@
 draft: true
 ---
 
-# Tavanomaiset muutokset 1.0.0-next
+# Tavanmukaiset muutokset 1.0.0-next
 
 ## Tiivistelmä
 
-Tavanomaiset muutokset-ohjeistus on kevyt menettelytapa muutosviesteille.
+Tavanmukaiset muutokset-ohjeistus on kevyt menettelytapa muutosviesteille.
 Se tarjoaa selkeät, helposti noudettavat säännöt täsmälliselle muutoshistorialle,
 joka tekee niihin liittyvien automaattisten työkalujen käytöstä helppoa.
 Tämä mahdollistaaa muutosviestien nivoutumisen [SemVerin](http://semver.org) kanssa
@@ -38,7 +38,7 @@ niiden tarkoituksen tuotteesi käyttäjille:
    `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` jne.
 5. Muita _alatunnisteita_, kuin `BREAKING CHANGE: <description>` voidaan lisätä ja ne pohjautuvat [git trailer formaattiin](https://git-scm.com/docs/git-interpret-trailers).
 
-Muita _tyyppejä_ ei ole laadittu Tavanomaiset muutokset-menettelytavassa - eikä niillä ole välitöntä merkitystä kaavamaisessa versioinnisa, ellei ne sisällä särkevää muutosta.
+Muita _tyyppejä_ ei ole laadittu Tavanmukaiset muutokset-menettelytavassa - eikä niillä ole välitöntä merkitystä kaavamaisessa versioinnisa, ellei ne sisällä särkevää muutosta.
 
 <br /><br />
 Tyypille voidaan määritellä laajuus, eli scope. Laajuudessa annetaan sisällölle konteksti ja se merkitään huomautuksena suluissa, esim. `feat(parser): lisää ominaisuus muuntaa kokoelmia`.
@@ -173,27 +173,27 @@ Suosittelemme käyttämään SemVeriä omissa laajennuksissa tähän spesifikaat
 
 ### Mitä jos käytän vahingossa väärää muutostyyppiä?
 
-#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+#### Kun käytit spesifikaation mukaista, mutta väärää muutostyyppiä, kuten `fix` `feat`:in sijaan
 
-Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
+Ennen virheen yhdistämistä tai vapauttamista, suosittelemme käyttämään git rebase -i-komentoa sitoumushistorian muokkaamiseen. Julkaisun jälkeen virheen korjaus on erilainen sen mukaan, mitä työkaluja ja prosesseja käytät.
 
-#### When you used a type _not_ of the spec, e.g. `feet` instead of `feat`
 
-In a worst case scenario, it's not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the spec.
+#### Kun käytit muutostyyppiä, joka ei ole spesifikaation mukainen, kuten `feet` `feat`:in sijaan
 
-### Do all my contributors need to use the conventional commit specification?
+Pahimmassakaan tapauksessa ei ole maailmanloppu, jos repositorioon päätyy kommentti, joka ei ole spesifikaation mukainen. Se vain tarkoittaa, että spesifikaatioon perustuvat työkalut eivät löydä kyseistä muutosta.
 
-No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
-A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
+### Täytyykö kaikkien projektiin osallistuvien lehittäjien käyttää Tavanmukaisia muutoksia?
 
-### How does Conventional Commits handle revert commits?
+Ei! Jos käytät squash-pohjaista työnkulkua Gitissä, projektijohtajat voivat siistiä muutosviestit yhdistämisen (merge) yhteydessä. Näin vapaamuotoisemmille kehittäjile ei koidu ylimääräistä työtaakkaa.
+Yleinen työnkulku tähän on määrittää git-systeemi suorittamaan automaattinen squash-toiminto vetopyynnön muutoksille, minkä jälkeen projektijohtajalle annetaan lomake, johon tämä voi kirjoittaa yhdistämiseen sopivan muutosviestin.
 
-Reverting code can be complicated: are you reverting multiple commits? if you revert a feature, should the next release instead be a patch?
+### Miten Tavanmukaiset muutokset käsittelevät muutosten peruutuksia (revert)?
 
-Conventional Commits does not make an explicit effort to define revert behavior. Instead we leave it to tooling
-authors to use the flexibility of _types_ and _footers_ to develop their logic for handling reverts.
+Koodin peruuttaminen voi olla monimutkaista: peruutatko useita muutoksia? Jos peruutat ominaisuuden, tulisiko seuraavan julkaisun olla bugikorjaus ominaisuuden sijaan?
 
-One recommendation is to use the `revert` type, and a footer that references the commit SHAs that are being reverted:
+Tavanmukaiset muutokset ei määritä suoraan, miten peruutusten kanssa tulisi toimia. Sen sijaan annamme tooling (kehitystyökalujen?)-kehittäjien käyttää _tyyppien_ ja _alatunnisteiden_ joustavuutta peruutusten logiikan kehittämiseen.
+
+Yksi suositus olisi käyttää `revert`-tyyppiä sekä alatunnistetta, joka viittaa peruutettavien muutosten SHA:han.
 
 ```
 revert: let us never again speak of the noodle incident
@@ -201,11 +201,11 @@ revert: let us never again speak of the noodle incident
 Refs: 676104e, a215868
 ```
 
-### What writing form should I use?
+### Mitä kirjoitusmuotoa minun tulisi käyttää?
 
-We recommend writing a commit description and body using the [imperative](https://en.wikipedia.org/wiki/Imperative_mood) present tense writing form.
+Suosittelemme kirjoittamaan muutosviestin kuvauksen ja päätekstin [imperatiivin] (https://en.wikipedia.org/wiki/Imperative_mood) preesensissä.
 
-There are a significant number of examples of this writing form for commits [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
+Tämän kirjoitusmuodon käytöstä muutosviesteissä on hyvin paljon esimerkkejä [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
 
 ## About
 
