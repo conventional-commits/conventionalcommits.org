@@ -1,6 +1,6 @@
 ---
 draft: false
-aliases: ["/am/"]
+aliases: ["/hy/"]
 ---
 
 # Conventional Commits 1.0.0
