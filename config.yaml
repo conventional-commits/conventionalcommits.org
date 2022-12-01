@@ -346,3 +346,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  nl:
+    weight: 19
+    languageName: "Nederlands"
+    title: Conventionele Commits
+    description: Een specificatie voor mens- en machine-leesbare commit berichten
+    actions:
+    - label: Samenvatting
+      url: '#samenvatting'
+    - label: Specificatie
+      url: '#specificatie'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
