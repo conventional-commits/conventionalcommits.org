@@ -13,7 +13,7 @@ Ce qui facilite l'écriture d'outils automatisés.
 Cette convention est liée à [SemVer](http://semver.org),
 en décrivant les fonctionnalités, les correctifs et les modifications importantes apportées aux messages de commit.
 
-Le message du commit doit être structuré comme suit:
+Le message du commit doit être structuré comme suit :
 
 ---
 
@@ -28,7 +28,7 @@ Le message du commit doit être structuré comme suit:
 
 <br />
 Le commit contient les éléments structurels suivants, permettant de communiquer à l’intention des
-consommateurs de votre bibliothèque:
+consommateurs de votre bibliothèque :
 
 1. **fix:** un commit de _type_ `fix` corrige un bogue dans le code (cela est en corrélation avec [`PATCH`](http://semver.org/#summary) en versioning sémantique).
 1. **feat:** un commit de _type_ `feat` introduit une nouvelle fonctionnalité dans le code (cela est en corrélation avec [`MINOR`](http://semver.org/#summary) en versioning sémantique).
@@ -176,7 +176,7 @@ Un processus courant consiste à ce que votre système git supprime automatiquem
 
 ### Comment les Conventional Commits traitent-ils les annulations de commits ?
 
-L'annulation de code peut être compliquée: est-ce une annulation de plusieurs commits ? Si vous annulez une fonctionnalité, la prochaine version devrait-elle être un correctif ?
+L'annulation de code peut être compliquée : est-ce une annulation de plusieurs commits ? Si vous annulez une fonctionnalité, la prochaine version devrait-elle être un correctif ?
 
 Les Conventional Commits ne font pas un effort explicite pour définir le comportement d'annulation. Au lieu de cela, nous laissons les auteurs d’outils utiliser la flexibilité des _types_ et des _pieds de page_ pour développer leur logique de traitement des annulations.
 
