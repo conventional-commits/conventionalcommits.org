@@ -42,7 +42,7 @@ utilizador da sua biblioteca:
  do versionamento semântico). Uma BREAKING CHANGE pode fazer parte de commits de qualquer _tipo_.
 1. Outros: _tipos_ adicionais são permitidos além de `fix:` e `feat:`, por exemplo
  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
- (baseado na [Convenção do Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines))
+ (baseado na [Convenção do Angular](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit))
  recomenda-se `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, entre outros.
 
 Também recomendamos `improvement` para commits que melhoram uma implementação

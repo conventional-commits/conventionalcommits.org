@@ -33,7 +33,7 @@ aliases: ["/zh-hant/"]
 1. **feat:** 為 `feat` _類型_ 的提交，表示對程式增加了一個功能 (對應到語意化版本中的 [`MINOR`](http://semver.org/#summary))。
 1. **BREAKING CHANGE:** 在可選的正文或是頁腳的起始文字為 `BREAKING CHANGE:` 的提交，表示有重大的 API 變更 (對應到語意化版本中的 [`MAJOR`](http://semver.org/#summary))。
 重大變更可以是任何 _類型_ 提交的一部分。
-1. 其他: 除 `fix:` 與 `feat:` 以外，其他的提交 _類型_ 也是被允許的，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (基於 [Angular 慣例](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) 中推薦的 `chore:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:` 以及更多。
+1. 其他: 除 `fix:` 與 `feat:` 以外，其他的提交 _類型_ 也是被允許的，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (基於 [Angular 慣例](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)) 中推薦的 `chore:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:` 以及更多。
 
 我們也推薦對那些沒有增加新功能或是修正臭蟲而是改善目前實作的提交使用 `improvement`。
 請注意，這些類型在約定式提交規範中並不是強制性的，且在語意化版本中也沒有隱含的作用 (除非它們包含 BREAKING CHANGE)。
