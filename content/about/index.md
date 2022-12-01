@@ -44,6 +44,7 @@ The first draft of this specification has been written in collaboration with som
 * [VSCode Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits): Add Conventional Commits supports for VSCode.
 * [Pyhist](https://github.com/jgoodman8/pyhist): A Python utility to automagically update the package version from the git history and generate the Changelog.
 * [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply Semantic Versioning to git repositories based on _Conventional Commits_.
+* [git-semver](https://github.com/PSanetra/git-semver): A cli tool for calculating the next semantic version according to latest _Conventional Commits_ and printing changelogs to stdout.
 * [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling and language agnostic utility to calculate the next semantic version based on the _Conventional Commits_ since the prior version. Supports monorepos.
 * [change](https://github.com/adamtabrams/change): A tool for generating and updating a changelog using Conventional Commits.
 * [Turbogit](https://b4nst.github.io/turbogit): A command line tool to help you follow _Conventional Commits_ flow.
