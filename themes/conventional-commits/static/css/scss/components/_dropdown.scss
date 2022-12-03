@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "./../abstracts/index";
 
 @keyframes show {
@@ -20,7 +21,6 @@
 
 .dropdown {
   position: relative;
-  min-width: 110px;
 
   &__label {
     display: block;
@@ -33,7 +33,7 @@
     text-decoration: inherit;
     text-transform: inherit;
     text-align: center;
-    padding: $dropdown-padding;
+    padding: $dropdown-label-padding;
     background-color: $dropdown-label-background-color;
     border-radius: $dropdown-border-radius;
     &:after {
@@ -50,7 +50,8 @@
 
   &__options {
     visibility: visible;
-    min-width: 100%;
+    z-index: 1;
+    min-width: 110px;
     max-height: 50vh;
     position: absolute;
     top: 100%;
@@ -62,7 +63,12 @@
     border-radius: $dropdown-border-radius;
     box-shadow: $shadow-soft;
     overflow: auto;
-    animation: hide $dropdown-animation-timing/2 ease forwards;
+    animation: hide math.div($dropdown-animation-timing, 2)  ease forwards;
+
+    @include up-to-mobile {
+      top: 75%;
+    }
+
     &:before {
       content: '';
       width: 0;
@@ -71,7 +77,7 @@
       top: 0;
       left: 50%;
       border-style: solid;
-      border-width: 0 $dropdown-arrow-size ($dropdown-arrow-size/2) $dropdown-arrow-size;
+      border-width: 0 $dropdown-arrow-size math.div($dropdown-arrow-size, 2) $dropdown-arrow-size;
       border-color: transparent transparent $dropdown-options-background-color transparent;
       transform: translate(-50%, -100%);
     }
@@ -80,7 +86,7 @@
   &__option {
     a {
       display: block;
-      padding: $dropdown-padding;
+      padding: $dropdown-option-padding;
       color: rgba(black, .6);
       text-decoration: none;
       border-bottom: 1px solid $dropdown-option-border-bottom-color;
