@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "./../abstracts/index";
 
 .welcome {
@@ -36,6 +37,11 @@
   &__title {
     font-size: 2.6em;
     margin-bottom: $gap-sm;
+
+    @include up-to-mobile {
+      word-break: break-all;
+    }
+
     @include desktop {
       width: 85%;
       font-size: 3.6em;
@@ -52,7 +58,7 @@
 
   &__actions {
     display: flex;
-    margin-top: ($gap-lg * 3)/2;
+    margin-top: math.div($gap-lg * 3, 2);
     flex-wrap: wrap;
   }
 

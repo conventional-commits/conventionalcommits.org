@@ -29,11 +29,35 @@
     display: flex;
     color: $color-neutral-light;
     list-style: none;
+    margin-left: $gap-sm * 2;
   }
 
   &__menu-item {
     margin-right: $gap-sm;
+
     &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include up-to-mobile {
+  .header {
+    .container {
+      align-items: flex-start;
+      height: auto;
+      margin-top: $gap-sm;
+    }
+
+
+    &__menu {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: $gap-sm * -1;
+    }
+
+    &__menu-item {
       margin-right: 0;
     }
   }

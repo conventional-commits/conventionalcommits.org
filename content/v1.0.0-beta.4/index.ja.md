@@ -46,7 +46,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 1. **BREAKING CHANGE:** 本体または脚注の冒頭に `BREAKING CHANGE:` という内容があるコミットは、APIの重大な変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
 `BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
 
-1. Others: `fix:` and `feat:` 以外のコミット _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約] (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)ベース)は  `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
+1. Others: `fix:` and `feat:` 以外のコミット _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)ベース)は  `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
 
 
 新しい機能の追加やバグを修正ではなく、現在の実装を改善するコミットには `improvement` をおすすめします。
@@ -113,7 +113,7 @@ _説明_ はコード変更の要約です。 _fix：文字列に複数の空白
 1. 1行以上の _脚注_ は、本文の後ろに1行の空白行を入れてもよい（ MAY ）。 _脚注_ はコミットに関するメタ情報、例えば関連するプルリクエスト、レビュアー、変更の中断などを1行につき1つのメタ情報として含めなければならない（ MUST ）。
 1. 重大な変更(`BREAKING CHANGE`)は、本文セクションの一番最初、または脚注の先頭にしなければいけません（ MUST ）。
 重大な変更は大文字のテキスト `BREAKING CHANGE` と続くコロンとスペースから構成されなければいけません（ MUST ）。
-1. APIについて何が変わったのかを説明する`BREAKING CHANGE:`の後には説明を描かなければいけません（ MUST ）。
+1. APIについて何が変わったのかを説明する`BREAKING CHANGE:`の後には説明を書かなければいけません（ MUST ）。
 例、 _BREAKING CHANGE: 環境変数が設定ファイルよりも優先されるようになりました。_
 1. `feat`と`fix` 以外の _型_ をあなたのコミットメッセージに仕様してもよい（ MAY ）。
 1. Conventional Commitsを構成する情報の単位は、必ず大文字の`BREAKING CHANGE`を除いて、実装側は大文字と小文字を別の物して扱ってはいけない（ MUST NOT ）

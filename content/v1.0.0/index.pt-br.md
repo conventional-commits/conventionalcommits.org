@@ -33,7 +33,7 @@ O commit contém os seguintes elementos estruturais, para comunicar a intenção
 1. **feat:** um commit do _tipo_ `feat` inclui um novo recurso na sua base de código (isso se correlaciona com [`MINOR`](https://semver.org/lang/pt-BR/#sum%C3%A1rio) do versionamento semântico).
 1. **BREAKING CHANGE:** um commit que contém no rodapé opcional o texto `BREAKING CHANGE:`, ou contém o símbolo `!` depois do tipo/escopo, introduz uma modificação que quebra a compatibilidade da API (isso se correlaciona com [`MAJOR`](https://semver.org/lang/pt-BR/#sum%C3%A1rio) do versionamento semântico). Uma BREAKING CHANGE pode fazer parte de commits de qualquer _tipo_.
 1. Outros _tipos_ adicionais são permitidos além de `fix:` e `feat:`, por exemplo [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (baseado na [Convenção do Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recomenda-se `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, entre outros.
-1. Outros _rodapés_ diferentes de `BREAKING CHANGE: <descrição>` podem ser providos e seguem a convenção simular a [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+1. Outros _rodapés_ diferentes de `BREAKING CHANGE: <descrição>` podem ser providos e seguem uma convenção similar ao [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Observe que esses tipos adicionais não são exigidos pela especificação do Conventional Commits e não têm efeito implícito no versionamento semântico (a menos que incluam uma `BREAKING CHANGE`).
 <br /><br />
@@ -52,18 +52,18 @@ BREAKING CHANGE: a chave `extends`, no arquivo de configuração, agora é utili
 ### Mensagem de commit com `!` para chamar a atenção para quebra a compatibilidade
 
 ```
-refactor!: remove suporte para Node 6
+feat!: envia email para o cliente quando o produto é enviado
 ```
 
 ### Mensagem de commit com escopo e `!` para chamar a atenção para quebra a compatibilidade
 ```
-refactor(execução)!: remove suporte para Node 6
+feat(api)!: envia email para o cliente quando o produto é enviado
 ```
 
-### Commit message with both `!` and BREAKING CHANGE footer
+### Mensagem de commit com `!` e BREAKING CHANGE no rodapé
 
 ```
-refactor!: remove suporte para Node 6
+chore!: remove suporte para Node 6
 
 BREAKING CHANGE: refatorar para usar recursos do JavaScript não disponíveis no Node 6.
 ```

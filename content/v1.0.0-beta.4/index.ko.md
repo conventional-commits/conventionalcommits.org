@@ -8,7 +8,7 @@ aliases: ["/ko/"]
 ## 개요
 
 Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤션으로 명확한 커밋 히스토리를 생성하기 위한 간단한 규칙을 제공합니다. 이렇게 만들어진 커밋 히스토리를 이용하여 더 쉽게 자동화된 도구를 만들 수 있습니다.
-이 컨벤션은 커밋 메세지에 신규 기능 추가, 문제 수정, 커다란 변화가 있음을 기술함으로써 [유의적 버전(Sementic Versioning)](https://semver.org/lang/ko/)과 일맥상통한 면이 있습니다.
+이 컨벤션은 커밋 메세지에 신규 기능 추가, 문제 수정, 커다란 변화가 있음을 기술함으로써 [유의적 버전(Semantic Versioning)](https://semver.org/lang/ko/)과 일맥상통한 면이 있습니다.
 
 커밋 메세지는 다음과 같은 구조가 되어야 합니다:
 
@@ -30,7 +30,7 @@ Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤
 1. **fix:** 코드베이스에서 버그를 패치하는 `fix` _타입_ 의 커밋 (이는 유의적 버전에서의 [`PATCH`](http://semver.org/#summary)와 관련이 있습니다).
 1. **feat:** 코드베이스에서 새 기능이 추가되는 `feat` _타입_ 의 커밋 (이는 유의적 버전에서의 [`MINOR`](http://semver.org/#summary)와 관련이 있습니다).
 1. **BREAKING CHANGE:** 본문이나 꼬리말의 시작 부분에 `BREAKING CHANGE:`이라는 문자열을 가진 커밋은 커다란 API 변경 있다는 것을 의미합니다 (이는 유의적 버전에서의 [`MAJOR`](http://semver.org/#summary)와 관련이 있습니다). 어떤 커밋 타입이라도 BREAKING CHANGE는 해당 커밋의 일부가 될 수 있습니다.
-1. 다른 타입: `fix:`와 `feat:` 이외의 커밋 타입을 말합니다, 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
+1. 다른 타입: `fix:`와 `feat:` 이외의 커밋 타입을 말합니다, 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
 
 또한, 새로운 기능이나 버그 수정없이 현재 구현체를 개선하는 커밋에 대해서는 `improvement`을 사용하는 것이 좋습니다. 이 타입은 BREAKING CHANGES를 포함하지 않는 한 Conventional Commits 스펙에 의해 강제되는 부분은 아니고 유의적 버전에도 암묵적 영향을 가지지 않습니다.
 <br />
@@ -83,9 +83,9 @@ closes issue #12
 1. 긴 커밋 본문은 짧은 설명 다음에 위치하는데 코드 변경 사항에 대한 추가적인 문맥적인 정보를 제공합니다. 본문은 반드시 설명 다음에 빈 행으로 시작해야 합니다.
 1. 한 줄 이상을 가진 꼬리말은 본문 다음 빈 행 다음에 위치합니다. 꼬리말은 커밋에 대한 메타 정보를 포함해야 합니다. 예를 들어, 한 줄에 하나의 메타 정보로 관련 있는 PR, 리뷰어, BREAKING CHANGES를 포함합니다.
 1. Breaking changes는 본문 영역의 시작이나 꼬리말 영역의 시작 부분에 위치합니다. Breaking changes는 대문자로 된 BREAKING CHANGE 문자열을 포함하고 그 뒤로 콜론과 공백이 옵니다.
-1. 설명은 반드시 `BREAKING CHANGE: ` 다음에 와야하는데 이는 API에서 변경된 사항을 기술해야 합니다, 예를 들어, _BREAKING CHANGE: environment variables now take precedence over config files._
+1. 설명은 반드시 `BREAKING CHANGE: ` 다음에 와야 하는데 이는 API에서 변경된 사항을 기술해야 합니다, 예를 들어, _BREAKING CHANGE: environment variables now take precedence over config files._
 1. `feat`와 `fix` 이외의 타입이 커밋 메세지에 사용될 수 있습니다.
-1. Conventional Commit을 구성하는 정보의 단위는 반드시 문자여야 하는 BREAKING CHANGES를 제외하고 구현자에 의해 대소문자를 구분하는 것으로 처리되어서는 안됩니다.
+1. Conventional Commit을 구성하는 정보의 단위는 반드시 문자이어야 하는 BREAKING CHANGES를 제외하고 구현자에 의해 대소문자를 구분하는 것으로 처리되어서는 안됩니다.
 1. `!`는 타입/적용 범위 접두어에서 `:` 앞에 붙어야 하는데 큰 변화에 대한 주의를 주기 위함입니다. `BREAKING CHANGE: description`는 반드시 접두어에 `!`와 함께 본문이나 꼬리말에 포함되어야 합니다.
 
 ## 왜 Conventional Commits를 사용할까요?
@@ -134,9 +134,9 @@ SemVer를 사용해서 이 규격에 대한 사용자 자신의 확장판을 릴
 
 #### 스펙에 맞지 않은 타입을 사용하는 경우, 예를 들어, `feat` 대신 `feet`
 
-최악의 경우, Conventional Commmit 규격을 충족하지 않는 커밋이 추가되었다고 해서 그것이 세계의 종말을 의미하지 않습니다. 이는 커밋이 단순히 규격을 기반으로 하는 툴에 의해 누락된다는 것을 의미합니다.
+최악의 경우, Conventional Commit 규격을 충족하지 않는 커밋이 추가되었다고 해서 그것이 세계의 종말을 의미하지 않습니다. 이는 커밋이 단순히 규격을 기반으로 하는 툴에 의해 누락된다는 것을 의미합니다.
 
 ### 모든 기여자가 Conventional Commit 규격을 사용해야 하나요?
 
-아니요! Git를 기반으로 스쿼시를 사용하는 경우, 리드 유지관리자는 커밋된 메시지를 병합할 때 정리할 수 있으므로 일반 커밋자에 작업량이 추가되지 않습니다.
+아니요! Git을 기반으로 스쿼시를 사용하는 경우, 리드 유지관리자는 커밋된 메시지를 병합할 때 정리할 수 있으므로 일반 커밋자에 작업량이 추가되지 않습니다.
 이에 대한 일반적인 작업 흐름은 Git 시스템이 자동으로 풀 요청에서 커밋되도록 하고 리드 유지관리자가 병합에 대한 적절한 Git 커밋 메시지를 입력할 수 있는 양식을 제시하도록 하는 것입니다.

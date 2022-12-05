@@ -176,7 +176,7 @@ In a worst case scenario, it's not the end of the world if a commit lands that d
 
 ### Do all my contributors need to use the conventional commit specification?
 
-No! If you use a squash based workflow on Git lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
+No! If you use a squash based workflow on Git, lead maintainers can clean up the commit messages as they're merged—adding no workload to casual committers.
 A common workflow for this is to have your git system automatically squash commits from a pull request and present a form for the lead maintainer to enter the proper git commit message for the merge.
 
 ### How does Conventional Commits handle revert commits?
@@ -193,6 +193,12 @@ revert: let us never again speak of the noodle incident
 
 Refs: 676104e, a215868
 ```
+
+### What writing form should I use?
+
+We recommend writing a commit description and body using the [imperative](https://en.wikipedia.org/wiki/Imperative_mood) present tense writing form.
+
+There are a significant number of examples of this writing form for commits [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
 
 ## About
 
