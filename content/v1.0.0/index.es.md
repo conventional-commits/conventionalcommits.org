@@ -103,7 +103,7 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 2. El tipo `feat` DEBE ser usado cuando un commit agrega una nueva funcionalidad a la aplicación o librería.
 3. El tipo `fix` DEBE ser usado cuando el commit representa una corrección a un error en el código de la aplicación (bug).
 4. Un ámbito PUEDE ser añadido después de un tipo. Un ámbito DEBE consistir en un sustantivo que describa una sección de la base del código encerrado entre paréntesis, ej., `fix(parser):`.
-5. Una descripción DEBE ir inmediatamente después del punto y coma y espacio del prefijo de tipo/ámbito. La descripción es resúmen corto de los cambios realizados en el código, ej., _fix: array parsing issue when multiple spaces were contained in string._.
+5. Una descripción DEBE ir inmediatamente después de los dos puntos y el espacio del prefijo de tipo/ámbito. La descripción es resúmen corto de los cambios realizados en el código, ej., _fix: array parsing issue when multiple spaces were contained in string._.
 6. Un cuerpo de commit más extenso PUEDE agregarse después de la descripción corta, dando información contextual adicional acerca de los cambios en el código. El cuerpo DEBE iniciar después de una línea en blanco después de la descripción.
 7. Un cuerpo de commit es de forma-libre y PUEDE consistir de cualquier número de párrafos separados por una nueva línea.
 8. Una o más notas al pie PUEDEN ser añadidas una línea en blanco después del cuerpo. Cada nota al pie DEBE consistir de una palabra clave, seguida ya sea por un separador `:<espacio>` o `<espacio>#`, seguido por un valor cadena (string) (esto está inspirado por la [convención git trailer](https://git-scm.com/docs/git-interpret-trailers)).
