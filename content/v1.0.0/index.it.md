@@ -10,7 +10,7 @@ aliases: ["/it/"]
 La specifica Conventional Commits è una convenzione semplice da implementare per i messaggi dei commit.
 Fornisce un insieme di semplici regole per la creazione di una cronologia di commit esplicita;
 il che rende più facile utilizzare strumenti per automatizzare processi.
-Questa convenzione si completa con [SemVer](http://semver.org),
+Questa convenzione si completa con [SemVer](http://semver.org/lang/it/),
 descrivendo le funzionalità, la risoluzione di errori e l'introduzione di breaking changes fatte dei commit.
 
 

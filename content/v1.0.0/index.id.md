@@ -10,7 +10,7 @@ aliases: ["/id/"]
 Conventional Commits adalah perjanjian sederhana tentang cara menulis pesan komit.
 Ini menjelaskan sekumpulan aturan sederhana untuk membuat riwayat komit yang jelas;
 yang memudahkan untuk membuat alat automatis di atasnya.
-Perjanjian ini cocok dengan [SemVer](http://semver.org),
+Perjanjian ini cocok dengan [SemVer](http://semver.org/lang/id/),
 dengan menjelaskan suatu fitur (features), perbaikan (fixes),  perubahan yang merusak (breaking changes) yang dimuat dalam pesan komit.
 
 Pesan komit harus tersusun sebagai berikut:
