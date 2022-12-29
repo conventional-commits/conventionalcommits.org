@@ -346,6 +346,7 @@ languages:
     versions:
       current: v1.0.0
       list:
+        - v1.0.0
 
   nl:
     weight: 19
