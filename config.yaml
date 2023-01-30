@@ -330,6 +330,7 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+        
   tr:
     weight: 18
     languageName: "Türkçe"
@@ -345,7 +346,7 @@ languages:
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   nl:
     weight: 19
@@ -363,3 +364,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  ml:
+    weight: 20
+    languageName: "Malayalam - മലയാളം"
+    title: കോൺവെൻഷനൽ കമ്മിറ്റ്‌സ് 
+    description: സന്ദേശങ്ങൾ കമ്മിറ്റ് ചെയ്യാൻ മനുഷ്യനും യന്ത്രവും വായിക്കാവുന്ന അർത്ഥം ചേർക്കുന്നതിനുള്ള ഒരു സ്പെസിഫിക്കേഷൻ
+    actions:
+    - label: സംഗ്രഹം
+      url: '#സംഗ്രഹം'
+    - label: പൂർണ്ണ സ്പെസിഫിക്കേഷൻ
+      url: '#specification'
+    - label: Github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
