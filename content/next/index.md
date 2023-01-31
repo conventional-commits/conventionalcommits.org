@@ -267,6 +267,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Undercut](https://github.com/the-spyke/undercut): JavaScript lazy data processing pipelines and utilities.
 * [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): A stats builder for [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
 * [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
+* [GearLock](https://github.com/axonasif/gearlock): Custom Recovery Replacement for Android-x86.
 * [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Integration RSQL query language and Querydsl framework.
 * [Changeloguru](https://github.com/haunt98/changeloguru): Auto-generate changelog from conventional commits, written in Go.
 
