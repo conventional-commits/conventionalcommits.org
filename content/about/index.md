@@ -81,6 +81,7 @@ The first draft of this specification has been written in collaboration with som
 * [Belajarpython](https://github.com/belajarpythoncom/belajarpython.com) Open source Indonesian python programming tutorial site.
 * [Uno Platform](https://platform.uno): Build Mobile, Desktop and WebAssembly apps with C# and XAML. Today. Open source and professionally supported.
 * [Jenkins X](https://jenkins-x.io/): Jenkins X provides pipeline automation, built-in GitOps, and preview environments to help teams collaborate and accelerate their software delivery at any scale.
+* [GearLock](https://github.com/axonasif/gearlock): Custom Recovery Replacement for Android-x86.
 * [Changeloguru](https://github.com/haunt98/changeloguru): Auto-generate changelog from conventional commits, written in Go.
 * [freeCodeCamp](https://www.freecodecamp.org): A nonprofit community that helps you learn to code by building projects.
 
