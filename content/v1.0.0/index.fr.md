@@ -145,7 +145,7 @@ Revenez en arrière et faites plusieurs commits autant que possible. Une partie 
 
 ### Est-ce que cela ne décourage pas le développement rapide et l’itération rapide ?
 
-Cela décourage les commits rapides et désorganisée. Il vous aide à être en mesure d'évoluer rapidement et à long terme dans plusieurs projets avec des contributeurs variés.
+Cela décourage les commits rapides et désorganisés. Il vous aide à être en mesure d'évoluer rapidement et à long terme dans plusieurs projets avec des contributeurs variés.
 
 ### Les Conventional Commits pourraient-ils amener les développeurs à limiter le type d’engagements qu’ils effectuent car ils réfléchiront aux types fournis ?
 
