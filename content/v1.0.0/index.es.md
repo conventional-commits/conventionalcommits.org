@@ -103,7 +103,7 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 2. El tipo `feat` DEBE ser usado cuando un commit agrega una nueva funcionalidad a la aplicación o librería.
 3. El tipo `fix` DEBE ser usado cuando el commit representa una corrección a un error en el código de la aplicación (bug).
 4. Un ámbito PUEDE ser añadido después de un tipo. Un ámbito DEBE consistir en un sustantivo que describa una sección de la base del código encerrado entre paréntesis, ej., `fix(parser):`.
-5. Una descripción DEBE ir inmediatamente después de los dos puntos y el espacio del prefijo de tipo/ámbito. La descripción es resúmen corto de los cambios realizados en el código, ej., _fix: array parsing issue when multiple spaces were contained in string._.
+5. Una descripción DEBE ir inmediatamente después de los dos puntos y el espacio del prefijo de tipo/ámbito. La descripción es un resúmen corto de los cambios realizados en el código, ej., _fix: array parsing issue when multiple spaces were contained in string._.
 6. Un cuerpo de commit más extenso PUEDE agregarse después de la descripción corta, dando información contextual adicional acerca de los cambios en el código. El cuerpo DEBE iniciar después de una línea en blanco después de la descripción.
 7. Un cuerpo de commit es de forma-libre y PUEDE consistir de cualquier número de párrafos separados por una nueva línea.
 8. Una o más notas al pie PUEDEN ser añadidas una línea en blanco después del cuerpo. Cada nota al pie DEBE consistir de una palabra clave, seguida ya sea por un separador `:<espacio>` o `<espacio>#`, seguido por un valor cadena (string) (esto está inspirado por la [convención git trailer](https://git-scm.com/docs/git-interpret-trailers)).
@@ -113,7 +113,7 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 12. Si se incluye como una nota al pie, un cambio de ruptura DEBE consistir del texto en mayúsculas BREAKING CHANGE, seguido de dos puntos, y una descripción, ej., _BREAKING CHANGE: environment variables now take precedence over config files_.
 13. Si se incluye en el prefijo de tipo/ámbito, cambios de ruptura DEBEN ser indicados por un `!` inmediatamente después de `:`. Si `!` es usado, `BREAKING CHANGE:` PUEDE ser omitido de la sección de la nota al pie, y la descripción del commit DEBERÁ ser usada para describir el cambio de ruptura.
 14. Tipos diferentes a `feat` y `fix` PUEDEN ser usados en los mensajes de commit, ej., _docs: updated ref docs._.
-15. Las unidades de información que componen Commits Convencionales NO DEBEN ser tratados como implementadores sensitivos de caso, con la excepción de BREAKING CHANGE que DEBE ir en mayúsculas.
+15. Las unidades de información que componen Commits Convencionales NO DEBEN ser tratados como discriminantes de mayúsculas por los implementadores, con la excepción de BREAKING CHANGE que DEBE ir en mayúsculas.
 16. BREAKING-CHANGE DEBE ser sinónimo de BREAKING CHANGE, cuando se usa en una nota al pie.
 
 ## ¿Por qué usar Commits Convencionales?
@@ -121,14 +121,14 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 * Generación automática de CHANGELOGs.
 * Determinación automática de un salto de versión semántico (basado en los tipos de commits utilizados).
 * Comunicar la naturaleza de los cambios a los demás integrantes del equipo, el público o cualquier otro interesado.
-* Activar procesos de procesos y publicación.
+* Activar procesos de construcción y publicación.
 * Hacer más fácil a otras personas contribuir al proyecto al permitirles explorar una historia de los commits más estructurada.
 
 ## FAQ (Preguntas Frecuentes)
 
 ### ¿Cómo puedo trabajar con los mensajes de los commits en la etapa inicial de desarrollo?
 
-Recomendamos trabajar como si ya hubieras lanzado tu producto. Típicamente _alguien_, incluso si son tus compañeros desarrolladores, están usando tu software. Ellos querrán saber qué se ha arreglado, qué se ha dañado, etc.
+Recomendamos trabajar como si ya hubieras lanzado tu producto. Típicamente _alguien_, incluso si son tus compañeros desarrolladores, está usando tu software. Ellos querrán saber qué se ha arreglado, qué se ha dañado, etc.
 
 ### ¿Los tipos en los títulos de los commits están en mayúsculas o en minúsculas?
 
