@@ -18,7 +18,7 @@ The first draft of this specification has been written in collaboration with som
 
 ## Tooling for Conventional Commits
 
-* [go-conventional-commits](https://github.com/joselitofilho/go-conventional-commits): A tool to parser your git commit messages into a change log message based on conventional commits specification.
+* [go-conventional-commits](https://github.com/joselitofilho/go-conventional-commits): A tool to parse your git commit messages into a change log message based on conventional commits specification.
 * [go-conventionalcommits](https://github.com/leodido/go-conventionalcommits): Full Go powers to parse conventional commits.
 * [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit): go library for parsing commit messages following the specification.
 * [chglog](https://github.com/goreleaser/chglog): a tool for parsing Conventional Commits messages from git histories and turning them into templateable change logs.
