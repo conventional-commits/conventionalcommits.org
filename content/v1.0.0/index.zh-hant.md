@@ -3,11 +3,11 @@ draft: false
 aliases: ["/zh-hant/"]
 ---
 
-# 約定式提交 Conventional Commits 1.0.0
+# 慣例式提交 Conventional Commits 1.0.0
 
 ## 概述
 
-約定式提交規範，是一種對提交說明的輕量慣例。
+慣例式提交規範，是一種對提交說明的輕量慣例。
 它提供一些簡單的條件集合用於建立明確的提交歷史；
 這能讓自動化工具更容易撰寫。
 這份慣例能對應到 [SemVer](https://semver.org/lang/zh-TW/)，
@@ -36,14 +36,14 @@ aliases: ["/zh-hant/"]
 1. 其他: 除 `fix:` 與 `feat:` 以外，其他的提交 _類型_ 也是被允許的，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (基於 [Angular 慣例](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) 中推薦的 `chore:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:` 以及更多。
 
 我們也推薦對那些沒有增加新功能或是修正臭蟲而是改善目前實作的提交使用 `improvement`。
-請注意，這些類型在約定式提交規範中並不是強制性的，且在語意化版本中也沒有隱含的作用 (除非它們包含 BREAKING CHANGE)。
+請注意，這些類型在慣例式提交規範中並不是強制性的，且在語意化版本中也沒有隱含的作用 (除非它們包含 BREAKING CHANGE)。
 <br />
 
 1. 除了 `fix:` 與 `feat:` 之外也允許其他的 _類型_ ，如（基於 [Angular 慣例](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)的）[@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) 推薦使用 `build:` 與 `chore:`、
   `ci:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:`、等其他。
 1. 也可以使用 `BREAKING CHANGE: <描述>` 之外的 _頁腳_ ，並遵守類似 [git trailer format](https://git-scm.com/docs/git-interpret-trailers) 的慣例。
 
-追加類型並不被約定式提交所束縛，並且不對語義化版本有任何隱藏的影響。（但若包含 BREAKING CHANGE 則不在此限。）
+追加類型並不被慣例式提交所束縛，並且不對語義化版本有任何隱藏的影響。（但若包含 BREAKING CHANGE 則不在此限。）
 <br /><br />
 提交的類型可以在括號內給予作用範圍，以提供額外的脈絡資訊。例如：`feat(parser): add ability to parse arrays`。
 
@@ -121,10 +121,10 @@ Refs: #123
 1. 若作為類型／作用範圍的前綴，重大變更「必須 MUST」以一個 `!` 識別，並緊鄰於 `:` 之前。若使用 `!`，
   頁腳段落的 `BREAKING CHANGE:` 則「可以 MAY」被省略，且提交說明「應當 SHALL」用來描述重大變更。
 1. 除了 `feat` 與 `fix` 以外的類型「可以 MAY」被用於提交訊息內，如： _docs: updated ref docs_ 。
-1. 組成約定式提交資訊的單位在實作時除了大寫的 `BREAKING CHANGE` 外，「禁止 MUST NOT」區分大小寫。
+1. 組成慣例式提交資訊的單位在實作時除了大寫的 `BREAKING CHANGE` 外，「禁止 MUST NOT」區分大小寫。
 1. 在作為頁腳符記時，BREAKING-CHANGE「必須 MUST」與 BREAKING CHANGE 視為相同的。
 
-## 為何要使用約定式提交
+## 為何要使用慣例式提交
 
 * 自動產生修改日誌 (Changelog)。
 * 基於提交的類型，自動決定語意化版本的升級。
@@ -144,21 +144,21 @@ Refs: #123
 
 ### 當提交符合一或多種提交類型，我應該怎麼做？
 
-退回並盡可能切成多個提交。約定式提交的一個好處就是它能夠促使我們做更有組織的提交與拉取請求 (PR, Pull Request)。
+退回並盡可能切成多個提交。慣例式提交的一個好處就是它能夠促使我們做更有組織的提交與拉取請求 (PR, Pull Request)。
 
 ### 這不會阻礙快速開發與快速迭代嗎？
 
 它阻礙用非組織化的方式快速前進。它幫助你長期能在橫跨多個專案與多個貢獻者協作時都能快速前進。
 
-### 約定式提交會讓開發者受限於提交的類型，因為他們會用已提供的類型去思考嗎？
+### 慣例式提交會讓開發者受限於提交的類型，因為他們會用已提供的類型去思考嗎？
 
-約定式提交鼓勵我們多使用某些類型的提交，例如 `fixes`。除此之外，約定式提交的彈性也允許你的團隊使用自己的類型，以及隨時間推移更改這些類型。
+慣例式提交鼓勵我們多使用某些類型的提交，例如 `fixes`。除此之外，慣例式提交的彈性也允許你的團隊使用自己的類型，以及隨時間推移更改這些類型。
 
 ### 這與 SemVer 有什麼關係呢？
 
 `fix` 類型的提交應該對應到 `PATCH` 版本。`feat` 類型的提交應該對應到 `MINOR` 版本。含有 `BREAKING CHANGE` 的提交，無論是什麼類型，都應該要對應到 `MAJOR` 版本。
 
-### 我對約定式提交做了擴充 (例如：`@jameswomack/conventional-commit-spec`)，我該如何管理這些擴充的版本呢？
+### 我對慣例式提交做了擴充 (例如：`@jameswomack/conventional-commit-spec`)，我該如何管理這些擴充的版本呢？
 
 我們推薦使用 SemVer 來發布你對這份規範的擴充 (並且也鼓勵你做些擴充！)
 
@@ -171,18 +171,18 @@ Refs: #123
 
 #### 當你使用 *非* 規範中的類型時，例如：將 `feat` 寫成 `feet`
 
-最糟狀況下，即使提交沒有符合約定式提交的規範，也不會是世界末日。它僅意味著這個提交將會被基於這個規範的工具略過。
+最糟狀況下，即使提交沒有符合慣例式提交的規範，也不會是世界末日。它僅意味著這個提交將會被基於這個規範的工具略過。
 
-### 所有的貢獻者都需要使用約定式提交的規範嗎？
+### 所有的貢獻者都需要使用慣例式提交的規範嗎？
 
 不用！如果你使用的是基於 squash 的 Git 工作流程，主維護者可以在合併時清理提交說明，因此這不會對一般的提交者產生額外的負擔。
 有一種常見的工作流程是讓 git 系統自動從 pull request 中 squash 出提交，然後提供一份表單給主維護者，用以在合併的時候輸入合適的 git 提交說明。
 
-### 約定式提交要如何處理回退提交 (revert commit)？
+### 慣例式提交要如何處理回退提交 (revert commit)？
 
 回退程式碼可能非常複雜：你是回退了多個提交嗎？如果你回退了一個功能，那麼下一個版本釋出應該要是修正檔嗎？
 
-約定式提交沒有強制定義回退的行為。反而，我們將這個問題留給工具的作者，靈活運用 _類型_ 以及 _頁腳_ 來開發處理回退的邏輯。
+慣例式提交沒有強制定義回退的行為。反而，我們將這個問題留給工具的作者，靈活運用 _類型_ 以及 _頁腳_ 來開發處理回退的邏輯。
 
 其中一個推薦的方法時使用 `revert` 類型，並在頁腳中參照到被回退的 SHA 雜湊：
 
