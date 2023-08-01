@@ -10,7 +10,7 @@ aliases: ["/id/"]
 Conventional Commits adalah perjanjian sederhana tentang cara menulis pesan komit.
 Ini menjelaskan sekumpulan aturan sederhana untuk membuat riwayat komit yang jelas;
 yang memudahkan untuk membuat alat automatis di atasnya.
-Perjanjian ini cocok dengan [SemVer](http://semver.org),
+Perjanjian ini cocok dengan [SemVer](http://semver.org/lang/id/),
 dengan menjelaskan suatu fitur (features), perbaikan (fixes),  perubahan yang merusak (breaking changes) yang dimuat dalam pesan komit.
 
 Pesan komit harus tersusun sebagai berikut:
@@ -174,7 +174,7 @@ Mengembalikan kode bisa rumit: apakah Anda mengembalikan banyak komit? jika Anda
 
 Conventional Commits tidak membuat upaya eksplisit untuk mendefinisikan perilaku kembalikan. Alih-alih, kami menyerahkannya kepada perkakas penulis untuk menggunakan fleksibilitas _type_ dan _footers_ untuk mengembangkan logika mereka untuk menangani orang yang kembali.
 
-Satu rekomendasi adalah menggunakan tipe `revert`, dan foter yang merujuk komit SHA yang sedang dikembalikan:
+Satu rekomendasi adalah menggunakan tipe `revert`, dan _footer_ yang merujuk komit SHA yang sedang dikembalikan:
 
 ```
 revert: let us never again speak of the noodle incident
