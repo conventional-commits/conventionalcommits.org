@@ -381,3 +381,20 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+
+  ro:
+    weight: 21
+    languageName: "Romanian"
+    title: Comiteri convenționale
+    description: O specificație pentru adăugarea unui sens care poate fi citit de om și de mașină pentru a comite mesaje
+    actions:
+    - label: Rezumat rapid
+      url: '#rezumat'
+    - label: Specificație completă
+      url: '#specificație'
+    - label: Contribuie
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
