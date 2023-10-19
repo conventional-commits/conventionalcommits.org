@@ -45,8 +45,16 @@ aliases: ["/zh/", "/zh-hans/"]
 2. **feat:** _类型_ 为 `feat` 的提交表示在代码库中新增了一个功能（这和语义化版本中的 [`MINOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
 3. **BREAKING CHANGE:** 在脚注中包含 `BREAKING CHANGE:` 或 <类型>(范围) 后面有一个 `!` 的提交，表示引入了破坏性 API 变更（这和语义化版本中的 [`MAJOR`](https://semver.org/lang/zh-CN/#%E6%91%98%E8%A6%81) 相对应）。
 破坏性变更可以是任意 _类型_ 提交的一部分。
-1. 除 `fix:` 和 `feat:` 之外，也可以使用其它提交 _类型_ ，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)（基于 [Angular 约定](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)）中推荐的 `build:`、`chore:`、
+4. 除 `fix:` 和 `feat:` 之外，也可以使用其它提交 _类型_ ，例如 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)（基于 [Angular 约定](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)）中推荐的 `build:`、`chore:`、
   `ci:`、`docs:`、`style:`、`refactor:`、`perf:`、`test:`，等等。
+   - build: 用于修改项目构建系统，例如修改依赖库、外部接口或者升级 Node 版本等；
+   - chore: 用于对非业务性代码进行修改，例如修改构建流程或者工具配置等；
+   - ci: 用于修改持续集成流程，例如修改 Travis、Jenkins 等工作流配置；
+   - docs: 用于修改文档，例如修改 README 文件、API 文档等；
+   - style: 用于修改代码的样式，例如调整缩进、空格、空行等；
+   - refactor: 用于重构代码，例如修改代码结构、变量名、函数名等但不修改功能逻辑；
+   - perf: 用于优化性能，例如提升代码的性能、减少内存占用等；
+   - test: 用于修改测试用例，例如添加、删除、修改代码的测试用例等。
 1. 脚注中除了 `BREAKING CHANGE: <description>` ，其它条目应该采用类似
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers) 这样的惯例。
 
