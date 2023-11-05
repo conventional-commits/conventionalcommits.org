@@ -398,3 +398,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  bn:
+    weight: 22
+    languageName: "বাংলা (Bengali)" 
+    title: প্রচলিত কমিটসমূহ 
+    description: কমিট বার্তায় মানুষ এবং মেশিন দ্বারা পাঠযোগ্য অর্থ যোগ করার জন্য একটি সবিস্তার বিবরণী। 
+    actions:
+    - label: সারসংক্ষেপ
+      url: '#সারসংক্ষেপ'
+    - label: নির্দিষ্টকরণ রীতি
+      url: '#নির্দিষ্টকরণ'
+    - label: গিটহাব  
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
