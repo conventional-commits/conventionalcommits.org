@@ -415,3 +415,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  uz:
+    weight: 23
+    languageName: "Uzbek (O'zbekcha)" 
+    title: Conventional Commits
+    description: Commit xabarlariga inson va mashina o'qishi mumkin bo'ladigan ma'noni qo'shish uchun spesifikatsiya
+    actions:
+    - label: Xulosa
+      url: '#xulosa'
+    - label: Spesifikatsiya
+      url: '#spesifikatsiya'
+    - label: Github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
