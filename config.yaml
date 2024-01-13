@@ -415,3 +415,18 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  cz:
+    weight: 23
+    languageName: "Čeština"
+    title: Konvenční Commity
+    description: Specifikace pro přidávání lidsky čitelného významu do zpráv o změnách
+    actions:
+    - label: Přečtěte si specifikace
+      url: '#specifikace'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
