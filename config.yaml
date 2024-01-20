@@ -415,3 +415,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  hi:
+    weight: 22
+    languageName: "हिन्दी (Hindi)"
+    title: सांवेंशनल कमिट्स 1.0.0
+    description: कमिट मैसेज में पठनीय अर्थ जोड़ने के लिए एक हल्का नियम है।
+    actions:
+    - label: संक्षेप
+      url: '#संक्षेप'
+    - label: निर्दिष्टीकरण रीति
+      url: '#निर्दिष्टीकरण'
+    - label: गिटहब
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
