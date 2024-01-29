@@ -194,7 +194,7 @@ languages:
     weight: 10
     languageName: "한국어"
     title: Conventional Commits
-    description: 커밋 메세지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
+    description: 커밋 메시지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
     actions:
     - label: 요약
       url: '#개요'
