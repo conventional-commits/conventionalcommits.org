@@ -30,35 +30,35 @@ The commit contains the following structural elements, to communicate intent to 
 consumers of your library:
 
 1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in Semantic Versioning).
-1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
+1. **feature:** a commit of the _type_ `feature` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
 1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in Semantic Versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
-1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
+1. _types_ other than `fix:` and `feature:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
   `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
 1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Additional types are not mandated by the conventional commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE).
 <br /><br />
-A scope may be provided to a commit's type, to provide additional contextual information and is contained within parentheses, e.g., `feat(parser): add ability to parse arrays`.
+A scope may be provided to a commit's type, to provide additional contextual information and is contained within parentheses, e.g., `feature(parser): add ability to parse arrays`.
 
 ## Examples
 
 ### Commit message with description and breaking change footer
 ```
-feat: allow provided config object to extend other configs
+feature: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
 ### Commit message with `!` to draw attention to breaking change
 ```
-feat!: send an email to the customer when a product is shipped
+feature!: send an email to the customer when a product is shipped
 ```
 
 ### Commit message with scope and `!` to draw attention to breaking change
 ```
-feat(api)!: send an email to the customer when a product is shipped
+feature(api)!: send an email to the customer when a product is shipped
 ```
 
 ### Commit message with both `!` and BREAKING CHANGE footer
@@ -75,7 +75,7 @@ docs: correct spelling of CHANGELOG
 
 ### Commit message with scope
 ```
-feat(lang): add polish language
+feature(lang): add polish language
 ```
 
 ### Commit message with multi-paragraph body and multiple footers
@@ -96,9 +96,9 @@ Refs: #123
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
+1. Commits MUST be prefixed with a type, which consists of a noun, `feature`, `fix`, etc., followed
   by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
-1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
+1. The type `feature` MUST be used when a commit adds a new feature to your application or library.
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
   section of the codebase surrounded by parentheses, e.g., `fix(parser):`
@@ -120,7 +120,7 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
   `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
-1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
+1. Types other than `feature` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 
@@ -157,7 +157,7 @@ Conventional Commits encourages us to make more of certain types of commits such
 
 ### How does this relate to SemVer?
 
-`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
+`fix` type commits should be translated to `PATCH` releases. `feature` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
 
 ### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
 
@@ -166,11 +166,11 @@ encourage you to make these extensions!)
 
 ### What do I do if I accidentally use the wrong commit type?
 
-#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feat`
+#### When you used a type that's of the spec but not the correct type, e.g. `fix` instead of `feature`
 
 Prior to merging or releasing the mistake, we recommend using `git rebase -i` to edit the commit history. After release, the cleanup will be different according to what tools and processes you use.
 
-#### When you used a type *not* of the spec, e.g. `feet` instead of `feat`
+#### When you used a type *not* of the spec, e.g. `feet` instead of `feature`
 
 In a worst case scenario, it's not the end of the world if a commit lands that does not meet the conventional commit specification. It simply means that commit will be missed by tools that are based on the spec.
 
