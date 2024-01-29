@@ -8,9 +8,9 @@ aliases: ["/ko/"]
 ## 개요
 
 Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤션으로 명확한 커밋 히스토리를 생성하기 위한 간단한 규칙을 제공합니다. 이렇게 만들어진 커밋 히스토리를 이용하여 더 쉽게 자동화된 도구를 만들 수 있습니다.
-이 컨벤션은 커밋 메세지에 신규 기능 추가, 문제 수정, 커다란 변화가 있음을 기술함으로써 [유의적 버전(Sementic Versioning)](https://semver.org/lang/ko/)과 일맥상통한 면이 있습니다.
+이 컨벤션은 커밋 메시지에 신규 기능 추가, 문제 수정, 커다란 변화가 있음을 기술함으로써 [유의적 버전(Sementic Versioning)](https://semver.org/lang/ko/)과 일맥상통한 면이 있습니다.
 
-커밋 메세지는 다음과 같은 구조가 되어야 합니다:
+커밋 메시지는 다음과 같은 구조가 되어야 합니다:
 
 ---
 
@@ -40,41 +40,41 @@ Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤
 
 ## 예제
 
-### 설명과 BREAKING CHANGE 꼬리말을 가지는 커밋 메세지
+### 설명과 BREAKING CHANGE 꼬리말을 가지는 커밋 메시지
 ```
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 
-### 단절적 변경(breaking change)에 주의를 주기 위해 `!`를 포함한 커밋 메세지
+### 단절적 변경(breaking change)에 주의를 주기 위해 `!`를 포함한 커밋 메시지
 ```
 feat!: send an email to the customer when a product is shipped
 ```
 
-### 단절적 변경(breaking change)에 주의를 주기위해 적용 범위와 `!` 를 포함한 커밋 메세지
+### 단절적 변경(breaking change)에 주의를 주기위해 적용 범위와 `!` 를 포함한 커밋 메시지
 ```
 feat(api)!: send an email to the customer when a product is shipped
 ```
 
-### BREAKING CHANGE 꼬리말과 `!`를 함께 포함한 커밋 메세지
+### BREAKING CHANGE 꼬리말과 `!`를 함께 포함한 커밋 메시지
 ```
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
-### 본문이 없는 커밋 메세지
+### 본문이 없는 커밋 메시지
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### 적용 범위를 가지는 커밋 메세지
+### 적용 범위를 가지는 커밋 메시지
 ```
 feat(lang): add polish language
 ```
 
-### 다중-단락 본문과 다수의 꼬리말을 가진 커밋 메세지
+### 다중-단락 본문과 다수의 꼬리말을 가진 커밋 메시지
 ```
 fix: prevent racing of requests
 
@@ -105,7 +105,7 @@ Refs: #123
 1. 단절적 변경은 반드시 커밋의 타입/적용범위 접두어에 표시하거나 꼬리말에 기입되어야 합니다.
 1. 꼬리말로 포함된 경우 단절적 변경은 반드시 대문자 문자열 BREAKING CHANGE과 뒤따르는 콜론(:), 공백, 그리고 설명으로 구성되어야 합니다. 예를 들면 _BREAKING CHANGE: environment variables now take precedence over config files._
 1. 타입/범위 접두어에 포함된 경우, 단절적 변경은 반드시 `:` 바로 앞의 `!` 를 명시해야 합니다. 만약 `!` 가 사용되면, `BREAKING CHANGE:` 는 꼬리말 섹션에서 생략할 수 있으며, 커밋 설명은 단절적 변경을 설명하기 위해 사용되어야 합니다.
-1. `feat`와 `fix` 이외의 타입이 커밋 메세지에 사용될 수 있습니다. 예: _docs: updated ref docs._
+1. `feat`와 `fix` 이외의 타입이 커밋 메시지에 사용될 수 있습니다. 예: _docs: updated ref docs._
 1. Conventional Commit을 구성하는 정보의 단위는 반드시 대문자여야 하는 BREAKING CHANGES를 제외하고 구현자에 의해 대소문자를 구분하는 것으로 처리되어서는 안됩니다.
 1. BREAKING-CHANGE는 꼬리말에서 토큰으로 사용될 때 반드시 BREAKING CHANGE와 동의어야 합니다.
 
@@ -119,7 +119,7 @@ Refs: #123
 
 ## FAQ
 
-### 초기 개발 단계에서 커밋 메세지를 어떻게 다루어야 하나요?
+### 초기 개발 단계에서 커밋 메시지를 어떻게 다루어야 하나요?
 
 제품을 이미 출시한 것처럼 진행하세요. 일반적으로 *누군가* 는 여러분의 소프트웨어를 사용하고 있는데 그게 동료 개발자일 수도 있고 그들은 무엇이 고쳐졌는지, 무엇이 문제인지 등을 알고 싶어 할 것입니다.
 
