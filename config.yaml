@@ -105,7 +105,7 @@ languages:
   zh-hant:
     weight: 5
     languageName: "繁體中文"
-    title: 約定式提交
+    title: 慣例式提交
     description: 一種用於增加提交說明之人機可讀性意義的規範
     actions:
     - label: 概述
