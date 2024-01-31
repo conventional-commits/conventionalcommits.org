@@ -273,7 +273,7 @@ languages:
       url: '#zusammenfassung'
     - label: Spezifikation
       url: '#spezifikation'
-    - label: Beitragen
+    - label: Mitmachen
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
       current: v1.0.0
