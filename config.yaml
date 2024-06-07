@@ -432,3 +432,20 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  vi:
+      weight: 24
+      languageName: "Vietnamese"
+      title: Các quy ước khi commit
+      description: Một quy ước giúp làm rõ ý nghĩa của thông điệp commit cho cả người dùng và các hệ thống tự động (ví dụ như là CI/CD).
+      actions:
+      - label: Tóm tắt nhanh
+        url: '#t%C3%B3m-t%E1%BA%AFt-nhanh'
+      - label: Quy ước đầy đủ
+        url: '#quy-%C6%B0%E1%BB%9Bc-%C4%91%E1%BA%A7y-%C4%91%E1%BB%A7'
+      - label: Đóng góp vào dự án
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      versions:
+        current: v1.0.0-beta.4
+        list:
+        - v1.0.0-beta.4
