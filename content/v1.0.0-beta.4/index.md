@@ -67,6 +67,13 @@ docs: correct spelling of CHANGELOG
 feat(lang): add polish language
 ```
 
+### Commit message indicating the initial stable release
+```
+docs: polish for initial release
+
+INITIAL STABLE RELEASE
+```
+
 ### Commit message for a fix using an (optional) issue number.
 ```
 fix: correct minor typos in code
@@ -98,6 +105,14 @@ per-line.
 1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 1. A `!` MAY be appended prior to the `:` in the type/scope prefix, to further draw attention to breaking changes. `BREAKING CHANGE: description` MUST also be included in the body
 or footer, along with the `!` in the prefix.
+1. The effect of commits types on a release version bump SHOULD be as follows:
+    1. If there are any breaking changes _and_ the library is _not_ in its "initial devlopment" status [as defined by semver](https://semver.org/#spec-item-4) _then_ bump the major version.
+    1. If there is an `INITIAL STABLE RELEASE` indication at the very beginning of the body section, or at the beginning of a line in the footer section _and_ the library is in its "initial development" status [as defined by semver](https://semver.org/#spec-item-4) _then_ bump the major version.
+    1. Otherwise if there are any `feat` type commits then bump the minor version.
+    1. Otherwise if there are any `fix` type commits then bump the patch version.
+    1. Otherwise if there are other types of commits, other than `chore`, then bump the patch version.
+    1. Otherwise there should be no bump.
+
 
 ## Why Use Conventional Commits
 
