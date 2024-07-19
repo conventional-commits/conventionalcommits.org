@@ -126,13 +126,16 @@ languages:
     title: Commits Convencionales
     description: Especificación para dar significado a los mensajes de los commits haciéndolos legibles para máquinas y humanos
     actions:
+    - label: Resumen
+      url: '#resumen'
     - label: Lee la especificación
       url: '#especificación'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.3
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.3
       - v1.0.0-beta.2
 
@@ -267,13 +270,13 @@ languages:
     weight: 14
     languageName: "Deutsch"
     title: Konventionelle Commits
-    description: Eine Spezifikation für menschlich und maschinell lesbare Commit-Nachrichten
+    description: Eine Spezifikation für maschinell und menschenlesbare Commit-Nachrichten
     actions:
     - label: Zusammenfassung
       url: '#zusammenfassung'
     - label: Spezifikation
       url: '#spezifikation'
-    - label: Contribute
+    - label: Mitwirken
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
       current: v1.0.0
