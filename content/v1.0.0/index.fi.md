@@ -1,8 +1,9 @@
 ---
-draft: true
+draft: false
+aliases: ["/fi/"]
 ---
 
-# Tavanmukaiset muutokset 1.0.0-next
+# Tavanmukaiset muutokset 1.0.0
 
 ## Tiivistelmä
 
@@ -200,83 +201,3 @@ revert: let us never again speak of the noodle incident
 
 Refs: 676104e, a215868
 ```
-
-### Mitä kirjoitusmuotoa minun tulisi käyttää?
-
-Suosittelemme kirjoittamaan muutosviestin kuvauksen ja päätekstin [imperatiivin] (https://en.wikipedia.org/wiki/Imperative_mood) preesensissä.
-
-Tämän kirjoitusmuodon käytöstä muutosviesteissä on hyvin paljon esimerkkejä [1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)[2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject)[3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project)[4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70)[5](https://chris.beams.io/posts/git-commit/)
-
-## About
-
-The Conventional Commit specification is inspired by, and based heavily on, the [Angular Commit Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-
-The first draft of this specification has been written in collaboration with some of the folks contributing to:
-
-- [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): a set of tools for parsing conventional commit messages from git histories.
-- [bumped](https://bumped.github.io): a tool for releasing software that makes it easy to perform actions before and after releasing a new version of your software.
-- [unleash](https://github.com/netflix/unleash): a tool for automating the software release and publishing lifecycle.
-- [lerna](https://github.com/lerna/lerna): a tool for managing monorepos, which grew out of the Babel project.
-
-## Tooling for Conventional Commits
-
-- [go-conventionalcommits](https://github.com/leodido/go-conventionalcommits): Full Go powers to parse conventional commits
-- [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit): go library for parsing commit messages following the specification.
-- [chglog](https://github.com/goreleaser/chglog): a tool for parsing Conventional Commits messages from git histories and turning them into templateable change logs.
-- [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): follows the specification to manage versions and generate a changelog automatically.
-- [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): a tool built to create commit messages following the Conventional Commit specs.
-  Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
-- [php-conventional-changelog](https://github.com/marcocesarato/php-conventional-changelog): a tool built to generate a changelog from a project's committing history messages and metadata and automate versioning with Semver, following Conventional Commits specs. Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
-- [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
-- [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
-- [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Add _Conventional Commits_ support to [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
-- [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
-- [semantic-release](https://github.com/semantic-release/semantic-release): A tool that automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
-- [ngx-semantic-version](https://github.com/d-koppenhagen/ngx-semantic-version): Automate your Angular app commit- and release-workflow by integrating _commitizen_, _commitlint_, _husky_ and _standard-version_ in your project and configuring it for using _Conventional Commits_.
-- [Pyhist](https://github.com/jgoodman8/pyhist): Python apuväline joka päivittää automaattisesti pakettiversion gitin historiasta ja luo muutoslokin.
-- [commitizen-tools/commitizen](https://github.com/commitizen-tools/commitizen): A Python tool built to create committing rules for projects (default: conventional commit), bump project versions, and generate changelog. Configurable and usable for both Python and non-Python project. It's highly extensible through Python.
-- [git-mkver](https://github.com/idc101/git-mkver): A tool to automatically apply Semantic Versioning to git repositories based on _Conventional Commits_.
-- [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): A tooling and language agnostic utility to calculate the next semantic version based on the _Conventional Commits_ since the prior version. Supports monorepos.
-- [change](https://github.com/adamtabrams/change): A tool for generating and updating a changelog using Conventional Commits.
-- [sv4git](https://github.com/bvieira/sv4git): A command line tool (CLI) to validate commit messages, bump versions, create tags and generate changelogs.
-- [semantic-gitlog](https://github.com/semantic-gitlog) A simple Semantic Versioning management tool based on Conventional Commits. It automatically derives and manage version numbers and generate angular-style changelogs. supports [Maven](https://github.com/semantic-gitlog/maven-semantic-gitlog) and [Gradle](https://github.com/semantic-gitlog/gradle-semantic-gitlog).
-- [idea-conventional-commit](https://github.com/lppedd/idea-conventional-commit) Context and template-based completion for conventional/semantic commits.
-- [Versio](https://github.com/chaaz/versio): Monorepo-yhteensopiva työkalu joka päivittää versionumeroita kommitointipohjaisesti sekä projektiriippuvaisesti. Se luo myös omat merkinnät ja muutoslokit
-- [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib): Javakirjasto joka tukee muutoslokin hahmontamista annetuilla konteksteilla juonnettuna Gitistä. Tukee tavanmukaisia kommitointeja [Handlebars Helpers](https://github.com/tomasbjerre/git-changelog-lib#helpers):lla. Se on käytössä seuraavissa:
-  - [Gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin)
-  - [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
-  - [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
-  - [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
-- [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto on sarja CLI työkaluja tavanomaiseen muutostekstiin ja semver erikoistumiseen.
-- [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter):Apuvälinöintiin ja kieliagnostiikkaan erikoistunut gitin kommittaus virheenkäsittelytyökalu _Conventional Commits_ :lle
-- [Uplift](https://github.com/gembaadvantage/uplift): Tavanomainen kommitointi. Rakennettu käytettäväksi helpolla CI:llä.
-
-## Projects Using Conventional Commits
-
-- [NFPM](https://github.com/goreleaser/nfpm): Simppeli deb, rpm ja apk paketoija kirjoitettuna GO:lla
-- [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser. Kaikkien suosikki merirosvo-teemainen komentokehoteargumenttijäsennin.
-- [istanbuljs](https://github.com/istanbuljs/istanbuljs): Kokoelma avoimen lähdekoodin työkaluja ja kirjastoja Javascript testien näkyvyyden lisäämiseen.
-- [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) and [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame): Vaihtoehtoinen lisä käyttäjärajapinnan parannukseen.[Apereo uPortal](https://www.apereo.org/projects/uportal).
-- [massive.js](https://github.com/dmfay/massive-js): Datakäsittelykirjasto Node:lle ja PostGreSQL:lle.
-- [electron](https://github.com/electron/electron): Rakenna ristikkäisalusta työpöytäsovelluksia JavaScriptillä, HTML:llä ja CSS:llä.
-- [scroll-utility](https://github.com/LeDDGroup/scroll-utility): Helposti käytettävä vieritys hyödykepakkaus elementtien keskittämiseen ja animaatioiden pehmentämiseen.
-- [Blaze UI](https://github.com/BlazeUI/blaze): Kehitysalustavapaa avoimen lähdekoodin UI työkalu
-- [Monica](https://github.com/monicahq/monica): Avoimen lähdekoodin henkilökohtainen relaatiosuhteiden hallintajärjestelmä. hallinnointisysteemi.
-- [mhy](https://mhy.js.org): 🧩 Ilman konfiguraatiota, suoraa pakasta, moni-käyttöinen kirjasto sekä tuotantolusta.
-- [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simppeli jäsenteli Diff tiedostoille (määrittelemättömille diff formaateille)
-- [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Helppo jakaminen .diff & .patch tiedostoihin.
-- [@thi.ng/umbrella](https://github.com/thi-ng/umbrella):Monorepositorio ~100:sta TypeScript projekille data käyttöistä kehitystä varten.
-- [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 Paranneltu Yii2 sovellusmalli.
-- [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Tee helposti dynaamisia verkkolomakkeita kaappaamiseen ja toimita tarkkaa ja ajankohtaista dataa.
-- [Tina CMS](https://tinacms.org): Avoimen lähdekoodin työkalut front-end ja sisällönhallinnan rakentamiseen verkkosivuillesi.
-- [Uno Platform](https://platform.uno): Rakenna mobiili, pöytä ja Webassembly sovelluksia C# ja XAML:lla. Tänään. Avoin lähdekoodi ja ammattilaisten tukema.
-- [AutoSort.NetCore](https://www.nuget.org/packages/AutoSort.NetCore/): Käytä itsenäisiä määritteitä oletuslajitteluun
-- [Undercut](https://github.com/the-spyke/undercut): JavaScriptin ajoitetun datan prosessointipuskuriputkia ja apuväline.
-- [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): Statistiikkan rakentaja Blox Fruitsille [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
-- [Jenkins X](https://jenkins-x.io/): Jenkins X tarjoaa puskuriputki-automaation, sisäisen Gitopsin ja esikatselu ympäristöjä avustamaan tiimejä yhteistoimintaan ja nopettamaan ohjelmistojen tuotantoa kaikilla skaaloilla.
-- [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Sisäinen RSQL kyselykieli ja Quarydsl kehitysympäristö.
-- [Changeloguru](https://github.com/haunt98/changeloguru): Luo automaattisesti muutoslokin tavanmukaisia muutoksia kirjoitettuna Go-ohjelmointikielellä.
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-_want your project on this list?_ [send a pull request](https://github.com/conventional-changelog/conventionalcommits.org/pulls).
