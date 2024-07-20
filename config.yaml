@@ -1,4 +1,4 @@
-baseURL: '/'
+baseURL: "/"
 languageCode: en-us
 theme: conventional-commits
 defaultContentLanguageInSubdir: true
@@ -10,12 +10,12 @@ params:
     title: License
     action:
       label: Creative Commons - CC BY 3.0
-      url: 'https://creativecommons.org/licenses/by/3.0/'
+      url: "https://creativecommons.org/licenses/by/3.0/"
 
   footer:
     logos:
-    - name: github
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - name: github
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
 
 # Languages parameters
 languages:
@@ -25,21 +25,21 @@ languages:
     title: Conventional Commits
     description: A specification for adding human and machine readable meaning to commit messages
     actions:
-    - label: Quick Summary
-      url: '#summary'
-    - label: Full Specification
-      url: '#specification'
-    - label: Contribute
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Quick Summary
+        url: "#summary"
+      - label: Full Specification
+        url: "#specification"
+      - label: Contribute
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
-      - v1.0.0-beta.4
-      - v1.0.0-beta.3
-      - v1.0.0-beta.2
-      - v1.0.0-beta.1
-      - v1.0.0-beta
+        - v1.0.0
+        - v1.0.0-beta.4
+        - v1.0.0-beta.3
+        - v1.0.0-beta.2
+        - v1.0.0-beta.1
+        - v1.0.0-beta
 
   it:
     weight: 2
@@ -47,21 +47,21 @@ languages:
     title: Commit Convenzionali
     description: Una specifica per aggiungere un significato leggibile da umani e macchine ai messaggi dei commit
     actions:
-    - label: Riepilogo
-      url: '#riepilogo'
-    - label: Leggi la specifica
-      url: '#specifica'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Riepilogo
+        url: "#riepilogo"
+      - label: Leggi la specifica
+        url: "#specifica"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
-      - v1.0.0-beta.4
-      - v1.0.0-beta.3
-      - v1.0.0-beta.2
-      - v1.0.0-beta.1
-      - v1.0.0-beta
+        - v1.0.0
+        - v1.0.0-beta.4
+        - v1.0.0-beta.3
+        - v1.0.0-beta.2
+        - v1.0.0-beta.1
+        - v1.0.0-beta
 
   pl:
     weight: 3
@@ -69,16 +69,16 @@ languages:
     title: Konwencjonalne Commity
     description: Specyfikacja dodawania znaczenia czytelnego dla człowieka do commit komunikatów
     actions:
-    - label: Przeczytaj specyfikację
-      url: '#specyfikacja'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Przeczytaj specyfikację
+        url: "#specyfikacja"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0-beta.2
       list:
-      - v1.0.0-beta.2
-      - v1.0.0-beta.1
-      - v1.0.0-beta
+        - v1.0.0-beta.2
+        - v1.0.0-beta.1
+        - v1.0.0-beta
 
   # zh-cn/zh-tw/zh-chs are legacy
   # zh-hans specification usage from IETF language tag
@@ -89,36 +89,36 @@ languages:
     title: 约定式提交
     description: 一种用于给提交信息增加人机可读含义的规范
     actions:
-    - label: 阅读规范
-      url: '#约定式提交规范'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: 阅读规范
+        url: "#约定式提交规范"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
-      - v1.0.0-beta.4
-      - v1.0.0-beta.3
-      - v1.0.0-beta.2
-      - v1.0.0-beta.1
-      - v1.0.0-beta
+        - v1.0.0
+        - v1.0.0-beta.4
+        - v1.0.0-beta.3
+        - v1.0.0-beta.2
+        - v1.0.0-beta.1
+        - v1.0.0-beta
   zh-hant:
     weight: 5
     languageName: "繁體中文"
     title: 約定式提交
     description: 一種用於增加提交說明之人機可讀性意義的規範
     actions:
-    - label: 概述
-      url: '#概述'
-    - label: 完整規範
-      url: '#規範'
-    - label: 貢獻
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: 概述
+        url: "#概述"
+      - label: 完整規範
+        url: "#規範"
+      - label: 貢獻
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
-      - v1.0.0-beta.4
+        - v1.0.0
+        - v1.0.0-beta.4
 
   es:
     weight: 6
@@ -126,15 +126,15 @@ languages:
     title: Commits Convencionales
     description: Especificación para dar significado a los mensajes de los commits haciéndolos legibles para máquinas y humanos
     actions:
-    - label: Lee la especificación
-      url: '#especificación'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Lee la especificación
+        url: "#especificación"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0-beta.3
       list:
-      - v1.0.0-beta.3
-      - v1.0.0-beta.2
+        - v1.0.0-beta.3
+        - v1.0.0-beta.2
 
   ru:
     weight: 7
@@ -143,11 +143,11 @@ languages:
     description: Простое соглашение о том, как нужно писать сообщения коммитов
     actions:
       - label: Главное
-        url: '#главное'
+        url: "#главное"
       - label: Спецификация
-        url: '#спецификация'
+        url: "#спецификация"
       - label: GitHub
-        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
@@ -163,16 +163,16 @@ languages:
     description: 人間と機械が読みやすく、意味のあるコミットメッセージにするための仕様
     actions:
       - label: 簡単なまとめ
-        url: '#概要'
+        url: "#概要"
       - label: すべての仕様
-        url: '#仕様'
+        url: "#仕様"
       - label: GitHub
-        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
-      - v1.0.0-beta.4
+        - v1.0.0
+        - v1.0.0-beta.4
 
   fr:
     weight: 9
@@ -180,15 +180,15 @@ languages:
     title: Commits Conventionnels
     description: Une spécification ajoutant une signification lisible pour l'humain et pour la machine dans les messages des commits
     actions:
-    - label: Voir la spécification
-      url: '#spécification'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Voir la spécification
+        url: "#spécification"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
-      - v1.0.0-beta.2
+        - v1.0.0
+        - v1.0.0-beta.2
 
   ko:
     weight: 10
@@ -196,16 +196,16 @@ languages:
     title: Conventional Commits
     description: 커밋 메시지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
     actions:
-    - label: 요약
-      url: '#개요'
-    - label: 전체 스펙
-      url: '#규격'
-    - label: Github
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: 요약
+        url: "#개요"
+      - label: 전체 스펙
+        url: "#규격"
+      - label: Github
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0-beta.4
       list:
-      - v1.0.0-beta.4
+        - v1.0.0-beta.4
 
   pt-br:
     weight: 11
@@ -213,12 +213,12 @@ languages:
     title: Conventional Commits
     description: Uma especificação para dar um significado legível às mensagens de commit para humanos e máquinas
     actions:
-    - label: Resumo
-      url: '#resumo'
-    - label: Especificação Completa
-      url: '#especificação'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Resumo
+        url: "#resumo"
+      - label: Especificação Completa
+        url: "#especificação"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
@@ -232,12 +232,12 @@ languages:
     title: Komit Konvensional
     description: Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk pesan komit
     actions:
-    - label: Ringkasan
-      url: '#ringkasan'
-    - label: Spesifikasi
-      url: '#spesifikasi'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Ringkasan
+        url: "#ringkasan"
+      - label: Spesifikasi
+        url: "#spesifikasi"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
@@ -251,17 +251,17 @@ languages:
     title: Համաձայնեցված «Commit»֊ներ
     description: Սպեցիֆիկացիա, որը ընթեռնելի է դարձնում «commit» մեսիջները մեքենաների և մարդկանց համար
     actions:
-    - label: Համառոտագիր
-      url: '#համառոտագիր'
-    - label: Սպեցիֆիկացիա
-      url: '#սպեցիֆիկացիա'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Համառոտագիր
+        url: "#համառոտագիր"
+      - label: Սպեցիֆիկացիա
+        url: "#սպեցիֆիկացիա"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0-beta.4
       list:
-      - v1.0.0-beta.4
-      - v1.0.0-beta.3
+        - v1.0.0-beta.4
+        - v1.0.0-beta.3
 
   de:
     weight: 14
@@ -269,16 +269,16 @@ languages:
     title: Konventionelle Commits
     description: Eine Spezifikation für menschlich und maschinell lesbare Commit-Nachrichten
     actions:
-    - label: Zusammenfassung
-      url: '#zusammenfassung'
-    - label: Spezifikation
-      url: '#spezifikation'
-    - label: Contribute
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Zusammenfassung
+        url: "#zusammenfassung"
+      - label: Spezifikation
+        url: "#spezifikation"
+      - label: Contribute
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   th:
     weight: 15
@@ -286,16 +286,16 @@ languages:
     title: Conventional Commits
     description: ข้อกำหนดในการทำให้มนุษย์และเครื่องจักรเข้าใจความหมายของข้อความ commit
     actions:
-    - label: ข้อสรุปอย่างเร็ว
-      url: '#ข้อสรุป'
-    - label: ข้อกำหนดฉบับเต็ม
-      url: '#ข้อกำหนด'
-    - label: มีส่วนร่วม
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: ข้อสรุปอย่างเร็ว
+        url: "#ข้อสรุป"
+      - label: ข้อกำหนดฉบับเต็ม
+        url: "#ข้อกำหนด"
+      - label: มีส่วนร่วม
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   uk:
     weight: 16
@@ -303,16 +303,16 @@ languages:
     title: Політика Комітів
     description: Угода для додавання зручних для читання коміт повідомлень для людей та роботів
     actions:
-    - label: Швидкий Огляд
-      url: '#summary'
-    - label: Повна Специфікація
-      url: '#specification'
-    - label: Контрибуція
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Швидкий Огляд
+        url: "#summary"
+      - label: Повна Специфікація
+        url: "#specification"
+      - label: Контрибуція
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   be:
     weight: 17
@@ -320,29 +320,29 @@ languages:
     title: Пагадненне аб камітах
     description: Спецыфікацыя па дадаванню лёгкачытэльных паведамленняў у камітах для людзей і робатаў
     actions:
-    - label: Сціслы агляд
-      url: '#сціслы-агляд'
-    - label: Поўная Спецыфікацыя
-      url: '#поўная-спецыфікацыя'
-    - label: Github
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Сціслы агляд
+        url: "#сціслы-агляд"
+      - label: Поўная Спецыфікацыя
+        url: "#поўная-спецыфікацыя"
+      - label: Github
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
         - v1.0.0
-        
+
   tr:
     weight: 18
     languageName: "Türkçe"
     title: Conventional Commits
     description: Conventional Commits şartnamesi, commit mesajları hakkında kolayca takip edilebilecek bir sözleşmedir
     actions:
-    - label: Özet
-      url: '#özet'
-    - label: Şartname
-      url: '#şartname'
-    - label: Github
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Özet
+        url: "#özet"
+      - label: Şartname
+        url: "#şartname"
+      - label: Github
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
@@ -354,29 +354,29 @@ languages:
     title: Conventionele Commits
     description: Een specificatie voor mens- en machine-leesbare commit berichten
     actions:
-    - label: Samenvatting
-      url: '#samenvatting'
-    - label: Specificatie
-      url: '#specificatie'
-    - label: GitHub
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Samenvatting
+        url: "#samenvatting"
+      - label: Specificatie
+        url: "#specificatie"
+      - label: GitHub
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   ml:
     weight: 20
     languageName: "Malayalam - മലയാളം"
-    title: കോൺവെൻഷനൽ കമ്മിറ്റ്‌സ് 
+    title: കോൺവെൻഷനൽ കമ്മിറ്റ്‌സ്
     description: സന്ദേശങ്ങൾ കമ്മിറ്റ് ചെയ്യാൻ മനുഷ്യനും യന്ത്രവും വായിക്കാവുന്ന അർത്ഥം ചേർക്കുന്നതിനുള്ള ഒരു സ്പെസിഫിക്കേഷൻ
     actions:
-    - label: സംഗ്രഹം
-      url: '#സംഗ്രഹം'
-    - label: പൂർണ്ണ സ്പെസിഫിക്കേഷൻ
-      url: '#specification'
-    - label: Github
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: സംഗ്രഹം
+        url: "#സംഗ്രഹം"
+      - label: പൂർണ്ണ സ്പെസിഫിക്കേഷൻ
+        url: "#specification"
+      - label: Github
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
@@ -388,47 +388,64 @@ languages:
     title: Comiteri convenționale
     description: O specificație pentru adăugarea unui sens care poate fi citit de om și de mașină pentru a comite mesaje
     actions:
-    - label: Rezumat rapid
-      url: '#rezumat'
-    - label: Specificație completă
-      url: '#specificație'
-    - label: Contribuie
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Rezumat rapid
+        url: "#rezumat"
+      - label: Specificație completă
+        url: "#specificație"
+      - label: Contribuie
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   bn:
     weight: 22
-    languageName: "বাংলা (Bengali)" 
-    title: প্রচলিত কমিটসমূহ 
-    description: কমিট বার্তায় মানুষ এবং মেশিন দ্বারা পাঠযোগ্য অর্থ যোগ করার জন্য একটি সবিস্তার বিবরণী। 
+    languageName: "বাংলা (Bengali)"
+    title: প্রচলিত কমিটসমূহ
+    description: কমিট বার্তায় মানুষ এবং মেশিন দ্বারা পাঠযোগ্য অর্থ যোগ করার জন্য একটি সবিস্তার বিবরণী।
     actions:
-    - label: সারসংক্ষেপ
-      url: '#সারসংক্ষেপ'
-    - label: নির্দিষ্টকরণ রীতি
-      url: '#নির্দিষ্টকরণ'
-    - label: গিটহাব  
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: সারসংক্ষেপ
+        url: "#সারসংক্ষেপ"
+      - label: নির্দিষ্টকরণ রীতি
+        url: "#নির্দিষ্টকরণ"
+      - label: গিটহাব
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
 
   uz:
     weight: 23
-    languageName: "Uzbek (O'zbekcha)" 
+    languageName: "Uzbek (O'zbekcha)"
     title: Conventional Commits
     description: Commit xabarlariga inson va mashina o'qishi mumkin bo'ladigan ma'noni qo'shish uchun spesifikatsiya
     actions:
-    - label: Xulosa
-      url: '#xulosa'
-    - label: Spesifikatsiya
-      url: '#spesifikatsiya'
-    - label: Github
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+      - label: Xulosa
+        url: "#xulosa"
+      - label: Spesifikatsiya
+        url: "#spesifikatsiya"
+      - label: Github
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
     versions:
       current: v1.0.0
       list:
-      - v1.0.0
+        - v1.0.0
+
+  fi:
+    weight: 24
+    languageName: "Finnish"
+    title: Tavanomaiset muutokset
+    description: Määrielmä kone- ia ihmisluettaville, merkityksellisille commit-viesteille
+    actions:
+      - label: Tiivistelmä
+        url: "#tiivistelma"
+      - label: Määritelmä
+        url: "#maaritelma"
+      - label: Osallistu
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
