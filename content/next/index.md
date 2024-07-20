@@ -31,14 +31,15 @@ consumers of your library:
 
 1. **fix:** a commit of the _type_ `fix` patches a bug in your codebase (this correlates with [`PATCH`](http://semver.org/#summary) in Semantic Versioning).
 1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
-1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in Semantic Versioning).
+1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) when the version >= 1.0.0, and [`MINOR`](https://semver.org/#spec-item-4) when on a pre-release 0.y.z version, in Semantic Versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
+1. **INITIAL STABLE RELEASE:**  a commit that has a footer `INITIAL STABLE RELEASE:`, or appends `!!` after the type/scope, and introduces a new `MAJOR` even on versions `< 1.0.0`, denoting the promotion from a pre-release version `0.y.z` to `1.0.0`.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
   `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` may be provided and follow a convention similar to
+1. _footers_ other than `BREAKING CHANGE: <description>` or `INITIAL STABLE RELEASE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
-Additional types are not mandated by the conventional commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE).
+Additional types are not mandated by the conventional commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE, or mark an INITIAL STABLE RELEASE).
 <br /><br />
 A scope may be provided to a commit's type, to provide additional contextual information and is contained within parentheses, e.g., `feat(parser): add ability to parse arrays`.
 
@@ -66,6 +67,25 @@ feat(api)!: send an email to the customer when a product is shipped
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
+```
+
+### Commit message with `!!` to mark graduating to Production Version 1.0.0
+```
+feat!!: send an email to the customer when a product is shipped
+```
+
+### Commit message with `!!` and INITIAL STABLE RELEASE footer
+```
+feat!!: send an email to the customer when a product is shipped
+
+INITIAL STABLE RELEASE: the API is now ready for use by the general public
+```
+
+### Commit message with description and INITIAL STABLE RELEASE footer
+```
+feat: send an email to the customer when a product is shipped
+
+INITIAL STABLE RELEASE: the API is now ready for use by the general public
 ```
 
 ### Commit message with no body
@@ -97,7 +117,7 @@ Refs: #123
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-  by the OPTIONAL scope, OPTIONAL `!`, and REQUIRED terminal colon and space.
+  by the OPTIONAL scope, OPTIONAL `!`, OPTIONAL second `!`, and REQUIRED terminal colon and space.
 1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
@@ -110,7 +130,7 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
  a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
   [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
-  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, which MAY also be used as a token.
+  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE` and `INITIAL STABLE RELEASE`, which MAY also be used as a token.
 1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
   token/separator pair is observed.
 1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
@@ -121,8 +141,11 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
   `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
+1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE and INITIAL STABLE RELEASE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+1. Graduating a pre-release 0.y.z version to 1.0.0 MUST be signaled by at least one of:
+    1. Including `!!` in the type/scope prefix immediately before the `:` 
+    1. Providing `INITIAL STABLE RELEASE:` in the footer section.
 
 ## Why Use Conventional Commits
 
@@ -240,6 +263,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
   * [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
   * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
   * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
+  * [Docker](https://hub.docker.com/r/tomasbjerre/git-changelog-command-line)
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI

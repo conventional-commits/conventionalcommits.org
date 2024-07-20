@@ -29,6 +29,7 @@ The first draft of this specification has been written in collaboration with som
   Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [php-conventional-changelog](https://github.com/marcocesarato/php-conventional-changelog): a tool built to generate a changelog from a project's committing history messages and metadata and automate versioning with Semver, following Conventional Commits specs. Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [conventional-commits](https://github.com/ramsey/conventional-commits): A PHP library for creating and validating commit messages according to the Conventional Commits specification.
+* [sh-conventional-commits](https://github.com/joaobsjunior/sh-conventional-commits) A hook that locally validates commit messages, checking if they follow the conventional commit pattern. The project also includes a shell script for generating semantic versions through conventional commits.
 * [commitlint](https://github.com/conventional-changelog/commitlint): A linter to check that your commit messages meet the Conventional Commits format.
 * [gitlint](https://github.com/jorisroovers/gitlint): Git commit message linter written in Python, which can be configured to [enforce Conventional Commits format](https://jorisroovers.com/gitlint/contrib_rules/#ct1-contrib-title-conventional-commits).
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including Conventional Commits.
@@ -55,9 +56,11 @@ The first draft of this specification has been written in collaboration with som
     * [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
     * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
     * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
+    * [Docker](https://hub.docker.com/r/tomasbjerre/git-changelog-command-line)
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
+* [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation
 
 ## Projects Using Conventional Commits
 
@@ -73,7 +76,7 @@ The first draft of this specification has been written in collaboration with som
 * [mhy](https://mhy.js.org): A zero-config, out-of-the-box, multi-purpose toolbox and development environment.
 * [@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): Simple parser for Diff files (unified diff format).
 * [@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): Easy split of .diff & .patch into its files.
-* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Monorepo of ~100 TypeScript projects for data driven development.
+* [@thi.ng/umbrella](https://github.com/thi-ng/umbrella): Broadly scoped ecosystem & monorepo of ~185 TypeScript projects for general purpose, functional, data driven development
 * [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): 🔥 An enhanced Yii2 app template.
 * [dcyou/resume](https://github.com/dcyou/resume): 😎 Template to easily and quickly create your online CV.
 * [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): Easily create dynamic online forms to capture and submit accurate and current data.

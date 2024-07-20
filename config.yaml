@@ -194,7 +194,7 @@ languages:
     weight: 10
     languageName: "한국어"
     title: Conventional Commits
-    description: 커밋 메세지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
+    description: 커밋 메시지에 사용자와 기계 모두가 이해할 수 있는 의미를 부여하기 위한 스펙
     actions:
     - label: 요약
       url: '#개요'
@@ -381,3 +381,54 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+
+  ro:
+    weight: 21
+    languageName: "Romanian"
+    title: Comiteri convenționale
+    description: O specificație pentru adăugarea unui sens care poate fi citit de om și de mașină pentru a comite mesaje
+    actions:
+    - label: Rezumat rapid
+      url: '#rezumat'
+    - label: Specificație completă
+      url: '#specificație'
+    - label: Contribuie
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
+
+  bn:
+    weight: 22
+    languageName: "বাংলা (Bengali)" 
+    title: প্রচলিত কমিটসমূহ 
+    description: কমিট বার্তায় মানুষ এবং মেশিন দ্বারা পাঠযোগ্য অর্থ যোগ করার জন্য একটি সবিস্তার বিবরণী। 
+    actions:
+    - label: সারসংক্ষেপ
+      url: '#সারসংক্ষেপ'
+    - label: নির্দিষ্টকরণ রীতি
+      url: '#নির্দিষ্টকরণ'
+    - label: গিটহাব  
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
+
+  uz:
+    weight: 23
+    languageName: "Uzbek (O'zbekcha)" 
+    title: Conventional Commits
+    description: Commit xabarlariga inson va mashina o'qishi mumkin bo'ladigan ma'noni qo'shish uchun spesifikatsiya
+    actions:
+    - label: Xulosa
+      url: '#xulosa'
+    - label: Spesifikatsiya
+      url: '#spesifikatsiya'
+    - label: Github
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
