@@ -64,6 +64,7 @@ The first draft of this specification has been written in collaboration with som
 
 ## Projects Using Conventional Commits
 
+* [Oculus](https://github.com/ppfeister/oculus): Novel OSINT utility that can be used to help link social media identities to their owners.
 * [NFPM](https://github.com/goreleaser/nfpm): NFPM is Not FPM - a simple deb, rpm and apk packager written in Go.
 * [yargs](https://github.com/yargs/yargs): everyone's favorite pirate themed command line argument parser.
 * [istanbuljs](https://github.com/istanbuljs/istanbuljs): a collection of open-source tools and libraries for adding test coverage to your JavaScript tests.
