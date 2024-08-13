@@ -9,7 +9,7 @@ aliases: ["/id/"]
 
 Conventional Commits adalah perjanjian sederhana tentang cara menulis pesan komit.
 Ini menjelaskan sekumpulan aturan sederhana untuk membuat riwayat komit yang jelas;
-yang memudahkan untuk membuat alat automatis di atasnya.
+yang memudahkan untuk membuat alat otomatis di atasnya.
 Perjanjian ini cocok dengan [SemVer](http://semver.org/lang/id/),
 dengan menjelaskan suatu fitur (features), perbaikan (fixes),  perubahan yang merusak (breaking changes) yang dimuat dalam pesan komit.
 
@@ -37,7 +37,7 @@ Komit berisi elemen struktural sebagai berikut, untuk menyampaikan maksud kepada
 1. _footers_ daripada `BREAKING CHANGE: <description>` dapat disediakan dan mengikuti konvensi yang mirip dengan
   [format git trailer](https://git-scm.com/docs/git-interpret-trailers).
 
-Tipe tambahan tidak di amanatkan oleh spesifikasi conventional commits, dan tidak ada efek implisit dalam Semantic Versioning (kecuali mereka termasuk BREAKING CHANGE).
+Tipe tambahan tidak diwajibkan oleh spesifikasi Conventional Commits dan tidak mempengaruhi Semantic Versioning (kecuali mereka termasuk BREAKING CHANGE).
 <br /> < br/>
 Cakupan dapat disediakan ke tipe komit. untuk memberikan informasi kontekstual tambahan dan terkandung dalam kurung, misalnya, `feat(parser): add ability to parse arrays`.
 
@@ -96,13 +96,13 @@ Refs: #123
 Kata kunci “HARUS”, “TIDAK BOLEH”, “DIBUTUHKAN”, “SEHARUSNYA”, “JANGAN SAMPAI”, “SEBAIKNYA”, “SEBAIKNYA TIDAK”, “DIREKOMENDASIKAN”, “BISA”, dan “OPSIONAL” di dokumen ini sesuai dengan [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
  
 1. Komit HARUS (MUST) diawali dengan tipe, yang terdiri dari kata benda, `feat`, `fix`, dll., diikuti dengan scope OPSIONAL (OPTIONAL) `!`, dan DIBUTUHKAN (REQUIRED) terminal colon dan spasi.
-1. Tipe `feat` HARUS (MUST) digunakan ketika komit menambahkan fitur baru ke aplikasi atau pustaka Anda.
+1. Tipe `feat` HARUS (MUST) digunakan ketika komit menambahkan fitur baru ke aplikasi atau perpustakaan Anda.
 1. Tipe `fix` HARUS (MUST) digunakan ketika komit merepresentasikan perbaikan bug untuk aplikasi Anda.
 1. Scope BISA (MAY) dicantumkan setelah tipe. Scope HARUS (MAY) terdiri dari kata benda yang menggambarkan bagian dari kode yang dikelilingi tanda kurung, misalnya, e.g., `fix(parser):`
-1. Deskripsi HARUS (MUST) segera mengikuti spasi setelah awalan type/scope. Deskripsi adalah ringkasan singkat dari perubahan kode, misalnya, _fix: array parsing issue when multiple spaces were contained in string_.
+1. Deskripsi HARUS (MUST) segera mengikuti spasi setelah awalan type/scope. Deskripsi adalah ringkasan singkat tentang perubahan kode, misalnya, _fix: array parsing issue when multiple spaces were contained in string_.
 1. Body yang lebih panjang BISA (MAY) disediakan setelah deskripsi singkat, memberikan informasi kontekstual tambahan tentang perubahan kode. Body HARUS (MUST) memulai satu baris kosong setelah deskripsi.
 1. Body komit adalah bentuk bebas dan BISA (MAY) terdiri dari sejumlah paragraf terpisah baris baru.
-1. Satu atau lebih footer BISA (MAY) disediakan satu baris kosong setelah badan. Setiap footer HARUS (MUST) terdiri dari token kata, diikuti oleh pemisah `:<space>` atau `<space>#`, diikuti oleh nilai string (ini terinspirasi oleh [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
+1. Satu atau lebih footer BISA (MAY) disediakan satu baris kosong setelah badan. Setiap footer HARUS (MUST) terdiri dari kata kunci, diikuti oleh pemisah `:<space>` atau `<space>#`, diikuti oleh nilai string (ini terinspirasi oleh [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. Token footer HARUS (MUST) menggunakan `-` sebagai ganti karakter spasi putih, mis., `Acked-by` (ini membantu membedakan bagian footer dari badan multi-paragraf). Pengecualian dibuat untuk `BREAKING CHANGE`, yang BISA (MAY) juga digunakan sebagai token.
 1. Nilai footer BISA (MAY) berisi spasi dan baris baru, dan penguraian HARUS (MUST) berakhir ketika pasangan token/pemisah footer yang berlaku berikutnya diamati.
 1. Melanggar perubahan HARUS (MUST) ditunjukkan dalam tipe / lingkup awalan dari komit, atau sebagai entri dalam catatan kaki.
@@ -111,14 +111,14 @@ Kata kunci “HARUS”, “TIDAK BOLEH”, “DIBUTUHKAN”, “SEHARUSNYA”, �
 
 awalan, memecah perubahan HARUS (MUST) ditunjukkan oleh `!` Segera sebelum `:`. Jika `!` Digunakan, `BREAKING CHANGE:` BISA (MAY) dihapus dari bagian footer, dan deskripsi commit HARUS (MUST) digunakan untuk menjelaskan perubahan yang melanggar.
 1. Jenis selain `feat` dan `fix` BISA (MAY) digunakan dalam pesan komit Anda, mis., _docs: updated ref docs._
-1. Unit-unit informasi yang membentuk konvensional melakukan TIDAK BOLEH (MUST NOT) diperlakukan sebagai case sensitif oleh implementor, dengan pengecualian BREAKING CHANGE yang HARUS (MUST) huruf besar.
+1. Unit-unit informasi yang membentuk konvensional TIDAK BOLEH (MUST NOT) diperlakukan sebagai case sensitif oleh implementor, dengan pengecualian BREAKING CHANGE yang HARUS (MUST) huruf besar.
 1. BREAKING-CHANGE HARUS (MUST) identik dengan BREAKING CHANGE, bila digunakan sebagai token di footer.
 
 ## Mengapa menggunakan Conventional Konvensional
 
 * Secara automatis menghasilkan CHANGELOGs.
 * Secara automatis menentukan versi semantic (Berdasarkan tipe komit yang dilakukan).
-* Mengkomunikasikan sifat perubahan kepada rekan setim, publik, dan pemangku kepentingan lainnya.
+* Mengkomunikasikan sifat perubahan kepada rekan tim, publik, dan pemangku kepentingan lainnya.
 * Memicu proses pembuatan dan publikasi.
 * Mempermudah orang untuk berkontribusi pada proyek Anda, dengan memungkinkan mereka untuk menjelajah riwayat komit yang lebih terstruktur.
 
