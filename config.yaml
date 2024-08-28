@@ -178,7 +178,7 @@ languages:
     weight: 9
     languageName: "Français"
     title: Commits Conventionnels
-    description: Une spécification ajoutant une signification lisible pour l'humain et pour la machine dans les messages des commits
+    description: Une spécification qui permet une signification lisible pour l'humain et pour la machine dans les messages des commits
     actions:
     - label: Voir la spécification
       url: '#spécification'
