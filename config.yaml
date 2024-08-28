@@ -180,7 +180,7 @@ languages:
     title: Commits Conventionnels
     description: Une spécification qui permet une signification lisible pour l'humain et pour la machine dans les messages des commits
     actions:
-    - label: Voir la spécification
+    - label: Spécification complète
       url: '#spécification'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
