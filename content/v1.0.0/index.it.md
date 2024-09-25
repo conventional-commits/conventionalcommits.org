@@ -115,7 +115,7 @@ Le parole “DEVE”, “NON DEVE”, “RICHIESTO”, “DOVRÀ”, “NON DOVR
    Una _breaking change_ DEVE essere scritta in maiuscolo `BREAKING CHANGE`, seguita dai due punti ed uno spazio.
 1. Una descrizione DEVE essere aggiunta dopo il testo `BREAKING CHANGE: `, descrivendo il cambiamento delle API.
    Es: _BREAKING CHANGE: environment variables now take precedence over config files._
-1. Un `!` POTREBBE essere aggiunti prima del prefisso`:` nel _tipo_/_contesto_, per attirare notificare l'introduzione di una breaking change. `BREAKING CHANGE: description` DEVE essere aggiungto nel _copro_ o _piè di pagina_ se un `!` è presente.
+1. Un `!` POTREBBE essere aggiunto prima del prefisso`:` nel _tipo_/_contesto_, per attirare l'introduzione di una breaking change. `BREAKING CHANGE: description` DEVE essere aggiunto nel _corpo_ o _piè di pagina_ se un `!` è presente.
 1. Un commit POTREBBE utilizzare altri _tipi_ al di fuori di `feat` e `fix` nel messaggio.
 1. La convenzione NON DEVE tener conto del maiuscolo o minuscolo, ad eccezione di `BREAKING CHANGE` che DEVE sempre essere maiuscolo.
 1. `BREAKING-CHANGE` equivale a `BREAKING CHANGE` 
