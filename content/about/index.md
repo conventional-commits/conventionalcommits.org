@@ -61,6 +61,7 @@ The first draft of this specification has been written in collaboration with som
 * [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
 * [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation
+* [cz-git](https://github.com/Zhengqbbb/cz-git): A customizable CLI tool for generating commit messages following Conventional Commits.
 
 ## Projects Using Conventional Commits
 
