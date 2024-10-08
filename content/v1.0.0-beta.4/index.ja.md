@@ -100,7 +100,7 @@ closes issue #12
 
 ## 仕様
 
-この文書における次の各キーワード「しなければならない（ MUST ）」、 「してはならない（ MUST NOT ）」、「要求されている（ REQUIRED ）」、 「することになる（ SHALL ）」、「することはない（ SHALL NOT ）」、 「する必要がある（ SHOULD ）」、「しないほうがよい（ SHOULD NOT ）」、 「推奨される（ RECOMMENDED ）」、「してもよい（ MAY ）」、 「選択できる（ OPTIONAL ）」は、 [RFC 2119 (IPA 日本語)](https://www.ipa.go.jp/security/rfc/RFC2119JA.html) で述べられているように 解釈されるべきものです。
+この文書における次の各キーワード「しなければならない（ MUST ）」、 「してはならない（ MUST NOT ）」、「要求されている（ REQUIRED ）」、 「することになる（ SHALL ）」、「することはない（ SHALL NOT ）」、 「する必要がある（ SHOULD ）」、「しないほうがよい（ SHOULD NOT ）」、 「推奨される（ RECOMMENDED ）」、「してもよい（ MAY ）」、 「選択できる（ OPTIONAL ）」は、 [RFC 2119 (JPNIC 日本語)](https://www.nic.ad.jp/ja/tech/ipa/RFC2119JA.html) で述べられているように 解釈されるべきものです。
 
 1. コミットは _型_ から始まり、次に選択できる（ OPTIONAL ） _範囲_ と、末尾に要求されている（ REQUIRED ）コロンとスペースで成り立ちます。
 1. コミットがあなたのアプリケーションやライブラリに新しい機能を追加するとき、 _型_ は`feat`にしなければならない（ MUST ）。
