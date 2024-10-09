@@ -40,7 +40,7 @@ Un changement radical peut faire partie des commits de n'importe quel type.
 
 Nous recommandons également `improvement` pour les commits qui améliorent une implémentation en cours sans ajouter de nouvelle fonctionnalité ou correction de bogue. Remarquez que ces types ne sont pas prescrits par la spécification de Conventional Commits et n'ont aucun effet implicite dans la gestion des versions sémantiques (à moins qu'ils ne comportent un BREAKING CHANGE).
 <br />
-Un scope peut être fournie au type d'un commit, pour fournir des informations contextuelles supplémentaires et
+Un scope peut être fourni au type d'un commit, pour fournir des informations contextuelles supplémentaires et
 le contenu entre parenthèses, par exemple, `feat (analyseur): ajout possibilité d'analyser des tableaux`.
 
 ## Exemples
@@ -82,12 +82,12 @@ fixes issue #12
 
 Les mots clés ”DOIT” (“MUST”), “NE DOIT PAS” (“MUST NOT”), “REQUIS” (“REQUIRED”), “NE DOIT” (“SHALL”), “NE DOIT PAS” (“SHALL NOT”), “NE DEVRAIT” (“SHOULD”), “NE DEVRAIT PAS” (“SHOULD NOT”), “RECOMMANDÉ” (“RECOMMENDED”), “PEUT” (“MAY”), et “FACULTATIF” (“OPTIONAL”) dans ce document doivent être interprétés comme décrit dans [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-1. Les commits DOIT être préfixés par un type, qui consiste en un nom, `feat`,` fix`, etc.,
-   suivi d'un côlon et d'un espace.
+1. Les commits DOIVENT être préfixés par un type, qui consiste en un nom, `feat`,` fix`, etc.,
+   suivi de deux points et d'un espace.
 1. Le type `feat` DOIT être utilisé lorsqu'un commit ajoute une nouvelle fonctionnalité à votre application.
   ou bibliothèque.
 1. Le type `fix` DOIT être utilisé lorsqu'un commit représente un correctif pour votre application.
-1. Un scope facultative PEUT être fournie après un type. Un scope est une phrase décrivant
+1. Un scope facultative PEUT être fourni après un type. Un scope est une phrase décrivant
   une section du code encadrée par des parenthèses, par exemple, `fix (analyseur):`
 1. Une description DOIT suivre immédiatement le préfixe type/scope.
   La description est une brève description des modifications du code, par exemple,
@@ -121,7 +121,7 @@ Nous vous recommandons de procéder comme si vous aviez déjà publié un produi
 
 ### Les types dans le titre des commits sont-ils en majuscules ou en minuscules?
 
-N'importe quel taille peut être utilisé, mais il est préférable d'être cohérent.
+N'importe quelle taille peut être utilisée, mais il est préférable d'être cohérent.
 
 ### Que dois-je faire si le commit est conforme à plus d'un type de commit?
 
@@ -156,5 +156,5 @@ Dans le pire des cas, ce n'est pas la fin du monde si un commit atterrit sans re
 
 ### Est-ce que tous mes contributeurs doivent utiliser les spécifications de Conventional Commits ?
 
-Non! Si vous utilisez un flux de travail basé sur squash sur Git, les responsables principaux peuvent nettoyer les messages des commits au fur et à mesure de leur fusion, ce qui permet de ne pas ajouter de charge de travail aux committers occasionnels.
+Non ! Si vous utilisez un flux de travail basé sur squash sur Git, les responsables principaux peuvent nettoyer les messages des commits au fur et à mesure de leur fusion, ce qui permet de ne pas ajouter de charge de travail aux committers occasionnels.
 Un processus courant consiste à ce que votre système git écrase automatiquement les commits d'une demande d'extraction et présente un formulaire permettant au responsable de la maintenance d'entrer le message du commit git approprié pour la fusion.
