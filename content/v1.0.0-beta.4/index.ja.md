@@ -46,7 +46,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 1. **BREAKING CHANGE:** 本体または脚注の冒頭に `BREAKING CHANGE:` という内容があるコミットは、APIの重大な変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
 `BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
 
-1. Others: `fix:` and `feat:` 以外のコミット _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)ベース)は  `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
+1. Others: `fix:` and `feat:` 以外のコミット _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)ベース)は  `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
 
 
 新しい機能の追加やバグを修正ではなく、現在の実装を改善するコミットには `improvement` をおすすめします。

@@ -30,7 +30,7 @@ Conventional Commits 스펙은 커밋 메시지에 곁들여진 가벼운 컨벤
 1. **fix:** 코드베이스에서 버그를 패치하는 `fix` _타입_ 의 커밋 (이는 유의적 버전에서의 [`PATCH`](http://semver.org/#summary)와 관련이 있습니다).
 1. **feat:** 코드베이스에서 새 기능이 추가되는 `feat` _타입_ 의 커밋 (이는 유의적 버전에서의 [`MINOR`](http://semver.org/#summary)와 관련이 있습니다).
 1. **BREAKING CHANGE:** 본문이나 꼬리말의 시작 부분에 `BREAKING CHANGE:`이라는 문자열을 가진 커밋은 커다란 API 변경 있다는 것을 의미합니다 (이는 유의적 버전에서의 [`MAJOR`](http://semver.org/#summary)와 관련이 있습니다). 어떤 커밋 타입이라도 BREAKING CHANGE는 해당 커밋의 일부가 될 수 있습니다.
-1. 다른 타입: `fix:`와 `feat:` 이외의 커밋 타입을 말합니다, 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
+1. 다른 타입: `fix:`와 `feat:` 이외의 커밋 타입을 말합니다, 예를 들어 [앵귤러 컨벤션](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)을 기반으로 하는 [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)에서는 `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` 등의 타입을 사용할 것을 권고하고 있습니다.
 
 또한, 새로운 기능이나 버그 수정없이 현재 구현체를 개선하는 커밋에 대해서는 `improvement`을 사용하는 것이 좋습니다. 이 타입은 BREAKING CHANGES를 포함하지 않는 한 Conventional Commits 스펙에 의해 강제되는 부분은 아니고 유의적 버전에도 암묵적 영향을 가지지 않습니다.
 <br />
