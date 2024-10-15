@@ -18,6 +18,7 @@ The first draft of this specification has been written in collaboration with som
 
 ## Tooling for Conventional Commits
 
+* [Conventional Commit Builder](https://marketplace.visualstudio.com/items?itemName=fletch-r.conventional-commit-builder): VSCode extension that prompts you for commit information following the Conventional Commit standard. Highly customizable, allowing Conventional Commit Builder to fit your teams commit message needs.
 * [go-conventional-commits](https://github.com/joselitofilho/go-conventional-commits): A tool to parser your git commit messages into a change log message based on conventional commits specification.
 * [go-conventionalcommits](https://github.com/leodido/go-conventionalcommits): Full Go powers to parse conventional commits.
 * [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit): go library for parsing commit messages following the specification.
