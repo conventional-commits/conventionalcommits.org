@@ -110,5 +110,11 @@
       max-height: 100%;
     }
   }
+
+  // Override for RTL layout if RTL is enabled
+  .rtl__image {
+    right: auto !important;
+    left: 0;
+  }
 }
 
