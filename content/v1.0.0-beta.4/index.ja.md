@@ -46,7 +46,7 @@ Conventional Commitsの仕様は、コミットメッセージのための軽量
 1. **BREAKING CHANGE:** 本体または脚注の冒頭に `BREAKING CHANGE:` という内容があるコミットは、APIの重大な変更を意味できます。(セマンティックバージョン管理における[`MAJOR`](http://semver.org/#summary)に相当します)
 `BREAKING CHANGE` はあらゆる _型_ のコミットに含めることができます。
 
-1. Others: `fix:` and `feat:` 以外のコミット _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)ベース)は  `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
+1. Others: `fix:` and `feat:` 以外のコミット _型_ を許容します、例えば  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) ([Angularの規約](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)ベース)は  `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, などがあります。
 
 
 新しい機能の追加やバグを修正ではなく、現在の実装を改善するコミットには `improvement` をおすすめします。
@@ -100,7 +100,7 @@ closes issue #12
 
 ## 仕様
 
-この文書における次の各キーワード「しなければならない（ MUST ）」、 「してはならない（ MUST NOT ）」、「要求されている（ REQUIRED ）」、 「することになる（ SHALL ）」、「することはない（ SHALL NOT ）」、 「する必要がある（ SHOULD ）」、「しないほうがよい（ SHOULD NOT ）」、 「推奨される（ RECOMMENDED ）」、「してもよい（ MAY ）」、 「選択できる（ OPTIONAL ）」は、 [RFC 2119 (IPA 日本語)](https://www.ipa.go.jp/security/rfc/RFC2119JA.html) で述べられているように 解釈されるべきものです。
+この文書における次の各キーワード「しなければならない（ MUST ）」、 「してはならない（ MUST NOT ）」、「要求されている（ REQUIRED ）」、 「することになる（ SHALL ）」、「することはない（ SHALL NOT ）」、 「する必要がある（ SHOULD ）」、「しないほうがよい（ SHOULD NOT ）」、 「推奨される（ RECOMMENDED ）」、「してもよい（ MAY ）」、 「選択できる（ OPTIONAL ）」は、 [RFC 2119 (JPNIC 日本語)](https://www.nic.ad.jp/ja/tech/ipa/RFC2119JA.html) で述べられているように 解釈されるべきものです。
 
 1. コミットは _型_ から始まり、次に選択できる（ OPTIONAL ） _範囲_ と、末尾に要求されている（ REQUIRED ）コロンとスペースで成り立ちます。
 1. コミットがあなたのアプリケーションやライブラリに新しい機能を追加するとき、 _型_ は`feat`にしなければならない（ MUST ）。
