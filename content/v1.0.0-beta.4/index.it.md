@@ -34,7 +34,7 @@ Il commit contiene i seguenti elementi strutturali, allo scopo di comunicare l'i
 1. **feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento semver).
 1. **BREAKING CHANGE:** un commit che contiene il testo `BREAKING CHANGE:` all'inizio delle sezioni opzionali _corpo_ o _piè di pagina_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento semver).
 Una _BREAKING CHANGE_ può essere parte di un commit di qualsiasi _tipo_.
-1. Extra: sono ammessi ulteriori _tipi_ oltre `fix:` e`feat:`, per esempio [commitlint-config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (che si basa sulla [convenzione Angular](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)) raccomanda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, ed altri.
+1. Extra: sono ammessi ulteriori _tipi_ oltre `fix:` e`feat:`, per esempio [commitlint-config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (che si basa sulla [convenzione Angular](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)) raccomanda `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, ed altri.
 Raccomandiamo anche `improvement` per commit che migliorano un'implementazione esistente senza aggiungere nuove funzionalità o risolvere un errore.
 Notare che questi _tipi_ non sono mantenuti da questa specifica, e non hanno un effetto sul versionamento semver (a meno che non introducano una _BREAKING CHANGE_).
 <br />
