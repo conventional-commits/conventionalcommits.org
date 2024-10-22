@@ -76,7 +76,7 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 feat!: send an email to the customer when a product is shipped
 ```
 
-### 包含了范围和破坏性变更 `!` 的提交說明
+### 包含了范围和破坏性变更 `!` 的提交说明
 ```
 feat(api)!: send an email to the customer when a product is shipped
 ```
