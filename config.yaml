@@ -437,7 +437,7 @@ languages:
     weight: 24
     languageName: "العربية"
     title: Conventional Commits
-    description: مواصفة لإضافة معنى قابل للقراءة من قبل الإنسان والآلة إلى رسائل الـ commit.
+    description: إضافة معنى قابل للقراءة من قبل الإنسان والآلة إلى رسائل الـ commit.
     actions:
       - label: الملخص
         url: '# الملخص'
