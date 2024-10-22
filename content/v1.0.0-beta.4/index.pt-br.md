@@ -42,7 +42,7 @@ utilizador da sua biblioteca:
  do versionamento semântico). Uma BREAKING CHANGE pode fazer parte de commits de qualquer _tipo_.
 1. Outros: _tipos_ adicionais são permitidos além de `fix:` e `feat:`, por exemplo
  [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
- (baseado na [Convenção do Angular](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit))
+ (baseado na [Convenção do Angular](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit))
  recomenda-se `chore:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, entre outros.
 
 Também recomendamos `improvement` para commits que melhoram uma implementação
@@ -202,4 +202,3 @@ Não! Se você usar um workflow de git baseado em squash, os mantenedores poder�
  isso é fazer com que o git faça squash dos commits automaticamente de um pull
  request e apresente um formulário para o mantenedor inserir a mensagem do commit
  apropriada para o merge.
-
