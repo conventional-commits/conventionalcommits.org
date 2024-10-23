@@ -52,7 +52,7 @@ fix) մասին տեղեկացնելու համար (այն փոխկապակցվ
 4. Ուրիշ տեսակներ. կարելի է օգտագործել նաև վերը նշվածներից տարբերվող
 _ՏԵՍԱԿ_ ունեցող (`fix:` և `feat:`) «commit»֊ներ, օրինակ՝
 [@commitlint-config-conventional](https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional)֊ը
-(հիմնված է [Angular convention](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit)֊ի վրա)
+(հիմնված է [Angular convention](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)֊ի վրա)
 առաջարկում է օգագործել են նաև՝ `chore:`, `docs:`, `style:`, `refactor:`,
 `perf:`, `test:` և այլ _ՏԵՍԱԿԻ_ «commit»֊ներ։
 
