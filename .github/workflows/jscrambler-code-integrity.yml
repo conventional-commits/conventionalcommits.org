@@ -1,14 +1,17 @@
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
-# documentation.
-
+# documentation
 # This is a basic workflow to help you get started with Using Jscrambler Code Integrity Action.
 # It automates the protection of your JavaScript Applications, so you can run it whenever a new version of your application is built.
 # A Jscrambler account is required to use this Workflow.
 #
 # More info can be found here : https://docs.jscrambler.com/latest/code-integrity/documentation/github-ci-integration
-
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+  }
+}
 name: Jscrambler Code Integrity
 
 on:
