@@ -9,7 +9,7 @@
       {{ end }}
     </div>
     {{ end }}
-    <figure class="welcome__image">
+    <figure class="welcome__image {{ if .Site.Language.Params.rtl }}rtl__image{{ end }}">
       <img src='{{default "/img/git-flow--welcome.png"}}'>
     </figure>
   </div>

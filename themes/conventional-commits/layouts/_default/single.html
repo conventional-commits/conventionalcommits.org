@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="{{ if .Site.Language.Params.rtl }}rtl{{ end }}">
 {{- partial "head.html" . -}}
 <body class="conventional-commits--loading">
 {{- partial "header.html" . -}}

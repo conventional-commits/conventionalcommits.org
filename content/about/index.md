@@ -57,10 +57,13 @@ The first draft of this specification has been written in collaboration with som
     * [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
     * [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
     * [Docker](https://hub.docker.com/r/tomasbjerre/git-changelog-command-line)
+    * [GitHub Action](https://github.com/tomasbjerre/git-changelog-github-release)
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
 * [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation
+* [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation.
+* [git-cliff](https://git-cliff.org/): A highly customizable changelog generator written in Rust that can generate changelog files for any Git repository that follows the _Conventional Commits_ specification
 * [cz-git](https://github.com/Zhengqbbb/cz-git): A customizable CLI tool for generating commit messages following Conventional Commits.
 
 ## Projects Using Conventional Commits
