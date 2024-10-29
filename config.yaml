@@ -433,6 +433,23 @@ languages:
       list:
       - v1.0.0
 
+  hi:
+    weight: 25
+    languageName: "Hindi"
+    title: Conventional Commits
+    description: प्रतिबद्ध संदेशों में मानव और मशीन पठनीय अर्थ जोड़ने के लिए विनिर्देश
+    actions:
+    - label: त्वरित सारांश
+      url: '#सारांश'
+    - label: पूर्ण विशिष्टता
+      url: '#विनिर्देश'
+    - label: Contribute
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
+
   ar:
     weight: 24
     languageName: "العربية"
