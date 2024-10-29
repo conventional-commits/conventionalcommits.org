@@ -449,3 +449,21 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  ar:
+    weight: 24
+    languageName: "العربية"
+    title: Conventional Commits
+    description: إضافة معنى قابل للقراءة من قبل الإنسان والآلة إلى رسائل الـ commit.
+    actions:
+      - label: الملخص
+        url: '# الملخص'
+      - label: المواصفات
+        url: '# المواصفات'
+      - label: شارك في المشروع
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
+    rtl: true

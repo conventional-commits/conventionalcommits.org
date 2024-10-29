@@ -15,6 +15,12 @@ body {
   font: 16px Helvetica, sans-serif;
 }
 
+// Apply RTL direction only if 'rtl' class is present
+html.rtl body, html.rtl .content {
+    direction: rtl;
+    text-align: right;
+}
+
 .container {
   width: 100%;
   max-width: $desktop-width;
