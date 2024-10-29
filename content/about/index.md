@@ -18,7 +18,6 @@ The first draft of this specification has been written in collaboration with som
 
 ## Tooling for Conventional Commits
 
-* [Conventional Commit Builder](https://marketplace.visualstudio.com/items?itemName=fletch-r.conventional-commit-builder): VSCode extension that prompts you for commit information following the Conventional Commit standard. Highly customizable, allowing Conventional Commit Builder to fit your teams commit message needs.
 * [go-conventional-commits](https://github.com/joselitofilho/go-conventional-commits): A tool to parser your git commit messages into a change log message based on conventional commits specification.
 * [go-conventionalcommits](https://github.com/leodido/go-conventionalcommits): Full Go powers to parse conventional commits.
 * [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit): go library for parsing commit messages following the specification.
@@ -61,7 +60,8 @@ The first draft of this specification has been written in collaboration with som
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
-* [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation
+* [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation.
+* [Conventional Commit Builder](https://marketplace.visualstudio.com/items?itemName=fletch-r.conventional-commit-builder): VSCode extension that prompts you for commit information following the Conventional Commit standard. Highly customizable, allowing Conventional Commit Builder to fit your teams commit message needs.
 
 ## Projects Using Conventional Commits
 
