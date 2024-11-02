@@ -294,6 +294,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [GearLock](https://github.com/axonasif/gearlock): Custom Recovery Replacement for Android-x86.
 * [rsql-querydsl](https://github.com/ymind/rsql-querydsl): Integration RSQL query language and Querydsl framework.
 * [Changeloguru](https://github.com/haunt98/changeloguru): Auto-generate changelog from conventional commits, written in Go.
+* [Sylva Identity Discovery](https://github.com/ppfeister/sylva): Novel OSINT utility that can be used to help link social media identities to their owners.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
