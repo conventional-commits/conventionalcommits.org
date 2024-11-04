@@ -126,7 +126,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
 1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
-1. One or more footers MAY be provided one blank line after the body. Each footer MUST consist of
+1. One or more footers MAY be provided one blank line after the body (one blank line after the description, if the body is omitted). Each footer MUST consist of
  a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
   [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
