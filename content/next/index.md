@@ -244,7 +244,8 @@ The first draft of this specification has been written in collaboration with som
 Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [php-conventional-changelog](https://github.com/marcocesarato/php-conventional-changelog): a tool built to generate a changelog from a project's committing history messages and metadata and automate versioning with Semver, following Conventional Commits specs. Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including conventional commits.
-* [standard-version](https://github.com/conventional-changelog/standard-version): Automatic versioning and CHANGELOG management, using GitHub's new squash button and the recommended Conventional Commits workflow.
+* [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version): Fork of the excellent standard-version. Automate versioning and CHANGELOG generation, with semver.org and conventionalcommits.org
+* [release-please](https://github.com/googleapis/release-please): generate release PRs based on the conventionalcommits.org spec
 * [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): Add _Conventional Commits_ support to [JetBrains Editors](https://www.jetbrains.com/) (IntelliJ IDEA, PyCharm, PhpStorm...).
 * [commitsar](https://github.com/commitsar-app/commitsar): Go tool for checking if commits on branch are conventional commit compliant. Comes with Docker image for CI uses.
 * [semantic-release](https://github.com/semantic-release/semantic-release): A tool that automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.
