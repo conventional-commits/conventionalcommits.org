@@ -64,6 +64,9 @@ The first draft of this specification has been written in collaboration with som
 * [Monopub](https://github.com/thi-ng/monopub): Conventional Commits-driven release tool for monorepo releases, versioning & changelog generation.
 * [git-cliff](https://git-cliff.org/): A highly customizable changelog generator written in Rust that can generate changelog files for any Git repository that follows the _Conventional Commits_ specification
 * [cz-git](https://github.com/Zhengqbbb/cz-git): A customizable CLI tool for generating commit messages following Conventional Commits.
+* [EasyBuild ecosystem](https://github.com/easybuild-org): A collection of tools for automating release using Conventional Commits.
+    * [EasyBuild.CommitLinter](https://github.com/easybuild-org/EasyBuild.CommitLinter): A .NET CLI tool to lint your commit messages
+    * [EasyBuild.ChangelogGen](https://github.com/easybuild-org/EasyBuild.ChangelogGen): A .NET CLI tool for generating changelog based on Git history following Conventional Commits.
 
 ## Projects Using Conventional Commits
 
