@@ -4,7 +4,7 @@
 
 This repo is the home of the Conventional Commits specification.
 
-## Repo Layout
+ Layout
 
 We use [HUGO](https://gohugo.io/) as static site generator, so we use the [directory structure](https://gohugo.io/getting-started/directory-structure/) HUGO proposes.
 
@@ -21,8 +21,7 @@ fixing typos, or adding more translations. Please don't hesitate
 to send a pull request.
 
 ### Adding a translation
-
-1. Create a new file in `./content/version/index.[lang].md` using the hugo command `hugo new [version]/index.[lang].md`.
+m1. Create a new file`./content/version/index.[lang].md` using the hugo command `hugo new [version]/index.[lang].md`.
 1. Ensure all files have the appropriate fields required (see others as an example)..
 1. Add the language to the `config.yaml` file (see others as an example).
 
