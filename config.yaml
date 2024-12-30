@@ -450,3 +450,21 @@ languages:
       list:
         - v1.0.0
     rtl: true
+    
+  fa:
+    weight: 25
+    languageName: "فارسی"
+    title: Conventional Commits
+    description: قراردادی برای افزودن معنای قابل خواندن توسط انسان و ماشین به پیام‌های کامیت
+    actions:
+      - label: خلاصه سریع
+        url: '#خلاصه'
+      - label: مشخصات کامل
+        url: '#مشخصات'
+      - label: مشارکت
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
+    rtl: true
