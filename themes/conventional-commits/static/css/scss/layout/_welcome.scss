@@ -71,12 +71,12 @@
     border: 1px solid $welcome-action-color;
     margin-right: $gap-md;
     margin-bottom: $gap-md;
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     min-width: fit-content;
 
     &:hover {
       background-color: $welcome-action-color;
-      color: get-color-accessible-for-background($welcome-action-color)
+      color: get-color-accessible-for-background($welcome-action-color);
     }
   }
 
@@ -113,4 +113,3 @@
     left: 0;
   }
 }
-
