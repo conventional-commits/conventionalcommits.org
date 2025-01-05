@@ -40,7 +40,7 @@ languages:
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
-
+  
   it:
     weight: 2
     languageName: "Italian"
@@ -432,7 +432,21 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
-
+  ma:
+    weight: 25
+    languageName: "Marathi"
+    title: परंपरागत वचने
+    description: संदेश पाठवण्यासाठी मानवी आणि मशीन वाचनीय अर्थ जोडण्यासाठी एक तपशील
+    - label: द्रुत सारांश
+      url: '#summary'
+    - label: संपूर्ण तपशील
+      url: '#specification'
+    - label: Contribute
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
   ar:
     weight: 24
     languageName: "العربية"
