@@ -34,8 +34,7 @@ consumers of your library:
 1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) when the version >= 1.0.0, and [`MINOR`](https://semver.org/#spec-item-4) when on a pre-release 0.y.z version, in Semantic Versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
 1. **INITIAL STABLE RELEASE:**  a commit that has a footer `INITIAL STABLE RELEASE:`, or appends `!!` after the type/scope, and introduces a new `MAJOR` even on versions `< 1.0.0`, denoting the promotion from a pre-release version `0.y.z` to `1.0.0`.
-1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
+1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
 1. _footers_ other than `BREAKING CHANGE: <description>` or `INITIAL STABLE RELEASE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
