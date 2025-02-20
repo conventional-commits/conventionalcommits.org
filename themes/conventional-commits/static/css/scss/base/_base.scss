@@ -15,10 +15,29 @@ body {
   font: 16px Helvetica, sans-serif;
 }
 
-// Apply RTL direction only if 'rtl' class is present
-html.rtl body, html.rtl .content {
-    direction: rtl;
-    text-align: right;
+html[lang="en"] body :not(code, .anchorjs-link) {
+  font-family: "Poppins", sans-serif !important;
+}
+
+html[lang="fa"] body :not(code, .anchorjs-link) {
+  font-family: "Vazirmatn", sans-serif !important;
+  line-height: 1.75;
+}
+
+a.anchorjs-link {
+  font-family: 'anchorjs-icons' !important;
+  margin-inline-start: -1em;
+  padding-right: 0 !important;
+}
+
+// Apply RTL direction only if 'rtl' dir attribute is present
+[dir="rtl"] {
+  text-align: right;
+}
+
+pre {
+  text-align: left;
+  direction: ltr;
 }
 
 .container {
