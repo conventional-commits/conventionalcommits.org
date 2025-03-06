@@ -450,3 +450,20 @@ languages:
       list:
         - v1.0.0
     rtl: true
+
+    ta:
+    weight: 20
+    languageName: "Tamil - தமிழ்"
+    title: வழக்கமான கமிட்கள் 
+    description: செய்திகளை உறுதி செய்வதற்கு மனித மற்றும் இயந்திரம் படிக்கக்கூடிய பொருளைச் சேர்ப்பதற்கான விவரக்குறிப்பு.
+    actions:
+    - label: சுருக்கம்
+      url: '#summary'
+    - label: ஆவண விவரக்குறிப்பு  
+      url: '#specification'
+    - label: பங்களிக்கவும்
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
