@@ -93,7 +93,7 @@
     z-index: -1;
     position: absolute;
     top: 50%;
-    right: 0;
+    inset-inline-end: 0;
     height: 70%;
     width: 24%;
     overflow: hidden;
@@ -106,11 +106,4 @@
       max-height: 100%;
     }
   }
-
-  // Override for RTL layout if RTL is enabled
-  .rtl__image {
-    right: auto !important;
-    left: 0;
-  }
 }
-

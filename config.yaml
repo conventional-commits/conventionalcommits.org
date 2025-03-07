@@ -433,8 +433,28 @@ languages:
       list:
       - v1.0.0
 
-  ar:
+  fa:
     weight: 24
+    languageName: "فارسی (Persian)"
+    title: کامیت‌های قراردادی
+    description: یک استاندارد برای نوشتن پیام‌های کامیت که هم برای انسان‌ها و هم برای ماشین‌ها قابل فهم باشد
+    actions:
+      - label: خلاصه
+        url: '#خلاصه'
+      - label: توضیحات کامل
+        url: '#توضیحات-کامل'
+      - label: سوالات متداول
+        url: '#سوالات-متداول'
+      - label: مشارکت کنید
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
+    rtl: true
+
+  ar:
+    weight: 25
     languageName: "العربية"
     title: Conventional Commits
     description: إضافة معنى قابل للقراءة من قبل الإنسان والآلة إلى رسائل الـ commit.
