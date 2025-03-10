@@ -467,3 +467,21 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+
+  pr:
+    weight: 26
+    languageName: "فارسی"
+    title: Conventional Commits
+    description: مشخصات برای اضافه کردن معانی خوانا برای اسنان و ماشین به پیام های کامیت
+    actions:
+      - label: خلاصه
+        url: '# خلاصه'
+      - label: توضیحات
+        url: '# توضیحات'
+      - label: مشارکت
+        url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
+    rtl: true
