@@ -451,7 +451,7 @@ languages:
         - v1.0.0
     rtl: true
 
-    ta:
+  ta:
     weight: 20
     languageName: "Tamil - தமிழ்"
     title: வழக்கமான கமிட்கள் 
