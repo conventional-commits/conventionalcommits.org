@@ -85,6 +85,12 @@
   }
 }
 
+@include up-to-mobile{
+  .welcome{
+    padding-top: 7rem;
+  }
+}
+
 @include desktop {
   .welcome__image {
     display: flex;
