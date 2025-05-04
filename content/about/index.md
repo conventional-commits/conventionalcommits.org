@@ -93,6 +93,7 @@ The first draft of this specification has been written in collaboration with som
 * [GearLock](https://github.com/axonasif/gearlock): Custom Recovery Replacement for Android-x86.
 * [Changeloguru](https://github.com/haunt98/changeloguru): Auto-generate changelog from conventional commits, written in Go.
 * [freeCodeCamp](https://www.freecodecamp.org): A nonprofit community that helps you learn to code by building projects.
+* [seedcase-sprout](https://github.com/seedcase-project/seedcase-sprout): Open source software to help you grow structured and scalable data.
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
