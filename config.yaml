@@ -67,7 +67,7 @@ languages:
     weight: 3
     languageName: "Polish"
     title: Conventional Commits
-    description: Specyfikacja, nadawająca czytelność commitom zarówno ludzi, jak i maszyn
+    description: Specyfikacja, nadawająca czytelność commitom zarówno dla ludzi, jak i maszyn
     actions:
     - label: Przeczytaj specyfikację
       url: '#specyfikacja'
