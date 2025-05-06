@@ -123,7 +123,7 @@ Słowa kluczowe „MUSI” („MUST”), „NIE MOŻE” („MUST NOT”), „WY
 
 * Automatyczne generowanie listy zmian (CHANGELOG).
 * Automatyczne podbicia wersji semantycznej (na podstawie typów commitów).
-* Komunikowanie charakteru zmian współpracownikom, społeczności i innym interesariuszom.
+* Komunikowanie charakteru zmian współpracownikom, społeczności i innym zainteresowanym.
 * Wyzwalanie procesów budowania i publikacji.
 * Ułatwienie osobom z zewnątrz kontrybuowania do projektu poprzez bardziej uporządkowaną historię commitów.
 
