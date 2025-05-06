@@ -29,7 +29,7 @@ Wiadomość commita powinna być zbudowana w następujący sposób:
 
 <br />
 Commit zawiera następujące elementy strukturalne, aby przekazać intencję
-otrzymującym Twoją bibliotekę:
+używającym Twojej biblioteki:
 
 1. **fix:** commit _typu_ `fix`  naprawia błąd w Twojej bazie kodu (odpowiada [`PATCH`](http://semver.org/#summary) w Semantic Versioning).
 2. **feat:** commit _typu_ `feat`  wprowadza nową funkcjonalność do bazy kodu (odpowiada [`MINOR`](http://semver.org/#summary) w Semantic Versioning).
