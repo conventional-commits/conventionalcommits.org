@@ -121,7 +121,7 @@ Słowa kluczowe „MUSI” („MUST”), „NIE MOŻE” („MUST NOT”), „WY
 
 ## Dlaczego warto używać Conventional Commits
 
-* Automatyczne generowanie CHANGELOGów.
+* Automatyczne generowanie listy zmian (CHANGELOG).
 * Automatyczne określanie podbicia wersji semantycznej (na podstawie typów commitów).
 * Komunikowanie charakteru zmian współpracownikom, społeczności i innym interesariuszom.
 * Wyzwalanie procesów budowania i publikacji.
