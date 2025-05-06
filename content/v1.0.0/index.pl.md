@@ -32,7 +32,7 @@ Commit zawiera następujące elementy strukturalne, aby przekazać intencję
 używającym Twojej biblioteki:
 
 1. **fix:** commit _typu_ `fix`  naprawia błąd w kodzie (odpowiada [`PATCH`](http://semver.org/#summary) w Semantic Versioning).
-2. **feat:** commit _typu_ `feat`  wprowadza nową funkcjonalność do bazy kodu (odpowiada [`MINOR`](http://semver.org/#summary) w Semantic Versioning).
+2. **feat:** commit _typu_ `feat`  wprowadza nową funkcjonalność w kodzie (odpowiada [`MINOR`](http://semver.org/#summary) w Semantic Versioning).
 3. **BREAKING CHANGE:** commit, który posiada footer (stopkę) `BREAKING CHANGE:`, lub dodaje `!` po typie/scope (zakres), wprowadza breaking change w API (odpowiada [`MAJOR`](http://semver.org/#summary) w Semantic Versioning). BREAKING CHANGE może być częścią commita dowolnego _typu_.
 4. Dozwolone są _typy_ inne niż `fix:` i `feat:`, np. [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (bazujący na [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) zaleca `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:` i inne.
 5. Dozwolone są footery (stopki) inne niż `BREAKING CHANGE: <opis>`, zgodne z [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
