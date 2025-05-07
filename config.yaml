@@ -66,16 +66,17 @@ languages:
   pl:
     weight: 3
     languageName: "Polish"
-    title: Konwencjonalne Commity
-    description: Specyfikacja dodawania znaczenia czytelnego dla człowieka do commit komunikatów
+    title: Conventional Commits
+    description: Specyfikacja, nadająca czytelność commitom zarówno dla ludzi, jak i maszyn
     actions:
     - label: Przeczytaj specyfikację
       url: '#specyfikacja'
     - label: GitHub
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
-      current: v1.0.0-beta.2
+      current: v1.0.0
       list:
+      - v1.0.0
       - v1.0.0-beta.2
       - v1.0.0-beta.1
       - v1.0.0-beta
