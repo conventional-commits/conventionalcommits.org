@@ -195,3 +195,89 @@ revert: let us never again speak of the noodle incident
 
 Refs: 676104e, a215868
 ```
+
+### ما شكل الكتابة الذي يجب أن أستخدمه؟
+
+نوصي بكتابة وصف رسائل الإيداع: وصفها ومتنها بصيغة [الأمر
+Imperative mood](https://en.wikipedia.org/wiki/Imperative_mood).
+يوجد عدد كبير من الأمثلة على أسلوب الكتابة هذا لرسائل الإيداع
+[1](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) و [2](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#subject) و [3](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project) و [4](https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70) و [5](https://chris.beams.io/posts/git-commit/)
+
+## حول رسائل الإيداع الاصطلاحية
+
+مواصفات رسائل الإيداع الاصطلاحية مستوحاة من [إرشادات Angular لرسائل الإيداع] (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) وتعتمد عليها اعتمادًا كبيرًا.
+
+كتبت المسودة الأولى لهذه المواصفات بالتعاون مع بعض الأشخاص الذين ساهموا في:
+
+- [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog): مجموعة من الأدوات لتحليل رسائل الإيداع الاصطلاحية من سجلات git.
+- [bumped](https://bumped.github.io): أداة لإصدار البرامج التي تسهل تنفيذ الإجراءات قبل وبعد إطلاق إصدار جديد من برنامجك.
+- [unleash](https://github.com/netflix/unleash): أداة لأتمتة إصدار البرنامج والنشر.
+- [lerna](https://github.com/lerna/lerna): أداة لإدارة المشاريع ذات المستودع الواحد، والتي انبثقت من مشروع Babel.
+
+## أدوات لرسائل الإيداعات الاصطلاحات
+
+- [go-conventionalcommits](https://github.com/leodido/go-conventionalcommits): قوة [لغة غو](https://academy.hsoub.com/programming/go/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%89-%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-go-r222/) الكاملة لتحليل رسائل الإيداعات الاصطلاحية.
+- [go-conventional-commit](https://gitlab.com/digitalxero/go-conventional-commit): مكتبة لغة غو لتحليل رسائل الإيداعات الاصطلاحية وفقًا للمواصفات.
+- [chglog](https://github.com/goreleaser/chglog): أداة لتحليل رسائل الإيداعات الاصطلاحية من سجلات git وتحويلها إلى نماذج سجلات تغيير CHANGELOGS.
+- [fastlane-plugin](https://github.com/xotahal/fastlane-plugin-semantic_release): إضافة تتبع المواصفات لإدارة النسخ وتوليد سجل التغييرات تلقائيًا.
+- [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): أداة مصممة لإنشاء رسائل إيداع وفقًا لمواصفات رسائل الإيداع الاصطلاحية، وهي قابلة للتكوين وللاستخدام لمشاريع [PHP](https://academy.hsoub.com/programming/php/) لأنها تابعة للمؤلف أو قابلة للاستخدام عالميًا لمشاريع غير PHP.
+- [php-conventional-changelog](https://github.com/marcocesarato/php-conventional-changelog): أداة صممت لإنشاء سجل التغيير من رسائل محفوظات رسائل الإيداع الخاصة بالمشروع وبيانات التعريف وأتمتة الإصدار باستخدام Semver، باتباع مواصفات الالتزامات التقليدية، وهي قابلة للتكوين وقابلة للاستخدام لمشاريع PHP إذ أنها تابعة للمؤلف أو قابلة للاستخدام عالميًا لمشاريع غير PHP.
+- [conform](https://github.com/autonomy/conform): أداة يمكن استخدامها لفرض السياسات على مستودعات غيت، بما في ذلك رسائل الإيداع الاصطلاحية.
+- [standard-version](https://github.com/conventional-changelog/standard-version): تصدير تلقائي للنسخ وإدارة سجل التغييرات، باستخدام زر GitHub لـ squash وسير عمل رسائل الإيداع الاصطلاحية الموصى به.
+- [Git Commit Template](https://plugins.jetbrains.com/plugin/9861-git-commit-template): يضيف دعم رسائل الإيداع الاصطلاحية [لمحررات JetBrains](https://www.jetbrains.com/) (IntelliJ IDEA و PyCharm و PhpStorm...).
+- [commitsar](https://github.com/commitsar-app/commitsar): أداة لغة غو للتحقق ما إذا كانت رسائل الإيداع على الفرع متوافقة مع رسائل الإيداع الاصطلاحية، وتأتي بنسخة دوكر للتكامل المستمر.
+- [semantic-release](https://github.com/semantic-release/semantic-release): أداة تعمل على أتمتة سير عمل إصدار الحزمة بالكامل بما في ذلك: تحديد رقم الإصدار التالي وإنشاء ملاحظات الإصدار ونشر الحزمة.
+- [ngx-semantic-version](https://github.com/d-koppenhagen/ngx-semantic-version): يؤتمت رسائل إيداع مشروع Angular وسير عمل الالتزام عن طريق تكامل _commitizen_, _commitlint_, _husky_ and _standard-version_ في مشروعك وتكوينها لاستخدام _رسائل الإيداع الاصطلاحية_.
+- [Pyhist](https://github.com/jgoodman8/pyhist): أداة مساعدة من [لغة بايثون](https://academy.hsoub.com/python/) لتحديث إصدار الباقة من سجل git وإنشاء سجل التغيير CHANGELOG.
+- [commitizen-tools/commitizen](https://github.com/commitizen-tools/commitizen): أداة للغة بايثون مصممة لإنشاء قواعد رسائل الإيداع الاصطلاحية للمشاريع، ورفع إصدارات المشروع، وإنشاء سجل التغيير. قابلة للتكوين وقابلة للاستخدام لكل من مشروع بايثون وغير بايثون، وقابلة للتوسيع توسعًا كبيرًا من خلال بايثون.
+- [git-mkver](https://github.com/idc101/git-mkver):أداة لتطبيق الإصدار الدلالي تلقائيًا على مستودعات git استنادًا إلى رسائل الإيداع الاصطلاحية.
+- [Conventional Commits Next Version](https://gitlab.com/DeveloperC/conventional_commits_next_version): أداة مساعدة حيادية للأدوات واللغات لحساب الإصدار الدلالي التالي استنادًا إلى رسائل الإيداعات الاصطلاحية منذ الإصدار السابق في المشاريع ذات المستودع الواحد.
+- [change](https://github.com/adamtabrams/change): أداة لتوليد وتحديث سجل التغيير باستخدام رسائل الإيداع الاصطلاحية.
+- [sv4git](https://github.com/bvieira/sv4git): أداة سطر الأوامر للتحقق من صحة رسائل الإيداع الاصطلاحية، ونسخ الإصدارات وإنشاء الوسوم وسجلات التغيير.
+- [semantic-gitlog](https://github.com/semantic-gitlog) أداة بسيطة لإدارة الإصدار الدلالي تعتمد على رسائل الإيداع الاصطلاحية. يشتق تلقائيًا أرقام الإصدارات وإدارتها وتوليد سجلات التغيير ذات نمط إطار عمل Angular.
+  دعم [Maven](https://github.com/semantic-gitlog/maven-semantic-gitlog) و [Gradle](https://github.com/semantic-gitlog/gradle-semantic-gitlog).
+- [idea-conventional-commit](https://github.com/lppedd/idea-conventional-commit) الإكمال التلقائي للسياق والقوالب، لرسائل الإيداع الاصطلاحية ورسائل النسخ الدلالية.
+- [Versio](https://github.com/chaaz/versio): أداة متوافقة مع المشاريع ذات المستودع الواحد (monorepos) التي تحدّث أرقام الإصدارات بناءً على رسائل الإيداع الاصطلاحية، واعتماديات المشروع، ويمكنه توليد الوسوم وسجلات التغيير أيضًا.
+- [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib): مكتبة [جافا Java](https://academy.hsoub.com/programming/java/) تدعم عرض سجل التغيير في سياق مشتق من Git. تدعم رسائل الإيداع الاصطلاحية مع [Handlebars Helpers](https://github.com/tomasbjerre/git-changelog-lib#helpers)، ومُستخدمة في المشاريع التالية:
+  - [Gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin)
+  - [Maven](https://github.com/tomasbjerre/git-changelog-maven-plugin)
+  - [Jenkins](https://github.com/jenkinsci/git-changelog-plugin)
+  - [Command Line](https://github.com/tomasbjerre/git-changelog-command-line)
+- [Cocogitto](https://github.com/oknozor/cocogitto): مجموعة من أدوات سطر الأوامر لرسائل الإيداعات الاصطلاحية ومواصفات الإدارة الدلالية لنُسخ البرمجيات semver.
+- [منقّح صياغة رسائل الإيداع الاصطلاحية](https://gitlab.com/DeveloperC/conventional_commits_linter): أداة تنقيح صياغة رسائل الإيداع الاصطلاحية، وهي أداة محايدة للغات والأدوات الأخرى.
+- [Uplift](https://github.com/gembaadvantage/uplift): الإصدار الدلالي بطريقة سهلة. مدعوم من رسائل الإيداع الاصطلاحية. مصمم لكي يستخدم مع التكامل المستمر.
+
+## المشاريع التي تستخدم رسائل الإيداع الاصطلاحية
+
+- [NFPM](https://github.com/goreleaser/nfpm): NFPM is Not FPM -أداة تجميع بسيطة لـ deb و rpm و apk مكتوبة بلغة غو
+- [yargs](https://github.com/yargs/yargs): محلل وسيطات سطر الأوامر المفضل لدى الجميع.
+- [istanbuljs](https://github.com/istanbuljs/istanbuljs): مجموعة أدوات مفتوحة المصدر ومكتبات برمجية لإضافة الاختبارات الآلية للغة [جافا سكريبت](https://academy.hsoub.com/programming/javascript/).
+- [uPortal-home](https://github.com/UW-Madison-DoIT/angularjs-portal) و [uPortal-application-framework](https://github.com/UW-Madison-DoIT/uw-frame):محسن اختياري لواجهة الاستخدام [Apereo uPortal](https://www.apereo.org/projects/uportal).
+- [massive.js](https://github.com/dmfay/massive-js): مكتبة وصول للبيانات لـ Node و PostgreSQL.
+- [electron](https://github.com/electron/electron): بناء تطبيقات تعمل على أكثر من نظام تشغيل باستخدام جافا سكريبت و [HTML](https://academy.hsoub.com/programming/html/) و [CSS](https://academy.hsoub.com/programming/css/).
+- [scroll-utility](https://github.com/LeDDGroup/scroll-utility): أداة بسيطة لتسهيل التمرير للعناصر المتوسطة مع حركيات سلسلة.
+- [Blaze UI](https://github.com/BlazeUI/blaze): أدوات واجهة استخدام غير مرتبط بإطار عمل معين.
+- [Monica](https://github.com/monicahq/monica): نظام إدارة العلاقات الشخصية مفتوح المصدر.
+- [mhy](https://mhy.js.org): بيئة عمل معدة بالأدوات ومتعددة الاستخدامات ولا تحتاج إلى إعداد مسبق.
+- [‎@tandil/diffparse](https://github.com/danielduarte/diffparse#readme): محلل بسيط للتغييرات بين الملفات في نظام إدارة التحكم في الإصدارات.
+- [‎@tandil/diffsplit](https://github.com/danielduarte/diffsplit#readme): يسهل تقسيم ملفات التغييرات من نوع .diff و .patch إلى ملفات من نوعها.
+- [‎@thi.ng/umbrella](https://github.com/thi-ng/umbrella): مستودع لقرابة مئة مشروع TypeScript التي تتخذ منهجية التطوير المقادة بالبيانات Data Driven Development ذات المستودع الواحد.
+- [yii2-basic-firestarter](https://github.com/HunWalk/yii2-basic-firestarter): قالب تطبيق Yii2 محسّن.
+- [Nintex Forms](https://www.nintex.com/workflow-automation/modern-forms/): إنشاء نماذج إدخال ديناميكية سهلة لإرسال واستقبال بيانات دقيقة وآنية.
+- [Tina CMS](https://tinacms.org): مجموعة أدوات لبناء إدارة محتوى واجهات الاستخدام في موقعك.
+- [Uno Platform](https://platform.uno): منصة بناء تطبيقات جوال وسطح مكتب وتقنية ويب أسمبلي عن طريق لغة برمجة #C و XAML، وتدعم البرمجيات مفتوحة المصدر والاحترافية.
+- [AutoSort.NetCore](https://www.nuget.org/packages/AutoSort.NetCore/): استخدام سمات الكائن للترتيب الافتراضي.
+- [Undercut](https://github.com/the-spyke/undercut): خطوط إمداد وأدوات لمعالجة البيانات المؤجلة في لغة جافا سكريبت.
+- [Stats Builder](https://github.com/MarkFChavez/blox_piece_stats_builder): باني إحصائيات لـ [Blox Fruits](https://www.roblox.com/games/2753915549/UPDATE-11-Blox-Fruits)
+- [Jenkins X](https://jenkins-x.io/): يوفر Jenkins X خطوط إمداد الأتمتة، وتطوير عمليات Git، وعرض بيئة التشغيل لمساعدة التعاون بين فريق العمل وتسريع نشر البرمجيات مهما كان حجمها.
+- [GearLock](https://github.com/axonasif/gearlock): بديل مخصص لاستعادة Android-x86..
+- [rsql-querydsl](https://github.com/ymind/rsql-querydsl): تكامل لغة الاستعلامات RSQL وإطار عمل Querydsl.
+- [Changeloguru](https://github.com/haunt98/changeloguru): توليد سجل التغييرات آليًا من رسائل الإيداع الاصطلاحية، مكتوبة بلغة غو.
+
+ترجمة -وبتصرف- للدليل [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0) لصاحبه Damiano Petrungaro وكل المساهمين.
+
+## اقرأ أيضًا
+
+- [بدء العمل مع نظام إدارة الإصدارات جيت Git](https://academy.hsoub.com/programming/workflow/git/%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%85%D8%B9-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AC%D9%8A%D8%AA-git-r1593/)
+- [استخدامات متقدمة لنظام التحكم بالإصدار Git لإدارة مشاريع بايثون](https://academy.hsoub.com/programming/python/%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%D8%A7%D8%AA-%D9%85%D8%AA%D9%82%D8%AF%D9%85%D8%A9-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D8%A8%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-git-%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86-r2047/)
+- [أدوات رسومية للأداة سطر الأوامر جيت Git](https://academy.hsoub.com/programming/workflow/git/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D8%B1%D8%B3%D9%88%D9%85%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%AF%D8%A7%D8%A9-%D8%B3%D8%B7%D8%B1-%D8%A7%D9%84%D8%A3%D9%88%D8%A7%D9%85%D8%B1-%D8%AC%D9%8A%D8%AA-git-r1604/)
