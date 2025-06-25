@@ -63,7 +63,7 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 feat!: send an email to the customer when a product is shipped
 ```
 
-### Message du commit avec _étendue_ et `!` qui attirer l'attention sur un BREAKING CHANGE
+### Message du commit avec _étendue_ et `!` qui attire l'attention sur un BREAKING CHANGE
 ```
 feat(api)!: send an email to the customer when a product is shipped
 ```
@@ -135,7 +135,7 @@ Les mots clés ”DOIT” (“MUST”), “NE DOIT PAS” (“MUST NOT”), “R
    `!` immédiatement avant le `:`. Si `!` est utilisé, `BREAKING CHANGE:` PEUT être omis de la section de _pied_,
    et la _description_ du commit DEVRA être utilisée pour décrire la _rupture de compatibilité_.
 1. Un _type_ autre que `feat` et `fix` PEUT être utilisé, par exemple, _docs: updated ref docs._
-1. Les unités d’information qui composent Commits Conventionnels NE DOIVENT PAS être traités comme sensibles à la casse
+1. Les unités d’information qui composent Commits Conventionnels NE DOIVENT PAS être traitées comme sensibles à la casse
   par les développeurs, à l'exception de BREAKING CHANGE qui DOIT être en majuscules.
 1. BREAKING-CHANGE DOIT être synonyme de BREAKING CHANGE, lorsqu'il est utilisé comme mot-clé dans un _pied_.
 
@@ -152,7 +152,7 @@ Les mots clés ”DOIT” (“MUST”), “NE DOIT PAS” (“MUST NOT”), “R
 ### Comment dois-je gérer les messages de commit dans la phase de développement initiale ?
 
 Nous vous recommandons de procéder comme si vous aviez déjà publié un produit. Généralement *quelqu'un*, même si ce sont
-vos collègues développeurs de logiciels, utilise votre logiciel. Ils voudront savoir ce qui est corrigé, ce qui casse, etc.
+vos collègues développeurs de logiciels, utilise votre logiciel. Ils voudra savoir ce qui est corrigé, ce qui casse, etc.
 
 ### Les types dans le titre des commits sont-ils en majuscules ou en minuscules ?
 
@@ -165,7 +165,7 @@ réside dans sa capacité à nous inciter à créer des commits et des PR plus o
 
 ### Est-ce que cela ne décourage pas le développement rapide et l’itération rapide ?
 
-Cela décourage les commits rapides et désorganisée. Il vous aide à être en mesure d'évoluer rapidement et à long terme
+Cela décourage les commits rapides et désorganisés. Cela vous aide à être en mesure d'évoluer rapidement et à long terme
 dans plusieurs projets avec des contributeurs variés.
 
 ### Les Commits Conventionnels pourraient-ils amener les développeurs à limiter le type d’engagement qu’ils effectuent car ils réfléchiront aux types fournis ?
