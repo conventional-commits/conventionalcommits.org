@@ -152,7 +152,7 @@ Les mots clés ”DOIT” (“MUST”), “NE DOIT PAS” (“MUST NOT”), “R
 ### Comment dois-je gérer les messages de commit dans la phase de développement initiale ?
 
 Nous vous recommandons de procéder comme si vous aviez déjà publié un produit. Généralement *quelqu'un*, même si ce sont
-vos collègues développeurs de logiciels, utilise votre logiciel. Ils voudra savoir ce qui est corrigé, ce qui casse, etc.
+vos collègues développeurs de logiciels, utilise votre logiciel. Il voudra savoir ce qui est corrigé, ce qui casse, etc.
 
 ### Les types dans le titre des commits sont-ils en majuscules ou en minuscules ?
 
