@@ -32,13 +32,13 @@ aliases: ["/ru/"]
 пользователям вашей библиотеки:
 
 1. **fix:** коммит _типа_ `fix` исправляет баг в вашем коде (соответствует
-   [`PATCH`](https://semver.org/lang/ru/#%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE) в Cемантическом Версионировании).
+   [`PATCH`](https://semver.org/lang/ru/#%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE) в Семантическом Версионировании).
 1. **feat:** коммит _типа_ `feat` добавляет новую функцию в ваш код
-   (соответствует [`MINOR`](https://semver.org/lang/ru/#%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE) в Cемантическом Версионировании).
+   (соответствует [`MINOR`](https://semver.org/lang/ru/#%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE) в Семантическом Версионировании).
 1. **BREAKING CHANGE:** коммит, который имеет _сноску_ `BREAKING CHANGE` или
    коммит, заканчивающийся восклицательным знаком (`!`) после _типа_ или
    _контекста_, вводящий изменение(я), нарушающие обратную совместимость
-   (соответствует [`MAJOR`](https://semver.org/lang/ru/#%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE) в Cемантическом Версионировании).
+   (соответствует [`MAJOR`](https://semver.org/lang/ru/#%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE) в Семантическом Версионировании).
    `BREAKING CHANGE` может быть частью коммита любого _типа_.
 1. Другие _типы_ коммитов разрешены.  Например,
    [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (основан
