@@ -185,6 +185,11 @@ html.theme-dark .markdown-body {
   fill: var(--text-secondary);
 }
 
+// Fix hardcoded white text colors
+.theme-dark .no-style-a {
+  color: var(--text-primary) !important;
+}
+
 // Netlify badge theme switching
 .netlify-badge-dark {
   display: none;
