@@ -351,7 +351,7 @@ languages:
 
   nl:
     weight: 19
-    languageName: "Nederlands"
+    languageName: "Netherlands"
     title: Conventionele Commits
     description: Een specificatie voor mens- en machine-leesbare commit berichten
     actions:
