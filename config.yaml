@@ -473,7 +473,7 @@ languages:
     weight: 26
     languageName: "فارسی"
     title: Conventional Commits
-    description: مشخصات برای اضافه کردن معانی خوانا برای اسنان و ماشین به پیام های کامیت
+    description: مشخصات برای اضافه کردن معانی خوانا برای انسان و ماشین به پیام های کامیت
     actions:
       - label: خلاصه
         url: '# خلاصه'
