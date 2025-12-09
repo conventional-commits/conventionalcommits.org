@@ -486,3 +486,20 @@ languages:
       list:
         - v1.0.0
     rtl: true
+
+  sr:
+    weight: 27
+    languageName: "Serbian - Srpski"
+    title: Conventional Commits
+    description: Specifikacija za dodavanje značenja porukama commit-ova koje je čitljivo i ljudima i mašinama.
+    actions:
+    - label: Kratak rezime
+      url: '#rezime'
+    - label: Puna specifikacija
+      url: '#specifikacija'
+    - label: Doprinos
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
