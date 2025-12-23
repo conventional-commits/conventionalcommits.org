@@ -33,10 +33,12 @@ consumers of your library:
 1. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in Semantic Versioning).
 1. **BREAKING CHANGE:** a commit that has a footer `BREAKING CHANGE:`, or appends a `!` after the type/scope, introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) when the version >= 1.0.0, and [`MINOR`](https://semver.org/#spec-item-4) when on a pre-release 0.y.z version, in Semantic Versioning).
 A BREAKING CHANGE can be part of commits of any _type_.
+1. **DEPRECATE:** a commit that has a footer `DEPRECATE`, or appends a `-` after the type/score, introduces an API deprecation warning (correlating with [`MINOR`](https://semver.org/#how-should-i-handle-deprecating-functionality)).
+A DEPRECATE can be part of commits of any _type_.
 1. **INITIAL STABLE RELEASE:**  a commit that has a footer `INITIAL STABLE RELEASE:`, or appends `!!` after the type/scope, and introduces a new `MAJOR` even on versions `< 1.0.0`, denoting the promotion from a pre-release version `0.y.z` to `1.0.0`.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
   `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
-1. _footers_ other than `BREAKING CHANGE: <description>` or `INITIAL STABLE RELEASE: <description>` may be provided and follow a convention similar to
+1. _footers_ other than `BREAKING CHANGE: <description>` or `INITIAL STABLE RELEASE: <description>` or `DEPRECATE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
 Additional types are not mandated by the conventional commits specification, and have no implicit effect in Semantic Versioning (unless they include a BREAKING CHANGE, or mark an INITIAL STABLE RELEASE).
@@ -67,6 +69,23 @@ feat(api)!: send an email to the customer when a product is shipped
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
+```
+
+### Commit message with `-` to draw attention to a deprecation warning
+```
+refactor-: deprecate the api for seding a mail to a customer
+```
+
+### Commit message with scope and `-` to draw attention to a deprecation warning
+```
+fix(api)-: deprecate the v1 api for seding a mail to a customer in favor of v2
+```
+
+### Commit message with both `-` and DEPRECATE footer
+```
+refactor-: deprecate the api for sending a mail to a customer
+
+DEPRECATE: usage of the API for a sending a mail is deprecated and will be removed
 ```
 
 ### Commit message with `!!` to mark graduating to Production Version 1.0.0
@@ -117,7 +136,7 @@ Refs: #123
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 1. Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed
-  by the OPTIONAL scope, OPTIONAL `!`, OPTIONAL second `!`, and REQUIRED terminal colon and space.
+  by the OPTIONAL scope, OPTIONAL `!`, OPTIONAL second `!`, OPTIONAL `-` and REQUIRED terminal colon and space.
 1. The type `feat` MUST be used when a commit adds a new feature to your application or library.
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
@@ -130,18 +149,25 @@ The description is a short summary of the code changes, e.g., _fix: array parsin
  a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value (this is inspired by the
   [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
 1. A footer's token MUST use `-` in place of whitespace characters, e.g., `Acked-by` (this helps differentiate
-  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE` and `INITIAL STABLE RELEASE`, which MAY also be used as a token.
+  the footer section from a multi-paragraph body). An exception is made for `BREAKING CHANGE`, `DEPRECATE` and `INITIAL STABLE RELEASE`, which MAY also be used as a token.
 1. A footer's value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
   token/separator pair is observed.
 1. Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the
   footer.
+1. Deprecation warnings MUST be indicated in the type/scope prefix of a comit, or as an entry in 
+  the footer.
 1. If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon, space, and description, e.g.,
 _BREAKING CHANGE: environment variables now take precedence over config files_.
+1. If included as a fotter, a deprecation warning MUST consist of the uppercase text DEPRECATE, followed by a colon, space, and description, e.g.,
+_DEPRECATE: usage of the email API v1 is deprecated in favor of v2 of the API_.
 1. If included in the type/scope prefix, breaking changes MUST be indicated by a
   `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
+1. If included in the type/scope prefix, deprecation warnings MUST be indicated by a 
+  `-` immediately before the `:`. If `-` is used, `DEPRECATE:` MAY be omitted from the footer section,
+  and the commit description SHALL be used to describe the deprecation warning.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE and INITIAL STABLE RELEASE which MUST be uppercase.
+1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE, DEPRECATE and INITIAL STABLE RELEASE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 1. Graduating a pre-release 0.y.z version to 1.0.0 MUST be signaled by at least one of:
     1. Including `!!` in the type/scope prefix immediately before the `:` 
@@ -180,7 +206,7 @@ Conventional Commits encourages us to make more of certain types of commits such
 
 ### How does this relate to SemVer?
 
-`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases.
+`fix` type commits should be translated to `PATCH` releases. `feat` type commits should be translated to `MINOR` releases. Commits with `BREAKING CHANGE` in the commits, regardless of type, should be translated to `MAJOR` releases. Commits with `DEPRECATE` in the commits, regardless of type, should be translated to `MINOR` releases. 
 
 ### How should I version my extensions to the Conventional Commits Specification, e.g. `@jameswomack/conventional-commit-spec`?
 
