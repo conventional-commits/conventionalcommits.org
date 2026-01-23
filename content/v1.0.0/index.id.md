@@ -9,8 +9,8 @@ aliases: ["/id/"]
 
 Conventional Commits adalah perjanjian sederhana tentang cara menulis pesan komit.
 Ini menjelaskan sekumpulan aturan sederhana untuk membuat riwayat komit yang jelas;
-yang memudahkan untuk membuat alat automatis di atasnya.
-Perjanjian ini cocok dengan [SemVer](http://semver.org/lang/id/),
+yang memudahkan untuk membuat alat otomatis di atasnya.
+Perjanjian ini sesuai dengan [SemVer](http://semver.org/lang/id/),
 dengan menjelaskan suatu fitur (features), perbaikan (fixes),  perubahan yang merusak (breaking changes) yang dimuat dalam pesan komit.
 
 Pesan komit harus tersusun sebagai berikut:
@@ -27,19 +27,19 @@ Pesan komit harus tersusun sebagai berikut:
 ---
 
 <br />
-Komit berisi elemen struktural sebagai berikut, untuk menyampaikan maksud kepada konsumen perpustakaan anda:
+Komit ini memiliki elemen-elemen struktural berikut untuk menjelaskan maksud kepada pengguna pustaka:
 
-1. **fix:** komit _tipe_ `fix` untuk perbaikan celah (bug) dalam kode anda (ini berkolerasi dengan [`PATCH`](http://semver.org/#summary) di Semantic Versioning).
-1. **feat:** komit _tipe_ `feat` memperkenalkan suatu fitur (feature) baru dalam kode anda (ini berkolerasi dengan [`MINOR`](http://semver.org/#summary) di Semantic Versioning).
-1. **BREAKING CHANGE:** komit yang berisi footer `BREAKING CHANGE:`, atau tambahkan `!` setelah type/scope, memperkenalkan perusakan perubahan API (ini berkolerasi dengan [`MAJOR`](http://semver.org/#summary) di Semantic Versioning). BREAKING CHANGE dapat menjadi bagian dari komit _type_ apapun.
-1. _types_ daripada `fix:` dan `feat:` diperbolehkan, sebagai contoh [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) direkomendasikan `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainya.
+1. **fix:** komit _tipe_ `fix` untuk perbaikan celah (bug) dalam kode Anda (ini berkaitan dengan [`PATCH`](http://semver.org/#summary) di Semantic Versioning).
+1. **feat:** komit _tipe_ `feat` memperkenalkan suatu fitur (feature) baru dalam kode Anda (ini berkaitan dengan [`MINOR`](http://semver.org/#summary) di Semantic Versioning).
+1. **BREAKING CHANGE:** komit yang berisi footer `BREAKING CHANGE:`, atau tambahkan `!` setelah type/scope, memperkenalkan perubahan yang merusak API (ini berkaitan dengan [`MAJOR`](http://semver.org/#summary) di Semantic Versioning). BREAKING CHANGE dapat diterapkan pada semua _tipe_ komit.
+1. _types_ selain `fix:` dan `feat:` diperbolehkan, sebagai contoh [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (berdasarkan pada [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) disarankan `build:`, `chore:`,
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, dan lainnya.
 1. _footers_ daripada `BREAKING CHANGE: <description>` dapat disediakan dan mengikuti konvensi yang mirip dengan
   [format git trailer](https://git-scm.com/docs/git-interpret-trailers).
 
 Tipe tambahan tidak di amanatkan oleh spesifikasi conventional commits, dan tidak ada efek implisit dalam Semantic Versioning (kecuali mereka termasuk BREAKING CHANGE).
-<br /> < br/>
-Cakupan dapat disediakan ke tipe komit. untuk memberikan informasi kontekstual tambahan dan terkandung dalam kurung, misalnya, `feat(parser): add ability to parse arrays`.
+<br /> <br />
+Cakupan (scope) dapat disediakan ke tipe komit untuk memberikan informasi kontekstual tambahan dan terkandung dalam kurung, misalnya, `feat(parser): add ability to parse arrays`.
 
 ## Contoh
 
@@ -116,9 +116,9 @@ awalan, memecah perubahan HARUS (MUST) ditunjukkan oleh `!` Segera sebelum `:`. 
 
 ## Mengapa menggunakan Conventional Konvensional
 
-* Secara automatis menghasilkan CHANGELOGs.
-* Secara automatis menentukan versi semantic (Berdasarkan tipe komit yang dilakukan).
-* Mengkomunikasikan sifat perubahan kepada rekan setim, publik, dan pemangku kepentingan lainnya.
+* Secara otomatis menghasilkan CHANGELOGs.
+* Secara otomatis menentukan versi semantic (Berdasarkan tipe komit yang dilakukan).
+* Mengomunikasikan sifat perubahan kepada rekan setim, publik, dan pemangku kepentingan lainnya.
 * Memicu proses pembuatan dan publikasi.
 * Mempermudah orang untuk berkontribusi pada proyek Anda, dengan memungkinkan mereka untuk menjelajah riwayat komit yang lebih terstruktur.
 
@@ -128,7 +128,7 @@ awalan, memecah perubahan HARUS (MUST) ditunjukkan oleh `!` Segera sebelum `:`. 
 
 Kami menyarankan Anda melanjutkan seolah-olah Anda sudah merilis produk. Biasanya *seseorang*, bahkan jika itu sesama pengembang perangkat lunak Anda, menggunakan perangkat lunak Anda. Mereka ingin tahu apa yang diperbaiki, apa yang rusak, dll.
 
-### Apakah tipe dalam komit judul huruf besar atau kecil?
+### Apakah tipe dalam komit menggunakan judul huruf besar atau kecil?
 
 Casing apa pun dapat digunakan, tetapi yang terbaik adalah konsisten.
 
@@ -161,7 +161,7 @@ Sebelum menggabungkan atau merilis kesalahan, sebaiknya gunakan `git rebase -i` 
 
 #### Saat Anda menggunakan jenis *bukan* spesifikasi, mis. `feet` bukannya `feat`
 
-Dalam skenario terburuk, ini bukan akhir dunia jika komit mendarat yang tidak memenuhi spesifikasi conventional commit. Ini berarti komit akan dilewatkan oleh alat yang didasarkan pada spesifikasi.
+Dalam skenario terburuk, hal ini bukanlah masalah besar jika terdapat komit yang tidak memenuhi spesifikasi conventional commit. Ini berarti komit akan dilewatkan oleh alat yang didasarkan pada spesifikasi.
 
 ### Apakah semua kontributor saya perlu menggunakan spesifikasi commit konvensional?
 
