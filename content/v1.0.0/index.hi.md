@@ -1,6 +1,6 @@
 ---
 draft: false
-aliases: ["/en/"]
+aliases: ["/hi/"]
 ---
 
 # कन्वेंशनल कमिट्स 1.0.0
