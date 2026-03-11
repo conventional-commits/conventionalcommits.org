@@ -536,3 +536,15 @@ languages:
       current: v1.0.0
       list:
       - v1.0.0
+
+  si:
+    weight: 29
+    languageName: "Sinhala"
+    title: සම්මුතිවාදී කමිට්ස්
+    description: මිනිසුන්ට මෙන්ම යන්ත්‍රවලටද තේරුම් ගත හැකි අයුරින් කමිට් පණිවිඩවලට අර්ථයක් ලබා දීම සඳහා වූ පිරිවිතරයකි.
+    actions:
+    - label: සාරාංශය
+      url: '#summary'
+    - label: සම්පූර්ණ පිරිවිතරය
+      url: '#පිරිවිතරය'
+    - label: දායක වන්න
