@@ -1,0 +1,204 @@
+// Only apply dark theme styles when explicitly in dark mode
+.theme-dark {
+  body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+  }
+
+  main {
+    background-color: var(--bg);
+  }
+
+  article {
+    background-color: var(--surface);
+    color: var(--text-primary);
+  }
+
+  .header {
+    .logo {
+      border-color: var(--text-primary);
+    }
+
+    &__menu {
+      color: var(--text-primary);
+    }
+  }
+
+  .welcome {
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+
+    .container, .mini_container {
+      color: var(--text-primary);
+    }
+
+    .welcome__action {
+      color: var(--text-primary);
+      border-color: var(--text-primary);
+
+      &:hover {
+        background-color: var(--text-primary);
+        color: var(--bg);
+      }
+    }
+  }
+
+  .dropdown {
+    &__label {
+      color: var(--text-primary);
+    }
+
+    &__options {
+      background-color: var(--surface);
+      border: 1px solid var(--divider);
+
+      // Dark mode scrollbar
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: var(--surface);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--divider);
+        border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: var(--text-secondary);
+      }
+
+      // Arrow pointer color
+      &:before {
+        border-bottom-color: var(--surface) !important;
+      }
+    }
+
+    &__option {
+      border-bottom-color: var(--divider) !important;
+
+      a {
+        color: var(--text-primary);
+        border-bottom: 1px solid var(--divider) !important;
+      }
+
+      &:last-child a {
+        border-bottom: none !important;
+      }
+
+      &:hover {
+        background-color: var(--divider);
+      }
+    }
+  }
+
+  .footer {
+    background-color: var(--surface);
+    color: var(--text-secondary);
+    border-top: 1px solid var(--divider);
+  }
+}
+
+// Override GitHub markdown CSS with higher specificity for dark mode
+.theme-dark .markdown-body,
+html.theme-dark .markdown-body {
+  color: var(--text-primary) !important;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary) !important;
+    border-bottom-color: var(--divider) !important;
+  }
+
+  p, li {
+    color: var(--text-secondary) !important;
+  }
+
+  blockquote {
+    border-left-color: var(--divider) !important;
+    color: var(--text-secondary) !important;
+  }
+
+  hr {
+    background-color: var(--divider) !important;
+    border-bottom-color: var(--divider) !important;
+  }
+
+  table {
+    border-color: var(--divider) !important;
+
+    th, td {
+      border-color: var(--divider) !important;
+    }
+
+    tr {
+      background-color: var(--surface) !important;
+      border-top-color: var(--divider) !important;
+
+      &:nth-child(2n) {
+        background-color: var(--bg) !important;
+      }
+    }
+  }
+
+  code {
+    background-color: var(--divider) !important;
+    color: var(--text-primary) !important;
+  }
+
+  pre {
+    background-color: var(--surface) !important;
+    border: 1px solid var(--divider) !important;
+
+    code {
+      background-color: transparent !important;
+      color: var(--text-primary) !important;
+    }
+  }
+
+  .highlight pre {
+    background-color: var(--surface) !important;
+  }
+
+  kbd {
+    background-color: var(--surface) !important;
+    border-color: var(--divider) !important;
+    color: var(--text-primary) !important;
+    box-shadow: inset 0 -1px 0 var(--divider) !important;
+  }
+
+  a {
+    color: var(--accent-start) !important;
+
+    &:hover {
+      color: var(--accent-end) !important;
+    }
+  }
+
+  img {
+    background-color: var(--surface) !important;
+  }
+}
+
+// GitHub SVG icon theme switching
+.theme-dark .github path {
+  fill: var(--text-secondary);
+}
+
+// Fix hardcoded white text colors
+.theme-dark .no-style-a {
+  color: var(--text-primary) !important;
+}
+
+// Netlify badge theme switching
+.netlify-badge-dark {
+  display: none;
+}
+
+.theme-dark .netlify-badge-light {
+  display: none;
+}
+
+.theme-dark .netlify-badge-dark {
+  display: inline;
+}

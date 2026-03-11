@@ -1,8 +1,10 @@
 import AnchorJS from 'anchor-js';
+import ThemeToggle from './theme-toggle.js';
 
 class App {
   constructor(anchors) {
     this.anchors = anchors;
+    new ThemeToggle();
     this.onInit();
   }
 

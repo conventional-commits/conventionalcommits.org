@@ -1,9 +1,12 @@
+@import 'abstracts/theme-variables';
 @import 'base/base';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/welcome';
 @import "components/dropdown";
 @import "components/banner-image";
+@import "components/theme-toggle";
 @import "themes/markdown";
 @import "themes/conventional-commits";
+@import "themes/dark-mode";
 @import "vendors/github-markdown-css";

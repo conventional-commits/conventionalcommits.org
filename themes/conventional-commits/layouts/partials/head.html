@@ -8,8 +8,19 @@
 
     gtag('config', 'UA-2173276-5');
   </script>
-  
+
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.classList.add('theme-' + theme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('theme-dark');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  <script src="{{ .Site.BaseURL | absURL }}switchcss.js"></script>
 
   <title>{{ .Param "Title" }}</title>
   <meta name="description" content="{{ .Param "Description" }}"/>
