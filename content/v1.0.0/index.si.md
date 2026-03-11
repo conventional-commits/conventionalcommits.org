@@ -196,5 +196,3 @@ revert: let us never again speak of the noodle incident
 Refs: 676104e, a215868
 
 ```
-
-```
