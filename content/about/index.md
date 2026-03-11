@@ -67,6 +67,7 @@ The first draft of this specification has been written in collaboration with som
 * [EasyBuild ecosystem](https://github.com/easybuild-org): A collection of tools for automating release using Conventional Commits.
     * [EasyBuild.CommitLinter](https://github.com/easybuild-org/EasyBuild.CommitLinter): A .NET CLI tool to lint your commit messages
     * [EasyBuild.ChangelogGen](https://github.com/easybuild-org/EasyBuild.ChangelogGen): A .NET CLI tool for generating changelog based on Git history following Conventional Commits.
+* [commitish](https://github.com/victor141516/commitish): A simple, lightweight commitizen-like tool for creating standardized Git commit messages following the Conventional Commits format.
 
 ## Projects Using Conventional Commits
 
