@@ -63,7 +63,7 @@ feat(api)!: envia email para o cliente quando o produto é enviado
 ### Mensagem de commit com `!` e BREAKING CHANGE no rodapé
 
 ```
-chore!: remove suporte para Node 6
+feat:! remove suporte para Node 6
 
 BREAKING CHANGE: refatorar para usar recursos do JavaScript não disponíveis no Node 6.
 ```

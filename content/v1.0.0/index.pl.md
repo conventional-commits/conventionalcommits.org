@@ -66,7 +66,7 @@ feat(api)!: send an email to the customer when a product is shipped
 ### Commit message z `!` i footerm (stopką) BREAKING CHANGE
 
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

@@ -83,7 +83,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### 包含了 `!` 和 BREAKING CHANGE 脚注的提交说明
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

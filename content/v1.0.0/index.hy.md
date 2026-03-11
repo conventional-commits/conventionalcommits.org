@@ -61,7 +61,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### Commit հաղորդագրություն՝ միաժամանակ և՛ `!` նշանով, և՛ BREAKING CHANGE վերջավորությունով
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

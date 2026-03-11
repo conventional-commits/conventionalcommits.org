@@ -63,7 +63,7 @@ feat(api)!: müşteriye, ürünü kargolandığında mail atma özelliği eklend
 ### `!` ve köklü değişiklik alt metni içeren commit mesajı
 
 ```
-chore!: Node 6 desteği kaldırıldı
+feat:! Node 6 desteği kaldırıldı
 
 BREAKING CHANGE: Sadece Node 6 içinde olan Javascript özellikleri kullanan yerler yeniden yazılmalı.
 ```
