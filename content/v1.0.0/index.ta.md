@@ -68,7 +68,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### `!` மற்றும் BREAKING CHANGE footer இரண்டையும் கொண்டு கமிட் செய்தியை கமிட் செய்யவும்
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

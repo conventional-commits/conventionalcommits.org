@@ -59,7 +59,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### BREAKING CHANGE 꼬리말과 `!`를 함께 포함한 커밋 메시지
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

@@ -63,7 +63,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### کامیت همراه `!` و فوتر BREAKING CHANGE بطور همزمان
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

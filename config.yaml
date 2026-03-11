@@ -190,6 +190,22 @@ languages:
       list:
       - v1.0.0
       - v1.0.0-beta.2
+  hi:
+    weight: 10
+    languageName: "हिन्दी"
+    title: पारंपरिक कमिट (Conventional Commits)
+    description: कमिट संदेशों में मानव और मशीन दोनों के लिए अर्थ जोड़ने की एक विशिष्टता
+    actions:
+    - label: सारांश
+      url: '#summary'
+    - label: पूरी विशिष्टता
+      url: '#specification'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
 
   ko:
     weight: 10
@@ -487,8 +503,42 @@ languages:
         - v1.0.0
     rtl: true
 
+  gr:
+    weight: 27
+    languageName: "Ελληνικά"
+    title: Conventional Commits
+    description: Μια προδιαγραφή για την προσθήκη νοήματος, αναγνώσιμου τόσο από ανθρώπους όσο και από μηχανές, στα μηνύματα των commit
+    actions:
+      - label: Γρήγορη Περίληψη
+        url: "#περίληψη"
+      - label: Πλήρης Προδιαγραφή
+        url: "#προδιαγραφή"
+      - label: Συνεισφέρετε
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
+
+  sr:
+    weight: 28
+    languageName: "Serbian - Srpski"
+    title: Conventional Commits
+    description: Specifikacija za dodavanje značenja porukama commit-ova koje je čitljivo i ljudima i mašinama.
+    actions:
+    - label: Kratak rezime
+      url: '#rezime'
+    - label: Puna specifikacija
+      url: '#specifikacija'
+    - label: Doprinos
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
+
   si:
-    weight: 1
+    weight: 29
     languageName: "Sinhala"
     title: සම්මුතිවාදී කමිට්ස්
     description: මිනිසුන්ට මෙන්ම යන්ත්‍රවලටද තේරුම් ගත හැකි අයුරින් කමිට් පණිවිඩවලට අර්ථයක් ලබා දීම සඳහා වූ පිරිවිතරයකි.
@@ -498,13 +548,3 @@ languages:
     - label: සම්පූර්ණ පිරිවිතරය
       url: '#පිරිවිතරය'
     - label: දායක වන්න
-      url: 'https://github.com/conventional-commits/conventionalcommits.org'
-    versions:
-      current: v1.0.0
-      list:
-      - v1.0.0
-      - v1.0.0-beta.4
-      - v1.0.0-beta.3
-      - v1.0.0-beta.2
-      - v1.0.0-beta.1
-      - v1.0.0-beta
