@@ -503,8 +503,25 @@ languages:
         - v1.0.0
     rtl: true
 
-  sr:
+  gr:
     weight: 27
+    languageName: "Ελληνικά"
+    title: Conventional Commits
+    description: Μια προδιαγραφή για την προσθήκη νοήματος, αναγνώσιμου τόσο από ανθρώπους όσο και από μηχανές, στα μηνύματα των commit
+    actions:
+      - label: Γρήγορη Περίληψη
+        url: "#περίληψη"
+      - label: Πλήρης Προδιαγραφή
+        url: "#προδιαγραφή"
+      - label: Συνεισφέρετε
+        url: "https://github.com/conventional-commits/conventionalcommits.org"
+    versions:
+      current: v1.0.0
+      list:
+        - v1.0.0
+
+  sr:
+    weight: 28
     languageName: "Serbian - Srpski"
     title: Conventional Commits
     description: Specifikacija za dodavanje značenja porukama commit-ova koje je čitljivo i ljudima i mašinama.
