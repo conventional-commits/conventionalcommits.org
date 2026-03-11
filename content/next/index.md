@@ -141,7 +141,7 @@ _BREAKING CHANGE: environment variables now take precedence over config files_.
   `!` immediately before the `:`. If `!` is used, `BREAKING CHANGE:` MAY be omitted from the footer section,
   and the commit description SHALL be used to describe the breaking change.
 1. Types other than `feat` and `fix` MAY be used in your commit messages, e.g., _docs: updated ref docs._
-1. The units of information that make up conventional commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE and INITIAL STABLE RELEASE which MUST be uppercase.
+1. The units of information that make up conventional commits MUST NOT be treated as case-sensitive by implementors, with the exception of BREAKING CHANGE and INITIAL STABLE RELEASE which MUST be uppercase.
 1. BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
 1. Graduating a pre-release 0.y.z version to 1.0.0 MUST be signaled by at least one of:
     1. Including `!!` in the type/scope prefix immediately before the `:` 
