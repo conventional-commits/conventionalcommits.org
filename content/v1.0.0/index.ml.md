@@ -64,7 +64,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### `!` എന്നതും ബ്രേക്കിംഗ് മാറ്റുക അടിക്കുറിപ്പും ഉപയോഗിച്ച് കമ്മിറ്റ് സന്ദേശം
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

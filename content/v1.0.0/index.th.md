@@ -63,7 +63,7 @@ feat(api)!: send an email to the customer when a product is shipped
 
 ### ข้อความ commit ที่มีทั้ง `!` และ BREAKING CHANGE ลงท้าย
 ```
-chore!: drop support for Node 6
+feat!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```

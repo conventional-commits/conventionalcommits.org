@@ -190,6 +190,22 @@ languages:
       list:
       - v1.0.0
       - v1.0.0-beta.2
+  hi:
+    weight: 10
+    languageName: "हिन्दी"
+    title: पारंपरिक कमिट (Conventional Commits)
+    description: कमिट संदेशों में मानव और मशीन दोनों के लिए अर्थ जोड़ने की एक विशिष्टता
+    actions:
+    - label: सारांश
+      url: '#summary'
+    - label: पूरी विशिष्टता
+      url: '#specification'
+    - label: GitHub
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
 
   ko:
     weight: 10
@@ -503,3 +519,20 @@ languages:
       current: v1.0.0
       list:
         - v1.0.0
+
+  sr:
+    weight: 28
+    languageName: "Serbian - Srpski"
+    title: Conventional Commits
+    description: Specifikacija za dodavanje značenja porukama commit-ova koje je čitljivo i ljudima i mašinama.
+    actions:
+    - label: Kratak rezime
+      url: '#rezime'
+    - label: Puna specifikacija
+      url: '#specifikacija'
+    - label: Doprinos
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
