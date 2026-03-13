@@ -1,6 +1,6 @@
 ---
 draft: false
-aliases: ["/es/"]
+aliases: ['/es/']
 ---
 
 # Commits Convencionales 1.0.0
@@ -24,6 +24,7 @@ El mensaje del commit debe ser estructurado de la siguiente manera:
 
 [nota(s) al pie opcional(es)]
 ```
+
 ---
 
 <br />
@@ -33,7 +34,7 @@ a los consumidores de tu librería:
 1. **fix:** un commit de _tipo_ `fix` corrige un error en la base del código (se correlaciona con [`PATCH`](http://semver.org/#summary) en el Versionado Semántico).
 1. **feat:** un commit de _tipo_ `feat` introduce una nueva funcionalidad en la base del código (se correlaciona con [`MINOR`](http://semver.org/#summary) en el Versionado Semántico).
 1. **BREAKING CHANGE:** un commit que contiene la nota al pie `BREAKING CHANGE:`, o que agrega un `!` después del tipo/ámbito, introduce un cambio de ruptura de API (se correlaciona con [`MAJOR`](http://semver.org/#summary) en el Versionado Semántico).
-Un BREAKING CHANGE puede ser parte de commits de cualquier _tipo_.
+   Un BREAKING CHANGE puede ser parte de commits de cualquier _tipo_.
 1. _tipos_ distintos a `fix:` y `feat:` están permitidos, por ejemplo [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (basados en [la convención de Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) que recomienda `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, y otros.
 1. _notas al pie_ distintas de `BREAKING CHANGE: <descripción>` pueden ser añadidas y siguen una convención similar al [formato git trailer](https://git-scm.com/docs/git-interpret-trailers).
 
@@ -111,18 +112,18 @@ en [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 10. Una nota al pie PUEDE contener espacios y líneas en blanco, y el parseo DEBE terminar cuando se observe el siguiente separador/clave.
 11. Los cambios de ruptura DEBEN ser indicados en el prefijo de tipo/ámbito de un commit, o como una entrada en la nota al pie.
 12. Si se incluye como una nota al pie, un cambio de ruptura DEBE consistir del texto en mayúsculas BREAKING CHANGE, seguido de dos puntos, y una descripción, ej., _BREAKING CHANGE: environment variables now take precedence over config files_.
-13. Si se incluye en el prefijo de tipo/ámbito, cambios de ruptura DEBEN ser indicados por un `!` inmediatamente después de `:`. Si `!` es usado, `BREAKING CHANGE:` PUEDE ser omitido de la sección de la nota al pie, y la descripción del commit DEBERÁ ser usada para describir el cambio de ruptura.
+13. Si se incluye en el prefijo de tipo/ámbito, cambios de ruptura DEBEN ser indicados por un `!` inmediatamente antes de `:`. Si `!` es usado, `BREAKING CHANGE:` PUEDE ser omitido de la sección de la nota al pie, y la descripción del commit DEBERÁ ser usada para describir el cambio de ruptura.
 14. Tipos diferentes a `feat` y `fix` PUEDEN ser usados en los mensajes de commit, ej., _docs: updated ref docs._.
 15. Las unidades de información que componen Commits Convencionales NO DEBEN ser tratados como implementadores sensitivos de caso, con la excepción de BREAKING CHANGE que DEBE ir en mayúsculas.
 16. BREAKING-CHANGE DEBE ser sinónimo de BREAKING CHANGE, cuando se usa en una nota al pie.
 
 ## ¿Por qué usar Commits Convencionales?
 
-* Generación automática de CHANGELOGs.
-* Determinación automática de un salto de versión semántico (basado en los tipos de commits utilizados).
-* Comunicar la naturaleza de los cambios a los demás integrantes del equipo, el público o cualquier otro interesado.
-* Activar procesos de procesos y publicación.
-* Hacer más fácil a otras personas contribuir al proyecto al permitirles explorar una historia de los commits más estructurada.
+- Generación automática de CHANGELOGs.
+- Determinación automática de un salto de versión semántico (basado en los tipos de commits utilizados).
+- Comunicar la naturaleza de los cambios a los demás integrantes del equipo, el público o cualquier otro interesado.
+- Activar procesos de procesos y publicación.
+- Hacer más fácil a otras personas contribuir al proyecto al permitirles explorar una historia de los commits más estructurada.
 
 ## FAQ (Preguntas Frecuentes)
 
