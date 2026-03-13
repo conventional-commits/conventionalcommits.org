@@ -2,26 +2,22 @@
 
 .footer {
   margin: ($article-offset-top + ($gap-md*3)) 0 ($gap-md*3);
+  direction: ltr;
+  text-align: left;
 
   .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
-  &__license {
-    margin-right: auto;
-    a {
-      font-size: .7em;
-      text-decoration: none;
-      color: inherit;
-      &:hover {
-        text-decoration: underline;
-      }
+  &__license a {
+    font-size: .7em;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
     }
-  }
-
-  &__logos {
-    margin-left: auto;
   }
 
   &__logo {

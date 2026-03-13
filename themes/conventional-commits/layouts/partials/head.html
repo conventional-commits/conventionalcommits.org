@@ -26,4 +26,13 @@
   <meta property="og:url" content="{{ .Permalink }}"/>
   <meta property="og:description" content="{{ .Param "Description" }}"/>
   <meta property="og:site_name" content="{{ .Param "Title" }}"/>
+
+  <!-- Fonts -->
+  {{ if eq .Site.Language.Lang "en" }}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  {{ end }}
+  
+  {{ if eq .Site.Language.Lang "fa" }}
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  {{ end }}
 </head>
