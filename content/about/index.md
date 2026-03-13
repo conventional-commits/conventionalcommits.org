@@ -31,6 +31,7 @@ The first draft of this specification has been written in collaboration with som
 * [conventional-commits](https://github.com/ramsey/conventional-commits): A PHP library for creating and validating commit messages according to the Conventional Commits specification.
 * [sh-conventional-commits](https://github.com/joaobsjunior/sh-conventional-commits) A hook that locally validates commit messages, checking if they follow the conventional commit pattern. The project also includes a shell script for generating semantic versions through conventional commits.
 * [commitlint](https://github.com/conventional-changelog/commitlint): A linter to check that your commit messages meet the Conventional Commits format.
+* [commit-check](https://github.com/commit-check/commit-check): A Python library for validating commit messages and branch names, checking sign-off, author info, imperative mood, and more. Available via CLI, pre-commit hook and GitHub Action.
 * [gitlint](https://github.com/jorisroovers/gitlint): Git commit message linter written in Python, which can be configured to [enforce Conventional Commits format](https://jorisroovers.com/gitlint/contrib_rules/#ct1-contrib-title-conventional-commits).
 * [conform](https://github.com/autonomy/conform): a tool that can be used to enforce policies on git repositories, including Conventional Commits.
 * [detect-next-version](https://npmjs.com/package/detect-next-version): Parse, detect and get more metadata about given Conventional Commits.
