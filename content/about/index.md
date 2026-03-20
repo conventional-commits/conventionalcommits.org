@@ -28,6 +28,7 @@ The first draft of this specification has been written in collaboration with som
 * [php-commitizen](https://github.com/damianopetrungaro/php-commitizen): A PHP tool built to create commit messages following the Conventional Commits specs.
   Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
 * [php-conventional-changelog](https://github.com/marcocesarato/php-conventional-changelog): a tool built to generate a changelog from a project's committing history messages and metadata and automate versioning with Semver, following Conventional Commits specs. Configurable and usable for PHP projects as a composer dependency or usable globally for non-PHP projects.
+* [ccval](https://github.com/andrey-fomin/ccval): a tool for validating commit messages, available as a command-line tool, Docker image, and GitHub Action.
 * [conventional-commits](https://github.com/ramsey/conventional-commits): A PHP library for creating and validating commit messages according to the Conventional Commits specification.
 * [sh-conventional-commits](https://github.com/joaobsjunior/sh-conventional-commits) A hook that locally validates commit messages, checking if they follow the conventional commit pattern. The project also includes a shell script for generating semantic versions through conventional commits.
 * [commitlint](https://github.com/conventional-changelog/commitlint): A linter to check that your commit messages meet the Conventional Commits format.
