@@ -67,6 +67,10 @@ The first draft of this specification has been written in collaboration with som
 * [EasyBuild ecosystem](https://github.com/easybuild-org): A collection of tools for automating release using Conventional Commits.
     * [EasyBuild.CommitLinter](https://github.com/easybuild-org/EasyBuild.CommitLinter): A .NET CLI tool to lint your commit messages
     * [EasyBuild.ChangelogGen](https://github.com/easybuild-org/EasyBuild.ChangelogGen): A .NET CLI tool for generating changelog based on Git history following Conventional Commits.
+* [commisery](https://github.com/tomtom-international/commisery): Commisery is a package to help check whether given commit messages adhere to Conventional Commits. Specifically it checks the syntax and some small aspects of the semantics. Written in python.
+* [commisery-action](https://github.com/tomtom-international/commisery-action): This GitHub Action consists of two major components:
+    * Scan all commits in your Pull Request against the Conventional Commits standard
+    * Create GitHub Releases based on unreleased Conventional Commits
 
 ## Projects Using Conventional Commits
 
