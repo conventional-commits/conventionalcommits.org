@@ -28,22 +28,23 @@ Il messaggio del commit dovrebbe seguire la seguente struttura:
 ---
 
 <br />
-Il commit contiene i seguenti elementi strutturali, allo scopo di comunicare l'intento al consumatore della tua libreria:
+Il commit contiene i seguenti elementi strutturali, allo scopo di comunicare l'intento al consumatore della libreria:
 
-1. **fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un Versionamento Semantico).
-1. **feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un Versionamento Semantico).
-1. **BREAKING CHANGE:** un commit che contiene in un _piè di pagina_ `BREAKING CHANGE:`, o aggiunge un `!` subito dopo il _tipo_/_contesto_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un Versionamento Semantico). Una _BREAKING CHANGE_ può essere parte di commit di qualsiasi _tipo_.
+1. **fix:** un commit di _tipo_ `fix` risolve un errore nel codice (correlato al [`PATCH`](http://semver.org/#summary) in un versionamento Semver).
+1. **feat:**  un commit di _tipo_ `feat` introduce una nuova funzionalità al codice (correlato al [`MINOR`](http://semver.org/#summary) in un versionamento Semver).
+1. **BREAKING CHANGE:** un commit che contiene in un _piè di pagina_ `BREAKING CHANGE:`, o aggiunge un `!` subito dopo il _tipo_/_contesto_, introduce una breaking API change (correlato al [`MAJOR`](http://semver.org/#summary) in un versionamento Semver).
+   Una _BREAKING CHANGE_ può essere parte di commit di qualsiasi _tipo_.
 1. Sono ammessi ulteriori _tipi_ oltre `fix:` e `feat:`, per esempio [commitlint-config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (che si basa sulla [convenzione Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) 
 raccomanda `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, ed altri.
 1. Altri _piè di pagina_ oltre `BREAKING CHANGE: <description>` possono essere utilizzati e seguono una specifica simile a [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
    
-Altri  _tipi_ non sono mantenuti da questa specifica, e non hanno un effetto sul Versionamento Semantico (a meno che non introducano una _BREAKING CHANGE_).
+Altri  _tipi_ non sono mantenuti da questa specifica, e non hanno un effetto sul versionamento Semver (a meno che non introducano una _BREAKING CHANGE_).
 <br />
 Un _contesto_ potrebbe essere aggiunto al _tipo_ di commit, al fine di offrire informazioni contestuali aggiuntive ed è contenuto tra parentesi, es. `feat(parser): add ability to parse arrays`.
 
 ## Esempi
 
-### Messaggio di un commit con una descrizione e una breaking change nel piè di pagina
+### Messaggio di un commit con una _descrizione_ e una breaking change nel _piè di pagina_
 ```
 feat: allow provided config object to extend other configs
 
@@ -60,24 +61,24 @@ feat!: send an email to the customer when a product is shipped
 feat(api)!: send an email to the customer when a product is shipped
 ```
 
-### Messaggio di un commit con entrambe `!` e BREAKING CHANGE a piè di pagina
+### Messaggio di un commit con entrambe `!` e _BREAKING CHANGE_ a piè di pagina
 ```
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
 ```
 
-### Messaggio di un commit senza una descrizione
+### Messaggio di un commit senza una _descrizione_
 ```
 docs: correct spelling of CHANGELOG
 ```
 
-### Messaggio di un commit con un contesto
+### Messaggio di un commit con un _contesto_
 ```
 feat(lang): add Polish language
 ```
 
-### Messaggio di un commit con una descrizione multi-paragrafo e piè di pagina multipli
+### Messaggio di un commit con una _descrizione multi-paragrafo_ e _piè di pagina multipli_
 ```
 fix: prevent racing of requests
 
