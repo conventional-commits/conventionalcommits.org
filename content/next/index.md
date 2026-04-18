@@ -268,6 +268,7 @@ Configurable and usable for PHP projects as a composer dependency or usable glob
 * [Cocogitto](https://github.com/oknozor/cocogitto): Cocogitto is a set of cli tools for the conventional commits and semver specifications.
 * [Conventional Commits Linter](https://gitlab.com/DeveloperC/conventional_commits_linter): A tooling and language agnostic Git commit linter for the _Conventional Commits_ specification.
 * [Uplift](https://github.com/gembaadvantage/uplift): Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI
+* [changegen](https://github.com/creativengine-ai/changegen): A zero-dependency Node.js CLI for generating formatted changelogs from git history using Conventional Commits. Supports multiple output formats and includes a ready-to-use GitHub Action.
 
 ## Projects Using Conventional Commits
 
