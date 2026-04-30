@@ -321,9 +321,9 @@ languages:
     description: Угода для додавання зручних для читання коміт повідомлень для людей та роботів
     actions:
     - label: Швидкий Огляд
-      url: '#summary'
+      url: '#вступ'
     - label: Повна Специфікація
-      url: '#specification'
+      url: '#специфікація'
     - label: Контрибуція
       url: 'https://github.com/conventional-commits/conventionalcommits.org'
     versions:
