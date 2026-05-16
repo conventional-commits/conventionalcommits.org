@@ -35,7 +35,7 @@ consumers of your library:
 A BREAKING CHANGE can be part of commits of any _type_.
 1. **INITIAL STABLE RELEASE:**  a commit that has a footer `INITIAL STABLE RELEASE:`, or appends `!!` after the type/scope, and introduces a new `MAJOR` even on versions `< 1.0.0`, denoting the promotion from a pre-release version `0.y.z` to `1.0.0`.
 1. _types_ other than `fix:` and `feat:` are allowed, for example [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) (based on the [the Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends `build:`, `chore:`,
-  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
+  `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others. Teams using AI coding agents may also use **`agent:`** for commits that change how an agent behaves or produces code (for example prompts, skills or rules, agent memory layout, `AGENTS.md`-style instructions, or review and guardrail text).
 1. _footers_ other than `BREAKING CHANGE: <description>` or `INITIAL STABLE RELEASE: <description>` may be provided and follow a convention similar to
   [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
@@ -96,6 +96,19 @@ docs: correct spelling of CHANGELOG
 ### Commit message with scope
 ```
 feat(lang): add polish language
+```
+
+### Commit messages for AI coding agent configuration
+```
+agent: refine progressive disclosure ordering in AGENTS.md
+```
+
+```
+agent(memory): split memory bank into blocks
+```
+
+```
+agent(prompts): rewrite golang coding guidelines
 ```
 
 ### Commit message with multi-paragraph body and multiple footers
@@ -169,6 +182,16 @@ Any casing may be used, but it's best to be consistent.
 ### What do I do if the commit contains changes of more than one type?
 
 Go back and make multiple commits whenever possible. Part of the benefit of Conventional Commits is its ability to drive us to make more organized commits and PRs.
+
+### When should I use `agent` instead of `docs` or `chore`?
+
+Use **`agent`** when the commit is intended to change how an AI coding agent behaves or what code it will generate in the future—for example prompts, skills or rules, agent memory organization, constitutions and guardrails, or review expectations. Reviewers can treat `agent` commits as higher-impact for future generated output than routine maintenance.
+
+Use **`docs`** for documentation aimed at humans using or developing the product or library itself, not operational configuration for coding agents.
+
+Use **`chore`** for routine repository housekeeping that is not meant to change how an agent reasons or generates code. Overlap is possible; choose the type that best signals intent to your team.
+
+Teams may use scopes such as `memory`, `prompts`, or `rules` (for example `agent(memory):`) to filter changelogs and pull requests. Scopes are optional and not mandated by this specification.
 
 ### Doesn’t this discourage rapid development and fast iteration?
 
