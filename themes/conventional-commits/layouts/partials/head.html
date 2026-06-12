@@ -8,7 +8,23 @@
 
     gtag('config', 'UA-2173276-5');
   </script>
-  
+
+  <!-- Dark mode: apply the saved/system theme before CSS is parsed to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+      } catch (e) {}
+      window.toggleTheme = function () {
+        var isDark = document.documentElement.classList.toggle('dark');
+        try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+      };
+    })();
+  </script>
+
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
   <title>{{ .Param "Title" }}</title>

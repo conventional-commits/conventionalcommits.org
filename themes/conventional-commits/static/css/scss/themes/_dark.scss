@@ -1,0 +1,153 @@
+@import "./../abstracts/index";
+
+// Dark mode overrides. Activated by adding the `dark` class to <html>
+// (see the inline script in partials/head.html). The pink welcome gradient
+// and brand colors are intentionally kept; only the white surfaces, the
+// article (markdown) body and the dropdowns are re-themed.
+
+$dark-bg: #0d1117;
+$dark-surface: #161b22;
+$dark-surface-2: #1c2330;
+$dark-border: #30363d;
+$dark-text: #c9d1d9;
+$dark-muted: #8b949e;
+
+html.dark {
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  main {
+    background-color: $dark-bg;
+  }
+
+  // --- Hero / welcome: keep a hint of the brand, but dark ---
+  .welcome {
+    background: $dark-bg;
+    background: linear-gradient(45deg, #14181f 0%, #3a1e2b 60%, #4a2230 100%);
+  }
+
+  article {
+    background-color: $dark-surface;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .35), 0 2px 20px 10px rgba(0, 0, 0, .25);
+  }
+
+  // --- Article (github-markdown-css) body ---
+  .markdown-body {
+    color: $dark-text;
+
+    h1, h2 {
+      border-bottom-color: $dark-border;
+    }
+
+    hr {
+      background-color: $dark-border;
+      border-bottom-color: $dark-border;
+    }
+
+    blockquote {
+      color: $dark-muted;
+      border-left-color: $dark-border;
+    }
+
+    code {
+      background-color: rgba(110, 118, 129, .35);
+    }
+
+    pre {
+      background-color: $dark-surface-2;
+    }
+
+    pre > code,
+    pre code {
+      background-color: transparent;
+    }
+
+    kbd {
+      color: $dark-text;
+      background-color: $dark-surface-2;
+      border-color: $dark-border;
+      box-shadow: inset 0 -1px 0 $dark-border;
+    }
+
+    table {
+      th, td {
+        border-color: $dark-border;
+      }
+
+      tr {
+        background-color: $dark-surface;
+        border-top-color: $dark-border;
+      }
+
+      tr:nth-child(2n) {
+        background-color: $dark-surface-2;
+      }
+    }
+  }
+
+  // --- Footer: the GitHub SVG defaults to black, invisible on a dark footer ---
+  .footer__logo .github {
+    fill: $dark-text;
+    transition: fill .3s ease;
+
+    &:hover {
+      fill: $color-neutral-light;
+    }
+  }
+
+  // --- Dropdowns (Versions / Languages) ---
+  .dropdown__options {
+    background-color: $dark-surface;
+
+    &:before {
+      border-color: transparent transparent $dark-surface transparent;
+    }
+  }
+
+  .dropdown__option a {
+    color: rgba($dark-text, .75);
+    border-bottom-color: rgba(255, 255, 255, .06);
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      background-color: rgba(255, 255, 255, .05);
+    }
+  }
+}
+
+// --- Theme toggle button (lives in the header, sits on the pink gradient) ---
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $color-neutral-light;
+  padding: $dropdown-label-padding;
+  font-size: 1.15em;
+  line-height: 1;
+
+  .theme-toggle__moon {
+    display: inline;
+  }
+
+  .theme-toggle__sun {
+    display: none;
+  }
+}
+
+html.dark .theme-toggle {
+  .theme-toggle__moon {
+    display: none;
+  }
+
+  .theme-toggle__sun {
+    display: inline;
+  }
+}
