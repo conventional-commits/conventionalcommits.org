@@ -548,3 +548,20 @@ languages:
     - label: සම්පූර්ණ පිරිවිතරය
       url: '#පිරිවිතරය'
     - label: දායක වන්න
+
+  vi:
+    weight: 30
+    languageName: "Tiếng Việt"
+    title: Conventional Commits
+    description: Quy chuẩn viết commit message có ý nghĩa dành cho lập trình viên
+    actions:
+    - label: Tóm tắt
+      url: '#tóm-tắt'
+    - label: Đặc tả
+      url: '#đặc-tả'
+    - label: Đóng góp
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
