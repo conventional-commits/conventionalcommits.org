@@ -67,6 +67,7 @@ The first draft of this specification has been written in collaboration with som
 * [EasyBuild ecosystem](https://github.com/easybuild-org): A collection of tools for automating release using Conventional Commits.
     * [EasyBuild.CommitLinter](https://github.com/easybuild-org/EasyBuild.CommitLinter): A .NET CLI tool to lint your commit messages
     * [EasyBuild.ChangelogGen](https://github.com/easybuild-org/EasyBuild.ChangelogGen): A .NET CLI tool for generating changelog based on Git history following Conventional Commits.
+* [FerrFlow](https://github.com/FerrLabs/FerrFlow): A single binary that reads _Conventional Commits_ to bump versions across 16 file formats (Cargo.toml, package.json, pyproject.toml, Chart.yaml, pubspec.yaml and more), generate the changelog, tag and publish the release. Works with monorepos and classic repositories, with no runtime or per-ecosystem plugin required.
 
 ## Projects Using Conventional Commits
 
