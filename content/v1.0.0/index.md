@@ -103,7 +103,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 1. The type `fix` MUST be used when a commit represents a bug fix for your application.
 1. A scope MAY be provided after a type. A scope MUST consist of a noun describing a
   section of the codebase surrounded by parenthesis, e.g., `fix(parser):`
-1. A description MUST immediately follow the colon and space after the type/scope prefix.
+1. A description MUST immediately follow the colon and one space (or multiple spaces)  after the type/scope prefix.
 The description is a short summary of the code changes, e.g., _fix: array parsing issue when multiple spaces were contained in string_.
 1. A longer commit body MAY be provided after the short description, providing additional contextual information about the code changes. The body MUST begin one blank line after the description.
 1. A commit body is free-form and MAY consist of any number of newline separated paragraphs.
