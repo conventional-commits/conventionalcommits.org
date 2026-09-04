@@ -68,6 +68,8 @@ The first draft of this specification has been written in collaboration with som
     * [EasyBuild.CommitLinter](https://github.com/easybuild-org/EasyBuild.CommitLinter): A .NET CLI tool to lint your commit messages
     * [EasyBuild.ChangelogGen](https://github.com/easybuild-org/EasyBuild.ChangelogGen): A .NET CLI tool for generating changelog based on Git history following Conventional Commits.
 
+* [relnote](https://github.com/loki-inu/relnote): Offline stdlib Python CLI and GitHub Action that generates GitHub release notes from Conventional Commits (no API, no config).
+
 ## Projects Using Conventional Commits
 
 * [NFPM](https://github.com/goreleaser/nfpm): NFPM is Not FPM - a simple deb, rpm and apk packager written in Go.
