@@ -129,7 +129,7 @@ dit document zijn te interpreteren zoals beschreven in [RFC 2119](https://www.ie
    were contained in string_.
 6. Een uitgebreide omschrijving MAG worden opgegeven voor aanvullende contextuele informatie over de wijzigingen. De
    uitgebreide omschrijving MOET één lege regel laten tussen de regel met het type/domein en de (korte) omschrijving.
-7. De uitgbreide omschrijving is een veld dat MAG bestaan uit een willekeurig aantal, door lege regels gescheiden,
+7. De uitgebreide omschrijving is een veld dat MAG bestaan uit een willekeurig aantal, door lege regels gescheiden,
    alinea's.
 8. Een voettekst (meedere toegestaan) MAG, na één lege regel achter de uitgebreide omschrijving, worden opgegeven. Elke
    voettekst MOET bestaan uit
