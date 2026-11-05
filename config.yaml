@@ -548,3 +548,20 @@ languages:
     - label: සම්පූර්ණ පිරිවිතරය
       url: '#පිරිවිතරය'
     - label: දායක වන්න
+
+  ca:
+    weight: 30
+    languageName: "Català"
+    title: Commits Convencionals
+    description: Una especificació per afegir als missatges de commit un significat llegible tant per a persones com per a màquines
+    actions:
+    - label: Resum ràpid
+      url: '#resum'
+    - label: Especificació completa
+      url: '#especificació'
+    - label: Contribueix
+      url: 'https://github.com/conventional-commits/conventionalcommits.org'
+    versions:
+      current: v1.0.0
+      list:
+      - v1.0.0
