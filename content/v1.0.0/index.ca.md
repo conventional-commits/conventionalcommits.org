@@ -95,7 +95,7 @@ Refs: #123
 
 ## Especificació
 
-Les paraules clau «HA DE» (MUST), «NO HA DE» (MUST NOT), «OBLIGATORI» (REQUIRED), «HAURÀ DE» (SHALL), «NO HAURÀ DE» (SHALL NOT), «CAL» (SHOULD), «NO CAL» (SHOULD NOT), «RECOMANAT» (RECOMMENDED), «POT» (MAY) i «OPCIONAL» (OPTIONAL) d'aquest document s'han d'interpretar tal com es descriu a l'[RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+Les paraules clau «HA DE» (MUST), «NO HA DE» (MUST NOT), «OBLIGATORI» (REQUIRED), «HAURÀ DE» (SHALL), «NO HAURÀ DE» (SHALL NOT), «HAURIA DE» (SHOULD), «NO HAURIA DE» (SHOULD NOT), «RECOMANAT» (RECOMMENDED), «POT» (MAY) i «OPCIONAL» (OPTIONAL) d'aquest document s'han d'interpretar tal com es descriu a l'[RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 1. Els commits HAN DE portar un prefix amb un tipus, que consisteix en un nom, `feat`, `fix`, etc., seguit
   de l'àmbit OPCIONAL, el `!` OPCIONAL i els dos punts i l'espai finals OBLIGATORIS.
